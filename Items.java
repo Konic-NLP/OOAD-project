@@ -96,7 +96,7 @@ class Items {
         class PaperScore extends Music{
         }
         //1.2
-        class CD extends Music{
+        class MusicCD extends Music{
         }
         //1/3
         class Vinyl extends Music{
@@ -108,7 +108,7 @@ class Items {
     }
 
         //2.1
-        class CD extends Players {
+        class PlayerCD extends Players {
         }
         //2.2
         class RecordPlayer extends Players{
@@ -161,7 +161,7 @@ class Items {
             class Harmonica extends Wind{
                 private String key;
 
-                public void setKey(String type) {
+                public void setKey(String key) {
                     this.key = key;
                 }
 
