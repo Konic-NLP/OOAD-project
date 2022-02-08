@@ -2,6 +2,7 @@ class Items {
 
     //General attributes of all the items
     public String name;
+    public String type;
     public int purchasePrice;
     public int listPrice;
     public int salePrice;
@@ -9,6 +10,7 @@ class Items {
     public String condition;
     public int daySold;
     public int dayArrived;
+
 
 
     //Below is a bunch of getter functions to get the attributes of the items
@@ -59,6 +61,10 @@ class Items {
     }
     public void setDayArrived(int day) {
         this.dayArrived = day;
+    }
+
+    public void initialize(){
+        Helper.random_name(this.type)
     }
 }
 
