@@ -35,7 +35,7 @@ public class Order {
 
     below just for testing
      */
-//    public static class Items {
+//    public static class Items {、。、
 //
 //        int price = 100;
 //
