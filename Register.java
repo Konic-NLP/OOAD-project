@@ -1,4 +1,4 @@
-public class register {
+public class Register {
 
     private int moneysum;// sum of money in the register
 
@@ -27,14 +27,37 @@ public class register {
 
 
         //the price is determined by the
-        this.moneysum-=items.getPurchasePrice;
+        this.moneysum-=items.getPurchasePrice();
 
      }
+/*
+below just for test
+
+ */
+
+//    public static class Items{
+//
+//        int price=100;
+//        public int getPurchasePrice() {
+//
+//            return this.price;
+//        }
+//    }
 
 
 
-
-
-
+//public static void main(String[] args){
+//        Register reg= new Register();
+//       Items items = new Items();
+//        reg.deductmoney(items);
+//        System.out.println(reg.getMoneysum());
+//
+//
+//
+//
+//
+//
+//
+//}
 
 }
