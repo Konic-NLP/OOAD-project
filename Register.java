@@ -35,6 +35,15 @@ below just for test
 
  */
 
+//    public static class Items{
+//
+//        int price=100;
+//        public int getPurchasePrice() {
+//
+//            return this.price;
+//        }
+//    }
+
 
 
 //public static void main(String[] args){
