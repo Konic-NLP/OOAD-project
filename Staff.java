@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class Staff {
     private String name;
-    private int consecutiveWorkDates;
+    private int cwd;// to represent 'consecutiveworkdays' althought it may mix with current work directory :)
     private float damageChance;
     private int workDays = 0;
 
