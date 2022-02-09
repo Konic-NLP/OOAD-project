@@ -50,7 +50,7 @@ public class Inventory {
         return luckyItem;
     }
 
-    public toString(){
-
-    }
+//    public toString(){
+//
+//    }
 }
