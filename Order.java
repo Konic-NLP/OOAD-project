@@ -18,7 +18,11 @@ public class Order {
 
 
     }
+    public ArrayList<Items> getorderlist(){
 
+        return this.orderlist;
+
+    }
     //when the item arrive at the store, remove it from the orderlist
     public void remove(Items item) {
         if (this.orderlist.size() != 0) {

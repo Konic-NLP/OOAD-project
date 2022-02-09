@@ -7,6 +7,7 @@ public class Bank {
 
         int withdraw = 1000;
         this.sum += 1000;
+
         return withdraw;
     }
 

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Random.*;
 
 // the Store object remain the same around 30 days
@@ -24,6 +25,12 @@ public class Store {
 
 
     }
+
+    public void getnostock(Inventory inventory){
+
+        this.outOfStocklist=inventory.checkstock();
+
+    };
     public void addSoldItem(Items item){
         //record what item has been sold
         this.soldList.add(item);
@@ -37,31 +44,31 @@ public class Store {
 
      */
     public void selectStaff(Staff a, Staff b){
-        if(a.getcwd()==3){
+        if(a.getCwd()==3){
             this.todayStaff=b;
-            b.setcwd();
-            a.clearcwd();
+            b.addCwd();
+            a.cleanCwd();
         }
-        else if(b.cwd==3){
+        else if(b.getCwd()==3){
 
             this.todayStaff=a;
-            a.setcwd();
-            b.clearcwd();
+            a.addCwd();
+            b.cleanCwd();
 
         }
         else{
 
             // select one from two  https://www.coder.work/article/867957
-
-            todayStaff=random.nextBoolean()?a:b;
+            Random random =new Random();
+            todayStaff= random.nextBoolean()?a:b;
             if (todayStaff==a){
-                a.setcwd();
-                b.clearcwd();
+                a.addCwd();
+                b.cleanCwd();
 
             }
             else{
-                b.setcwd();
-                a.clearcwd();
+                b.addCwd();
+                a.cleanCwd();
             }
 
         }
