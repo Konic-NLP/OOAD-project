@@ -8,7 +8,7 @@ public class Inventory {
 
     HashMap<Items, Integer> countItems = new HashMap<Items, Integer>();
 
-    public void CountItems(){
+    public Inventory(){
 
         this.countItems = new HashMap<Items, Integer>();
 
@@ -30,27 +30,27 @@ public class Inventory {
 //    }
 
     // add new items into store inventory
-    public void updateStock(ArrayList<Items> itemsList, Items items){
+    public void updateStock(Items items){
 
-        itemsList.add(items);
+        this.itemsList.add(items);
+        this.countItems.put(items,this.countItems.get(items)+1);
+
     }
 
     // remove item from store inventory
-    public void removeItems(ArrayList<Items> itemsList, Items items){
+    public void removeItems(Items items){
 
-        itemsList.remove(items);
+        this.itemsList.remove(items);
+        this.countItems.put(items,this.countItems.get(items)-1);
+
     }
 
     // method to randomly choose a lucky item which might be damaged by clerk.
-    public Items randomItem(ArrayList<Items> itemsList){
-
-        int index = (int)(Math.random() * itemsList.size());
-        Items luckyItem = itemsList.get(index);
-
-        return luckyItem;
-    }
-
-    public toString(){
-
-    }
+//    public Items randomItem(ArrayList<Items> itemsList){
+//
+//        int index = (int)(Math.random() * itemsList.size());
+//        Items luckyItem = itemsList.get(index);
+//
+//        return luckyItem;
+//    }
 }

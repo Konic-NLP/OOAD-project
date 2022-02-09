@@ -105,12 +105,12 @@ public class Staff {
     }
 
     public void checkWithSeller(Seller seller,double price,Register reg, Inventory inventory){
-        if(seller.getSellOrNot()=true){
+        if(seller.getSellOrNot() == true){
             reg.deductmoney(seller.itemsWantToSell.getPurchasePrice);
             inventory.updateStock(items);
         }else{
             price=price*1.1;
-            if(seller.getSellOrNotWithHigerPrice()=true){
+            if(seller.getSellOrNotWithHigerPrice()==true){
                 reg.deductmoney(seller.itemsWantToSell.getPurchasePrice);
                 inventory.updateStock(items);
 
@@ -125,14 +125,14 @@ public class Staff {
 }
     public void checkWithBuyer(Buyer buyer,Register reg, Inventory inventory,  Store store){
         buyitem=buyer.itemsWanttoBuy;
-        if (buyer.buyOrNot= true){
+        if (buyer.buyOrNot== true){
             reg.deductmoney(buyitem.getSalePrice);
             inventory.removeItems(buyitem);
             store.addSoldItem(buyitem);
 
         }else{
             buyitem.setSalePrice(buyitem.getSalePrice()*0.9);
-            if(buyer.getBuyNotWithLowerPrice()=true){
+            if(buyer.getBuyNotWithLowerPrice()==true){
 
                 reg.deductmoney(buyitem.getSalePrice);
                 inventory.removeItems(buyitem);
