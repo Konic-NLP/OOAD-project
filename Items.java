@@ -1,7 +1,7 @@
 class Items {
 
     //General attributes of all the items
-    public String name;
+    protocted String name;
     public String type;
     public int purchasePrice;
     public int listPrice;
