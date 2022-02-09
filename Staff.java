@@ -124,7 +124,7 @@ public class Staff {
 
 }
     public void checkWithBuyer(Buyer buyer,Register reg, Inventory inventory,  Store store){
-        buyitem=buyer.itemsWanttoBuy;
+        Item buyitem=buyer.itemWantToBuy;
         if (buyer.buyOrNot== true){
             reg.deductmoney(buyitem.getSalePrice);
             inventory.removeItems(buyitem);

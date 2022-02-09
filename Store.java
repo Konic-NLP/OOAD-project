@@ -26,11 +26,11 @@ public class Store {
 
     }
 
-    public void getnostock(Inventory inventory){
-
-        this.outOfStocklist=inventory.checkstock();
-
-    };
+//    public void getnostock(Inventory inventory){
+//
+//        this.outOfStocklist=inventory.checkstock();
+//
+//    };
     public void addSoldItem(Items item){
         //record what item has been sold
         this.soldList.add(item);
