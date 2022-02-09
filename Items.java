@@ -1,15 +1,15 @@
 class Items {
 
     //General attributes of all the items
-    protocted String name;
-    public String type;
-    public int purchasePrice;
-    public int listPrice;
-    public int salePrice;
-    public String newOrUsed;
-    public String condition;
-    public int daySold;
-    public int dayArrived;
+    protected String name;
+    protected String itemType = "Item";
+    protected int purchasePrice;
+    protected int listPrice;
+    protected int salePrice;
+    protected String newOrUsed;
+    protected int condition;
+    protected int daySold;
+    protected int dayArrived;
 
 
 
@@ -26,7 +26,7 @@ class Items {
     public int salePrice() {
         return salePrice;
     }
-    public String getCondition() {
+    public int getCondition() {
         return condition;
     }
     public String getNewOrUsed() {
@@ -53,7 +53,7 @@ class Items {
     public void setNewOrUsed(String newOrUsed) {
         this.newOrUsed = newOrUsed;
     }
-    public void setCondition(String condition) {
+    public void setCondition(int condition) {
         this.condition = condition;
     }
     public void setDaySold(int day) {
@@ -63,10 +63,28 @@ class Items {
         this.dayArrived = day;
     }
 
-    public void initialize(){
-        Helper.random_name(this.type)
+    //
+    protected int generate_Listprice(){
+        int number =  2*this.purchasePrice;
+        return number;
+    }
+
+    // Constructor for items
+    public void initialize_main(int day){
+        this.name = Helper.random_name(this.itemType);
+        this.newOrUsed = Helper.random_newOrUsed();
+        this.condition = Helper.random_number(5,1);
+        this.dayArrived = day;
+
+    }
+    
+    public void initialize_price(){
+        this.purchasePrice = Helper.random_purchasePrice();
+        this.listPrice = this.generate_Listprice();
     }
 }
+
+
 
 
 
@@ -75,8 +93,9 @@ class Items {
     class Music extends Items{
 
         //Attributes for the music
-        private String band;
-        private String album;
+        protected String itemType = "Music";
+        protected String band;
+        protected String album;
 
 
         //Getter methods for Music
@@ -95,40 +114,59 @@ class Items {
         public void setAlbum(String album) {
             this.album = album;
         }
+
+        // Constructor for Music
+        public void initialize_main(int day){
+            this.name = Helper.random_name(this.itemType);
+            this.newOrUsed = Helper.random_newOrUsed();
+            this.condition = Helper.random_number(5,1);
+            this.dayArrived = day;
+            this.band = Helper.random_name("band");
+            this.album = Helper.random_name("album");
+        }
     }
 
         //subclasses of music
         //1.1
         class PaperScore extends Music{
+            protected String itemType = "PaperScore";
         }
         //1.2
         class MusicCD extends Music{
+            protected String itemType = "MusicCD";
         }
         //1/3
         class Vinyl extends Music{
+            protected String itemType = "Vinyl";   
         }
 
     //Second subclass
     //2
     class Players extends Items {
+        protected String itemType = "Player";
     }
 
         //2.1
         class PlayerCD extends Players {
+            protected String itemType = "PlayerCD";
         }
         //2.2
         class RecordPlayer extends Players{
+            protected String itemType = "RecordPlayer";
         }
         //2.3
         class MP3 extends Players{
+            protected String itemType = "MP3";
         }
 
     //Third subclass
     //3
     class Instruments extends Items{
+        protected String itemType = "Instruments";
     }
         //3.1
         class Stringed extends Instruments{
+            protected String itemType = "Stringed";
             private boolean electric;
 
             public boolean getElectric() {
@@ -136,36 +174,58 @@ class Items {
             }
             public void setElectric(boolean electric){
                 this.electric = electric;
-                }
+            }
+
+            public void initialize_main(int day) {
+                this.name = Helper.random_name(this.itemType);
+                this.newOrUsed = Helper.random_newOrUsed();
+                this.condition = Helper.random_number(5,1);
+                this.dayArrived = day;
+                this.electric = Helper.random_boolean();
+            }
+
         }
             //3.1.1
             class Mandolin extends Stringed{
+                protected String itemType = "Mandolin";
             }
             //3.1.2
             class Bass extends Stringed{
+                protected String itemType = "Bass";
             }
             //3.1.3
             class Guitar extends Stringed{
+                protected String itemType = "Guitar";
             }
         //3.2
         class Wind extends Instruments{
+            protected String itemType = "Wind";
         }
             //3.2.1
             class Flute extends Wind{
+                protected String itemType = "Flute";
                 private String type;
 
-                public void setType(String type) {
-                    this.type = type;
+                public void setType(String itemType) {
+                    this.itemType = itemType;
                 }
 
                 public String getType() {
-                    return type;
+                    return itemType;
                 }
+
+                public void initialize_main(int day) {
+                    this.name = Helper.random_name(this.itemType);
+                    this.newOrUsed = Helper.random_newOrUsed();
+                    this.condition = Helper.random_number(5,1);
+                    this.dayArrived = day;
+                    this.type = Helper.random_name("type");
             }
 
             //3.2.2
             class Harmonica extends Wind{
                 private String key;
+                protected String itemType = "Harmonica";
 
                 public void setKey(String key) {
                     this.key = key;
@@ -174,15 +234,24 @@ class Items {
                 public String getKey() {
                     return key;
                 }
+
+                public void initialize_main(int day) {
+                    this.name = Helper.random_name(this.itemType);
+                    this.newOrUsed = Helper.random_newOrUsed();
+                    this.condition = Helper.random_number(5,1);
+                    this.dayArrived = day;
+                    this.key  = Helper.random_name("key");
             }
 
 
     //Fourth subclass
     //4
     class Clothing extends Items{
+        protected String itemType = "Clothing";
     }
         //4.1
         class Hats extends Clothing{
+            protected String itemType = "Hats";
             private int hatSize;
 
             public void setHatSize(int size) {
@@ -192,10 +261,18 @@ class Items {
             public int getHatSize() {
                 return hatSize;
             }
+
+            public void initialize_main(int day) {
+                this.name = Helper.random_name(this.itemType);
+                this.newOrUsed = Helper.random_newOrUsed();
+                this.condition = Helper.random_number(5,1);
+                this.dayArrived = day;
+                this.hatSize = Helper.random_number(5,1);
         }
 
         //4.2
         class Shirts extends Clothing{
+            protected String itemType = "Shirts";
             private int shirtSize;
 
             public void setShirtSize(int size) {
@@ -205,19 +282,29 @@ class Items {
             public int getHatSize() {
                 return shirtSize;
             }
+
+            public void initialize_main(int day) {
+                this.name = Helper.random_name(this.itemType);
+                this.newOrUsed = Helper.random_newOrUsed();
+                this.condition = Helper.random_number(5,1);
+                this.dayArrived = day;
+                this.shirtSize = Helper.random_number(5,1);
         }
 
         //4.3
         class Bandanas extends Clothing{
+            protected String itemType = "Bandanas";
         }
 
 
     //Fifth subclass
     //5
     class Accessories extends Items{
+        protected String itemType = "Accessories";
     }
         //5.1
         class PracticeAmps extends Accessories{
+            protected String itemType = "PracticeAmps";
             private int wattage;
 
             public void setWattage(int wattage) {
@@ -227,9 +314,17 @@ class Items {
             public int getWattage() {
                 return wattage;
             }
+
+            public void initialize_main(int day) {
+                this.name = Helper.random_name(this.itemType);
+                this.newOrUsed = Helper.random_newOrUsed();
+                this.condition = Helper.random_number(5,1);
+                this.dayArrived = day;
+                this.wattage = Helper.random_number(10,1);
     }
         //5.2
         class Cables extends Accessories{
+            protected String itemType = "Cables";
             private int length;
 
             public void setLength(int length) {
@@ -239,19 +334,35 @@ class Items {
             public int getLength() {
                 return length;
             }
+
+            public void initialize_main(int day) {
+                this.name = Helper.random_name(this.itemType);
+                this.newOrUsed = Helper.random_newOrUsed();
+                this.condition = Helper.random_number(5,1);
+                this.dayArrived = day;
+                this.length = Helper.random_number(10,1);
         }
        //5.3
-        class Strings extends Accessories{
+        class Strings extends Accessories {
+           protected String itemType = "Strings";
            private String type;
 
-           public void setType(String type) {
-               this.type = type;
+           public void setType(String itemType) {
+               this.itemType = itemType;
            }
 
            public String getType() {
-               return type;
+               return itemType;
            }
-        }
+
+           public void initialize_main(int day) {
+               this.name = Helper.random_name(this.itemType);
+               this.newOrUsed = Helper.random_newOrUsed();
+               this.condition = Helper.random_number(5,1);
+               this.dayArrived = day;
+               this.type = Helper.random_name("type");
+           }
+       }
 
 
 
