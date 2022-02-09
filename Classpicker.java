@@ -4,8 +4,8 @@ import java.util.Random;
 public class Classpicker {
     protected ArrayList<Class<?>> classes;
 
-    Classpicker(){
-        classes = new ArrayList <>();
+    Classpicker() {
+        classes = new ArrayList<>();
 
         classes.add(PlayerCD.class);
         classes.add(MusicCD.class);
@@ -22,27 +22,32 @@ public class Classpicker {
         classes.add(PracticeAmps.class);
         classes.add(Cables.class);
         classes.add(Strings.class);
+    }
 
-       public Items MakeRandomInstance(){
-           Items a;
-           int pick;
-           Random r = new Random();
-           Class<?> c = classes.get(pick);
-           Class<?> [] parameterType = null;
-           Object [] initargs = null;
-           try{
-               a = (Items) c.getDeclaredConstructor(parameterType).newInstance(initargs);
-           }
-           catch (Exception e ){
-               System.out.println("whoops"+e.toString());
-               a = null;
-           }
-           return a;
+    public Items MakeRandomInstance() {
+        Items a;
+        int pick;
+        Random r = new Random();
+        pick = r.nextInt(15);
+        switch (pick) {
+            case 0 -> new PlayerCD();
+            case 1 -> new MusicCD();
+            case 3 -> new MP3();
+            case 4 -> new Guitar();
+            case 5 -> new Bass();
+            case 6 -> new Mandolin();
+            case 7 -> new Hats();
+            case 8 -> new Shirts();
+            case 9 -> new Bandanas();
+            case 10 -> new PracticeAmps();
+            case 11 -> new Cables();
+            case 12 -> new Strings();
+            default -> {
+                a = null;
+                System.out.println("whoops");
+            }
         }
-
-
-
-
-
+        return a;
     }
 }
+

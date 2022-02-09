@@ -17,13 +17,13 @@ class Items {
     public String getName() {
         return name;
     }
-    public int purchasePrice() {
+    public int getPurchasePrice() {
         return purchasePrice;
     }
-    public int listPrice() {
+    public int getListPrice() {
         return listPrice;
     }
-    public int salePrice() {
+    public int getSalePricesalePrice() {
         return salePrice;
     }
     public int getCondition() {
@@ -220,6 +220,7 @@ class Items {
                     this.condition = Helper.random_number(5,1);
                     this.dayArrived = day;
                     this.type = Helper.random_name("type");
+                }
             }
 
             //3.2.2
@@ -241,6 +242,7 @@ class Items {
                     this.condition = Helper.random_number(5,1);
                     this.dayArrived = day;
                     this.key  = Helper.random_name("key");
+                }
             }
 
 
@@ -268,6 +270,7 @@ class Items {
                 this.condition = Helper.random_number(5,1);
                 this.dayArrived = day;
                 this.hatSize = Helper.random_number(5,1);
+            }
         }
 
         //4.2
@@ -289,6 +292,7 @@ class Items {
                 this.condition = Helper.random_number(5,1);
                 this.dayArrived = day;
                 this.shirtSize = Helper.random_number(5,1);
+            }
         }
 
         //4.3
@@ -303,7 +307,7 @@ class Items {
         protected String itemType = "Accessories";
     }
         //5.1
-        class PracticeAmps extends Accessories{
+        class PracticeAmps extends Accessories {
             protected String itemType = "PracticeAmps";
             private int wattage;
 
@@ -318,12 +322,13 @@ class Items {
             public void initialize_main(int day) {
                 this.name = Helper.random_name(this.itemType);
                 this.newOrUsed = Helper.random_newOrUsed();
-                this.condition = Helper.random_number(5,1);
+                this.condition = Helper.random_number(5, 1);
                 this.dayArrived = day;
-                this.wattage = Helper.random_number(10,1);
-    }
+                this.wattage = Helper.random_number(10, 1);
+            }
+        }
         //5.2
-        class Cables extends Accessories{
+        class Cables extends Accessories {
             protected String itemType = "Cables";
             private int length;
 
@@ -338,9 +343,10 @@ class Items {
             public void initialize_main(int day) {
                 this.name = Helper.random_name(this.itemType);
                 this.newOrUsed = Helper.random_newOrUsed();
-                this.condition = Helper.random_number(5,1);
+                this.condition = Helper.random_number(5, 1);
                 this.dayArrived = day;
-                this.length = Helper.random_number(10,1);
+                this.length = Helper.random_number(10, 1);
+            }
         }
        //5.3
         class Strings extends Accessories {
@@ -358,7 +364,7 @@ class Items {
            public void initialize_main(int day) {
                this.name = Helper.random_name(this.itemType);
                this.newOrUsed = Helper.random_newOrUsed();
-               this.condition = Helper.random_number(5,1);
+               this.condition = Helper.random_number(5, 1);
                this.dayArrived = day;
                this.type = Helper.random_name("type");
            }
