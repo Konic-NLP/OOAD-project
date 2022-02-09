@@ -10,7 +10,7 @@ public class Customer {
 
 class Buyer extends Customer{
 
-    private Items itemWantToBuy;
+    private String itemWantToBuy;
     private boolean buyOrNot;
     private boolean buyOrNotWithHigherPrice;
 

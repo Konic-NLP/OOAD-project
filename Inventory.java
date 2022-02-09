@@ -14,9 +14,10 @@ public class Inventory {
 
     }
 
+    // calculate the total purchase price of the items in the store inventory
     public int getTotalValue(ArrayList<Items> itemsList){
 
-        for (int i = 0; i < itemsList.size(); i++){
+        for (Items items: itemsList){
 
             totalValue += items.purchasePrice;
         }
@@ -24,15 +25,17 @@ public class Inventory {
         return totalValue;
     }
 
-    public void checkStock(){
+//    public void checkStock(){
+//
+//    }
 
-    }
-
+    // add new items into store inventory
     public void updateStock(ArrayList<Items> itemsList, Items items){
 
         itemsList.add(items);
     }
 
+    // remove item from store inventory
     public void removeItems(ArrayList<Items> itemsList, Items items){
 
         itemsList.remove(items);
