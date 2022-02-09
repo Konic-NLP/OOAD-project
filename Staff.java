@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Map;
 
 public class Staff {
@@ -20,7 +21,7 @@ public class Staff {
 
     public void checkRegister(Register register){
 
-        if (register.getMoney() < 75) {
+        if (register.getMoneysum() < 75) {
 
             goToBank();
         }
@@ -28,35 +29,46 @@ public class Staff {
 
     public void goToBank(Register register){
 
-        register.addMoney();
+        register.addmoney();
     }
 
     public void doInventory(Inventory inventory){
 
-        System.out.println("The total value of all the items in the store is " + inventory.getTotalvalue());
+        System.out.println("The total value of all the items in the store is " + inventory.getTotalValue());
 
     }
 
-    public void checkInventory(Map countItems, Arraylist<items> outOfStockList){
+    public void checkInventory(Map countItems, ArrayList<Items> outOfStockList){
 
-        for (Map.Entry<items, Integer> entry : countItems.entrySet()){
-            if (entry.getValue() == 0){
-                outOfStockList.add(entry.getKey());
-                placeAnOrder();
+        Iterator countItemsIterator = countItems.entrySet().iterator();
+
+        while (countItemsIterator.hasNext()){
+
+            Map.Entry mapElement = (Map.Entry)countItemsIterator.next();
+
+            if ((int)mapElement.getValue() == 0){
+                outOfStockList.add((Items) mapElement.getKey());
             }
         }
+//        for (Map.Entry<Items, Integer> entry : countItems.entrySet()){
+//            if (entry.getValue() == 0){
+//                outOfStockList.add(entry.getKey());
+//                placeAnOrder();
+//            }
+//        }
+
 //        inventory.forEach((itemType, amount) -> {
 //            if (amount.equals(0) = Ture){
 //            }
 //        });
     }
 
-    public void placeAnOrder(Arraylist<items> outOfStockList, Arraylist<items> orderList, Store store){
+    public void placeAnOrder(ArrayList<Items> outOfStockList, ArrayList<Items> orderList, Store store){
 
-        for(items items: outOfStockList) {
+        for(Items items: outOfStockList) {
             orderList.add(items);
         }
 
-        store.remove();
+        store.removeItem();
     }
 }
