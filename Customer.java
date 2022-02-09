@@ -23,11 +23,7 @@ class Buyer extends Customer{
 
             Map.Entry mapElement = (Map.Entry)countItemsIterator.next();
 
-            if ((int)mapElement.getValue() == 0){
-                return false;
-            }else{
-                return true;
-            }
+            return (int) mapElement.getValue() != 0;
         }
 //        for (Map.Entry<Items, Integer> entry : countItems.entrySet()){
 //            if (entry.getValue() == 0){
@@ -40,20 +36,12 @@ class Buyer extends Customer{
 
     public boolean getBuyOrNot(){
 
-        if (Math.random() < 0.5){
-            return true;
-        }else{
-            return false;
-        }
+        return Math.random() < 0.5;
     }
 
     public boolean getBuyOrNotWithHigherPrice(){
 
-        if (Math.random() < 0.75){
-            return true;
-        }else{
-            return false;
-        }
+        return Math.random() < 0.75;
     }
 }
 
@@ -65,19 +53,11 @@ class Seller extends Customer{
 
     public boolean getSellOrNot(){
 
-        if (Math.random() < 0.5){
-            return true;
-        }else{
-            return false;
-        }
+        return Math.random() < 0.5;
     }
 
     public boolean getSellOrNotWithHigherPrice(){
 
-        if (Math.random() < 0.75){
-            return true;
-        }else{
-            return false;
-        }
+        return Math.random() < 0.75;
     }
 }
