@@ -4,9 +4,9 @@ import java.io.*;
 
 public class Inventory {
 
-    private ArrayList<Items> itemsList;
-    private int totalValue = 0;
-    HashMap<Items, Integer> countItems = new HashMap<>();
+    public ArrayList<Items> itemsList;
+
+    HashMap<Items, Integer> countItems = new HashMap<Items, Integer>();
 
     public void CountItems(){
 
@@ -16,7 +16,7 @@ public class Inventory {
 
     // calculate the total purchase price of the items in the store inventory
     public int getTotalValue(ArrayList<Items> itemsList){
-
+        int totalValue = 0;
         for (Items items: itemsList){
 
             totalValue += items.purchasePrice;
