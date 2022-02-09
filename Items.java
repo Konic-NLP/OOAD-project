@@ -17,13 +17,13 @@ class Items {
     public String getName() {
         return name;
     }
-    public int purchasePrice() {
+    public int getPurchasePrice() {
         return purchasePrice;
     }
-    public int listPrice() {
+    public int getListPrice() {
         return listPrice;
     }
-    public int salePrice() {
+    public int getSalePricesalePrice() {
         return salePrice;
     }
     public int getCondition() {
