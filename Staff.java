@@ -6,7 +6,7 @@ import java.util.Random.*;
 
 public class Staff {
     private String name;
-    private int cwd;// to represent 'consecutiveworkdays' althought it may mix with current work directory :)
+    private int cwd;// to represent 'consecutiveworkdays' although it may mix with current work directory :)
     private int damageChance;
 
     public Staff(int chance, String name){

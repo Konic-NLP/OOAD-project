@@ -38,6 +38,7 @@ class Items {
     public int getDayArrived() {
         return dayArrived;
     }
+    public String getItemType(){return getItemType();}
 
 
     // Below is a bunch of setter functions to set the attributes of the items
@@ -81,6 +82,10 @@ class Items {
     public void initialize_price(){
         this.purchasePrice = Helper.random_purchasePrice();
         this.listPrice = this.generate_Listprice();
+    }
+
+    public void initalize_arriveDay(int day){
+        this.dayArrived = Helper.randome_arriveDay(day);
     }
 }
 
