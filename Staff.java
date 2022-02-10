@@ -109,13 +109,13 @@ public class Staff {
 
     public void checkWithSeller(Seller seller,double price,Register reg, Inventory inventory){
         Items selleritems=seller.getItemsWantToSell();
-        if(seller.getSellOrNot() == true){
-            reg.deductmoney(selleritems);
+        if(seller.getsellOrNot() == true){
+            reg.deductmoney(selleritems.getPurchasePrice());
             inventory.updateStock(selleritems);
         }else{
             price=price*1.1;
-            if(seller.getSellOrNotWithHigherPrice()==true){
-                reg.deductmoney(selleritems);
+            if(seller.getsellOrNot()==true){
+                reg.deductmoney(selleritems.getPurchasePrice());
                 inventory.updateStock(selleritems);
 
             }else{
@@ -141,22 +141,22 @@ public class Staff {
         Items buyitem=itemsforbuy.get(0);
         if(buyer.checkItemsInStore(inventory)){
         if (buyer.getBuyOrNot()== true){
-            reg.deductmoney(buyitem);
+            reg.deductmoney(buyitem.getListPrice());
             inventory.removeItems(buyitem);
             store.addSoldItem(buyitem);
 
         }else{
-            buyitem.setSalePrice(buyitem.getSalePrice()*0.9);
-            if(buyer.getBuyNotWithLowerPrice()==true){
+            buyitem.setListPrice((int)(buyitem.getListPrice()*0.9));
+            if(buyer.getBuyOrNotWithHigherPrice()==true){
 
-                reg.deductmoney(buyitem.getSalePrice);
+                reg.deductmoney(buyitem.getListPrice());
                 inventory.removeItems(buyitem);
                 store.addSoldItem(buyitem);
 
 
             }else{
 
-                System.out.format("%String doestn't buy anything and leave",buyer.name);
+                System.out.format("%String doestn't buy anything and leave",buyer.getName());
             }
 
 
@@ -165,7 +165,7 @@ public class Staff {
     }else{
 
 
-            System.out.format("%String doestn't buy anything and leave",buyer.name);
+            System.out.format("%String doestn't buy anything and leave",buyer.getName());
 
         }}
 

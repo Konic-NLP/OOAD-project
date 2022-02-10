@@ -23,11 +23,11 @@ public class Register {
 
     }
     // if a seller customer sells the item to the store, we need to deduct the money from the register
-     public void deductmoney(Items items){
+     public void deductmoney(int price){
 
 
         //the price is determined by the
-        this.moneysum-=items.getPurchasePrice();
+        this.moneysum-=price;
 
      }
 /*
