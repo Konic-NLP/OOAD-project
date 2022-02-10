@@ -17,8 +17,14 @@ public class Store {
     public int getDays(){
         // get today, and increase the date
         int today=this.days;
-        this.days+=1;
+
         return  today;
+    }
+
+    public void nextDay(){
+
+        this.days+=1;
+
     }
     public ArrayList getSoldList(){
         return this.soldList;
@@ -26,11 +32,11 @@ public class Store {
 
     }
 
-    public void getnostock(Inventory inventory){
-
-        this.outOfStocklist=inventory.checkstock();
-
-    };
+//    public void getnostock(Inventory inventory){
+//
+//        this.outOfStocklist=inventory.checkstock();
+//
+//    };
     public void addSoldItem(Items item){
         //record what item has been sold
         this.soldList.add(item);
