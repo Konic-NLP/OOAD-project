@@ -31,7 +31,7 @@ public class Staff {
         ArrayList<Items> orderlist =order.getorderlist();
         for(Items ordereditem:orderlist){
             if (ordereditem.getDaySold()==today-1){
-
+                System.out.format(" the %String get arrived at the store at days %d", ordereditem.getName(),today);
                 inventory.updateStock(ordereditem);
 
             };
@@ -89,11 +89,29 @@ public class Staff {
             order.orderItems(items);
         }
     }
-    public void openStore(){
+    public void openStore(Seller[] sellers,Buyer[] buyers, Register reg,Inventory inventory,Store store){
+        for(Buyer buyer:buyers){
+
+                checkWithBuyer(buyer,reg,inventory,store);
+
+
+            }
+
+        for(Seller seller:sellers){
 
 
 
-    };
+
+
+        }
+
+
+
+            }
+
+
+
+
 
     public int bidToSeller(Items items){
         int itemprice=0;
@@ -107,15 +125,16 @@ public class Staff {
         return itemprice;
     }
 
-    public void checkWithSeller(Seller seller,double price,Register reg, Inventory inventory){
+    public void checkWithSeller(Seller seller,Register reg, Inventory inventory){
         Items selleritems=seller.getItemsWantToSell();
+        int sellprice=bidToSeller(selleritems);
         if(seller.getsellOrNot() == true){
-            reg.deductmoney(selleritems.getPurchasePrice());
+            reg.deductmoney(sellprice);
             inventory.updateStock(selleritems);
         }else{
-            price=price*1.1;
+            sellprice=(int)(sellprice*1.1);
             if(seller.getsellOrNot()==true){
-                reg.deductmoney(selleritems.getPurchasePrice());
+                reg.deductmoney(sellprice);
                 inventory.updateStock(selleritems);
 
             }else{
@@ -176,7 +195,7 @@ public class Staff {
         Items destoryeditem = inventory.randomItem();
         Random random=new Random();
         int prob=random.nextInt(100);
-        if(prob<5){
+        if(prob<this.damageChance){
             destoryeditem.setCondition(destoryeditem.getCondition()-1);
             destoryeditem.setListPrice((int)(destoryeditem.getListPrice()*0.8));
             if (destoryeditem.getCondition()==0){
