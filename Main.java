@@ -18,8 +18,12 @@ public class Main {
 
         ArrayList<Items> totall_list = FNMS.do_stock();
 
-        for (int i = 0; i < totall_list.size(); i++ )
-            inventory.updateStock(totall_list.get(i));
+        for (int i = 0; i < totall_list.size(); i++ ){
+//            System.out.println(totall_list.get(i));
+//            if(totall_list.get(i).getName()==null){
+//                System.out.println(i);
+//            }
+            inventory.updateStock(totall_list.get(i));}
 
 
         Staff Velma = new Staff(5,"Velma");
@@ -45,4 +49,4 @@ public class Main {
 
 
 
-}
+}}

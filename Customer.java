@@ -20,9 +20,16 @@ class Buyer extends Customer{
     private boolean buyOrNotWithHigherPrice;
 
 
+    public String randomItemWantToBuy(){
+        String[] typeList = {"PaperScore", "MusicCD", "Vinyl", "PlayerCD", "RecordPlayer", "MP3"
+                , "Guitar", "Bass", "Mandolin", "Flute", "Harmonica", "Hats", "Shirts", "Bandanas"
+                , "PracticeAmps", "Cables", "Strings"};
 
+        String itemName = typeList[new Random().nextInt(typeList.length)];
+        return itemName;
+    }
     public String getItemWantToBuy(){
-        return this.itemWantToBuy;
+        return this.randomItemWantToBuy();
     }
 
     public boolean getBuyOrNot(){
@@ -38,13 +45,14 @@ class Buyer extends Customer{
     // If the inventory does not have the item, the buyer will leave directly.
     public boolean checkItemsInStore(Inventory inventory){
 
-        String[] typeList = {"PaperScore", "MusicCD", "Vinyl", "PlayerCD", "RecordPlayer", "MP3"
-                , "Guitar", "Bass", "Mandolin", "Flute", "Harmonica", "Hats", "Shirts", "Bandanas"
-                , "PracticeAmps", "Cables", "Strings"};
-
-        String itemName = typeList[new Random().nextInt(typeList.length)];
-
-
+//        String[] typeList = {"PaperScore", "MusicCD", "Vinyl", "PlayerCD", "RecordPlayer", "MP3"
+//                , "Guitar", "Bass", "Mandolin", "Flute", "Harmonica", "Hats", "Shirts", "Bandanas"
+//                , "PracticeAmps", "Cables", "Strings"};
+//
+//        String itemName = typeList[new Random().nextInt(typeList.length)];
+        String itemName = this.randomItemWantToBuy();
+//        System.out.println(itemName);
+//        if(inventory)
         return (inventory.countItems.get(itemName)!=0);
 
 
@@ -83,6 +91,7 @@ class Buyer extends Customer{
         return Math.random() < 0.75;
     }
 }
+
 
 class Seller extends Customer{
     private String name = Helper.random_name("Seller");

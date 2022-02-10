@@ -117,14 +117,14 @@ public class Staff {
 
 
     public int bidToSeller(Items items){
-
+        int itemprice=0;
         /*
 
             the seller give the item to the staff and the staff
             demonstrate the price based on the condition of the item
 
          */
-        int itemprice = items.condition* Helper.random_number(10,1);
+
         return itemprice;
     }
 
@@ -153,12 +153,23 @@ public class Staff {
         String buyitemtype=buyer.getItemWantToBuy();
         ArrayList<Items> itemsforbuy =new ArrayList<Items>();
         for(Items items:inventory.itemsList){
-            if (items.getName().startsWith(buyitemtype)){
+//            System.out.println(buyitemtype);
+//            System.out.println(items.);
+//            if (items.getName()==null){
+//                System.out.println(items.itemType);
+//                System.out.println(items.dayArrived);
+//
+//            }
+            System.out.println(items.getItemType()+buyitemtype);
+            if (items.itemType== buyitemtype){
                 itemsforbuy.add(items);
 
             }
 
         }
+        if(itemsforbuy.size()==0){
+            System.out.println("leave");
+        }else{
         Collections.shuffle(itemsforbuy);
         Items buyitem=itemsforbuy.get(0);
         if(buyer.checkItemsInStore(inventory)){
@@ -190,7 +201,7 @@ public class Staff {
             System.out.format("%String doestn't buy anything and leave",buyer.getName());
 
         }
-    }
+    }}
 
     public void cleanStore(Inventory inventory){
 

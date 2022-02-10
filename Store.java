@@ -114,7 +114,7 @@ public class Store {
         }
 
         public ArrayList<Items> do_stock(){
-            ArrayList<Items> itemsList;
+            ArrayList<Items> itemsList=new ArrayList<Items>();
 
             PaperScore ps1 = new PaperScore();
             ps1.stock();
@@ -293,4 +293,4 @@ public class Store {
 
         }
 
-}
+

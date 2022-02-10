@@ -14,13 +14,13 @@ public class Helper {
     }
 
     public static String random_name(String type){
-        int number = Helper.random_number(0,1000);
+        int number = Helper.random_number(1000,0);
         String letter = random_letter();
         return type+letter+number;
     }
 
     public static int random_purchasePrice(){
-        int number  = Helper.random_number(0, 50);
+        int number  = Helper.random_number(50, 0);
         return number;
     }
 

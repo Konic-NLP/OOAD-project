@@ -18,6 +18,14 @@ public class Inventory {
     public Inventory(){
 
         this.countItems = new HashMap<Items, Integer>();
+        String[] typeList = {"PaperScore", "MusicCD", "Vinyl", "PlayerCD", "RecordPlayer", "MP3"
+                , "Guitar", "Bass", "Mandolin", "Flute", "Harmonica", "Hats", "Shirts", "Bandanas"
+                , "PracticeAmps", "Cables", "Strings"};
+//        for(String string:typeList){
+//            Items items=new string();
+//            this.countItems.put(,1);
+//        }
+//        this.countItems.put(items,1);
 
     }
 
@@ -51,7 +59,15 @@ public class Inventory {
     public void updateStock(Items items){
 
         this.itemsList.add(items);
-        this.countItems.put(items,this.countItems.get(items)+1);
+        if(this.countItems.containsKey(items)){
+            this.countItems.put(items,this.countItems.get(items)+1);
+
+        }else{
+            this.countItems.put(items,1);
+
+        }
+//        System.out.println(this.countItems.get(items)+1);
+//        this.countItems.put(items,this.countItems.get(items)+1);
 
     }
 
