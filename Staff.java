@@ -6,7 +6,10 @@ public class Staff {
     private String name;
     private int cwd;// to represent 'consecutiveworkdays' although it may mix with current work directory :)
     private int damageChance;
+    public String getName(){
+        return this.name;
 
+    }
     public Staff(int chance, String name){
         this.damageChance=chance;
         this.name=name;
