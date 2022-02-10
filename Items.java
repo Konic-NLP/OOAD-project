@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Items {
 
     //General attributes of all the items
@@ -85,8 +87,19 @@ class Items {
         this.listPrice = this.generate_Listprice();
     }
 
+    public void initialize_forSelller(int condition){
+        int price = condition*Helper.random_number(10,1);
+        this.purchasePrice = price;
+        this.listPrice = this.generate_Listprice();
+
+
     public void initalize_arriveDay(int day){
         this.dayArrived = Helper.randome_arriveDay(day);
+    }
+
+    public void stock(){
+        this.initialize_main(0);
+        this.initialize_price();
     }
 }
 
