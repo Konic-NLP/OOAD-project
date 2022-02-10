@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Order {
     /*
@@ -12,9 +13,17 @@ public class Order {
     }
 
     // add new item into the orderlist
-    public void orderItems(Items item) {
+    public void orderItems(Class classname,Store store) throws InstantiationException, IllegalAccessException {
 
-        this.orderlist.add(item);
+        Random random=new Random();
+        int arriveDate=store.getDays()+random.nextInt(3-1)+1;
+        for (int i=0;i<3;i++){
+            Items item1=(Items)classname.newInstance();
+            item1.setDayArrived(arriveDate);
+            this.orderlist.add(item1);
+        }
+
+
 
 
     }

@@ -18,8 +18,11 @@ class Buyer extends Customer{
     private String itemWantToBuy;
     private boolean buyOrNot;
     private boolean buyOrNotWithHigherPrice;
+    @Override
+    public String getName(){
 
-
+        return this.name;
+    }
     public String randomItemWantToBuy(){
         String[] typeList = {"PaperScore", "MusicCD", "Vinyl", "PlayerCD", "RecordPlayer", "MP3"
                 , "Guitar", "Bass", "Mandolin", "Flute", "Harmonica", "Hats", "Shirts", "Bandanas"
@@ -31,14 +34,14 @@ class Buyer extends Customer{
     public String getItemWantToBuy(){
         return this.randomItemWantToBuy();
     }
+//
+//    public boolean getBuyOrNot(){
+//        return this.buyOrNot;
+//    }
 
-    public boolean getBuyOrNot(){
-        return this.buyOrNot;
-    }
-
-    public boolean getBuyOrNotWithHigherPrice(){
-        return this.buyOrNotWithHigherPrice;
-    }
+//    public boolean getBuyOrNotWithHigherPrice(){
+//        return this.buyOrNotWithHigherPrice;
+//    }
 
 
     // Check if the store inventory has the item that the customer want to buy.
@@ -53,6 +56,7 @@ class Buyer extends Customer{
         String itemName = this.randomItemWantToBuy();
 //        System.out.println(itemName);
 //        if(inventory)
+
         return (inventory.countItems.get(itemName)!=0);
 
 
@@ -81,14 +85,18 @@ class Buyer extends Customer{
 //        };
     }
 
-    public boolean getbuyOrNot(){
+    public boolean getBuyOrNot(){
 
-        return Math.random() < 0.5;
+        double a= Math.random();
+//        System.out.println(a);
+        return a< 0.5;
     }
 
-    public boolean getbuyOrNotWithHigherPrice(){
+    public boolean getBuyOrNotWithHigherPrice(){
 
-        return Math.random() < 0.75;
+        double b= Math.random();
+//        System.out.println(b);
+        return b < 0.75;
     }
 }
 
@@ -98,25 +106,47 @@ class Seller extends Customer{
     private Items itemWantToSell;
     private boolean sellOrNot;
     private boolean sellOrNotWithHigherPrice;
+    @Override
+    public String getName(){
+        return this.name;
 
-    public Items initialize(Store store){
-
-        itemWantToSell.initialize_main(store.getDays());
-        itemWantToSell.initialize_price();
-        return itemWantToSell;
     }
+//    public Items initialize(Store store){
+//
+//        itemWantToSell.initialize_main(store.getDays());
+//        itemWantToSell.initialize_price();
+//        return itemWantToSell;
+//    }
 
-    public Items getItemsWantToSell(){
-        return this.itemWantToSell;
+    public Items getItemsWantToSell(Inventory inventory) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+//        List<Class> claslist=(List)(set);
+
+        Random random=new Random();
+        Items classa= inventory.itemsList.get(random.nextInt(inventory.itemsList.size()));
+
+        Class classname= classa.getClass();
+
+//        Object obj=cla.newInstance();
+        System.out.println(classname);
+        Object obj=classname.newInstance();
+        Items items=(Items)obj;
+
+//        cla.initialize_price();
+//        System.out.println(items.name);
+//        System.out.println(items);
+        return items;
+
     }
 
     public boolean getsellOrNot(){
-
-        return Math.random() < 0.5;
+        double a= Math.random();
+//        System.out.println(a);
+        return a< 0.5;
     }
 
     public boolean getsellOrNotWithHigherPrice(){
-
-        return Math.random() < 0.75;
+        double b= Math.random();
+//        System.out.println(b);
+        return b < 0.75;
     }
 }

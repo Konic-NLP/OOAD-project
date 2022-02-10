@@ -1,7 +1,8 @@
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class Main {
-    public static  void main(String args []){
+    public static  void main(String args []) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 
 
         Order order = new Order();
@@ -18,11 +19,12 @@ public class Main {
 
         ArrayList<Items> totall_list = FNMS.do_stock();
 
-        for (int i = 0; i < totall_list.size(); i++ ){
+        for (int i = 0; i < totall_list.size()-2; i++ ){
 //            System.out.println(totall_list.get(i));
 //            if(totall_list.get(i).getName()==null){
 //                System.out.println(i);
 //            }
+//            System.out.println(totall_list.get(i).getClass());
             inventory.updateStock(totall_list.get(i));}
 
 
@@ -43,10 +45,10 @@ public class Main {
 
 //        todayStaff.bidToSeller();
         todayStaff.cleanStore(inventory);
+        System.out.println(register.getMoneysum());
+        System.out.println(order.getorderlist().stream().map(Items::getDayArrived).collect(Collectors.toList()));
 
-
-
-
+//        System.out.println(inventory.countItems.toString());
 
 
 }}

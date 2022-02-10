@@ -46,7 +46,7 @@ public class Helper {
         return false;
     }
 
-    public static int randome_arriveDay(int day){
+    public static int random_arriveDay(int day){
         Random rand = new Random();
         int rand_int = random_number(3,1);
         return day+rand_int;
