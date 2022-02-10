@@ -1,7 +1,5 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 import java.util.Random.*;
 
 public class Staff {
@@ -30,11 +28,11 @@ public class Staff {
     public void arriveAtStore(Order order,Inventory inventory,Store store){
 
         int today=store.getDays();
-        Arraylist<Items> orderlist =order.getorderlist();
+        ArrayList<Items> orderlist =order.getorderlist();
         for(Items ordereditem:orderlist){
-            if (ordereditem.getDaySolid()==today-1){
+            if (ordereditem.getDaySold()==today-1){
 
-                inventory.updatestock(ordereditem);
+                inventory.updateStock(ordereditem);
 
             };
         }
@@ -56,29 +54,34 @@ public class Staff {
         register.addmoney(money);
     }
 
-    public void doInventory(Inventory inventory,Order order){
+    public void doInventory(Inventory inventory,Order order,Store store){
 
-        System.out.println("The total value of all the items in the store is " + inventory.getTotalvalue());
-        ArrayList<Items> waitorder=checkInventory(inventory.countItems);
+        System.out.println("The total value of all the items in the store is " + inventory.getTotalValue());
+        ArrayList<Items> waitorder=inventory.checkStock(order,store);
         if(waitorder.size()!=0){
         this.placeAnOrder(waitorder,order);
     }}
 
-    public ArrayList<Items> checkInventory(Map countItems){
-        ArrayList<Items> waitorder= new ArrayList<Items>();
-        for (Map.Entry<Items, Integer> entry : countItems.entrySet()){
-            if (entry.getValue() == 0){
-                waitorder.add(entry.getKey());
-
-            }
-        }
+//    public ArrayList<Items> checkInventory(Inventory inventory,Store store,Order order){
+//        ArrayList<Items> waitorder= new ArrayList<Items>();
+//        HashMap<Items,Integer> alllist=inventory.countItems;
+//        for (Map.Entry<Items,Integer> entry : alllist.entrySet()){
+//            // stock =0 and this has not been ordered in orderlist.
+//            if (entry.getValue() == 0 & !order.getorderlist().contains(entry.getKey())){
+//                Items newitem=entry.getKey();
+//                newitem.initialize_main(store.getDays());
+//                newitem.initialize_price();
+//                waitorder.add(newitem);
+//
+//            }
+//        }
 //        inventory.forEach((itemType, amount) -> {
 //            if (amount.equals(0) = Ture){
 //            }
 //        });
 
-        return waitorder;
-    }
+//        return waitorder;
+//    }
 
     public void placeAnOrder(ArrayList<Items> waitorder, Order order){
 
@@ -105,17 +108,18 @@ public class Staff {
     }
 
     public void checkWithSeller(Seller seller,double price,Register reg, Inventory inventory){
+        Items selleritems=seller.getItemsWantToSell();
         if(seller.getSellOrNot() == true){
-            reg.deductmoney(seller.itemsWantToSell.getPurchasePrice);
-            inventory.updateStock(items);
+            reg.deductmoney(selleritems);
+            inventory.updateStock(selleritems);
         }else{
             price=price*1.1;
-            if(seller.getSellOrNotWithHigerPrice()==true){
-                reg.deductmoney(seller.itemsWantToSell.getPurchasePrice);
-                inventory.updateStock(items);
+            if(seller.getSellOrNotWithHigherPrice()==true){
+                reg.deductmoney(selleritems);
+                inventory.updateStock(selleritems);
 
             }else{
-                pass;
+                System.out.println("leave");
 
             }
 
@@ -124,9 +128,20 @@ public class Staff {
 
 }
     public void checkWithBuyer(Buyer buyer,Register reg, Inventory inventory,  Store store){
-        Item buyitem=buyer.itemWantToBuy;
-        if (buyer.buyOrNot== true){
-            reg.deductmoney(buyitem.getSalePrice);
+        String buyitemtype=buyer.getItemWantToBuy();
+        ArrayList<Items> itemsforbuy =new ArrayList<Items>();
+        for(Items items:inventory.itemsList){
+            if (items.getName().startsWith(buyitemtype)){
+                itemsforbuy.add(items);
+
+            }
+
+        }
+        Collections.shuffle(itemsforbuy);
+        Items buyitem=itemsforbuy.get(0);
+        if(buyer.checkItemsInStore(inventory)){
+        if (buyer.getBuyOrNot()== true){
+            reg.deductmoney(buyitem);
             inventory.removeItems(buyitem);
             store.addSoldItem(buyitem);
 
@@ -147,23 +162,28 @@ public class Staff {
 
 
         }
-    }
+    }else{
+
+
+            System.out.format("%String doestn't buy anything and leave",buyer.name);
+
+        }}
 
     public void cleanStore(Inventory inventory){
-        int index =(int)(Math.random()*inventory.itemList.size());
 
-        Items destoryeditem = inventory.itemList.get(index);
+
+        Items destoryeditem = inventory.randomItem();
         Random random=new Random();
         int prob=random.nextInt(100);
         if(prob<5){
             destoryeditem.setCondition(destoryeditem.getCondition()-1);
-            destoryeditem.setListPrice((int)(destoryeditem.getListPrice*0.8));
-            if (destoryeditem.getCondition=0){
+            destoryeditem.setListPrice((int)(destoryeditem.getListPrice()*0.8));
+            if (destoryeditem.getCondition()==0){
                 inventory.removeItems(destoryeditem);
 
 
             }else{
-                pass;
+                System.out.println("nothing");
 
 
             }

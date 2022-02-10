@@ -17,8 +17,14 @@ public class Store {
     public int getDays(){
         // get today, and increase the date
         int today=this.days;
-        this.days+=1;
+
         return  today;
+    }
+
+    public void nextDay(){
+
+        this.days+=1;
+
     }
     public ArrayList getSoldList(){
         return this.soldList;
