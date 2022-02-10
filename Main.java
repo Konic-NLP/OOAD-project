@@ -21,22 +21,20 @@ public class Main {
         Staff Velma = new Staff(5,"Velma");
         Staff Shaggy = new Staff(20,"Shaggy");
 
-        FNMS.selectStaff(Shaggy,Velma);
-        Staff todayStaff = FNMS.todayStaff;
+        Staff todayStaff = FNMS.selectStaff(Shaggy,Velma);
         todayStaff.arriveAtStore(order,inventory,FNMS);
         todayStaff.checkRegister(register,bank,FNMS);
 
         todayStaff.doInventory(inventory,order,FNMS);
-
+        Seller[] sellers=FNMS.createSellers();
+        Buyer[] buyers= FNMS.createBuyers();
         //inialize customer
         //return a list of customer;
-        todayStaff.openStore() ;
+        todayStaff.openStore(sellers,buyers,register,inventory,FNMS);
+        // if store.getDays()%7==0: continue;
 
-
-
-        todayStaff.bidToSeller();
-
-        todayStaff.cleanStore();
+//        todayStaff.bidToSeller();
+        todayStaff.cleanStore(inventory);
 
 
 

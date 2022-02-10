@@ -31,6 +31,30 @@ public class Store {
 
 
     }
+    public Seller[] createSellers(){
+        Random random= new Random();
+        int num= random.nextInt((10-4)+1)+4;
+        Seller[] sellers= new Seller[num];
+        for(int i=0;i<sellers.length;i++){
+            sellers[i]=new Seller();
+        }
+
+
+        return sellers;
+    }
+
+    public Buyer[] createBuyers(){
+        Random random= new Random();
+        int num= random.nextInt((4-1)+1)+1;
+        Buyer[] buyers=new Buyer[num];
+        for(int i=0;i<buyers.length;i++){
+            buyers[i]=new Buyer();
+        }
+
+
+        return buyers;
+
+    }
 
 //    public void getnostock(Inventory inventory){
 //
@@ -49,7 +73,7 @@ public class Store {
     if a keeps working
 
      */
-    public void selectStaff(Staff a, Staff b){
+    public Staff selectStaff(Staff a, Staff b){
         if(a.getCwd()==3){
             this.todayStaff=b;
             b.addCwd();
@@ -78,9 +102,9 @@ public class Store {
             }
 
         }
+    System.out.format("");
 
-
-
+    return todayStaff;
     }
 
         public void removeItem(){
