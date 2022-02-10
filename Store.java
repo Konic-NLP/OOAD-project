@@ -102,7 +102,7 @@ public class Store {
             }
 
         }
-    System.out.format("");
+    System.out.format("%s arrives at store at day %d",todayStaff.getName(),days);
 
     return todayStaff;
     }
