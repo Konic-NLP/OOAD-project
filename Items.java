@@ -23,7 +23,7 @@ class Items {
     public int getListPrice() {
         return listPrice;
     }
-    public int getSalePricesalePrice() {
+    public int getSalePrice() {
         return salePrice;
     }
     public int getCondition() {
@@ -63,6 +63,7 @@ class Items {
     public void setDayArrived(int day) {
         this.dayArrived = day;
     }
+    public void setSalePrice(int price){this.salePrice = price;}
 
     //
     protected int generate_Listprice(){

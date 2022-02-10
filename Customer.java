@@ -5,13 +5,21 @@ public class Customer {
 
     private String name;
 
+    public String getName(){
+        return this.name;
+    }
+
 }
 
 class Buyer extends Customer{
 
+    private String name = Helper.random_name("Buyer");
+
     private String itemWantToBuy;
     private boolean buyOrNot;
     private boolean buyOrNotWithHigherPrice;
+
+
 
     public String getItemWantToBuy(){
         return this.itemWantToBuy;
@@ -77,7 +85,7 @@ class Buyer extends Customer{
 }
 
 class Seller extends Customer{
-
+    private String name = Helper.random_name("Seller");
     private Items itemWantToSell;
     private boolean sellOrNot;
     private boolean sellOrNotWithHigherPrice;
