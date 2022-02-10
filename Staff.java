@@ -114,14 +114,14 @@ public class Staff {
 
 
     public int bidToSeller(Items items){
-        int itemprice=0;
+
         /*
 
             the seller give the item to the staff and the staff
             demonstrate the price based on the condition of the item
 
          */
-
+        int itemprice = items.condition* Helper.random_number(10,1);
         return itemprice;
     }
 

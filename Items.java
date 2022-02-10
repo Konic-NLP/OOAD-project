@@ -93,7 +93,7 @@ class Items {
         this.listPrice = this.generate_Listprice();
 
 
-    public void initalize_arriveDay(int day){
+    public void initialize_arriveDay(int day){
         this.dayArrived = Helper.randome_arriveDay(day);
     }
 
