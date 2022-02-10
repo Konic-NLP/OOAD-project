@@ -167,7 +167,8 @@ public class Staff {
 
             System.out.format("%String doestn't buy anything and leave",buyer.getName());
 
-        }}
+        }
+    }
 
     public void cleanStore(Inventory inventory){
 
