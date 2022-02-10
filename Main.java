@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static  void main(String args []){
 
@@ -14,8 +16,10 @@ public class Main {
         Inventory inventory = new Inventory();
 
 
-//function to do all the items *3
-        inventory.updateStock();
+        ArrayList<Items> totall_list = FNMS.do_stock();
+
+        for (int i = 0; i < totall_list.size(); i++ )
+            inventory.updateStock(totall_list.get(i));
 
 
         Staff Velma = new Staff(5,"Velma");
