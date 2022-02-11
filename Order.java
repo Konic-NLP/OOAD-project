@@ -21,8 +21,8 @@ public class Order {
             Items item1=(Items)classname.newInstance();
             item1.setDayArrived(arriveDate);
             this.orderlist.add(item1);
-        }
 
+        }
 
 
 

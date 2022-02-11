@@ -33,14 +33,22 @@ public class Staff {
         int today=store.getDays();
         ArrayList<Items> orderlist =order.getorderlist();
         for(Items ordereditem:orderlist){
-            if (ordereditem.getDaySold()==today-1){
-                System.out.format(" the %String get arrived at the store at days %d %n", ordereditem.getName(),today);
+            if (ordereditem.getDayArrived()==today){
+                System.out.format(" the 3 %String get arrived at the store at days %d %n", ordereditem.getName(),today);
                 inventory.updateStock(ordereditem);
+                ordereditem.setDayArrived(-1);
+//                orderlist.remove(ordereditem);
 
-            };
+            }else if  (ordereditem.getDayArrived()==today-1 & (today-1)%7==0){
+                // if the day before today is sunday and by chance there was an order get arrived,
+                // today to pick up the order
+                System.out.format(" the 3 %String get arrived at the store at days %d %n", ordereditem.getName(),today);
+                inventory.updateStock(ordereditem);
+                ordereditem.setDayArrived(-1);
+//                orderlist.remove(ordereditem); ;
         }
 
-    }
+    }}
 
     public void checkRegister(Register register,Bank bank,Store store){
         int money=register.getMoneysum();
@@ -128,52 +136,59 @@ public class Staff {
 
 //        return itemprice;
 //    }
+    public void leaveTheShop(Store store){
+        System.out.format("%s close the store at the day %d and back home %n",this.getName(),store.getDays());
+
+    }
 
     public void checkWithSeller(Seller seller,Register reg, Inventory inventory) throws InstantiationException, IllegalAccessException {
 //        System.out.println(seller.getItemsWantToSell(inventory));
 
-        try{Items selleritems= seller.getItemsWantToSell(inventory);
+        try{Items selleritems= seller.getItemsWantToSell();
+            System.out.println(selleritems);
             selleritems.setPurchasePrice(selleritems.getCondition() * Helper.random_number(10, 1));
-//            selleritems.initialize_main(5);
-//            selleritems.initialize_price();
-//            selleritems.initialize_forSelller(3);
-        System.out.println(selleritems+selleritems.getName());
-        int sellprice=selleritems.getPurchasePrice();
+
+//        System.out.println(selleritems+selleritems.getName());
+        int purchaseprice=selleritems.getPurchasePrice();
         if(seller.getsellOrNot() == true){
 
-            reg.deductmoney(sellprice);
-            selleritems.setSalePrice(sellprice);
+            reg.deductmoney(purchaseprice);
+//            selleritems.setSalePrice(purchaseprice);
             inventory.updateStock(selleritems);
-            System.out.format("%s sell a %s at a price %d %n",seller.getName(),selleritems.name,sellprice);
+            System.out.format("%s bought a %s %s %s from %s for %d %n",this.getName(),
+                    Items.getConditionList()[selleritems.getCondition()],
+                    selleritems.getNewOrUsed(),
+                    selleritems.getItemType(),
+                    seller.getName(),
+                    purchaseprice);
         }else{
-            sellprice=(int)(sellprice*1.1);
+            purchaseprice=(int)(purchaseprice*1.1);
             if(seller.getsellOrNot()==true){
-                reg.deductmoney(sellprice);
-                selleritems.setSalePrice(sellprice);
+                reg.deductmoney(purchaseprice);
+//                selleritems.setSalePrice(sellprice);
                 inventory.updateStock(selleritems);
-                System.out.format("%s sell a %s at a price %d after increase 10 %n",seller.getName(),selleritems.name,sellprice);
+                System.out.format("%s bought a %s %s %s from %s for %d  %n",this.getName(),//staff's name
+                        selleritems.getCondition(),  //condition
+                        selleritems.getNewOrUsed(), // new or old
+                        selleritems.getItemType(),  // the type of the item
+                        seller.getName(),     //the name of the seller
+                        purchaseprice);    // the terminal price bought from the customer
             }else{
-                System.out.println("not content for price leave");
+                System.out.format("the %s doesn't sell %s since he dissatisfied with the price %n",
+                        seller.getName(),selleritems.getItemType());
 
             }
 
         }}
-        catch (Exception e){System.out.println("Wrong");}}
+        catch (Exception e){System.out.println("Wrong");
+        e.printStackTrace();}}
 
 
     public void checkWithBuyer(Buyer buyer,Register reg, Inventory inventory,  Store store){
         String buyitemtype=buyer.getItemWantToBuy();
         ArrayList<Items> itemsforbuy =new ArrayList<Items>();
         for(Items items:inventory.itemsList){
-//            System.out.println(buyitemtype);
-//            System.out.println(items.);
-//            if (items.getName()==null){
-//                System.out.println(items.itemType);
-//                System.out.println(items.dayArrived);
-//
-//            }
-//            System.out.println(items.getItemType()+buyitemtype);
-//            String a=items.itemType
+
             if (items.getItemType().equals(buyitemtype)){
                 itemsforbuy.add(items);
 
@@ -181,29 +196,36 @@ public class Staff {
 
         }
         if(itemsforbuy.size()==0){
-            System.out.println("no I want to leave");
+            System.out.format("%s want to buy a %s but none were in inventory , so left%n", buyer.getName(),buyitemtype );
         }else{
         Collections.shuffle(itemsforbuy);
         Items buyitem=itemsforbuy.get(0);
-        System.out.println(buyitem+buyitem.getName());
+//        System.out.println(buyitem+buyitem.getName());
 //        if(buyer.checkItemsInStore(inventory)){
         if (buyer.getBuyOrNot()== true){
-            reg.deductmoney(buyitem.getListPrice());
+            reg.addmoney((buyitem.getListPrice()));
             inventory.removeItems(buyitem);
+            buyitem.setSalePrice(buyitem.getListPrice());
             store.addSoldItem(buyitem);
-            System.out.format("%s buy a %s at %d %n",buyer.getName(),buyitem.name,buyitem.getListPrice());
+            System.out.format("%s sold a %s to %s  for  %d  %n",this.getName(),buyitem.getItemType(),buyer.getName(),buyitem.getListPrice());
         }else{
-            buyitem.setListPrice((int)(buyitem.getListPrice()*0.9));
+            int discountprice=(int)(buyitem.getListPrice()*0.9);
             if(buyer.getBuyOrNotWithHigherPrice()==true){
 
-                reg.deductmoney(buyitem.getListPrice());
+                reg.addmoney(discountprice);
                 inventory.removeItems(buyitem);
+                buyitem.setDaySold(store.getDays());
+                buyitem.setSalePrice(discountprice);
                 store.addSoldItem(buyitem);
-                System.out.format("%s buy a %s at %d after 10%n",buyer.getName(),buyitem.name,buyitem.getListPrice());
+                System.out.format("%s sold a %s to %s  for  %d after a 10%% discount %n",
+                        this.getName(),
+                        buyitem.getItemType(),
+                        buyer.getName(),
+                        buyitem.getListPrice());
 
             }else{
 
-                System.out.format("%s doestn't buy anything and leave due to second not content%n",buyer.getName());
+                System.out.format("%s doesn't buy anything and leave because the dissatisfaction for the price %n",buyer.getName());
             }
 
 
@@ -228,13 +250,13 @@ public class Staff {
             destoryeditem.setListPrice((int)(destoryeditem.getListPrice()*0.8));
             if (destoryeditem.getCondition()==0){
                 inventory.removeItems(destoryeditem);
-                System.out.println("something destroyed");
+                System.out.format("%s destoryed a %s by accident %n",this.getName(),destoryeditem.getName());
 
             }
 
 
             }else{
-            System.out.println("nothing");
+            System.out.println("it's wonderful day");
         }
 
 

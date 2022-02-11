@@ -118,22 +118,8 @@ class Seller extends Customer{
 //        return itemWantToSell;
 //    }
 
-    public Items getItemsWantToSell(Inventory inventory) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
-//        List<Class> claslist=(List)(set);
-
-        Random random=new Random();
-        Items classa= inventory.itemsList.get(random.nextInt(inventory.itemsList.size()));
-
-        Class classname= classa.getClass();
-
-//        Object obj=cla.newInstance();
-        System.out.println(classname);
-        Object obj=classname.newInstance();
-        Items items=(Items)obj;
-
-//        cla.initialize_price();
-//        System.out.println(items.name);
-//        System.out.println(items);
+    public Items getItemsWantToSell() {
+        Items items = Classpicker.MakeRandomInstance();
         return items;
 
     }
