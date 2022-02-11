@@ -34,7 +34,7 @@ public class Store {
     public Seller[] createSellers(){
         Random random= new Random();
         int num= random.nextInt((10-4)+1)+4;
-        System.out.println(num);
+//        System.out.println(num);
         Seller[] sellers= new Seller[num];
         for(int i=0;i<sellers.length;i++){
             sellers[i]=new Seller();
@@ -47,7 +47,7 @@ public class Store {
     public Buyer[] createBuyers(){
         Random random= new Random();
         int num= random.nextInt((10-4)+1)+4;
-        System.out.println(num);
+//        System.out.println(num);
         Buyer[] buyers=new Buyer[num];
         for(int i=0;i<buyers.length;i++){
             buyers[i]=new Buyer();
@@ -77,12 +77,12 @@ public class Store {
 
      */
     public Staff selectStaff(Staff a, Staff b){
-        if(a.getCwd()==3){
+        if(a.getCwd()==2){
             this.todayStaff=b;
             b.addCwd();
             a.cleanCwd();
         }
-        else if(b.getCwd()==3){
+        else if(b.getCwd()==2){
 
             this.todayStaff=a;
             a.addCwd();
@@ -105,7 +105,7 @@ public class Store {
             }
 
         }
-    System.out.format("%s arrives at store at day %d",todayStaff.getName(),days);
+    System.out.format("%s arrives at store at day %d  %n",todayStaff.getName(),days);
 
     return todayStaff;
     }

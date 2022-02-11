@@ -33,9 +33,14 @@ public class Main {
         for(int i=0;i<30;i++){
             if (FNMS.getDays()%7==0){
                 FNMS.nextDay();
+                System.out.println("today is Sunday, the store closed ");
+                System.out.println("-----------------------------------");
+                Velma.cleanCwd();
+                Shaggy.cleanCwd();
                 continue;
             }else{
-            System.out.println("---------------------------");System.out.println("money in the register"+register.getMoneysum());
+
+//            System.out.println("money in the register"+register.getMoneysum());
         Staff todayStaff = FNMS.selectStaff(Shaggy,Velma);
         todayStaff.arriveAtStore(order,inventory,FNMS);
         todayStaff.checkRegister(register,bank,FNMS);
@@ -51,21 +56,13 @@ public class Main {
 //        todayStaff.bidToSeller();
         todayStaff.cleanStore(inventory);
         todayStaff.leaveTheShop(FNMS);
-
-        System.out.println("total value"+inventory.getTotalValue());
-        System.out.println(inventory.itemsList);
-        int totalsoldvalue=0;
-        for(int d=0;d<FNMS.getSoldList().size();d++){
-
-            Items solditem= (Items) FNMS.getSoldList().get(d);
-//            System.out.format("%s sell a price for %d at day %d %n",solditem.getName(),solditem.getDaySold(),solditem.getSalePrice());
-            totalsoldvalue+=solditem.getSalePrice();
-        }
-        System.out.println("total value for sold items "+totalsoldvalue);
-        System.out.println("The sum of money in the register is "+register.getMoneysum());
+        System.out.println("---------------------------");
 
 
-        System.out.println(order.getorderlist().stream().map(Items::getDayArrived).collect(Collectors.toList()));
+
+
+
+//        System.out.println(order.getorderlist().stream().map(Items::getDayArrived).collect(Collectors.toList()));
 
         FNMS.nextDay();
 
@@ -74,8 +71,20 @@ public class Main {
 
 }
 //                totalsoldvalue+=solditem.getSalePrice();
-            }bank.getSum();
+            }
+        System.out.println("-----------------------summarization-------------------------");
+        System.out.println("total value of inventory is "+inventory.getTotalValue());
+        System.out.println("the items in the inventory is "+inventory.itemsList);
+
+        int totalsoldvalue=0;
+
         for(int d=0;d<FNMS.getSoldList().size();d++){
 
             Items solditem= (Items) FNMS.getSoldList().get(d);
-            System.out.format("%s sell a price for %d at day %d %n",solditem.getName(),solditem.getSalePrice(),solditem.getDaySold());}System.out.println(Items.getConditionList()[1]); }}
+            System.out.format("%s sell a price for %d at day %d %n",solditem.getName(),solditem.getSalePrice(),solditem.getDaySold());
+            totalsoldvalue+=solditem.getSalePrice();
+        }  System.out.println("total value for sold items "+totalsoldvalue);
+        System.out.println("The sum of money in the register is "+register.getMoneysum());
+            bank.getSum();
+
+    }}

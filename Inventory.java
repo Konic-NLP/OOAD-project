@@ -52,7 +52,7 @@ public class Inventory {
 
             if (entry.getValue() ==0 & !namelist.contains(entry.getKey())){
                 Items newitem= (Items) entry.getKey().newInstance();
-                System.out.println(newitem);
+//                System.out.println(newitem);
 
                 waitorder.add(newitem);
 

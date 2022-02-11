@@ -34,7 +34,7 @@ public class Staff {
         ArrayList<Items> orderlist =order.getorderlist();
         for(Items ordereditem:orderlist){
             if (ordereditem.getDayArrived()==today){
-                System.out.format(" the 3 %String get arrived at the store at days %d %n", ordereditem.getName(),today);
+                System.out.format(" the  %s get arrived at the store at days %d %n", ordereditem.getName(),today);
                 inventory.updateStock(ordereditem);
                 ordereditem.setDayArrived(-1);
 //                orderlist.remove(ordereditem);
@@ -42,7 +42,7 @@ public class Staff {
             }else if  (ordereditem.getDayArrived()==today-1 & (today-1)%7==0){
                 // if the day before today is sunday and by chance there was an order get arrived,
                 // today to pick up the order
-                System.out.format(" the 3 %String get arrived at the store at days %d %n", ordereditem.getName(),today);
+                System.out.format(" the  %s get arrived at the store at days %d %n", ordereditem.getName(),today);
                 inventory.updateStock(ordereditem);
                 ordereditem.setDayArrived(-1);
 //                orderlist.remove(ordereditem); ;
@@ -97,6 +97,7 @@ public class Staff {
     public void placeAnOrder(ArrayList<Items> waitorder, Order order,Store store,Register reg) throws InstantiationException, IllegalAccessException {
 
         for(Items items: waitorder) {
+            System.out.format("%s ordered %s at the %d day %n",this.getName(),items.getItemType(),store.getDays());
             order.orderItems(items.getClass(),store);
             reg.deductmoney(items.getPurchasePrice());
         }
@@ -252,7 +253,7 @@ public class Staff {
 
 
             }else{
-            System.out.println("it's wonderful day");
+            System.out.println("it's wonderful day: nothing was damaged");
         }
 
 
