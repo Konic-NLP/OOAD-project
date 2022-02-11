@@ -40,7 +40,7 @@ public class Main {
         todayStaff.arriveAtStore(order,inventory,FNMS);
         todayStaff.checkRegister(register,bank,FNMS);
 
-        todayStaff.doInventory(inventory,order,FNMS);
+        todayStaff.doInventory(inventory,order,FNMS,register);
         Seller[] sellers=FNMS.createSellers();
         Buyer[] buyers= FNMS.createBuyers();
         //inialize customer
@@ -61,7 +61,7 @@ public class Main {
 //            System.out.format("%s sell a price for %d at day %d %n",solditem.getName(),solditem.getDaySold(),solditem.getSalePrice());
             totalsoldvalue+=solditem.getSalePrice();
         }
-        System.out.println(totalsoldvalue);
+        System.out.println("total value for sold items "+totalsoldvalue);
         System.out.println("The sum of money in the register is "+register.getMoneysum());
 
 
@@ -78,4 +78,4 @@ public class Main {
         for(int d=0;d<FNMS.getSoldList().size();d++){
 
             Items solditem= (Items) FNMS.getSoldList().get(d);
-            System.out.format("%s sell a price for %d at day %d %n",solditem.getName(),solditem.getDaySold(),solditem.getSalePrice());} }}
+            System.out.format("%s sell a price for %d at day %d %n",solditem.getName(),solditem.getSalePrice(),solditem.getDaySold());}System.out.println(Items.getConditionList()[1]); }}

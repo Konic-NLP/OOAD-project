@@ -65,12 +65,12 @@ public class Staff {
         register.addmoney(money);
     }
 
-    public void doInventory(Inventory inventory,Order order,Store store) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+    public void doInventory(Inventory inventory,Order order,Store store,Register reg) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 
         System.out.println("The total value of all the items in the store is " + inventory.getTotalValue());
         ArrayList<Items> waitorder=inventory.checkStock(order,store);
         if(waitorder.size()!=0){
-        this.placeAnOrder(waitorder,order,store);
+        this.placeAnOrder(waitorder,order,store,reg);
     }}
 
 //    public ArrayList<Items> checkInventory(Inventory inventory,Store store,Order order){
@@ -94,10 +94,11 @@ public class Staff {
 //        return waitorder;
 //    }
 
-    public void placeAnOrder(ArrayList<Items> waitorder, Order order,Store store) throws InstantiationException, IllegalAccessException {
+    public void placeAnOrder(ArrayList<Items> waitorder, Order order,Store store,Register reg) throws InstantiationException, IllegalAccessException {
 
         for(Items items: waitorder) {
             order.orderItems(items.getClass(),store);
+            reg.deductmoney(items.getPurchasePrice());
         }
     }
 
@@ -124,18 +125,6 @@ public class Staff {
 
 
 
-
-//    public int bidToSeller(Items items){
-//        int itemprice=0;
-        /*
-
-            the seller give the item to the staff and the staff
-            demonstrate the price based on the condition of the item
-
-         */
-
-//        return itemprice;
-//    }
     public void leaveTheShop(Store store){
         System.out.format("%s close the store at the day %d and back home %n",this.getName(),store.getDays());
 
@@ -155,8 +144,10 @@ public class Staff {
             reg.deductmoney(purchaseprice);
 //            selleritems.setSalePrice(purchaseprice);
             inventory.updateStock(selleritems);
+            String condition= Items.getConditionList()[(int)(selleritems.getCondition())];
+
             System.out.format("%s bought a %s %s %s from %s for %d %n",this.getName(),
-                    Items.getConditionList()[selleritems.getCondition()],
+                    condition,
                     selleritems.getNewOrUsed(),
                     selleritems.getItemType(),
                     seller.getName(),
@@ -167,8 +158,10 @@ public class Staff {
                 reg.deductmoney(purchaseprice);
 //                selleritems.setSalePrice(sellprice);
                 inventory.updateStock(selleritems);
+                String condition= Items.getConditionList()[(int)(selleritems.getCondition())];
+
                 System.out.format("%s bought a %s %s %s from %s for %d  %n",this.getName(),//staff's name
-                        selleritems.getCondition(),  //condition
+                        condition,  //condition
                         selleritems.getNewOrUsed(), // new or old
                         selleritems.getItemType(),  // the type of the item
                         seller.getName(),     //the name of the seller
@@ -207,6 +200,7 @@ public class Staff {
             inventory.removeItems(buyitem);
             buyitem.setSalePrice(buyitem.getListPrice());
             store.addSoldItem(buyitem);
+
             System.out.format("%s sold a %s to %s  for  %d  %n",this.getName(),buyitem.getItemType(),buyer.getName(),buyitem.getListPrice());
         }else{
             int discountprice=(int)(buyitem.getListPrice()*0.9);
@@ -217,11 +211,12 @@ public class Staff {
                 buyitem.setDaySold(store.getDays());
                 buyitem.setSalePrice(discountprice);
                 store.addSoldItem(buyitem);
+
                 System.out.format("%s sold a %s to %s  for  %d after a 10%% discount %n",
                         this.getName(),
                         buyitem.getItemType(),
                         buyer.getName(),
-                        buyitem.getListPrice());
+                        discountprice);
 
             }else{
 
@@ -248,6 +243,7 @@ public class Staff {
         if(prob<this.damageChance){
             destoryeditem.setCondition(destoryeditem.getCondition()-1);
             destoryeditem.setListPrice((int)(destoryeditem.getListPrice()*0.8));
+
             if (destoryeditem.getCondition()==0){
                 inventory.removeItems(destoryeditem);
                 System.out.format("%s destoryed a %s by accident %n",this.getName(),destoryeditem.getName());
