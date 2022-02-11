@@ -59,8 +59,9 @@ import java.util.ArrayList;
          return dayArrived;
      }
 
-     public String getConditionList(){
-         return String[] {"Poor","Fair","Good","Very Good","Excellent"};
+     public static String[] getConditionList() {
+         String[] conditionList = {"Poor","Fair","Good","Very Good","Excellent"};
+         return  conditionList;
      }
 
      // Below is a bunch of setter functions to set the attributes of the items
