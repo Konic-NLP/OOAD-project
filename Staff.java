@@ -103,7 +103,7 @@ public class Staff {
 
         for(Seller seller:sellers){
 
-            checkWithSeller(seller,reg,inventory);
+//            checkWithSeller(seller,reg,inventory);
 
 
 
@@ -129,36 +129,36 @@ public class Staff {
 //        return itemprice;
 //    }
 
-    public void checkWithSeller(Seller seller,Register reg, Inventory inventory) throws InstantiationException, IllegalAccessException {
-//        System.out.println(seller.getItemsWantToSell(inventory));
-
-        try{Items selleritems= seller.getItemsWantToSell(inventory);
-            selleritems.setPurchasePrice(selleritems.getCondition() * Helper.random_number(10, 1));
-//            selleritems.initialize_main(5);
-//            selleritems.initialize_price();
-//            selleritems.initialize_forSelller(3);
-        System.out.println(selleritems+selleritems.getName());
-        int sellprice=selleritems.getPurchasePrice();
-        if(seller.getsellOrNot() == true){
-
-            reg.deductmoney(sellprice);
-            selleritems.setSalePrice(sellprice);
-            inventory.updateStock(selleritems);
-            System.out.format("%s sell a %s at a price %d %n",seller.getName(),selleritems.name,sellprice);
-        }else{
-            sellprice=(int)(sellprice*1.1);
-            if(seller.getsellOrNot()==true){
-                reg.deductmoney(sellprice);
-                selleritems.setSalePrice(sellprice);
-                inventory.updateStock(selleritems);
-                System.out.format("%s sell a %s at a price %d after increase 10 %n",seller.getName(),selleritems.name,sellprice);
-            }else{
-                System.out.println("not content for price leave");
-
-            }
-
-        }}
-        catch (Exception e){System.out.println("Wrong");}}
+//    public void checkWithSeller(Seller seller,Register reg, Inventory inventory) throws InstantiationException, IllegalAccessException {
+////        System.out.println(seller.getItemsWantToSell(inventory));
+//
+//        try{Items selleritems= seller.getItemsWantToSell(inventory);
+//            selleritems.setPurchasePrice(selleritems.getCondition() * Helper.random_number(10, 1));
+////            selleritems.initialize_main(5);
+////            selleritems.initialize_price();
+////            selleritems.initialize_forSelller(3);
+//        System.out.println(selleritems+selleritems.getName());
+//        int sellprice=selleritems.getPurchasePrice();
+//        if(seller.getsellOrNot() == true){
+//
+//            reg.deductmoney(sellprice);
+//            selleritems.setSalePrice(sellprice);
+//            inventory.updateStock(selleritems);
+//            System.out.format("%s sell a %s at a price %d %n",seller.getName(),selleritems.name,sellprice);
+//        }else{
+//            sellprice=(int)(sellprice*1.1);
+//            if(seller.getsellOrNot()==true){
+//                reg.deductmoney(sellprice);
+//                selleritems.setSalePrice(sellprice);
+//                inventory.updateStock(selleritems);
+//                System.out.format("%s sell a %s at a price %d after increase 10 %n",seller.getName(),selleritems.name,sellprice);
+//            }else{
+//                System.out.println("not content for price leave");
+//
+//            }
+//
+//        }}
+//        catch (Exception e){System.out.println("Wrong");}}
 
 
     public void checkWithBuyer(Buyer buyer,Register reg, Inventory inventory,  Store store){
