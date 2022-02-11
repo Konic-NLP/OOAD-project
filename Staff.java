@@ -145,7 +145,7 @@ public class Staff {
 //        System.out.println(seller.getItemsWantToSell(inventory));
 
         try{Items selleritems= seller.getItemsWantToSell();
-            System.out.println(selleritems);
+//            System.out.println(selleritems);
             selleritems.setPurchasePrice(selleritems.getCondition() * Helper.random_number(10, 1));
 
 //        System.out.println(selleritems+selleritems.getName());
