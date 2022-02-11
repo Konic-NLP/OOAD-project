@@ -5,13 +5,13 @@ import java.lang.Object;
 public class Staff {
     private String name;
     private int cwd;// to represent 'consecutive_work_days' although it may mix with current work directory :)
-    private int damageChance;// the chance for damaging things
+    private int damageChance;// to the chance for damaging things
 
-    public String getName(){// get the name of Staff.
+    public String getName(){// to get the name of Staff.
         return this.name;
 
     }
-    public Staff(int chance, String name){// use constructor to instantiate the object
+    public Staff(int chance, String name){// to use constructor to instantiate the object
         this.damageChance=chance;
         this.name=name;
     }
@@ -20,11 +20,11 @@ public class Staff {
         return this.cwd;
     }
 
+    //If the stall is on duty that day, cwd will increase by one.
     public void addCwd(){
         this.cwd+=1;
-
     }
-
+    // If the stall is not on duty that day, cwd will set to zero.
     public void cleanCwd(){
 
         this.cwd=0;
@@ -70,31 +70,11 @@ public class Staff {
     public void doInventory(Inventory inventory,Order order,Store store,Register reg) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         // get the items that required to order
         System.out.println("The total value of all the items in the store is " + inventory.getTotalValue());
-        ArrayList<Items> waitorder=inventory.checkStock(order,store);
+        ArrayList<Items> waitorder=inventory.checkStock(order);
         if(waitorder.size()!=0){ //if any need to be required
         this.placeAnOrder(waitorder,order,store,reg);
-    }}
-
-//    public ArrayList<Items> checkInventory(Inventory inventory,Store store,Order order){
-//        ArrayList<Items> waitorder= new ArrayList<Items>();
-//        HashMap<Items,Integer> alllist=inventory.countItems;
-//        for (Map.Entry<Items,Integer> entry : alllist.entrySet()){
-//            // stock =0 and this has not been ordered in orderlist.
-//            if (entry.getValue() == 0 & !order.getorderlist().contains(entry.getKey())){
-//                Items newitem=entry.getKey();
-//                newitem.initialize_main(store.getDays());
-//                newitem.initialize_price();
-//                waitorder.add(newitem);
-//
-//            }
-//        }
-//        inventory.forEach((itemType, amount) -> {
-//            if (amount.equals(0) = Ture){
-//            }
-//        });
-
-//        return waitorder;
-//    }
+        }
+    }
 
     public void placeAnOrder(ArrayList<Items> waitorder, Order order,Store store,Register reg) throws InstantiationException, IllegalAccessException {
         // place an order
@@ -107,22 +87,12 @@ public class Staff {
 
     public void openStore(Seller[] sellers,Buyer[] buyers, Register reg,Inventory inventory,Store store) throws InstantiationException, IllegalAccessException {
         for(Buyer buyer:buyers){
-
                 checkWithBuyer(buyer,reg,inventory,store);
-
-
             }
 
         for(Seller seller:sellers){
-
             checkWithSeller(seller,reg,inventory);
-
-
-
         }
-
-
-
             }
 
 
@@ -232,16 +202,8 @@ public class Staff {
 
                 System.out.format("%s doesn't buy anything and leave because the dissatisfaction for the price %n",buyer.getName());
             }
-
-
-
         }
-    }
-
-
-
-
-
+        }
     }
 
     public void cleanStore(Inventory inventory){
@@ -261,18 +223,9 @@ public class Staff {
                 System.out.format("%s destoryed a %s by accident %n",this.getName(),destoryeditem.getName());
 
             }
-
-
             }else{
             System.out.println("it's wonderful day: nothing was damaged");
         }
-
-
-
-
     }
-
-
-
 }
 

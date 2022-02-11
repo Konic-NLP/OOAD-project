@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.Random;
 
+//The belowing code is adapted and inspried from Professor Bruce's code post in the Piazza.
+//weblink https://canvas.colorado.edu/courses/79638/external_tools/1711
+
 public class Classpicker {
     protected ArrayList<Class<?>> classes;
 
@@ -25,13 +28,12 @@ public class Classpicker {
         classes.add(Cables.class);
         classes.add(Strings.class);
     }
-
+    //The belowing method is return and create an object of random subclass introduced in the Items.java.
     public static Items MakeRandomInstance() {
         Items a;
         int pick;
         Random r = new Random();
         pick = r.nextInt(17);
-//        System.out.println(pick);
         switch (pick) {
             case 0 :  a  = new PaperScore(); break;
             case 1 : a  = new MusicCD();break;

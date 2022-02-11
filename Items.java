@@ -147,7 +147,7 @@ import java.util.ArrayList;
             @Override
             public String getItemType(){return this.itemType;}
         }
-        //1/3
+        //1.3
         class Vinyl extends Music{
             public Vinyl(){
                 super();
@@ -232,7 +232,7 @@ import java.util.ArrayList;
             @Override
             public String getItemType(){return this.itemType;}
 
-            // Additional getter and setter
+            //Addtional getter and setter for additional attributes.
             public boolean getElectric() {
                 return electric;
             }
@@ -291,6 +291,7 @@ import java.util.ArrayList;
                 }
                 @Override
                 public String getItemType(){return this.itemType;}
+                //Addtional getter and setter for additional attributes.
                 public void setType(String itemType) {
                     this.itemType = itemType;
                 }
@@ -311,6 +312,7 @@ import java.util.ArrayList;
                 }
                 @Override
                 public String getItemType(){return this.itemType;}
+                //Addtional getter and setter for additional attributes.
                 public void setKey(String key) {
                     this.key = key;
                 }
@@ -342,7 +344,7 @@ import java.util.ArrayList;
             }
             @Override
             public String getItemType(){return this.itemType;}
-
+            //Addtional getter and setter for additional attributes.
             public void setHatSize(int size) {
                 this.hatSize = size;
             }
@@ -364,7 +366,7 @@ import java.util.ArrayList;
 
             @Override
             public String getItemType() {return this.itemType;}
-
+            //Addtional getter and setter for additional attributes.
             public void setShirtSize(int size) {
                 this.shirtSize = size;
             }
@@ -409,7 +411,7 @@ import java.util.ArrayList;
 
             @Override
             public String getItemType() {return this.itemType;}
-
+            //Addtional getter and setter for additional attributes.
             public void setWattage(int wattage) {
                 this.wattage = wattage;
             }
@@ -428,7 +430,7 @@ import java.util.ArrayList;
             }
             @Override
             public String getItemType(){return this.itemType;}
-
+            //Addtional getter and setter for additional attributes.
             public void setLength(int length) {
                 this.length = length;
             }
@@ -448,7 +450,7 @@ import java.util.ArrayList;
            }
            @Override
            public String getItemType () {return this.itemType;}
-
+           //Addtional getter and setter for additional attributes.
            public void setType (String itemType){this.itemType = itemType;}
            public String getType() {return itemType;}
        }
