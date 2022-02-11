@@ -21,6 +21,8 @@ public class Staff {
     }
 
     public void addCwd(){
+        // encapsulation. we don't require the store know how to add the consecutive work days,
+        // they just call the method
         this.cwd+=1;
 
     }
@@ -62,6 +64,11 @@ public class Staff {
         }
     }
 
+    /*
+    abstraction:I don't worry about the implementation of the withdraw and addmoney,
+    I just delegate these methods.
+
+     */
     public void goToBank(Register register,Bank bank){
         int money=bank.withdraw();//bank cutdowns the money
         register.addmoney(money); //register increase the money
@@ -143,6 +150,7 @@ public class Staff {
 
         int purchaseprice=selleritems.getPurchasePrice();
         if(seller.getsellOrNot() == true){
+            // cohesion, the getsellornot just give me the boolean value whether the customer is willing to buy
             // if the the seller agree to sell
             reg.deductmoney(purchaseprice);// buy the item from the register
 //            selleritems.setSalePrice(purchaseprice);
@@ -184,9 +192,9 @@ public class Staff {
         String buyitemtype=buyer.getItemWantToBuy();  //get the itemtype in the inventory that a buyer want to buy
         ArrayList<Items> itemsforbuy =new ArrayList<Items>();
         // get all the items in the inventory that belongs to the specific itemtypes
-        for(Items items:inventory.itemsList){
+        for(Items items:inventory.itemsList){//polymorphic I don't care about the what's the specific type of the items
 
-            if (items.getItemType().equals(buyitemtype)){
+            if (items.getItemType().equals(buyitemtype)){//identity
                 itemsforbuy.add(items);
 
             }
