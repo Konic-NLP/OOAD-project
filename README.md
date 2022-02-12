@@ -17,7 +17,7 @@ The link to Part2 (current) version of UML:
 The link to the document that describes the changes of our UML: 
 [UML Documentation](https://docs.google.com/document/d/1-oRimywqX2OO93JRNCVeBiB7w9DjRaM1/edit?usp=sharing&ouid=107958256533487600087&rtpof=true&sd=true) <br>
 
-<h3>To make the code run, we adopt the bellowing modifications/Assumptions:<h3><br>
+<h3>To make the code run, we adopt the bellowing modifications/Assumptions:</h3><br>
 <ol>
 <li> The conditions of items are integers from 1 to 5 inclusively. The correspond relation between number and words is {Poor:1, Fair:2, Good:3, Very Good:4, Excellent:5}.</li>
 <li> The price of items is an integer. When the price is changed 1.1 times, 0.9 times, the 0.8 times, the (int) method is applied to truncate the float into int .</li>
