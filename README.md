@@ -19,11 +19,11 @@ The link to the document that describes the changes of our UML:
 
 To make the code run, we adopt the bellowing modifications/Assumptions:<br>
 <ol>
-<li>1. The conditions of items are integers from 1 to 5 inclusively. The correspond relation between number and words is {Poor:1, Fair:2, Good:3, Very Good:4, Excellent:5}.</li>
-<li>2. The price of items is an integer. When the price is changed 1.1 times, 0.9 times, the 0.8 times, the (int) method is applied to truncate the float into int .</li>
-<li>3. If the order is delivered on Sunday, when the store is closed, the staff of Monday will put items of the order in the inventory on that day.</li>
-<li>4. if today is sunday, both clerk's consecutive work days will clean to zero</li>
-<li>5.  the correspondent situation wth different prices: 
+<li> The conditions of items are integers from 1 to 5 inclusively. The correspond relation between number and words is {Poor:1, Fair:2, Good:3, Very Good:4, Excellent:5}.</li>
+<li> The price of items is an integer. When the price is changed 1.1 times, 0.9 times, the 0.8 times, the (int) method is applied to truncate the float into int .</li>
+<li> If the order is delivered on Sunday, when the store is closed, the staff of Monday will put items of the order in the inventory on that day.</li>
+<li> if today is sunday, both clerk's consecutive work days will clean to zero</li>
+<li> the correspondent situation wth different prices: 
   <ol>
     <li>listprice:when the buyer first time to consult with the price;</li>
     <li>saleprice:when the buyer second time to consult with the price;</li>
