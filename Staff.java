@@ -147,7 +147,7 @@ public class Staff {
                         seller.getName(),     //the name of the seller
                         purchaseprice);    // the terminal price bought from the customer
             }else{// if even the seller doesn't accept the higher price
-                System.out.format("%s doesn't sell %s since they dissatisfied with the price %n",
+                System.out.format("%s didn't sell %s since they dissatisfied with the price %n",
                         seller.getName(),selleritems.getItemType());
 
             }
@@ -207,7 +207,7 @@ public class Staff {
             }else{
                 // if the customer don't want to buy even with a discount
 
-                System.out.format("the %s doesn't buy since he dissatisfied with the price %n",buyer.getName());
+                System.out.format("%s didn't buy since he dissatisfied with the price %n",buyer.getName());
             }
         }
         }
@@ -227,7 +227,7 @@ public class Staff {
             if (destoryeditem.getCondition()==0){
                 // condition=0, disappear forever
                 inventory.removeItems(destoryeditem);
-                System.out.format("%s destoryed a %s by accident %n",this.getName(),destoryeditem.getName());
+                System.out.format("%s destroyed a %s by accident %n",this.getName(),destoryeditem.getName());
 
             }
             }else{
