@@ -1,7 +1,9 @@
 import java.util.Random;
 
 
-//This class is made of mutiple methods with simple functions that are used to create random names, number,prices for items and other classes.
+//This class is made of multiple methods with simple functions that are used to create random names, number,prices for items and other classes.
+//This class's methods are examples of Cohesion.
+
 public class Helper {
     //The below method is to return a number(price) ranging from min to max inclusively
     public static int random_number(int max, int min) {

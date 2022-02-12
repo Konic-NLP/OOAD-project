@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+//This class and its subclass are the example of Inheritance, Polymorphism, and Encapsulation.
  public class Items {
 
      //General attributes of all the items
