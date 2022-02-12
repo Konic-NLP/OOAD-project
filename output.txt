@@ -1,0 +1,650 @@
+Shaggy arrives at store at day 1  
+On day 1, $0 is in the register
+The staff withdraw $1000 from the bank
+The total value of all the items in the store is $1046
+BuyerJ265 didn't buy since he dissatisfied with the price 
+Shaggy sold a RecordPlayer to BuyerA739 for $28  
+Shaggy sold a Bandanas to BuyerD681 for $34  
+Shaggy sold a Hats to BuyerH887 for $38  
+Shaggy sold a PlayerCD to BuyerC388 for $62  
+Shaggy bought a Fair new RecordPlayer from SellerG875 for $3 
+Shaggy bought a Excellent used Hats from SellerJ548 for $32 
+Shaggy bought a Fair used Shirts from SellerD576 for $1  
+Shaggy bought a Good used Hats from SellerA98 for $2  
+Shaggy bought a Excellent new Guitar from SellerF128 for $35  
+It's wonderful day: nothing was damaged
+Shaggy closed the store on day 1 and came back home 
+---------------------------
+Shaggy arrives at store at day 2  
+On day 2, $1089 is in the register
+The total value of all the items in the store is $1035
+BuyerG549 didn't buy since he dissatisfied with the price 
+Shaggy sold a Bass to BuyerA898 for $48  
+Shaggy sold a PaperScore to BuyerF983 for $68 after a 10% discount 
+Shaggy sold a Cables to BuyerA535 for $16 after a 10% discount 
+Shaggy sold a Strings to BuyerJ955 for $81 after a 10% discount 
+Shaggy sold a Strings to BuyerJ153 for $10  
+Shaggy sold a Strings to BuyerH553 for $2  
+Shaggy sold a PaperScore to BuyerD763 for $88 after a 10% discount 
+Shaggy sold a Harmonica to BuyerG376 for $98  
+SellerH545 didn't sell Hats since they dissatisfied with the price 
+SellerG148 didn't sell Bandanas since they dissatisfied with the price 
+Shaggy bought a Very Good new PaperScore from SellerC443 for $12 
+Shaggy bought a Very Good new RecordPlayer from SellerE418 for $9  
+Shaggy bought a Excellent used Shirts from SellerE204 for $13  
+Shaggy bought a Excellent new Guitar from SellerD324 for $8 
+Shaggy bought a Excellent used Bandanas from SellerF147 for $4 
+Shaggy bought a Very Good used Harmonica from SellerJ997 for $3  
+Shaggy bought a Very Good used MusicCD from SellerI501 for $3 
+Shaggy closed the store on day 2 and came back home 
+---------------------------
+Velma arrives at store at day 3  
+On day 3, $1448 is in the register
+The total value of all the items in the store is $866
+Velma ordered Strings at the 3 day 
+Velma sold a Vinyl to BuyerI548 for $96  
+Velma sold a Bandanas to BuyerD29 for $12 after a 10% discount 
+BuyerC108 didn't buy since he dissatisfied with the price 
+BuyerA781 wanted to buy a Strings but none were in inventory, so they left
+Velma sold a Hats to BuyerC621 for $72  
+Velma sold a Vinyl to BuyerJ841 for $72  
+Velma sold a Flute to BuyerG562 for $42  
+Velma sold a Bandanas to BuyerF82 for $32  
+Velma bought a Very Good used Strings from SellerA374 for $19  
+SellerJ465 didn't sell MP3 since they dissatisfied with the price 
+Velma bought a Very Good new Harmonica from SellerE480 for $26  
+Velma bought a Excellent used Bandanas from SellerA511 for $44  
+SellerI541 didn't sell PaperScore since they dissatisfied with the price 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 3 and came back home 
+---------------------------
+Velma arrives at store at day 4  
+On day 4, $1652 is in the register
+The total value of all the items in the store is $784
+Velma sold a Flute to BuyerD570 for $22  
+Velma sold a PaperScore to BuyerF312 for $73 after a 10% discount 
+Velma sold a Shirts to BuyerD747 for $81 after a 10% discount 
+Velma sold a MusicCD to BuyerC474 for $32 after a 10% discount 
+Velma sold a Strings to BuyerC39 for $25 after a 10% discount 
+Velma sold a PracticeAmps to BuyerJ332 for $10  
+Velma bought a Very Good used Vinyl from SellerI226 for $21 
+Velma bought a Good new Mandolin from SellerE660 for $12 
+SellerH109 didn't sell Vinyl since they dissatisfied with the price 
+Velma bought a Fair new Harmonica from SellerA344 for $5 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 4 and came back home 
+---------------------------
+Shaggy arrives at store at day 5  
+ the  StringsI444 get arrived at the store on day 5 
+ the  StringsF926 get arrived at the store on day 5 
+ the  StringsD925 get arrived at the store on day 5 
+On day 5, $1857 is in the register
+The total value of all the items in the store is $782
+Shaggy sold a Bandanas to BuyerJ481 for $14 after a 10% discount 
+Shaggy sold a MusicCD to BuyerF966 for $68  
+Shaggy sold a PracticeAmps to BuyerI337 for $58  
+Shaggy sold a Shirts to BuyerC402 for $38  
+Shaggy sold a Guitar to BuyerF968 for $55 after a 10% discount 
+Shaggy bought a Excellent new Cables from SellerB658 for $16 
+Shaggy bought a Fair new Flute from SellerH495 for $9  
+Shaggy bought a Fair used Bandanas from SellerJ56 for $2 
+Shaggy bought a Excellent used Bandanas from SellerC796 for $8 
+Shaggy bought a Excellent new Mandolin from SellerE984 for $16 
+Shaggy bought a Very Good used Flute from SellerD9 for $26  
+SellerF530 didn't sell RecordPlayer since they dissatisfied with the price 
+It's wonderful day: nothing was damaged
+Shaggy closed the store on day 5 and came back home 
+---------------------------
+Shaggy arrives at store at day 6  
+On day 6, $2013 is in the register
+The total value of all the items in the store is $747
+Shaggy sold a Flute to BuyerJ345 for $79 after a 10% discount 
+Shaggy sold a MP3 to BuyerC433 for $58  
+Shaggy sold a Bass to BuyerD49 for $16  
+Shaggy sold a PlayerCD to BuyerB698 for $43 after a 10% discount 
+Shaggy sold a Mandolin to BuyerB220 for $52  
+Shaggy bought a Very Good used PracticeAmps from SellerI979 for $30 
+Shaggy bought a Fair used Vinyl from SellerB628 for $4 
+SellerF68 didn't sell PlayerCD since they dissatisfied with the price 
+Shaggy bought a Good new Guitar from SellerC352 for $4 
+Shaggy bought a Fair used PaperScore from SellerA954 for $1 
+Shaggy bought a Fair new Mandolin from SellerB895 for $4  
+Shaggy bought a Fair used PracticeAmps from SellerF783 for $8 
+Shaggy bought a Very Good new MP3 from SellerB543 for $23  
+SellerI494 didn't sell Guitar since they dissatisfied with the price 
+Shaggy bought a Good used Guitar from SellerD243 for $4  
+It's wonderful day: nothing was damaged
+Shaggy closed the store on day 6 and came back home 
+---------------------------
+today is Sunday, so the store closed 
+-----------------------------------
+Velma arrives at store at day 8  
+On day 8, $2183 is in the register
+The total value of all the items in the store is $737
+Velma sold a Flute to BuyerA714 for $86 after a 10% discount 
+Velma sold a RecordPlayer to BuyerF692 for $88  
+Velma sold a RecordPlayer to BuyerC901 for $73 after a 10% discount 
+Velma sold a Shirts to BuyerF238 for $20  
+Velma sold a Strings to BuyerD895 for $12  
+Velma sold a RecordPlayer to BuyerH837 for $56  
+Velma sold a RecordPlayer to BuyerG797 for $10 after a 10% discount 
+Velma bought a Fair used Shirts from SellerG653 for $9 
+Velma bought a Very Good new Mandolin from SellerF753 for $27 
+Velma bought a Good used RecordPlayer from SellerA452 for $16 
+Velma bought a Fair used Strings from SellerD935 for $7 
+Velma bought a Good used Mandolin from SellerI969 for $4 
+Velma bought a Good used Flute from SellerB869 for $16 
+SellerI753 didn't sell Mandolin since they dissatisfied with the price 
+SellerB621 didn't sell Strings since they dissatisfied with the price 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 8 and came back home 
+---------------------------
+Velma arrives at store at day 9  
+On day 9, $2449 is in the register
+The total value of all the items in the store is $730
+Velma sold a PaperScore to BuyerH765 for $33  
+Velma sold a Harmonica to BuyerB79 for $54  
+Velma sold a RecordPlayer to BuyerG106 for $72 after a 10% discount 
+BuyerG924 wanted to buy a RecordPlayer but none were in inventory, so they left
+Velma sold a MP3 to BuyerH556 for $32  
+Velma sold a Vinyl to BuyerJ364 for $88  
+Velma sold a MusicCD to BuyerD452 for $26  
+Velma sold a Mandolin to BuyerA515 for $94  
+Velma sold a MP3 to BuyerJ648 for $42  
+Velma bought a Fair used Shirts from SellerA50 for $3  
+SellerC156 didn't sell Strings since they dissatisfied with the price 
+Velma bought a Good new Strings from SellerB591 for $8  
+Velma bought a Fair used Hats from SellerA403 for $10 
+Velma bought a Fair new Cables from SellerA781 for $4 
+Velma bought a Excellent new Flute from SellerA568 for $8  
+Velma bought a Fair used RecordPlayer from SellerI96 for $8  
+Velma bought a Excellent used MP3 from SellerD687 for $20 
+SellerA573 didn't sell Flute since they dissatisfied with the price 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 9 and came back home 
+---------------------------
+Shaggy arrives at store at day 10  
+On day 10, $2829 is in the register
+The total value of all the items in the store is $651
+Shaggy sold a Vinyl to BuyerI836 for $63 after a 10% discount 
+Shaggy sold a Cables to BuyerI101 for $2  
+Shaggy sold a MP3 to BuyerG764 for $40  
+Shaggy sold a Cables to BuyerC219 for $30 after a 10% discount 
+Shaggy sold a Strings to BuyerB336 for $4  
+SellerA344 didn't sell Vinyl since they dissatisfied with the price 
+Shaggy bought a Very Good new Flute from SellerF841 for $12 
+SellerA362 didn't sell RecordPlayer since they dissatisfied with the price 
+Shaggy bought a Good used Vinyl from SellerC491 for $4 
+It's wonderful day: nothing was damaged
+Shaggy closed the store on day 10 and came back home 
+---------------------------
+Shaggy arrives at store at day 11  
+On day 11, $2952 is in the register
+The total value of all the items in the store is $570
+Shaggy sold a Shirts to BuyerA545 for $3 after a 10% discount 
+Shaggy sold a PaperScore to BuyerJ428 for $68 after a 10% discount 
+Shaggy sold a PlayerCD to BuyerG428 for $9 after a 10% discount 
+Shaggy sold a PracticeAmps to BuyerC969 for $6  
+SellerA256 didn't sell Cables since they dissatisfied with the price 
+SellerH575 didn't sell Hats since they dissatisfied with the price 
+Shaggy bought a Very Good used Hats from SellerB348 for $27 
+SellerI392 didn't sell Vinyl since they dissatisfied with the price 
+Shaggy bought a Fair used Flute from SellerJ868 for $6 
+Shaggy destroyed a BandanasH364 by accident 
+Shaggy closed the store on day 11 and came back home 
+---------------------------
+Velma arrives at store at day 12  
+On day 12, $3005 is in the register
+The total value of all the items in the store is $589
+Velma ordered PaperScore at the 12 day 
+Velma ordered PlayerCD at the 12 day 
+Velma sold a Strings to BuyerH152 for $4  
+BuyerG337 didn't buy since he dissatisfied with the price 
+BuyerA494 didn't buy since he dissatisfied with the price 
+Velma sold a RecordPlayer to BuyerH970 for $22  
+BuyerG287 wanted to buy a RecordPlayer but none were in inventory, so they left
+BuyerG356 wanted to buy a RecordPlayer but none were in inventory, so they left
+Velma sold a Mandolin to BuyerE184 for $22  
+Velma bought a Very Good used Vinyl from SellerA905 for $3 
+SellerB125 didn't sell Vinyl since they dissatisfied with the price 
+SellerG262 didn't sell Strings since they dissatisfied with the price 
+Velma bought a Good new Cables from SellerF485 for $6  
+It's wonderful day: nothing was damaged
+Velma closed the store on day 12 and came back home 
+---------------------------
+Shaggy arrives at store at day 13  
+On day 13, $3022 is in the register
+The total value of all the items in the store is $584
+Shaggy ordered RecordPlayer at the 13 day 
+BuyerG782 wanted to buy a PaperScore but none were in inventory, so they left
+BuyerG290 didn't buy since he dissatisfied with the price 
+Shaggy sold a Flute to BuyerA881 for $25 after a 10% discount 
+Shaggy sold a MP3 to BuyerH481 for $82 after a 10% discount 
+Shaggy bought a Very Good new Bandanas from SellerG449 for $33  
+Shaggy bought a Very Good used Vinyl from SellerE395 for $18 
+Shaggy bought a Excellent new MP3 from SellerF206 for $44  
+Shaggy bought a Good used Cables from SellerC777 for $13  
+SellerD184 didn't sell Guitar since they dissatisfied with the price 
+Shaggy bought a Fair new MP3 from SellerA630 for $8  
+SellerH245 didn't sell Hats since they dissatisfied with the price 
+SellerG7 didn't sell Strings since they dissatisfied with the price 
+It's wonderful day: nothing was damaged
+Shaggy closed the store on day 13 and came back home 
+---------------------------
+today is Sunday, so the store closed 
+-----------------------------------
+Velma arrives at store at day 15  
+ the  PaperScoreC458 get arrived at the store on day 15 
+ the  PaperScoreJ273 get arrived at the store on day 15 
+ the  PaperScoreG576 get arrived at the store on day 15 
+ the  PlayerCDJ162 get arrived at the store on day 15 
+ the  PlayerCDF769 get arrived at the store on day 15 
+ the  PlayerCDG724 get arrived at the store on day 15 
+On day 15, $3006 is in the register
+The total value of all the items in the store is $784
+Velma sold a Bandanas to BuyerG267 for $54  
+Velma sold a Vinyl to BuyerJ153 for $10 after a 10% discount 
+Velma sold a Guitar to BuyerI670 for $8  
+BuyerF68 wanted to buy a RecordPlayer but none were in inventory, so they left
+Velma sold a Flute to BuyerD758 for $30  
+Velma sold a Shirts to BuyerB730 for $80  
+Velma bought a Excellent used Bandanas from SellerI691 for $35  
+SellerF327 didn't sell RecordPlayer since they dissatisfied with the price 
+SellerG529 didn't sell Shirts since they dissatisfied with the price 
+Velma bought a Very Good used MP3 from SellerC973 for $3 
+Velma bought a Fair new Hats from SellerA708 for $9  
+SellerD632 didn't sell Harmonica since they dissatisfied with the price 
+Velma bought a Very Good used PlayerCD from SellerI515 for $21 
+Velma bought a Fair new Mandolin from SellerH474 for $4 
+Velma bought a Good new Bandanas from SellerG693 for $4 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 15 and came back home 
+---------------------------
+Velma arrives at store at day 16  
+ the  RecordPlayerA654 get arrived at the store on day 16 
+ the  RecordPlayerD771 get arrived at the store on day 16 
+ the  RecordPlayerI564 get arrived at the store on day 16 
+On day 16, $3112 is in the register
+The total value of all the items in the store is $852
+Velma sold a PracticeAmps to BuyerE297 for $77 after a 10% discount 
+Velma sold a MusicCD to BuyerB654 for $5 after a 10% discount 
+Velma sold a Harmonica to BuyerE240 for $23 after a 10% discount 
+Velma sold a Guitar to BuyerH539 for $16  
+Velma sold a Bass to BuyerI628 for $28  
+Velma bought a Very Good new Mandolin from SellerA381 for $9  
+Velma bought a Excellent used RecordPlayer from SellerG315 for $8 
+Velma bought a Excellent used Mandolin from SellerG861 for $32 
+Velma bought a Good used Shirts from SellerA782 for $2  
+Velma bought a Excellent used Bandanas from SellerE275 for $28 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 16 and came back home 
+---------------------------
+Shaggy arrives at store at day 17  
+On day 17, $3182 is in the register
+The total value of all the items in the store is $863
+Shaggy ordered Bass at the 17 day 
+Shaggy ordered MusicCD at the 17 day 
+Shaggy sold a Flute to BuyerB612 for $27 after a 10% discount 
+BuyerC29 wanted to buy a Bass but none were in inventory, so they left
+Shaggy sold a Shirts to BuyerG805 for $12 after a 10% discount 
+Shaggy sold a Harmonica to BuyerD165 for $72  
+Shaggy sold a PlayerCD to BuyerC854 for $14 after a 10% discount 
+Shaggy bought a Good used Shirts from SellerH12 for $17  
+Shaggy bought a Very Good used Guitar from SellerG115 for $24 
+Shaggy bought a Excellent new PlayerCD from SellerG996 for $20 
+SellerD79 didn't sell Vinyl since they dissatisfied with the price 
+SellerC835 didn't sell Harmonica since they dissatisfied with the price 
+Shaggy bought a Excellent new PracticeAmps from SellerD159 for $8 
+Shaggy bought a Very Good used Flute from SellerF507 for $12 
+Shaggy bought a Fair used Vinyl from SellerB128 for $6  
+SellerF709 didn't sell Mandolin since they dissatisfied with the price 
+It's wonderful day: nothing was damaged
+Shaggy closed the store on day 17 and came back home 
+---------------------------
+Velma arrives at store at day 18  
+ the  MusicCDH348 get arrived at the store on day 18 
+ the  MusicCDE912 get arrived at the store on day 18 
+ the  MusicCDG387 get arrived at the store on day 18 
+On day 18, $3154 is in the register
+The total value of all the items in the store is $953
+BuyerJ749 didn't buy since he dissatisfied with the price 
+Velma sold a Bandanas to BuyerA30 for $10 after a 10% discount 
+BuyerG148 didn't buy since he dissatisfied with the price 
+Velma sold a Hats to BuyerB941 for $18  
+SellerA112 didn't sell Bass since they dissatisfied with the price 
+Velma bought a Fair new Flute from SellerE53 for $7  
+Velma bought a Good used Guitar from SellerF443 for $11  
+Velma bought a Fair used PracticeAmps from SellerF193 for $6 
+Velma bought a Good used Guitar from SellerG209 for $2 
+Velma bought a Fair new Mandolin from SellerB400 for $7 
+SellerH964 didn't sell Strings since they dissatisfied with the price 
+SellerG911 didn't sell MP3 since they dissatisfied with the price 
+Velma bought a Fair used Vinyl from SellerE504 for $9 
+Velma bought a Good used Hats from SellerD424 for $8  
+It's wonderful day: nothing was damaged
+Velma closed the store on day 18 and came back home 
+---------------------------
+Velma arrives at store at day 19  
+On day 19, $3132 is in the register
+The total value of all the items in the store is $962
+Velma sold a Vinyl to BuyerD999 for $75 after a 10% discount 
+Velma sold a Harmonica to BuyerG585 for $14 after a 10% discount 
+Velma sold a RecordPlayer to BuyerG464 for $54  
+Velma sold a Bandanas to BuyerA402 for $76  
+BuyerI703 didn't buy since he dissatisfied with the price 
+SellerG13 didn't sell Bandanas since they dissatisfied with the price 
+Velma bought a Very Good new MP3 from SellerH592 for $6 
+SellerG93 didn't sell Cables since they dissatisfied with the price 
+Velma bought a Good new Vinyl from SellerC622 for $8 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 19 and came back home 
+---------------------------
+Shaggy arrives at store at day 20  
+ the  BassB121 get arrived at the store on day 20 
+ the  BassB136 get arrived at the store on day 20 
+ the  BassD256 get arrived at the store on day 20 
+On day 20, $3337 is in the register
+The total value of all the items in the store is $1022
+BuyerD348 didn't buy since he dissatisfied with the price 
+Shaggy sold a MusicCD to BuyerA127 for $82  
+Shaggy sold a PaperScore to BuyerB162 for $38  
+Shaggy sold a Flute to BuyerB25 for $28  
+Shaggy sold a Shirts to BuyerH520 for $37 after a 10% discount 
+Shaggy sold a RecordPlayer to BuyerJ921 for $64 after a 10% discount 
+Shaggy sold a Harmonica to BuyerD904 for $44  
+Shaggy sold a Bandanas to BuyerB428 for $55 after a 10% discount 
+Shaggy bought a Good used Bandanas from SellerB141 for $10 
+Shaggy bought a Good used Flute from SellerE380 for $17  
+Shaggy bought a Fair new Hats from SellerC763 for $1 
+Shaggy bought a Good used PlayerCD from SellerB364 for $6 
+Shaggy bought a Very Good used MP3 from SellerG912 for $3 
+It's wonderful day: nothing was damaged
+Shaggy closed the store on day 20 and came back home 
+---------------------------
+today is Sunday, so the store closed 
+-----------------------------------
+Velma arrives at store at day 22  
+On day 22, $3648 is in the register
+The total value of all the items in the store is $924
+Velma ordered Harmonica at the 22 day 
+BuyerA865 didn't buy since he dissatisfied with the price 
+Velma sold a RecordPlayer to BuyerC169 for $14  
+Velma sold a PracticeAmps to BuyerJ339 for $77 after a 10% discount 
+Velma sold a Hats to BuyerH842 for $41 after a 10% discount 
+Velma sold a MP3 to BuyerJ515 for $86 after a 10% discount 
+BuyerF515 wanted to buy a Harmonica but none were in inventory, so they left
+Velma sold a Shirts to BuyerC4 for $14  
+BuyerD541 didn't buy since he dissatisfied with the price 
+Velma sold a Bass to BuyerB503 for $98  
+Velma bought a Fair new Flute from SellerC998 for $9 
+Velma bought a Fair new PlayerCD from SellerB645 for $3  
+Velma bought a Good used Harmonica from SellerC914 for $17  
+Velma bought a Excellent new RecordPlayer from SellerJ126 for $28 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 22 and came back home 
+---------------------------
+Velma arrives at store at day 23  
+ the  HarmonicaH962 get arrived at the store on day 23 
+ the  HarmonicaG472 get arrived at the store on day 23 
+ the  HarmonicaE38 get arrived at the store on day 23 
+On day 23, $3910 is in the register
+The total value of all the items in the store is $958
+Velma sold a Hats to BuyerC487 for $3 after a 10% discount 
+Velma sold a Vinyl to BuyerB455 for $7 after a 10% discount 
+Velma sold a Harmonica to BuyerG606 for $54 after a 10% discount 
+Velma sold a MusicCD to BuyerA456 for $14  
+Velma bought a Very Good new Harmonica from SellerH379 for $21 
+Velma bought a Excellent new Guitar from SellerJ372 for $8 
+Velma bought a Excellent new PlayerCD from SellerH779 for $13  
+Velma bought a Fair new MP3 from SellerD389 for $7 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 23 and came back home 
+---------------------------
+Shaggy arrives at store at day 24  
+On day 24, $3939 is in the register
+The total value of all the items in the store is $947
+Shaggy sold a Cables to BuyerA671 for $66 after a 10% discount 
+Shaggy sold a Harmonica to BuyerJ8 for $9 after a 10% discount 
+BuyerB717 didn't buy since he dissatisfied with the price 
+BuyerC901 didn't buy since he dissatisfied with the price 
+Shaggy sold a Flute to BuyerI384 for $18  
+Shaggy bought a Very Good used Cables from SellerC102 for $15 
+SellerB254 didn't sell Mandolin since they dissatisfied with the price 
+Shaggy bought a Fair new Cables from SellerD445 for $3 
+Shaggy bought a Excellent used MusicCD from SellerC95 for $20 
+It's wonderful day: nothing was damaged
+Shaggy closed the store on day 24 and came back home 
+---------------------------
+Velma arrives at store at day 25  
+On day 25, $3994 is in the register
+The total value of all the items in the store is $958
+Velma sold a Cables to BuyerI778 for $21 after a 10% discount 
+BuyerD349 didn't buy since he dissatisfied with the price 
+Velma sold a Bandanas to BuyerD382 for $78  
+Velma sold a RecordPlayer to BuyerH851 for $40  
+Velma sold a Shirts to BuyerB282 for $42  
+Velma sold a Hats to BuyerB339 for $38  
+Velma bought a Very Good used Cables from SellerF372 for $27 
+Velma bought a Fair used Strings from SellerA581 for $5 
+Velma bought a Good used Guitar from SellerF555 for $4 
+Velma bought a Fair used PaperScore from SellerD664 for $3 
+SellerI371 didn't sell MP3 since they dissatisfied with the price 
+Velma bought a Good new Guitar from SellerC756 for $11  
+Velma bought a Good new RecordPlayer from SellerI205 for $20 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 25 and came back home 
+---------------------------
+Shaggy arrives at store at day 26  
+On day 26, $4143 is in the register
+The total value of all the items in the store is $930
+Shaggy ordered Shirts at the 26 day 
+Shaggy sold a RecordPlayer to BuyerG904 for $6  
+Shaggy sold a Cables to BuyerG713 for $59 after a 10% discount 
+BuyerB704 didn't buy since he dissatisfied with the price 
+Shaggy sold a Guitar to BuyerA955 for $37 after a 10% discount 
+Shaggy sold a RecordPlayer to BuyerB971 for $80  
+Shaggy sold a Guitar to BuyerE29 for $12  
+BuyerG305 didn't buy since he dissatisfied with the price 
+Shaggy sold a PracticeAmps to BuyerF509 for $10 after a 10% discount 
+BuyerJ307 didn't buy since he dissatisfied with the price 
+Shaggy bought a Very Good used Flute from SellerA401 for $27 
+Shaggy bought a Very Good new Vinyl from SellerI470 for $9 
+SellerH226 didn't sell MusicCD since they dissatisfied with the price 
+Shaggy bought a Fair used Cables from SellerB718 for $9 
+Shaggy bought a Excellent new RecordPlayer from SellerD722 for $8 
+It's wonderful day: nothing was damaged
+Shaggy closed the store on day 26 and came back home 
+---------------------------
+Velma arrives at store at day 27  
+ the  ShirtsC401 get arrived at the store on day 27 
+ the  ShirtsC936 get arrived at the store on day 27 
+ the  ShirtsC208 get arrived at the store on day 27 
+On day 27, $4279 is in the register
+The total value of all the items in the store is $1036
+Velma sold a Strings to BuyerF871 for $22  
+Velma sold a Hats to BuyerB473 for $68  
+Velma sold a Guitar to BuyerC561 for $72  
+Velma sold a Vinyl to BuyerA837 for $38  
+Velma bought a Fair used Harmonica from SellerE813 for $7 
+SellerI655 didn't sell MusicCD since they dissatisfied with the price 
+SellerH135 didn't sell Bandanas since they dissatisfied with the price 
+Velma bought a Excellent used MusicCD from SellerD625 for $40 
+Velma bought a Excellent new Cables from SellerE333 for $8 
+Velma bought a Fair used PracticeAmps from SellerH614 for $6 
+Velma bought a Excellent used Bandanas from SellerI300 for $39  
+It's wonderful day: nothing was damaged
+Velma closed the store on day 27 and came back home 
+---------------------------
+today is Sunday, so the store closed 
+-----------------------------------
+Velma arrives at store at day 29  
+On day 29, $4379 is in the register
+The total value of all the items in the store is $1109
+Velma sold a Bandanas to BuyerE174 for $36  
+Velma sold a Harmonica to BuyerG440 for $84  
+Velma sold a Mandolin to BuyerF570 for $14 after a 10% discount 
+BuyerJ863 didn't buy since he dissatisfied with the price 
+Velma sold a Guitar to BuyerH732 for $96  
+Velma sold a Harmonica to BuyerB406 for $64 after a 10% discount 
+Velma sold a Shirts to BuyerC219 for $36  
+SellerB165 didn't sell Bandanas since they dissatisfied with the price 
+Velma bought a Excellent used RecordPlayer from SellerE935 for $44  
+Velma bought a Fair used Shirts from SellerJ263 for $7 
+SellerA514 didn't sell Hats since they dissatisfied with the price 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 29 and came back home 
+---------------------------
+Velma arrives at store at day 30  
+On day 30, $4658 is in the register
+The total value of all the items in the store is $1057
+Velma sold a Shirts to BuyerE429 for $62  
+Velma sold a Bass to BuyerC313 for $80  
+Velma sold a PracticeAmps to BuyerI934 for $26  
+Velma sold a Harmonica to BuyerD645 for $44  
+BuyerB754 didn't buy since he dissatisfied with the price 
+Velma sold a Vinyl to BuyerH395 for $37 after a 10% discount 
+Velma bought a Very Good new Bass from SellerF229 for $29  
+Velma bought a Excellent used Flute from SellerJ610 for $20 
+SellerD63 didn't sell Guitar since they dissatisfied with the price 
+Velma bought a Very Good new MusicCD from SellerD477 for $15 
+SellerB278 didn't sell PlayerCD since they dissatisfied with the price 
+Velma bought a Fair new PaperScore from SellerD713 for $11  
+SellerB365 didn't sell Harmonica since they dissatisfied with the price 
+It's wonderful day: nothing was damaged
+Velma closed the store on day 30 and came back home 
+---------------------------
+-----------------------summarization-------------------------
+The total value of items in the inventory is $1020
+The items in the inventory is [Guitar@58372a00, Mandolin@4dd8dc3, Mandolin@6d03e736, Mandolin@568db2f2, Hats@378bf509, Cables@5fd0d5ae, Guitar@2d98a335, Guitar@16b98e56, Strings@7ef20235, Vinyl@27d6c5e0, Guitar@4f3f5b24, Strings@15aeb7ab, Mandolin@7b23ec81, Cables@6acbcfc0, Flute@5f184fc6, Vinyl@3feba861, Vinyl@5b480cf9, MP3@6f496d9f, MP3@723279cf, PaperScore@10f87f48, PaperScore@b4c966a, PlayerCD@2f4d3709, PlayerCD@4e50df2e, Hats@1d81eb93, PlayerCD@7291c18f, Mandolin@34a245ab, Mandolin@7cc355be, Mandolin@6e8cf4c6, Guitar@12edcd21, PlayerCD@34c45dca, Flute@52cc8049, MusicCD@5b6f7412, Flute@27973e9b, Guitar@312b1dae, Mandolin@7530d0a, Hats@27bc2616, MP3@3941a79c, Bass@506e1b77, Bandanas@4fca772d, PlayerCD@9807454, MP3@3d494fbf, Flute@1ddc4ec2, PlayerCD@133314b, PlayerCD@b1bc7ed, MP3@7cd84586, Cables@30dae81, MusicCD@1b2c6ec2, Cables@4edde6e5, PaperScore@70177ecd, Flute@1e80bfe8, Cables@66a29884, RecordPlayer@4769b07b, Shirts@cc34f4d, Harmonica@17a7cec2, MusicCD@65b3120a, Cables@6f539caf, PracticeAmps@79fc0f2f, Bandanas@50040f0c, RecordPlayer@2dda6444, Shirts@5e9f23b4, Bass@4783da3f, Flute@378fd1ac, MusicCD@49097b5d, PaperScore@6e2c634b]
+RecordPlayerF398 sell a price for $28 on day 1 
+BandanasC584 sell a price for $34 on day 1 
+HatsJ783 sell a price for $38 on day 1 
+PlayerCDH87 sell a price for $62 on day 1 
+BassI264 sell a price for $48 on day 2 
+PaperScoreJ332 sell a price for $68 on day 2 
+CablesH245 sell a price for $16 on day 2 
+StringsJ321 sell a price for $81 on day 2 
+StringsF905 sell a price for $10 on day 2 
+StringsA695 sell a price for $2 on day 2 
+PaperScoreI663 sell a price for $88 on day 2 
+HarmonicaC422 sell a price for $98 on day 2 
+VinylC671 sell a price for $96 on day 3 
+BandanasE244 sell a price for $12 on day 3 
+HatsG753 sell a price for $72 on day 3 
+VinylH284 sell a price for $72 on day 3 
+FluteJ815 sell a price for $42 on day 3 
+BandanasE986 sell a price for $32 on day 3 
+FluteE103 sell a price for $22 on day 4 
+PaperScoreI444 sell a price for $73 on day 4 
+ShirtsI659 sell a price for $81 on day 4 
+MusicCDC423 sell a price for $32 on day 4 
+StringsD205 sell a price for $25 on day 4 
+PracticeAmpsG912 sell a price for $10 on day 4 
+BandanasB71 sell a price for $14 on day 5 
+MusicCDA621 sell a price for $68 on day 5 
+PracticeAmpsC94 sell a price for $58 on day 5 
+ShirtsG355 sell a price for $38 on day 5 
+GuitarI833 sell a price for $55 on day 5 
+FluteJ625 sell a price for $79 on day 6 
+MP3B409 sell a price for $58 on day 6 
+BassB895 sell a price for $16 on day 6 
+PlayerCDA959 sell a price for $43 on day 6 
+MandolinJ544 sell a price for $52 on day 6 
+FluteA553 sell a price for $86 on day 8 
+RecordPlayerC465 sell a price for $88 on day 8 
+RecordPlayerA628 sell a price for $73 on day 8 
+ShirtsD941 sell a price for $20 on day 8 
+StringsF926 sell a price for $12 on day 8 
+RecordPlayerG725 sell a price for $56 on day 8 
+RecordPlayerB697 sell a price for $10 on day 8 
+PaperScoreG531 sell a price for $33 on day 9 
+HarmonicaF939 sell a price for $54 on day 9 
+RecordPlayerC994 sell a price for $72 on day 9 
+MP3D804 sell a price for $32 on day 9 
+VinylF752 sell a price for $88 on day 9 
+MusicCDA460 sell a price for $26 on day 9 
+MandolinA583 sell a price for $94 on day 9 
+MP3J459 sell a price for $42 on day 9 
+VinylA808 sell a price for $63 on day 10 
+CablesF937 sell a price for $2 on day 10 
+MP3C329 sell a price for $40 on day 10 
+CablesI161 sell a price for $30 on day 10 
+StringsD633 sell a price for $4 on day 10 
+ShirtsJ715 sell a price for $3 on day 11 
+PaperScoreD647 sell a price for $68 on day 11 
+PlayerCDB995 sell a price for $9 on day 11 
+PracticeAmpsB588 sell a price for $6 on day 11 
+StringsD925 sell a price for $4 on day 12 
+RecordPlayerC609 sell a price for $22 on day 12 
+MandolinD738 sell a price for $22 on day 12 
+FluteG763 sell a price for $25 on day 13 
+MP3D955 sell a price for $82 on day 13 
+BandanasH73 sell a price for $54 on day 15 
+VinylE891 sell a price for $10 on day 15 
+GuitarG562 sell a price for $8 on day 15 
+FluteI882 sell a price for $30 on day 15 
+ShirtsF64 sell a price for $80 on day 15 
+PracticeAmpsG539 sell a price for $77 on day 16 
+MusicCDF781 sell a price for $5 on day 16 
+HarmonicaI589 sell a price for $23 on day 16 
+GuitarE360 sell a price for $16 on day 16 
+BassH509 sell a price for $28 on day 16 
+FluteD514 sell a price for $27 on day 17 
+ShirtsA595 sell a price for $12 on day 17 
+HarmonicaH162 sell a price for $72 on day 17 
+PlayerCDJ162 sell a price for $14 on day 17 
+BandanasJ775 sell a price for $10 on day 18 
+HatsH676 sell a price for $18 on day 18 
+VinylC924 sell a price for $75 on day 19 
+HarmonicaB154 sell a price for $14 on day 19 
+RecordPlayerI564 sell a price for $54 on day 19 
+BandanasC336 sell a price for $76 on day 19 
+MusicCDG387 sell a price for $82 on day 20 
+PaperScoreG576 sell a price for $38 on day 20 
+FluteA739 sell a price for $28 on day 20 
+ShirtsC81 sell a price for $37 on day 20 
+RecordPlayerA654 sell a price for $64 on day 20 
+HarmonicaB712 sell a price for $44 on day 20 
+BandanasE8 sell a price for $55 on day 20 
+RecordPlayerD267 sell a price for $14 on day 22 
+PracticeAmpsJ219 sell a price for $77 on day 22 
+HatsI266 sell a price for $41 on day 22 
+MP3F275 sell a price for $86 on day 22 
+ShirtsE131 sell a price for $14 on day 22 
+BassD256 sell a price for $98 on day 22 
+HatsB327 sell a price for $3 on day 23 
+VinylB565 sell a price for $7 on day 23 
+HarmonicaE95 sell a price for $54 on day 23 
+MusicCDH348 sell a price for $14 on day 23 
+CablesF356 sell a price for $66 on day 24 
+HarmonicaG472 sell a price for $9 on day 24 
+FluteI952 sell a price for $18 on day 24 
+CablesE837 sell a price for $21 on day 25 
+BandanasH563 sell a price for $78 on day 25 
+RecordPlayerE1 sell a price for $40 on day 25 
+ShirtsG417 sell a price for $42 on day 25 
+HatsD93 sell a price for $38 on day 25 
+RecordPlayerD771 sell a price for $6 on day 26 
+CablesE730 sell a price for $59 on day 26 
+GuitarA166 sell a price for $37 on day 26 
+RecordPlayerA109 sell a price for $80 on day 26 
+GuitarD44 sell a price for $12 on day 26 
+PracticeAmpsB965 sell a price for $10 on day 26 
+StringsE872 sell a price for $22 on day 27 
+HatsF12 sell a price for $68 on day 27 
+GuitarC940 sell a price for $72 on day 27 
+VinylG926 sell a price for $38 on day 27 
+BandanasE490 sell a price for $36 on day 29 
+HarmonicaB740 sell a price for $84 on day 29 
+MandolinI492 sell a price for $14 on day 29 
+GuitarJ243 sell a price for $96 on day 29 
+HarmonicaH962 sell a price for $64 on day 29 
+ShirtsC936 sell a price for $36 on day 29 
+ShirtsC401 sell a price for $62 on day 30 
+BassB136 sell a price for $80 on day 30 
+PracticeAmpsG144 sell a price for $26 on day 30 
+HarmonicaE38 sell a price for $44 on day 30 
+VinylD700 sell a price for $37 on day 30 
+The total value for sold items is $5543
+The sum of money in the register is $4832
+The amount of money withdrawn from the bank is $1000
