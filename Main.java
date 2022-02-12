@@ -18,8 +18,8 @@ public class Main {
         ArrayList<Items> totall_list = FNMS.do_stock();
 
         for (int i = 0; i < totall_list.size(); i++ ){
-            inventory.updateStock(totall_list.get(i));}
-
+            inventory.updateStock(totall_list.get(i));
+        }
         //Initialize the staffs.
         Staff Velma = new Staff(5,"Velma");
         Staff Shaggy = new Staff(20,"Shaggy");
@@ -28,7 +28,7 @@ public class Main {
         for(int i=0;i<30;i++){
             if (FNMS.getDays()%7==0){
                 FNMS.nextDay();
-                System.out.println("today is Sunday, the store closed ");
+                System.out.println("today is Sunday, so the store closed ");
                 System.out.println("-----------------------------------");
                 Velma.cleanCwd();
                 Shaggy.cleanCwd();
@@ -55,17 +55,17 @@ public class Main {
 
 
         System.out.println("-----------------------summarization-------------------------");
-        System.out.println("total value of inventory is "+inventory.getTotalValue());
-        System.out.println("the items in the inventory is "+inventory.itemsList);
+        System.out.println("The total value of items in the inventory is $"+inventory.getTotalValue());
+        System.out.println("The items in the inventory is "+inventory.itemsList);
 
         int totalsoldvalue=0;
         for(int d=0;d<FNMS.getSoldList().size();d++){
 
             Items solditem= (Items) FNMS.getSoldList().get(d);
-            System.out.format("%s sell a price for %d at day %d %n",solditem.getName(),solditem.getSalePrice(),solditem.getDaySold());
+            System.out.format("%s sell a price for $%d on day %d %n",solditem.getName(),solditem.getSalePrice(),solditem.getDaySold());
             totalsoldvalue+=solditem.getSalePrice();
-        }  System.out.println("total value for sold items "+totalsoldvalue);
-        System.out.println("The sum of money in the register is "+register.getMoneysum());
+        }  System.out.println("The total value for sold items is $"+totalsoldvalue);
+        System.out.println("The sum of money in the register is $"+register.getMoneysum());
             bank.getSum();
 
     }

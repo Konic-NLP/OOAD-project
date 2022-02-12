@@ -37,7 +37,7 @@ public class Staff {
         ArrayList<Items> orderlist =order.getorderlist();
         for(Items ordereditem:orderlist){
             if (ordereditem.getDayArrived()==today){// means the ordered items arrived at the store
-                System.out.format(" the  %s get arrived at the store at days %d %n", ordereditem.getName(),today);
+                System.out.format(" the  %s get arrived at the store on day %d %n", ordereditem.getName(),today);
                 inventory.updateStock(ordereditem);//update the inventory
                 ordereditem.setDayArrived(-1);//signal that the one has been arrived
 //                orderlist.remove(ordereditem);
@@ -45,7 +45,7 @@ public class Staff {
             }else if  (ordereditem.getDayArrived()==today-1 & (today-1)%7==0){
                 // if the day before today is sunday and by chance there was an order get arrived,
                 // today to pick up the order
-                System.out.format(" the  %s get arrived at the store at days %d %n", ordereditem.getName(),today);
+                System.out.format(" the  %s get arrived at the store on day %d %n", ordereditem.getName(),today);
                 inventory.updateStock(ordereditem);
                 ordereditem.setDayArrived(-1);
 //                orderlist.remove(ordereditem); ; may induce conModificationException
@@ -57,7 +57,7 @@ public class Staff {
         //if register money lower than the threshold, enter to the bank.
         int money=register.getMoneysum();
         int today=store.getDays();
-        System.out.format("today %d, %d in the register%n",today,money);
+        System.out.format("On day %d, $%d is in the register%n",today,money);
         if (register.getMoneysum() < 75) {
 
             goToBank(register,bank);
@@ -76,7 +76,7 @@ public class Staff {
 
     public void doInventory(Inventory inventory,Order order,Store store,Register reg) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         // get the items that required to order
-        System.out.println("The total value of all the items in the store is " + inventory.getTotalValue());
+        System.out.println("The total value of all the items in the store is $" + inventory.getTotalValue());
         ArrayList<Items> waitorder=inventory.checkStock(order);
         if(waitorder.size()!=0){ //if any need to be required
         this.placeAnOrder(waitorder,order,store,reg);
@@ -86,9 +86,9 @@ public class Staff {
     public void placeAnOrder(ArrayList<Items> waitorder, Order order,Store store,Register reg) throws InstantiationException, IllegalAccessException {
         // place an order
         for(Items items: waitorder) {
-            System.out.format("%s ordered %s at the %d day %n",this.getName(),items.getItemType(),store.getDays());
             order.orderItems(items.getClass(),store);  // order items
             reg.deductmoney(items.getPurchasePrice());  // then deduct the money for the order
+            System.out.format("%s ordered %s at the %d day %n",this.getName(),items.getItemType(),store.getDays());
         }
     }
 
@@ -106,7 +106,7 @@ public class Staff {
 
 
     public void leaveTheShop(Store store){
-        System.out.format("%s close the store at the day %d and back home %n",this.getName(),store.getDays());
+        System.out.format("%s closed the store on day %d and came back home %n",this.getName(),store.getDays());
 
     }
 
@@ -115,7 +115,7 @@ public class Staff {
 
         try{Items selleritems= seller.getItemsWantToSell();// get what's the item that the seller want to buy
 //            System.out.println(selleritems);
-            selleritems.setPurchasePrice(selleritems.getCondition() * Helper.random_number(10, 1));
+            selleritems.setPurchasePrice(selleritems.getCondition() * Helper.random_number(11, 1));
             //get the price based on the condition
 
         int purchaseprice=selleritems.getPurchasePrice();
@@ -126,8 +126,7 @@ public class Staff {
 //            selleritems.setSalePrice(purchaseprice);
             inventory.updateStock(selleritems);// add the item to the inventory
             String condition= Items.getConditionList()[(int)(selleritems.getCondition())];// get the condition
-
-            System.out.format("%s bought a %s %s %s from %s for %d %n",this.getName(),
+            System.out.format("%s bought a %s %s %s from %s for $%d %n",this.getName(),
                     condition,
                     selleritems.getNewOrUsed(),
                     selleritems.getItemType(),
@@ -141,14 +140,14 @@ public class Staff {
                 inventory.updateStock(selleritems);
                 String condition= Items.getConditionList()[(int)(selleritems.getCondition())];
 
-                System.out.format("%s bought a %s %s %s from %s for %d  %n",this.getName(),//staff's name
+                System.out.format("%s bought a %s %s %s from %s for $%d  %n",this.getName(),//staff's name
                         condition,  //condition
                         selleritems.getNewOrUsed(), // new or old
                         selleritems.getItemType(),  // the type of the item
                         seller.getName(),     //the name of the seller
                         purchaseprice);    // the terminal price bought from the customer
             }else{// if even the seller doesn't accept the higher price
-                System.out.format("the %s doesn't sell %s since he dissatisfied with the price %n",
+                System.out.format("%s doesn't sell %s since they dissatisfied with the price %n",
                         seller.getName(),selleritems.getItemType());
 
             }
@@ -172,7 +171,7 @@ public class Staff {
         }
         // if there is no items that qualified the buyer's expectation
         if(itemsforbuy.size()==0){
-            System.out.format("%s want to buy a %s but none were in inventory , so left%n", buyer.getName(),buyitemtype );
+            System.out.format("%s wanted to buy a %s but none were in inventory, so they left%n", buyer.getName(),buyitemtype );
         }else{
         Collections.shuffle(itemsforbuy); // use shuffle to simulate select randomly
         Items buyitem=itemsforbuy.get(0);
@@ -187,7 +186,7 @@ public class Staff {
             store.addSoldItem(buyitem);
             // operation: update the inventory, deduct the money from the register, change the saleprice, add record
             // to the soldlist
-            System.out.format("%s sold a %s to %s  for  %d  %n",this.getName(),buyitem.getItemType(),buyer.getName(),buyitem.getListPrice());
+            System.out.format("%s sold a %s to %s for $%d  %n",this.getName(),buyitem.getItemType(),buyer.getName(),buyitem.getListPrice());
         }else{
             // otherwise, we will give the buyer a discount
             int discountprice=(int)(buyitem.getListPrice()*0.9);
@@ -199,7 +198,7 @@ public class Staff {
                 buyitem.setSalePrice(discountprice);
                 store.addSoldItem(buyitem);
 
-                System.out.format("%s sold a %s to %s  for  %d after a 10%% discount %n",
+                System.out.format("%s sold a %s to %s for $%d after a 10%% discount %n",
                         this.getName(),
                         buyitem.getItemType(),
                         buyer.getName(),
@@ -208,7 +207,7 @@ public class Staff {
             }else{
                 // if the customer don't want to buy even with a discount
 
-                System.out.format("%s doesn't buy anything and leave because the dissatisfaction for the price %n",buyer.getName());
+                System.out.format("the %s doesn't buy since he dissatisfied with the price %n",buyer.getName());
             }
         }
         }
@@ -232,7 +231,7 @@ public class Staff {
 
             }
             }else{
-            System.out.println("it's wonderful day: nothing was damaged");
+            System.out.println("It's wonderful day: nothing was damaged");
         }
     }
 }

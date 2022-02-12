@@ -107,54 +107,59 @@ public class Store {
         public ArrayList<Items> do_stock(){
             ArrayList<Items> itemsList=new ArrayList<Items>();
             Class[] classlist= new Class[]{};
-            PaperScore ps1 = new PaperScore();
-            itemsList.add(ps1);
-            Items ps2 = new PaperScore();
-            itemsList.add(ps2);
-            Items ps3 = new PaperScore();
-            itemsList.add(ps3);
-            MusicCD mcd1 = new MusicCD();
-            itemsList.add(mcd1);
-            MusicCD mcd2 = new MusicCD();
-            itemsList.add(mcd2);
-            MusicCD mcd3 = new MusicCD();
-            itemsList.add(mcd3);
-            Vinyl v1 = new Vinyl();
-            itemsList.add(v1);
-            Vinyl v2 = new Vinyl();
-            itemsList.add(v2);
-            Vinyl v3 = new Vinyl();
-            itemsList.add(v3);
-            PlayerCD pcd1 = new PlayerCD();
-            itemsList.add(pcd1);
-            PlayerCD pcd2 = new PlayerCD();
-            itemsList.add(pcd2);
-            PlayerCD pcd3 = new PlayerCD();
-            itemsList.add(pcd3);
-            RecordPlayer rp1 = new RecordPlayer();
-            itemsList.add(rp1);
-            RecordPlayer rp2 = new RecordPlayer();
-            itemsList.add(rp2);
-            RecordPlayer rp3 = new RecordPlayer();
-            itemsList.add(rp3);
-            MP3 mp31= new MP3();
-            itemsList.add(mp31);
-            MP3 mp32= new MP3();
-            itemsList.add(mp32);
-            MP3 mp33= new MP3();
-            itemsList.add(mp33);
-            Guitar g1 = new Guitar();
-            itemsList.add(g1);
-            Guitar g2 = new Guitar();
-            itemsList.add(g2);
-            Guitar g3 = new Guitar();
-            itemsList.add(g3);
-            Bass b1 = new Bass();
-            itemsList.add(b1);
-            Bass b2 = new Bass();
-            itemsList.add(b2);
-            Bass b3 = new Bass();
-            itemsList.add(b3);
+
+            for (int i = 0; i<3; i++){
+                itemsList.add(new PaperScore());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new MusicCD());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new Vinyl());
+            }
+            for (int i = 0; i<3; i++) {
+                itemsList.add(new RecordPlayer());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new PlayerCD());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new MP3());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new Guitar());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new Mandolin());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new Bass());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new Flute());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new Harmonica());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new Hats());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new Shirts());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new Bandanas());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new PracticeAmps());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new Cables());
+            }
+            for (int i = 0; i<3; i++){
+                itemsList.add(new Strings());
+            }
+//            System.out.println(itemsList.size());
         return itemsList;}
 }
 

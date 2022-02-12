@@ -425,7 +425,7 @@ import java.util.ArrayList;
             public Cables() {
                 super();
                 this.length = Helper.random_number(10,1);
-                this.itemType = "PracticeAmps";
+                this.itemType = "Cables";
                 this.name = Helper.random_name(this.itemType);
             }
             @Override
