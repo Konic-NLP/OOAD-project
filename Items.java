@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 //This class and its subclass are the example of Inheritance, Polymorphism, and Encapsulation.
  public class Items {
-
+     protected Property property;
      //General attributes of all the items
      protected String name; // unique for each object
      protected String itemType; //unique for each (sub)class
@@ -26,6 +26,7 @@ import java.util.ArrayList;
      }
 
      //Below is a bunch of getter functions to get the attributes of the items
+    public Property getProperty(){return  this.property;}
      public String getName() {
          return this.name;
      }
@@ -44,7 +45,7 @@ import java.util.ArrayList;
          return salePrice;
      }
 
-     public int getCondition() {
+     public int do_stocktion() {
          return condition;
      }
 
@@ -99,7 +100,10 @@ import java.util.ArrayList;
      }
 
      public void setSalePrice(int price) {this.salePrice = price;}
- }
+
+    public int getCondition() {return this.condition;
+    }
+}
 
     //First subclass and its subclasses of items:music
     //1
@@ -163,11 +167,15 @@ import java.util.ArrayList;
     //Second subclass
     //2
     class Players extends Items {
+     public Property property= new Property(10,"equalized");
         public Players(){
             super();
             this.itemType="Players";
             this.name = Helper.random_name(this.itemType);
-
+          ;
+        }
+        public Property getProperty(){
+            return  this.property;
         }
         @Override
         public String getItemType(){return this.itemType;}
@@ -175,8 +183,13 @@ import java.util.ArrayList;
 
         //2.1
         class PlayerCD extends Players {
+//            public Property property= new Property(10,"equalized");
+
+
             public PlayerCD(){
+
                 super();
+                property= new Property(10,"equalized");
                 this.itemType="PlayerCD";
                 this.name = Helper.random_name(this.itemType);
 
@@ -186,8 +199,13 @@ import java.util.ArrayList;
         }
         //2.2
         class RecordPlayer extends Players{
+//     public Property property= new Property(10,"equalized");
+
+
             public RecordPlayer(){
+
                 super();
+                this.property= new Property(10,"equalized");
                 this.itemType="RecordPlayer";
                 this.name = Helper.random_name(this.itemType);
 
@@ -197,8 +215,11 @@ import java.util.ArrayList;
         }
         //2.3
         class MP3 extends Players{
+            public Property property= new Property(10,"equalized");
+
             public MP3(){
                 super();
+                this.property= new Property(10,"equalized");
                 this.itemType="MP3";
                 this.name = Helper.random_name(this.itemType);
 
@@ -221,15 +242,21 @@ import java.util.ArrayList;
     }
         //3.1
         class Stringed extends Instruments{
+         public Property property=new Property(15,"tuned");
          protected boolean electric;
 
          public Stringed(){
+
                 super();
+             property=new Property(15,"tuned");
                 this.electric = Helper.random_boolean();
                 this.itemType="Stringed";
                 this.name = Helper.random_name(this.itemType);
 
          }
+            public Property getProperty(){
+                return this.property;
+            }
             @Override
             public String getItemType(){return this.itemType;}
 
@@ -243,8 +270,11 @@ import java.util.ArrayList;
         }
             //3.1.1
             class Mandolin extends Stringed{
+//                public Property property=new Property(15,"tuned");
+
                 public Mandolin(){
                     super();
+                    this.property=new Property(15,"tuned");
                     this.itemType="Mandolin";
                     this.name = Helper.random_name(this.itemType);
                 }
@@ -253,8 +283,11 @@ import java.util.ArrayList;
             }
             //3.1.2
              class Bass extends Stringed{
+                public Property property=new Property(15,"tuned");
+
                 public Bass(){
                     super();
+                    property=new Property(15,"tuned");
                     this.itemType="Bass";
                     this.name = Helper.random_name(this.itemType);
                 }
@@ -263,8 +296,11 @@ import java.util.ArrayList;
             }
             //3.1.3
             class Guitar extends Stringed{
+//                public Property property=new Property(15,"tuned");
+
                 public Guitar(){
                     super();
+                    property=new Property(15,"tuned");
                     this.itemType="Guitar";
                     this.name = Helper.random_name(this.itemType);
                 }
@@ -273,19 +309,29 @@ import java.util.ArrayList;
             }
         //3.2
         class Wind extends Instruments{
+     public Property property=new Property(20,"adjusted");
             public Wind(){
+
                 super();
+
                 this.itemType="Wind";
                 this.name = Helper.random_name(this.itemType);
+            }
+            public Property getProperty(){
+                return this.property;
             }
             @Override
             public String getItemType(){return this.itemType;}
         }
             //3.2.1
             class Flute extends Wind{
+
+
                 protected String type;
+//                Property property=new Property(15,"tuned");
                 public Flute(){
                     super();
+                    this.property=new Property(20,"adjusted");
                     this.type = Helper.random_name("type");
                     this.itemType="Flute";
                     this.name = Helper.random_name(this.itemType);
@@ -304,9 +350,12 @@ import java.util.ArrayList;
 
             //3.2.2
             class Harmonica extends Wind{
+                public Property property=new Property(20,"adjusted");
+
                 private String key;
                 public Harmonica(){
                     super();
+                    this.property=new Property(20,"adjusted");
                     this.key = Helper.random_name("key");
                     this.itemType="Harmonica";
                     this.name = Helper.random_name(this.itemType);

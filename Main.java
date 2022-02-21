@@ -11,7 +11,7 @@ public class Main {
         Bank bank = new Bank();
         Store FNMS = new Store();
         FNMS.nextDay();
-        Register register = new Register();
+//        Register register = new Register();
         Inventory inventory = new Inventory();
 
         //Initialize three objects of each subclass in the Items class and update the inventory.
@@ -21,8 +21,11 @@ public class Main {
             inventory.updateStock(totall_list.get(i));
         }
         //Initialize the staffs.
-        Staff Velma = new Staff(5,"Velma");
-        Staff Shaggy = new Staff(20,"Shaggy");
+        ArrayList<Staff> staffs=new ArrayList<Staff>();
+        staffs.add(new Staff(5,"Velma",new haphazard()));
+        staffs.add(new Staff(20,"Shaggy",new Electronic()));
+        staffs.add( new Staff(15,"Daphne",new Mannual()));;
+
 
         //Run the Store for 30 days.
         for(int i=0;i<30;i++){
@@ -30,20 +33,21 @@ public class Main {
                 FNMS.nextDay();
                 System.out.println("today is Sunday, so the store closed ");
                 System.out.println("-----------------------------------");
-                Velma.cleanCwd();
-                Shaggy.cleanCwd();
+                for(Staff staff:staffs){
+                    staff.cleanCwd();
+                }
                 continue;
             }else{
 
-        Staff todayStaff = FNMS.selectStaff(Shaggy,Velma);
+        Staff todayStaff = FNMS.selectStaff(staffs);
         todayStaff.arriveAtStore(order,inventory,FNMS);
-        todayStaff.checkRegister(register,bank,FNMS);
+        todayStaff.checkRegister(bank,FNMS);
 
-        todayStaff.doInventory(inventory,order,FNMS,register);
+        todayStaff.doInventory(inventory,order,FNMS);
         Seller[] sellers=FNMS.createSellers();
         Buyer[] buyers= FNMS.createBuyers();
 
-        todayStaff.openStore(sellers,buyers,register,inventory,FNMS);
+        todayStaff.openStore(sellers,buyers,inventory,FNMS);
 
         todayStaff.cleanStore(inventory);
         todayStaff.leaveTheShop(FNMS);
@@ -55,7 +59,7 @@ public class Main {
 
 
         System.out.println("-----------------------summarization-------------------------");
-        System.out.println("The total value of items in the inventory is $"+inventory.getTotalValue());
+        System.out.println("The total value of items in the inventory is $"+ FNMS.todayStaff.getTotalValue(inventory));
         System.out.println("The items in the inventory is "+inventory.itemsList);
 
         int totalsoldvalue=0;
@@ -65,7 +69,7 @@ public class Main {
             System.out.format("%s sell a price for $%d on day %d %n",solditem.getName(),solditem.getSalePrice(),solditem.getDaySold());
             totalsoldvalue+=solditem.getSalePrice();
         }  System.out.println("The total value for sold items is $"+totalsoldvalue);
-        System.out.println("The sum of money in the register is $"+register.getMoneysum());
+        System.out.println("The sum of money in the register is $"+FNMS.register.getMoneysum());
             bank.getSum();
 
     }

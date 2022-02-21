@@ -3,8 +3,9 @@ import java.util.*;
 import java.io.*;
 import java.util.stream.Collectors;
 
-public class Inventory {
-
+public class Inventory extends abstractInventory {
+    // justify whether one of the clothing subtype has been soldout;
+    private boolean clothingsellout=false;
     public ArrayList<Items> itemsList=new ArrayList<Items>(); //to record the stock
 
     public HashMap<Class, Integer> countItems = new HashMap<Class, Integer>();  // to record the itemtype and correspondent number
@@ -16,22 +17,23 @@ public class Inventory {
     }
 
     // to calculate the total purchase price of the items in the store inventory= total value
-    public int getTotalValue(){
-        int totalValue = 0;
-        for (Items items: this.itemsList){
 
-            totalValue += items.purchasePrice;
-        }
 
-        return totalValue;
-    }
 
     // The below method is adapted and inspired from (1) https://www.codegrepper.com/code-examples/java/java+stream+get+list+of+one+field,
     // (2) and  https://techvidvan.com/tutorials/java-object-creation/
-    public ArrayList<Items> checkStock(Order order) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-
+    public ArrayList<Items> checkStock(Order order) throws InstantiationException, IllegalAccessException {
+        //update
         ArrayList<Items> waitorder= new ArrayList<Items>();// get the items that may need to restock
         for (Map.Entry<Class,Integer> entry : this.countItems.entrySet()){
+            if(entry.getKey().getClass().getSuperclass().getName().contains("Clothing")){
+                if (entry.getValue()==0| clothingsellout == true){
+                    // once one kind of clothing was soldout, all kinds of clothing will soldout
+                    this.countItems.remove(entry.getKey());
+                    clothingsellout=true;
+                }
+
+            }
             /*get the itemtype that has been ordered to avoid order repeatly.
              https://www.codegrepper.com/code-examples/java/java+stream+get+list+of+one+field
              */
@@ -90,4 +92,34 @@ public class Inventory {
         Items luckyItem = this.itemsList.get(index);
         return luckyItem;
     }
-}
+    public boolean queryClothingStock(){
+        return  this.clothingsellout;
+
+    }
+    public ArrayList<Items> Getitemstosell(String buyitemtype) {
+//        String buyitemtype = buyer.getItemWantToBuy();
+        ArrayList<Items> buyitems=new ArrayList<>();
+        ArrayList<Items> itemsforbuy = new ArrayList<Items>();
+        // get all the items in the inventory that belongs to the specific itemtypes
+        for (Items items : this.itemsList) {//polymorphic I don't care about the what's the specific type of the items
+
+            if (items.getItemType().equals(buyitemtype)) {//identity
+                itemsforbuy.add(items);
+
+            }
+
+        }
+        // if there is no items that qualified the buyer's expectation
+        Items buyitem;
+        if (itemsforbuy.size() == 0) {
+
+            return null;
+
+        } else {
+            Collections.shuffle(itemsforbuy); // use shuffle to simulate select randomly
+            buyitems.add( itemsforbuy.get(0));
+
+            return buyitems;
+        }
+
+    }}

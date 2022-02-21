@@ -41,16 +41,30 @@ class Buyer extends Customer{
         return (inventory.countItems.get(itemName)!=0);
     }
     // The below method is to random chance if the buyer will buy the item or not.
-    public boolean getBuyOrNot(){
-        double a= Math.random();
-        return a< 0.5;
-    }
+    public boolean getBuyOrNot(ArrayList<Items> items,int threshold){
+//        System.out.println(items.property);
+        String[] words={"Wind","Stringed","Players"};
+        //using stream justify a string whether include sevral substrings
+        // : https://blog.csdn.net/neweastsun/article/details/108265666
+        List<String> classlist=Arrays.asList(words);
+        List<String> classname=Arrays.asList(items.get(0).getClass().getSuperclass().getName().split("\\$"));
+        int finalchance=0;
+        Random random=new Random();
+        int basicprob=random.nextInt(101);
+        if (classlist.stream().anyMatch(classname::contains)){
+            if (items.get(0).getProperty().getValue()){
+            int chance=items.get(0).getProperty().getChance();
+        finalchance= basicprob+chance;
+        }
+        else{
+            finalchance=basicprob;
+        }
 
-    public boolean getBuyOrNotWithHigherPrice(){
-        double b= Math.random();
-        return b < 0.75;
+
     }
-}
+        return finalchance< threshold;
+
+}}
 
 
 
@@ -71,13 +85,11 @@ class Seller extends Customer{
     }
 
     //The blow method is to random chance if the seller will sell his item to the store or not.
-    public boolean getsellOrNot(){
-        double a= Math.random();
-        return a< 0.5;
+    public boolean getsellOrNot(int threshold){
+        Random random= new Random();
+        int chance=random.nextInt(101);
+        return chance< threshold;
     }
 
-    public boolean getsellOrNotWithHigherPrice(){
-        double b= Math.random();
-        return b < 0.75;
-    }
+
 }

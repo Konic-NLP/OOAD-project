@@ -1,6 +1,7 @@
+
+
 import java.util.Random;
-
-
+import org.apache.commons.math3.distribution.PoissonDistribution;
 //This class is made of multiple methods with simple functions that are used to create random names, number,prices for items and other classes.
 //This class's methods are examples of Cohesion.
 
@@ -51,7 +52,16 @@ public class Helper {
         int rand_int = random_number(3,1);
         return day+rand_int;
     }
+    //update
+    /* return  a random value sampled from poisson distribution
+    // cite from official document for commons.math package
+    https://commons.apache.org/proper/commons-math/javadocs/api-3.5/org/apache/commons/math3/distribution/PoissonDistribution.html
+     */
+    public static int getPossionDistribution() {
+        PoissonDistribution possion=new PoissonDistribution(3);
+       int rand =possion.sample();
+        return rand;
 
-
+    }
 
 }
