@@ -230,17 +230,17 @@ public class Staff {
 
             // operation: update the inventory, deduct the money from the register, change the saleprice, add record
             // to the soldlist
+//
             System.out.format("%s sold a %s to %s  for  %d  %n",this.getName(),buyitem.getItemType(),buyer.getName(),buyitem.getListPrice());
         }else{
             // otherwise, we will give the buyer a discount
-            int discountprice=(int)(buyitem.getListPrice()*0.9);
-            if(buyer.getBuyOrNot(buyitem,75)==true){
+            int discountprice=(int)(buyitems.get(0).getListPrice()*0.9);
+            if(buyer.getBuyOrNot(buyitems,75)==true){
+                abstractInventory addgigbag= new addgigbag(inventory);
+                for(Items items:addgigbag.Getitemstosell(buyitemtype)){
+                    sellitem(items,store,inventory);
 
-                reg.addmoney(discountprice);
-                inventory.removeItems(buyitem);
-                buyitem.setDaySold(store.getDays());
-                buyitem.setSalePrice(discountprice);
-                store.addSoldItem(buyitem);
+                }
 
                 System.out.format("%s sold a %s to %s  for  %d after a 10%% discount %n",
                         this.getName(),

@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Random;
 import java.util.Random.*;
 
@@ -6,12 +8,13 @@ import java.util.Random.*;
 public class Store {
     private int days; //get the today is what day
     private ArrayList<Items>soldList;// all items that have been sold;
-    private ArrayList<Items>outOfdo_stocklist;// the items that has been sold out, it will clean each day
+    private ArrayList<Items>outOfStocklist;// the items that has been sold out, it will clean each day
     Staff todayStaff; // who is the today's clerk
-
+    public Register register;
     public Store(){
         this.soldList=new ArrayList<Items>();
-        this.outOfdo_stocklist=new ArrayList<Items>();
+        this.outOfStocklist=new ArrayList<Items>();
+        this.register=new Register();
             }
 
     public int getDays(){
@@ -43,7 +46,7 @@ public class Store {
 
     public Buyer[] createBuyers(){
         Random random= new Random();
-        int num= random.nextInt((10-4)+1)+4;
+        int num= Helper.getPossionDistribution()+2;
         Buyer[] buyers=new Buyer[num];
         for(int i=0;i<buyers.length;i++){
             buyers[i]=new Buyer();
@@ -65,35 +68,46 @@ public class Store {
     if a keeps working
 
      */
-    public Staff selectStaff(Staff a, Staff b){
-        if(a.getCwd()==2){
-            this.todayStaff=b;
-            b.addCwd();
-            a.cleanCwd();
+    public Staff selectStaff(ArrayList<Staff> staffs){
+        Random random=new Random();
+        ArrayList<Staff> candidate= new ArrayList<Staff>();
+        // exclude who has worked for 3 days
+        for(int i=0;i<staffs.size();i++){
+            if(staffs.get(i).getCwd()==2){
+                staffs.get(i).cleanCwd();
+
+            }else{
+                candidate.add(staffs.get(i));
+            }
         }
-        else if(b.getCwd()==2){
 
-            this.todayStaff=a;
-            a.addCwd();
-            b.cleanCwd();
+        int sickindex=random.nextInt(3);
+        int workindex=random.nextInt(staffs.size());
+//        Staff assignedStaff=staffs.get(workindex);
 
+        int sickprob=random.nextInt(100);
+        if(sickprob<=10 & workindex==sickindex){
+            // that should be work for that day take a rest,this one cannot work
+            staffs.get(workindex).cleanCwd();
+            candidate.remove(workindex);
+            Collections.shuffle(candidate);
+            // the one who assigned to work for that day get sicks
+            todayStaff=candidate.get(0);
+            candidate.remove(0);
         }
         else{
-
-            // select one from two  https://www.coder.work/article/867957
-            Random random =new Random();
-            todayStaff= random.nextBoolean()?a:b;
-            if (todayStaff==a){
-                a.addCwd();
-                b.cleanCwd();
-
-            }
-            else{
-                b.addCwd();
-                a.cleanCwd();
-            }
-
+            //if the one assigned to that day doesn't get sick, so he/she can work.
+            todayStaff=staffs.get(workindex);
+            candidate.remove(workindex);
         }
+        // the rest who doesn't work for that day get a rest
+        for(Staff staff:candidate){
+            staff.cleanCwd();
+        }
+
+
+
+
     System.out.format("%s arrives at store at day %d  %n",todayStaff.getName(),days);
 
     return todayStaff;
@@ -101,7 +115,7 @@ public class Store {
 
         public void removeItem(){
 
-        this.outOfdo_stocklist.clear();
+        this.outOfStocklist.clear();
 
         }
         public ArrayList<Items> do_stock(){

@@ -33,6 +33,7 @@ import java.util.ArrayList;
 
      public String getItemType() {return this.itemType;}
 
+
      public int getPurchasePrice() {
          return purchasePrice;
      }
