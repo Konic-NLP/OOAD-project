@@ -1,6 +1,9 @@
 
 
+import java.util.ArrayList;
 import java.util.Random;
+import java.util.StringJoiner;
+
 import org.apache.commons.math3.distribution.PoissonDistribution;
 //This class is made of multiple methods with simple functions that are used to create random names, number,prices for items and other classes.
 //This class's methods are examples of Cohesion.
@@ -62,6 +65,18 @@ public class Helper {
        int rand =possion.sample();
         return rand;
 
+    }
+    public static String mergeString(ArrayList<Items> arrayList ){
+        String pre="";
+        String infix=",";
+        String post="";
+        StringJoiner joiner=new StringJoiner(infix,pre,post);
+        for(Items item: arrayList){
+            joiner.add(item.getItemType());
+
+        }
+
+        return joiner.toString();
     }
 
 }

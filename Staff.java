@@ -2,6 +2,8 @@ import java.io.*;
 import java.util.*;
 import java.util.Random.*;
 import java.lang.Object;
+import java.util.stream.Collectors;
+
 public class Staff {
     private String name;
     private int cwd;// to represent 'consecutive_work_days' although it may mix with current work directory :)
@@ -118,7 +120,7 @@ public class Staff {
     public void openStore(Seller[] sellers,Buyer[] buyers,Inventory inventory,Store store) throws InstantiationException, IllegalAccessException {
         for(Buyer buyer:buyers){
 
-                checkWithBuyer(buyer,store.register,inventory,store);
+                checkWithBuyer(buyer,inventory,store);
 
 
             }
@@ -137,7 +139,7 @@ public class Staff {
     public int getTotalValue(Inventory inventory){
         int totalValue = 0;
         ArrayList<Items> maydamage= new ArrayList<Items>();
-        for (Items items: inventory.itemsList){
+        for (Items items: inventory.getItemsList()){
             this.tunealgorithms.operation(items);
 
             if (this.tunealgorithms.T2F){
@@ -213,38 +215,50 @@ public class Staff {
         e.printStackTrace();}}
 
 
-    public void checkWithBuyer(Buyer buyer,Register reg, Inventory inventory,  Store store){
+    public void checkWithBuyer(Buyer buyer, Inventory inventory,  Store store){
         String buyitemtype=buyer.randomItemWantToBuy();
-       ArrayList<Items> buyitems=inventory.Getitemstosell(buyitemtype);
-
-       if(buyitems==null){
+        Inventory inventory1= new addgigbag(inventory);
+       ArrayList<Items> buyitems=inventory1.Getitemstosell(buyitemtype);
+//       System.out.println(buyitems);
+       if(buyitems ==null){
             System.out.format("%s want to buy a %s but none were in inventory , so left%n", buyer.getName(),buyitemtype );
         }else{
             // if the buyer agree to buy with the original price
         if (buyer.getBuyOrNot(buyitems,50)== true){
-            abstractInventory addgigbag= new addgigbag(inventory);
-            for(Items items:addgigbag.Getitemstosell(buyitemtype)){
+
+//            System.out.println(addgigbag);
+//            buyitems=addgigbag.Getitemstosell(buyitemtype);
+            int sum=0;
+            for(Items items:buyitems){
                 sellitem(items,store,inventory);
+                sum+=items.getListPrice();
 
             }
 
             // operation: update the inventory, deduct the money from the register, change the saleprice, add record
             // to the soldlist
 //
-            System.out.format("%s sold a %s to %s  for  %d  %n",this.getName(),buyitem.getItemType(),buyer.getName(),buyitem.getListPrice());
+
+            if(buyitems.size()>1){
+            System.out.print(buyitems);};
+            System.out.format("%s sold a %s to %s  for  %d  %n",this.getName(),Helper.mergeString(buyitems),buyer.getName(),sum);
         }else{
             // otherwise, we will give the buyer a discount
             int discountprice=(int)(buyitems.get(0).getListPrice()*0.9);
             if(buyer.getBuyOrNot(buyitems,75)==true){
-                abstractInventory addgigbag= new addgigbag(inventory);
-                for(Items items:addgigbag.Getitemstosell(buyitemtype)){
+                Inventory addgigbag= new addgigbag(inventory);
+                buyitems=addgigbag.Getitemstosell(buyitemtype);
+                int sum=0;
+                for(Items items:buyitems){
                     sellitem(items,store,inventory);
-
+                    sum+=items.getListPrice();
                 }
+                if(buyitems.size()>1){
+                    System.out.print(buyitems);};
 
                 System.out.format("%s sold a %s to %s  for  %d after a 10%% discount %n",
                         this.getName(),
-                        buyitem.getItemType(),
+                        Helper.mergeString(buyitems),
                         buyer.getName(),
                         discountprice);
 

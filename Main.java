@@ -12,7 +12,7 @@ public class Main {
         Store FNMS = new Store();
         FNMS.nextDay();
 //        Register register = new Register();
-        Inventory inventory = new Inventory();
+        Inventory inventory = new concreteInventory();
 
         //Initialize three objects of each subclass in the Items class and update the inventory.
         ArrayList<Items> totall_list = FNMS.do_stock();
@@ -59,8 +59,12 @@ public class Main {
 
 
         System.out.println("-----------------------summarization-------------------------");
-        System.out.println("The total value of items in the inventory is $"+ FNMS.todayStaff.getTotalValue(inventory));
-        System.out.println("The items in the inventory is "+inventory.itemsList);
+        int totalvalue=0;
+        for(Items item:inventory.getItemsList()){
+            totalvalue+=item.getPurchasePrice();
+        }
+        System.out.println("The total value of items in the inventory is $"+ totalvalue);
+        System.out.println("The items in the inventory is "+inventory.getItemsList());
 
         int totalsoldvalue=0;
         for(int d=0;d<FNMS.getSoldList().size();d++){

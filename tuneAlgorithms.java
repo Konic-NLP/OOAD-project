@@ -9,11 +9,12 @@ abstract class tuneAlgorithms {
 
 
 class haphazard extends tuneAlgorithms {
-    int chance = 20;
+
     boolean T2F;
     @Override
     public void operation(Items items) {
-
+        Random random = new Random();
+        int chance=random.nextInt(101);
 
         if (chance<50){
             if (items.getProperty() !=null){

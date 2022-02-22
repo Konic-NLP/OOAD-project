@@ -35,7 +35,7 @@ class Buyer extends Customer{
 
     // The below method is to check if the store inventory has the item that the customer want to buy.
     // If the inventory does not have the item, the buyer will leave directly.
-    public boolean checkItemsInStore(Inventory inventory){
+    public boolean checkItemsInStore(concreteInventory inventory){
         
         String itemName = this.randomItemWantToBuy();
         return (inventory.countItems.get(itemName)!=0);

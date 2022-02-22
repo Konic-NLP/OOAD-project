@@ -1,28 +1,35 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public abstract class abstractdecorator extends abstractInventory {
+public abstract class abstractdecorator extends Inventory {
 
 }
 class addgigbag extends abstractdecorator{
-     abstractInventory inventory;
-     public addgigbag(abstractInventory inventory){
+     Inventory inventory;
+     public addgigbag(Inventory inventory){
           this.inventory=inventory;
+
+//          System.out.println(this.inventory.);
 
 
      }
      public ArrayList<Items> Getitemstosell(String buyitemtype){
+
           ArrayList<Items> originalitems=this.inventory.Getitemstosell(buyitemtype);
           boolean whetherstring = false;
+          if (originalitems!=null){
           for(Items item:originalitems){
-               if(item.getClass().getName().contains("Stringed")){
+               if(item.getClass().getSuperclass().getName().contains("Stringed")){
+                    System.out.println("*******************************");
                     whetherstring=true;
                }
-          }
+          }}
           if(whetherstring){
-               for(Items item:this.inventory.itemsList){
-                    if(item.getItemType()=="Gigbag"){
+//               System.out.println(this.inventory.itemsList);
+               for(Items item:this.inventory.getItemsList()){
+                    if(item.getItemType()=="MusicCD"){
                          originalitems.add(item);
+                         System.out.println(originalitems);
                          break;
                     }
 
@@ -53,6 +60,8 @@ class addgigbag extends abstractdecorator{
 
      };
 
-
-
+     @Override
+     public ArrayList<Items> getItemsList() {
+          return this.inventory.getItemsList();
+     }
 }
