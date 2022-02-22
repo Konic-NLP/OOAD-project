@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Random;
 
 public abstract class abstractdecorator extends Inventory {
 
@@ -17,6 +18,8 @@ class addgigbag extends abstractdecorator{
 
           ArrayList<Items> originalitems=this.inventory.Getitemstosell(buyitemtype);
           boolean whetherstring = false;
+          Random random= new Random();
+          int chance=random.nextInt(101);
           if (originalitems!=null){
           for(Items item:originalitems){
                if(item.getClass().getSuperclass().getName().contains("Stringed")){
@@ -24,7 +27,7 @@ class addgigbag extends abstractdecorator{
                     whetherstring=true;
                }
           }}
-          if(whetherstring){
+          if(whetherstring&chance<20){
 //               System.out.println(this.inventory.itemsList);
                for(Items item:this.inventory.getItemsList()){
                     if(item.getItemType()=="MusicCD"){
