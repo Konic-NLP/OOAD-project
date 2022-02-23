@@ -1,18 +1,23 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static  void main(String args []) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+    public static  void main(String args []) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
 
-        //Initialize order, bank, store, register and inventory.
+        //Initialize order, bank, store and inventory.
         Order order = new Order();
         Bank bank = new Bank();
         Store FNMS = new Store();
         FNMS.nextDay();
 //        Register register = new Register();
         Inventory inventory = new concreteInventory();
+        Publisher publisher = new Publisher();
+        Tracker tracker = new Tracker(publisher);
+
 
         //Initialize three objects of each subclass in the Items class and update the inventory.
         ArrayList<Items> totall_list = FNMS.do_stock();
@@ -40,17 +45,20 @@ public class Main {
             }else{
 
         Staff todayStaff = FNMS.selectStaff(staffs);
-        todayStaff.arriveAtStore(order,inventory,FNMS);
-        todayStaff.checkRegister(bank,FNMS);
+        Logger logger = new Logger(publisher,String.valueOf(FNMS.getDays()));
 
-        todayStaff.doInventory(inventory,order,FNMS);
+        todayStaff.arriveAtStore(order,inventory,FNMS,publisher);
+        todayStaff.checkRegister(bank,FNMS,publisher);
+        todayStaff.doInventory(inventory,order,FNMS,publisher);
         Seller[] sellers=FNMS.createSellers();
         Buyer[] buyers= FNMS.createBuyers();
 
-        todayStaff.openStore(sellers,buyers,inventory,FNMS);
+        todayStaff.openStore(sellers,buyers,inventory,FNMS,publisher);
 
-        todayStaff.cleanStore(inventory);
-        todayStaff.leaveTheShop(FNMS);
+        todayStaff.cleanStore(inventory,publisher);
+        todayStaff.leaveTheShop(FNMS,publisher);
+        logger.CCGlogger();
+
         System.out.println("---------------------------");
 
         FNMS.nextDay();

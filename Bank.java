@@ -4,7 +4,7 @@ public class Bank {
 
     // put $1000 to register by calling the method
     public int withdraw(){
-        System.out.println("The staff withdraw $1000 from the bank");
+        System.out.println("goToBank: The staff withdraw $1000 from the bank");
         int withdraw = 1000;
         this.sum += 1000;
 

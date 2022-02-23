@@ -164,6 +164,16 @@ import java.util.ArrayList;
             @Override
             public String getItemType(){return this.itemType;}
         }
+        //1.4
+        class Cassette extends Music{
+            public Cassette(){
+                super();
+                this.itemType="Cassette";
+                this.name = Helper.random_name(this.itemType);
+            }
+            @Override
+            public String getItemType(){return this.itemType;}
+        }
 
     //Second subclass
     //2
@@ -228,6 +238,18 @@ import java.util.ArrayList;
             @Override
             public String getItemType(){return this.itemType;}
         }
+        //2.4
+        class CassettePlayer extends Players{
+            public CassettePlayer(){
+                super();
+                this.itemType="CassettePlayer";
+                this.name = Helper.random_name(this.itemType);
+            }
+            @Override
+            public String getItemType(){return this.itemType;}
+        }
+
+
 
     //Third subclass
     //3
@@ -249,7 +271,7 @@ import java.util.ArrayList;
          public Stringed(){
 
                 super();
-             property=new Property(15,"tuned");
+                this.property=new Property(15,"tuned");
                 this.electric = Helper.random_boolean();
                 this.itemType="Stringed";
                 this.name = Helper.random_name(this.itemType);
@@ -370,6 +392,22 @@ import java.util.ArrayList;
                 public String getKey() {
                     return this.key;
                 }
+            }
+
+            //3.2.3
+            class Saxophone extends Wind{
+            protected String type;
+            public Saxophone(){
+                super();
+                this.type = Helper.random_name("type");
+                this.itemType="Saxophone";
+                this.name = Helper.random_name(this.itemType);
+            }
+            @Override
+            public String getItemType(){return this.itemType;}
+            //Addtional getter and setter for additional attributes.
+            public void setType(String itemType) {this.itemType = itemType;}
+            public String getType() {return itemType;}
             }
 
 
@@ -505,6 +543,18 @@ import java.util.ArrayList;
            public void setType (String itemType){this.itemType = itemType;}
            public String getType() {return itemType;}
        }
+
+       //5.4
+       class GigBag extends Accessories{
+           public GigBag(){
+               super();
+               this.itemType="GigBa";
+               this.name = Helper.random_name(this.itemType);
+           }
+           @Override
+           public String getItemType(){return this.itemType;}
+       }
+
 
 
 

@@ -33,6 +33,7 @@ public class concreteInventory extends Inventory {
                     // once one kind of clothing was soldout, all kinds of clothing will soldout
                     this.countItems.remove(entry.getKey());
                     clothingsellout=true;
+                    System.out.println(entry.getKey()+"Clothing items has been removed");
                 }
 
             }

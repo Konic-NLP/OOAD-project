@@ -11,11 +11,14 @@ public class Store {
     private ArrayList<Items>outOfStocklist;// the items that has been sold out, it will clean each day
     Staff todayStaff; // who is the today's clerk
     public Register register;
+//    private Publisher publisher;
+
     public Store(){
         this.soldList=new ArrayList<Items>();
         this.outOfStocklist=new ArrayList<Items>();
         this.register=new Register();
-            }
+//        this.publisher = new Publisher();
+    }
 
     public int getDays(){
         // get today, and increase the date
@@ -45,8 +48,8 @@ public class Store {
     }
 
     public Buyer[] createBuyers(){
-        Random random= new Random();
-        int num= Helper.getPossionDistribution()+2;
+
+        int num= 2+Helper.getPossionDistribution();
         Buyer[] buyers=new Buyer[num];
         for(int i=0;i<buyers.length;i++){
             buyers[i]=new Buyer();
@@ -82,10 +85,11 @@ public class Store {
         }
 
         int sickindex=random.nextInt(3);
-        int workindex=random.nextInt(staffs.size());
+        int workindex=random.nextInt(candidate.size());
+
 //        Staff assignedStaff=staffs.get(workindex);
 
-        int sickprob=random.nextInt(100);
+        int sickprob=random.nextInt(101);
         if(sickprob<=10 & workindex==sickindex){
             // that should be work for that day take a rest,this one cannot work
             staffs.get(workindex).cleanCwd();
@@ -93,35 +97,29 @@ public class Store {
             Collections.shuffle(candidate);
             // the one who assigned to work for that day get sicks
             todayStaff=candidate.get(0);
+            todayStaff.addCwd();
             candidate.remove(0);
         }
         else{
             //if the one assigned to that day doesn't get sick, so he/she can work.
             todayStaff=staffs.get(workindex);
+            todayStaff.addCwd();
             candidate.remove(workindex);
         }
         // the rest who doesn't work for that day get a rest
         for(Staff staff:candidate){
             staff.cleanCwd();
         }
-
-
-
-
-    System.out.format("%s arrives at store at day %d  %n",todayStaff.getName(),days);
-
-    return todayStaff;
-    }
-
+            System.out.format("arriveAtStore: %s arrives at store at day %d  %n",todayStaff.getName(),days);
+        return todayStaff;}
         public void removeItem(){
-
         this.outOfStocklist.clear();
 
         }
-        public ArrayList<Items> do_stock(){
-            ArrayList<Items> itemsList=new ArrayList<Items>();
-            Class[] classlist= new Class[]{};
 
+    public ArrayList<Items> do_stock(){
+        ArrayList<Items> itemsList=new ArrayList<Items>();
+        Class[] classList= new Class[]{};
             for (int i = 0; i<3; i++){
                 itemsList.add(new PaperScore());
             }
@@ -173,8 +171,10 @@ public class Store {
             for (int i = 0; i<3; i++){
                 itemsList.add(new Strings());
             }
-//            System.out.println(itemsList.size());
+            System.out.println("the total number of items in the inventory is  "+itemsList.size());
         return itemsList;}
+
+
 }
 
 

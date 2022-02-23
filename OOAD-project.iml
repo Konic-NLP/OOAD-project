@@ -12,5 +12,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="commons-math3-3.6.1" level="project" />
+    <orderEntry type="library" name="commons-math3-3.6.1-javadoc" level="project" />
+    <orderEntry type="library" name="commons.math" level="project" />
+    <orderEntry type="library" name="commons-math3-3.6.11" level="project" />
   </component>
 </module>

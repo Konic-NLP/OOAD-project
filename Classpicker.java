@@ -27,13 +27,17 @@ public class Classpicker {
         classes.add(PracticeAmps.class);
         classes.add(Cables.class);
         classes.add(Strings.class);
+        classes.add(Saxophone.class);
+        classes.add(Cassette.class);
+        classes.add(CassettePlayer.class);
+        classes.add(GigBag.class);
     }
     //The belowing method is return and create an object of random subclass introduced in the Items.java.
     public static Items MakeRandomInstance() {
         Items a;
         int pick;
         Random r = new Random();
-        pick = r.nextInt(17);
+        pick = r.nextInt(21);
         switch (pick) {
             case 0 :  a  = new PaperScore(); break;
             case 1 : a  = new MusicCD();break;
@@ -52,6 +56,11 @@ public class Classpicker {
             case 14 : a = new Cables();break;
             case 15 : a = new Strings();break;
             case 16 : a = new Guitar();break;
+            case 17 : a = new Saxophone(); break;
+            case 18 : a = new Cassette(); break;
+            case 19 : a = new CassettePlayer(); break;
+            case 20 : a = new GigBag(); break;
+
             default  :{
                 a = null;
                 System.out.println("whoops");
