@@ -60,7 +60,7 @@ public class Staff {
         }
         publisher.notifyObservers(0,this.getName(),0);
         publisher.notifyObservers(1,this.getName(),count);
-        System.out.println("Call the arriveAtStore once.");
+
     }
 
 
@@ -154,9 +154,10 @@ public class Staff {
         int damageCount = 0;
         ArrayList<Items> maydamage= new ArrayList<Items>();
         for (Items items: inventory.getItemsList()){
-            this.tunealgorithms.operation(items);
+            boolean T2F=this.tunealgorithms.operation(this.name,items); // get wehther true to false
 
-            if (this.tunealgorithms.T2F){
+
+            if (T2F&items.getProperty()!=null){ // may damage one item from such a list
 
                 maydamage.add(items);
             }
@@ -164,7 +165,7 @@ public class Staff {
             totalValue += items.purchasePrice;
         }
         for(Items item:maydamage){
-            damageCount +=damageItems(item,inventory,10);}
+            damageCount +=damageItems(item,inventory,10);} // call damage item
         publisher.notifyObservers(6,this.name,damageCount);
         return totalValue;
     }
@@ -186,6 +187,7 @@ public class Staff {
             int purchaseprice=selleritems.getPurchasePrice();
             //get the price based on the condition
             if(selleritems.getClass().getSuperclass().getName().contains("Clothing") & inventory.queryClothingStock()){
+                // once any subtype of clothing was sold out, the store will not buy clothing from sellers anymore.
                 System.out.println("we don't buy any Clothing from the seller due to the stock issues");
                 // test case
                 System.out.println(inventory.getItemsList());
@@ -235,8 +237,12 @@ public class Staff {
 
 
     public int checkWithBuyer(Buyer buyer, Inventory inventory,  Store store) throws IOException {
-
+        String[] notype= new String[]{"Shirts","Hats","Bandanas"};
         String buyitemtype=buyer.randomItemWantToBuy();
+        if(Arrays.asList(notype).contains(buyitemtype)&inventory.queryClothingStock()){
+
+            System.out.println("The Clothing items in the store is outofstock");
+        }else{
         /* decorator: the client will treat the decorated class as the same way as
         the original class object without decorating
 
@@ -255,7 +261,7 @@ public class Staff {
 //            System.out.println(addgigbag);
 //            buyitems=addgigbag.Getitemstosell(buyitemtype);
             int sum=0;
-
+            if(buyitems.size()>1){System.out.println("additional sold items:" +Helper.mergeString(new ArrayList<Items>(buyitems.subList(1,buyitems.size()))));}
             for(Items items:buyitems){
 
                 sellitem(items,store,inventory);
@@ -267,30 +273,30 @@ public class Staff {
             // to the soldlist
 //
 
-            if(buyitems.size()>1){
-            System.out.print(buyitems);};
+
             System.out.format("openStore: %s sold a %s to %s  for  %d  %n",this.getName(),Helper.mergeString(buyitems),buyer.getName(),sum);
             return buyitems.size();
         }else{
             // otherwise, we will give the buyer a discount
             int discountprice=(int)(buyitems.get(0).getListPrice()*0.9);
             if(buyer.getBuyOrNot(buyitems,75)==true){
-//                Inventory addgigbag= new addgigbag(inventory);
-//                buyitems=addgigbag.Getitemstosell(buyitemtype);
+
                 int sum=0;
+                if(buyitems.size()>1){System.out.println("additional sold items:" +Helper.mergeString(new ArrayList<Items>(buyitems.subList(1,buyitems.size()))));}
+
                 for(Items items:buyitems){
 
                     sellitem(items,store,inventory);
                     sum+=items.getListPrice();
                 }
-                if(buyitems.size()>1){
-                    System.out.print(buyitems);};
+//                if(buyitems.size()>1){
+//                    System.out.print(buyitems);};
 
                 System.out.format("%s sold a %s to %s  for  %d after a 10%% discount %n",
                         this.getName(),
                         Helper.mergeString(buyitems),
                         buyer.getName(),
-                        discountprice);
+                        sum);
                 return buyitems.size();
 
             }else{
@@ -301,7 +307,7 @@ public class Staff {
         }
        }
         return 0;
-    }
+    }return 0;}
 
     public void sellitem(Items buyitem,Store store,Inventory inventory){
             store.register.addmoney((buyitem.getListPrice()));
@@ -335,7 +341,7 @@ public class Staff {
             }
         }else{
 
-            System.out.println("nothing happened");
+//            System.out.println("nothing happened");
         }
         return count;
     }

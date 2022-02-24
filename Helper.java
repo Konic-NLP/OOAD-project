@@ -61,12 +61,14 @@ public class Helper {
     https://commons.apache.org/proper/commons-math/javadocs/api-3.5/org/apache/commons/math3/distribution/PoissonDistribution.html
      */
     public static int getPossionDistribution() {
+        // using commons.math package to generate the variate from the distribution
         PoissonDistribution possion=new PoissonDistribution(3);
        int rand =possion.sample();
         return rand;
 
     }
     public static String mergeString(ArrayList<Items> arrayList ){
+        // using string joiner to output the multiple items type when using decorator
         String pre="";
         String infix=",";
         String post="";

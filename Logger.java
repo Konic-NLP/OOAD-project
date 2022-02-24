@@ -9,8 +9,8 @@ public class Logger implements Observer {
 
     public Logger(Subject subject,String days) throws FileNotFoundException {
         this.subject=subject;
-        this.subject.registerObserver(this);
-        Path path= Paths.get("D:\\CLASIC课程\\2022 spring\\CSCI5448OOAD\\",days+".txt");
+        this.subject.registerObserver(this); // add to the observer list
+        Path path= Paths.get(".\\out","Logger"+days+".txt"); // get the output filestream
         File f= new File(String.valueOf(path));
         FileOutputStream fileou= new FileOutputStream(f);
         this.out=new OutputStreamWriter(fileou);
@@ -21,6 +21,7 @@ public class Logger implements Observer {
     }
     @Override
     public void update(int caseNumber,String name, int number) throws IOException {
+        // update would be called inside the notify method of the subject, and do different action based on the code
         switch (caseNumber) {
             case 0: writeToFile(String.format("Publisher:%s has arrived at the store.%n",name));break;
             case 1: writeToFile(String.format("Publisher:%d items has added to inventory.%n",number));break;
@@ -44,7 +45,7 @@ public class Logger implements Observer {
 
         this.out.write(string);
     }
-    public void CCGlogger() throws IOException {
+    public void CCGlogger() throws IOException { // at the end of day, close the file stream
      this.subject.removeObserver(this);
      this.out.close();
     }

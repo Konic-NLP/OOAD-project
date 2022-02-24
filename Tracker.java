@@ -4,9 +4,11 @@ import java.io.File;
 
 public class Tracker implements Observer {
     private int day;
+    // using a nested dict to recoed the data, key of outsider dict is the name of staff, and the key inside the dict
+    // is the items that required to record
     private HashMap<String, HashMap<String, Integer>> content;
     private Subject subject;
-
+    //
     public Tracker(Subject subject) throws FileNotFoundException {
         this.subject = subject;
         this.subject.registerObserver(this);
@@ -33,7 +35,7 @@ public class Tracker implements Observer {
         content.putIfAbsent("Velma",hashMap2);
         this.day=0;
     }
-
+    // update the value in the insider dict based on the code
     @Override
     public void update(int caseNumber, String name, int number) {
 
@@ -53,7 +55,7 @@ public class Tracker implements Observer {
                 newNumber = content.get(name).get("Items Purchased") + number;
                 content.get(name).replace("Items Purchased", newNumber);
                 break;
-            case 11:
+            case 12:
                 this.day+=1;
                 write();
                 break;

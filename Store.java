@@ -68,19 +68,24 @@ public class Store {
     /*
 
     select today's staff
-    if a keeps working
+    create two arraylist: one is the original the other is for select today's clerk(exclude the ones has work for 2days)
+    then check whether the one get sick is the one should have worked for that day, if so, choose other ones in the candidate.
+    otherwise, choose the one assigned for that day to work
 
      */
     public Staff selectStaff(ArrayList<Staff> staffs){
+
         Random random=new Random();
-        ArrayList<Staff> candidate= new ArrayList<Staff>();
+        ArrayList<Staff> candidate= new ArrayList<>();
+        for(Staff staff:staffs){
+            candidate.add(staff);
+        }
         // exclude who has worked for 3 days
         for(int i=0;i<staffs.size();i++){
             if(staffs.get(i).getCwd()==2){
                 staffs.get(i).cleanCwd();
+                candidate.remove(staffs.get(i));
 
-            }else{
-                candidate.add(staffs.get(i));
             }
         }
 
@@ -90,10 +95,14 @@ public class Store {
 //        Staff assignedStaff=staffs.get(workindex);
 
         int sickprob=random.nextInt(101);
-        if(sickprob<=10 & workindex==sickindex){
+        //sickprob<10:not invoke
+//        workindex<candidate.size(): the one who has been worked for 2 days got sick
+        if(sickprob<=10 &staffs.get(sickindex)==candidate.get(workindex)){
+            String sickname=staffs.get(sickindex).getName();
+            System.out.format("%s had assigned to work for day %d, but %s got sick %n",sickname,this.days,sickname);
             // that should be work for that day take a rest,this one cannot work
-            staffs.get(workindex).cleanCwd();
-            candidate.remove(workindex);
+            staffs.get(sickindex).cleanCwd();
+            candidate.remove(staffs.get(sickindex));
             Collections.shuffle(candidate);
             // the one who assigned to work for that day get sicks
             todayStaff=candidate.get(0);
@@ -102,9 +111,9 @@ public class Store {
         }
         else{
             //if the one assigned to that day doesn't get sick, so he/she can work.
-            todayStaff=staffs.get(workindex);
+            todayStaff=candidate.get(workindex);
             todayStaff.addCwd();
-            candidate.remove(workindex);
+            candidate.remove(candidate.get(workindex));
         }
         // the rest who doesn't work for that day get a rest
         for(Staff staff:candidate){
@@ -112,10 +121,9 @@ public class Store {
         }
             System.out.format("arriveAtStore: %s arrives at store at day %d  %n",todayStaff.getName(),days);
         return todayStaff;}
-        public void removeItem(){
-        this.outOfStocklist.clear();
 
-        }
+
+
 
     public ArrayList<Items> do_stock(){
         ArrayList<Items> itemsList=new ArrayList<Items>();
@@ -171,6 +179,12 @@ public class Store {
             for (int i = 0; i<3; i++){
                 itemsList.add(new Strings());
             }
+        for (int i = 0; i<3; i++){itemsList.add(new Saxophone());}
+        for (int i = 0; i<3; i++){itemsList.add(new Cassette());}
+        for (int i = 0; i<3; i++){itemsList.add(new CassettePlayer());}
+        for (int i = 0; i<3; i++){itemsList.add(new GigBag());}
+
+
             System.out.println("the total number of items in the inventory is  "+itemsList.size());
         return itemsList;}
 

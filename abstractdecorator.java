@@ -7,6 +7,8 @@ public abstract class abstractdecorator extends Inventory {
 
 }
 class addgigbag extends abstractdecorator{
+
+
      Inventory inventory;
 
      public addgigbag(Inventory inventory){
@@ -17,38 +19,44 @@ class addgigbag extends abstractdecorator{
 
      }
      public ArrayList<Items> Getitemstosell(String buyitemtype){
-
+          /* Decorator
+          get the original list, and check the stock based on the probability and the electric property
+          if the addition is at stock, add to the original list.
+           */
           ArrayList<Items> originalitems=this.inventory.Getitemstosell(buyitemtype);
+          //get the original list
           boolean whetherstring = false;
           Random random=new Random();
           int threshold=10;
           int chance= random.nextInt(101);
           if (originalitems!=null) {
                Items originalitem=originalitems.get(0);
-//               boolean electric=false;
+//
                // confirm that the buyer want to buy a stringed instruments and it in the stock,then get the eletric
           if (originalitem.getClass().getSuperclass().getName().contains("Stringed")) {
-               System.out.println("gigbag*******************************");
+               // using forced type conversion to get the electric field
                whetherstring = true;
                Stringed stringedinstrument= (Stringed) originalitem;
                if(stringedinstrument.getElectric()){
-                    threshold+=10;
+                    threshold+=10;// if so, then the probability increase
                }
           }
 
 
                if (whetherstring & chance <= threshold) {
+                    // if stringed in list
 //               System.out.println(this.inventory.itemsList);
                     for (Items item : this.inventory.getItemsList()) {
+                         // check the stock and add the item to the list
                          if (Objects.equals(item.getItemType(), "Gigbag")) {
                               originalitems.add(item);
-
+                              System.out.println("add one gigbag additionally");
                               break;
                          }
 
                     }
                }
-               System.out.println(originalitems);
+//               System.out.println(originalitems);
                return originalitems;
 
           }
@@ -102,7 +110,7 @@ class addPracticeAmp extends abstractdecorator{
 //               boolean electric=false;
                // confirm that the buyer want to buy a stringed instruments and it in the stock,then get the eletric
                if (originalitem.getClass().getSuperclass().getName().contains("Stringed")) {
-                    System.out.println("practiceamp*******************************");
+
                     whetherstring = true;
                     Stringed stringedinstrument= (Stringed) originalitem;
                     if(stringedinstrument.getElectric()){
@@ -114,12 +122,12 @@ class addPracticeAmp extends abstractdecorator{
                for(Items item:this.inventory.getItemsList()){
                     if(Objects.equals(item.getItemType(), "PracticeAmps")){
                          originalitems.add(item);
-
+                         System.out.println("add a practiceamp additionally");
                          break;
                     }
 
                }}
-               System.out.println(originalitems);
+
                return originalitems;
 
           }
@@ -172,7 +180,7 @@ class addCables extends abstractdecorator{
           if (originalitems!=null){
                  Items originalitem=originalitems.get(0);
                     if(originalitem.getClass().getSuperclass().getName().contains("Stringed")){
-                         System.out.println("cables*******************************");
+
                          whetherstring=true;
                          Stringed stringeditem=(Stringed)originalitem;
                          if(stringeditem.getElectric()){
@@ -185,14 +193,15 @@ class addCables extends abstractdecorator{
                for(Items item:this.inventory.getItemsList()){
                     if(Objects.equals(item.getItemType(), "Cables")){
                          originalitems.add(item);
-
+                         System.out.println("add a cables additionally");
                          num-=1;
                          if (num==0){
                          break;}
+
                     }
 
                }
-               System.out.println(originalitems);
+
                return originalitems;
 
           }
@@ -245,7 +254,7 @@ class addStrings extends abstractdecorator{
           if (originalitems!=null){
                Items originalitem=originalitems.get(0);
                     if(originalitem.getClass().getSuperclass().getName().contains("Stringed")){
-                         System.out.println("Strings*******************************");
+
                          whetherstring=true;
                          Stringed stringeditem=(Stringed)originalitem;
                          if(stringeditem.getElectric()){
@@ -258,14 +267,15 @@ class addStrings extends abstractdecorator{
                for(Items item:this.inventory.getItemsList()){
                     if(Objects.equals(item.getItemType(), "Strings")){
                          originalitems.add(item);
-
+                         System.out.println("adda Strings additionally");
                          num-=1;
                          if (num==0){
                               break;}
                     }
 
+
                }
-               System.out.println(originalitems);
+
                return originalitems;
 
           }

@@ -24,7 +24,7 @@ class Buyer extends Customer{
     public String randomItemWantToBuy(){
         String[] typeList = {"PaperScore", "MusicCD", "Vinyl", "PlayerCD", "RecordPlayer", "MP3"
                 , "Guitar", "Bass", "Mandolin", "Flute", "Harmonica", "Hats", "Shirts", "Bandanas"
-                , "PracticeAmps", "Cables", "Strings"};
+                , "PracticeAmps", "Cables", "Strings","Saxophone","Cassette","CassettePlayer","GigBag"};
 
         String itemName = typeList[new Random().nextInt(typeList.length)];
         return itemName;
@@ -47,6 +47,8 @@ class Buyer extends Customer{
         //using stream justify a string whether include sevral substrings
         // : https://blog.csdn.net/neweastsun/article/details/108265666
         List<String> classlist=Arrays.asList(words);
+        // detect the items whether belongs to the classes that have property, if so, look up the property and
+        // get the corresponding chance and add it to the random chance
         List<String> classname=Arrays.asList(items.get(0).getClass().getSuperclass().getName().split("\\$"));
         int finalchance=0;
         Random random=new Random();
@@ -54,6 +56,7 @@ class Buyer extends Customer{
         if (classlist.stream().anyMatch(classname::contains)){
             if (items.get(0).getProperty().getValue()){
             int chance=items.get(0).getProperty().getChance();
+
         finalchance= basicprob+chance;
         }
         else{

@@ -1,18 +1,20 @@
 import java.lang.reflect.Constructor;
 import java.util.*;
 import java.io.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 public class concreteInventory extends Inventory {
     // justify whether one of the clothing subtype has been soldout;
-    private boolean clothingsellout=false;
+    private boolean clothingsellout=false;// mark whether the Clothing has been sold out even if current subtype
+    //is not the first ones to be sold out
     public ArrayList<Items> itemsList=new ArrayList<Items>(); //to record the stock
 
-    public HashMap<Class, Integer> countItems = new HashMap<Class, Integer>();  // to record the itemtype and correspondent number
+    public ConcurrentHashMap<Class, Integer> countItems = new ConcurrentHashMap<Class, Integer>();  // to record the itemtype and correspondent number
 
     public concreteInventory(){
 
-        this.countItems = new HashMap<Class, Integer>();
+        this.countItems = new ConcurrentHashMap<Class, Integer>();
 
     }
     public ArrayList<Items> getItemsList(){
@@ -25,15 +27,25 @@ public class concreteInventory extends Inventory {
     // The below method is adapted and inspired from (1) https://www.codegrepper.com/code-examples/java/java+stream+get+list+of+one+field,
     // (2) and  https://techvidvan.com/tutorials/java-object-creation/
     public ArrayList<Items> checkStock(Order order) throws InstantiationException, IllegalAccessException {
+
+
         //update
         ArrayList<Items> waitorder= new ArrayList<Items>();// get the items that may need to restock
+
+
         for (Map.Entry<Class,Integer> entry : this.countItems.entrySet()){
-            if(entry.getKey().getClass().getSuperclass().getName().contains("Clothing")){
+
+            if(entry.getKey().getSuperclass().toString().contains("Clothing")){
+                // if the superclass of the items is class
                 if (entry.getValue()==0| clothingsellout == true){
+                    // the or means that it might be the first subtype
+                    //clothing that to be sold out, or has been sold out
                     // once one kind of clothing was soldout, all kinds of clothing will soldout
                     this.countItems.remove(entry.getKey());
+                    // once any kind of clothing was sold out, the rest type of clothing will remove.
                     clothingsellout=true;
-                    System.out.println(entry.getKey()+"Clothing items has been removed");
+                    // mark that the one subtype of clothing has sold out
+                    System.out.println(entry.getKey()+" items has been removed");
                 }
 
             }
@@ -49,8 +61,10 @@ public class concreteInventory extends Inventory {
                  */
                 Items newitem= (Items) entry.getKey().newInstance();
 //                System.out.println(newitem);
+                if(newitem.getClass().getSuperclass().toString().contains("Clothing")==false){
+                    waitorder.add(newitem);
+                }
 
-                waitorder.add(newitem);
 
     }}
         return waitorder;
@@ -78,7 +92,9 @@ public class concreteInventory extends Inventory {
     public void removeItems(Items items){
 
         this.itemsList.remove(items);
-        this.countItems.put(items.getClass(),this.countItems.get(items.getClass())-1);
+
+
+        this.countItems.replace(items.getClass(),this.countItems.get(items.getClass())-1);
 
     }
 

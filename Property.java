@@ -1,4 +1,7 @@
 public class Property {
+    /*
+    refer to each items which have the equalized/adjusted/tuned
+     */
     private String type;
     private boolean value=false;
     private int chance=0;

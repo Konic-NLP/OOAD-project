@@ -16,7 +16,7 @@ public class Order {
     public void orderItems(Class classname,Store store) throws InstantiationException, IllegalAccessException {
 
         Random random=new Random();
-        int arriveDate=store.getDays()+random.nextInt(3-1)+1;
+        int arriveDate=store.getDays()+random.nextInt(3-1+1)+1;
         for (int i=0;i<3;i++){
             Items item1=(Items)classname.newInstance();
             item1.setDayArrived(arriveDate);

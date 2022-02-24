@@ -29,18 +29,21 @@ public class Main {
         ArrayList<Staff> staffs=new ArrayList<Staff>();
         staffs.add(new Staff(5,"Velma",new haphazard()));
         staffs.add(new Staff(20,"Shaggy",new Electronic()));
-        staffs.add( new Staff(15,"Daphne",new Mannual()));;
+        staffs.add( new Staff(15,"Daphne",new Mannual()));// new clerk
 
 
         //Run the Store for 30 days.
         for(int i=0;i<30;i++){
             if (FNMS.getDays()%7==0){
                 FNMS.nextDay();
+                publisher.notifyObservers(11,"",0);
                 System.out.println("today is Sunday, so the store closed ");
+                publisher.notifyObservers(12,"",0);
                 System.out.println("-----------------------------------");
                 for(Staff staff:staffs){
                     staff.cleanCwd();
                 }
+
                 continue;
             }else{
 
@@ -58,7 +61,7 @@ public class Main {
         todayStaff.cleanStore(inventory,publisher);
         todayStaff.leaveTheShop(FNMS,publisher);
         logger.CCGlogger();
-
+                publisher.notifyObservers(12,"",0);
         System.out.println("---------------------------");
 
         FNMS.nextDay();
