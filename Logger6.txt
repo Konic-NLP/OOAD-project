@@ -1,0 +1,10 @@
+Publisher:Shaggy has arrived at the store.
+Publisher:0 items has added to inventory.
+Publisher:$1395 is in the register.
+Publisher:0 items has been damaged in the process of tuning.
+Publisher:67 items are in the inventory in total.
+Publisher:The total value in the inventory is $1463.
+Publisher:2 items has been sold.
+Publisher:6 items has been purchased.
+Publisher:0 items has been damaged in the process of cleaning.
+Publisher:Shaggy has left the store.

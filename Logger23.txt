@@ -1,0 +1,10 @@
+Publisher:Velma has arrived at the store.
+Publisher:0 items has added to inventory.
+Publisher:$3267 is in the register.
+Publisher:1 items has been damaged in the process of tuning.
+Publisher:78 items are in the inventory in total.
+Publisher:The total value in the inventory is $1418.
+Publisher:3 items has been sold.
+Publisher:9 items has been purchased.
+Publisher:0 items has been damaged in the process of cleaning.
+Publisher:Velma has left the store.
