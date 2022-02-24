@@ -4,7 +4,8 @@
 Java Version:16.0.2 <br>
 Code Version:2.0 <br>
 
-The output result of our code is in output.txt. <br>
+The output results of our code are in output folder. <br>
+The Junit Tests are in the test folder. <br> 
 
 The link to Project2 Part1 version of UML:
 [UML 1.0](https://drive.google.com/file/d/1DqevxZm52xK2XGYTwmdSzqwT_yVpVpwH/view?usp=sharing)
@@ -14,19 +15,23 @@ The link to Project2 Part2 version of UML:
 [UML 1.1](https://drive.google.com/file/d/1VHzqbyiT67pNIZOGk6VxLyTKSjVw6SfF/view?usp=sharing)
 <br>
 
-The link to the document that describes the changes from 1.0 to 1.1 of our UML: 
-[UML Documentation1](https://docs.google.com/document/d/1-oRimywqX2OO93JRNCVeBiB7w9DjRaM1/edit?usp=sharing&ouid=107958256533487600087&rtpof=true&sd=true) <br>
-
 The link to Project3 Part1 version of UML:
-[UML 2.0]
+[UML 2.0](https://drive.google.com/file/d/1m1sBKMnuXuZXXbP9N78wuhJgt7NsPCx_/view?usp=sharing)
 <br>
 
 The link to Prpject3 Part2 (current) version of UML:
-[UML 2.1]
+[UML 2.1](https://drive.google.com/file/d/1m1sBKMnuXuZXXbP9N78wuhJgt7NsPCx_/view?usp=sharing)
 <br>
 
-The link to the document that describes the changes from 2.0 to 2.1 of our UML: 
-[UML Documentation2](https://docs.google.com/document/d/1-oRimywqX2OO93JRNCVeBiB7w9DjRaM1/edit?usp=sharing&ouid=107958256533487600087&rtpof=true&sd=true) <br>
+The link to the document that describes the changes from 1.0 to 1.1 of our UML: 
+[UML Documentation1](https://docs.google.com/document/d/1-oRimywqX2OO93JRNCVeBiB7w9DjRaM1/edit?usp=sharing&ouid=107958256533487600087&rtpof=true&sd=true) <br>
+
+The link to the document that describes the changes from 1.1 to 2.0 of our UML: 
+[UML Documentation2](https://docs.google.com/document/d/1BesRkDBqgKqdcQbCI5BAd9jSxvViktC3CdPi2sptryk/edit?usp=sharing) <br>
+
+The link to the document that describes the changes from 1.1 to 2.0 of our UML: 
+[UML Documentation3](https://docs.google.com/document/d/1SlzilDsgJlP43i0qHNBBo2lF20u1aGkEvNOy1AfkgkM/edit?usp=sharing) <br>
+
 
 <h3>To make the code run, we adopt the bellowing modifications/Assumptions:</h3><br>
 <ol>
@@ -46,16 +51,3 @@ The link to the document that describes the changes from 2.0 to 2.1 of our UML:
 
 <li> generate Poisson distribution with commons.math3 jar package.</li>
  <li> each day one person who is may be responsible for that day or not get sick with the probability, anyone who is not responsible for that day will reset his/her consecutive work days.</li> 
-
-  
-  
-  
-</ol>
-<h3>As for the OO term examples: </h3><br>
-<ol>
-  <li>Examples of Inheritance can be found in Items.java, where each subclass inherits from the Parent class.</li>
-<li>Examples of Polymorphism can be found in Items.java, where subclass's Constructor and getter method overrides the Parent Class. Examples of Polymorphism can also be found in the Staff.java</li>
-<li>Examples of Cohesion can be found in Helper,java, where each method only has one basic thing/function to do.</li>
-<li>One example of Identity can be found in Staff.java, where the checkWithBuyer method check the content of two objects instead of the identity of two objects.</li>
-<li>Examples of Encapsulation can be found in Items.java, where classes' attributes are private and protected.</li>
-<li>One Example of Abstraction can be found in Staff.java, where the cehckRegister delegates with other methods, without concerning the details.</li></ol>
