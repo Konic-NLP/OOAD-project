@@ -19,10 +19,18 @@ public class Tracker implements Observer {
 //        System.out.println(content.toString());
         content.putIfAbsent("Shaggy",hashMap);
 
+        HashMap<String,Integer> hashMap1 = new HashMap<>();
+        hashMap1.putIfAbsent("Items Sold",0);
+        hashMap1.putIfAbsent("Items Purchased",0);
+        hashMap1.putIfAbsent("Items Damaged",0);
 //        System.out.println(hashMap.toString());
 //        System.out.println(content.toString());
-        content.putIfAbsent("Daphne",hashMap);
-        content.putIfAbsent("Velma",hashMap);
+        content.putIfAbsent("Daphne",hashMap1);
+        HashMap<String,Integer> hashMap2 = new HashMap<>();
+        hashMap2.putIfAbsent("Items Sold",0);
+        hashMap2.putIfAbsent("Items Purchased",0);
+        hashMap2.putIfAbsent("Items Damaged",0);
+        content.putIfAbsent("Velma",hashMap2);
         this.day=0;
     }
 
