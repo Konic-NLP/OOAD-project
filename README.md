@@ -40,8 +40,17 @@ The link to the document that describes the changes from 2.0 to 2.1 of our UML:
     <li>saleprice:when the buyer second time to consult with the price;</li>
     <li>purchaseprice: the price for ordered new items;</li>
     </ol>
-</ol>
 
+<li> once any kind of clothing would be sold out, the rest subtypes of clothing would also be removed from the inventory </li>
+<li> if the customer want to buy stringed instruments, even if some kind of additional items the customer may also want to buy out of stock, it will not impact this whole transaction. e.g,  no gigbag in the store but Strings, the customer will buy Stringed instruments + Strings</li>
+
+<li> generate Poisson distribution with commons.math3 jar package</li>
+ <li> each day one person who is may be responsible for that day or not get sick with the probability, anyone who is not responsible for that day will reset his/her consecutive work days</li> 
+
+  
+  
+  
+</ol>
 <h3>As for the OO term examples: </h3><br>
 <ol>
   <li>Examples of Inheritance can be found in Items.java, where each subclass inherits from the Parent class.</li>
