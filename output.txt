@@ -1,650 +1,1132 @@
-Shaggy arrives at store at day 1  
-On day 1, $0 is in the register
-The staff withdraw $1000 from the bank
-The total value of all the items in the store is $1046
-BuyerJ265 didn't buy since he dissatisfied with the price 
-Shaggy sold a RecordPlayer to BuyerA739 for $28  
-Shaggy sold a Bandanas to BuyerD681 for $34  
-Shaggy sold a Hats to BuyerH887 for $38  
-Shaggy sold a PlayerCD to BuyerC388 for $62  
-Shaggy bought a Fair new RecordPlayer from SellerG875 for $3 
-Shaggy bought a Excellent used Hats from SellerJ548 for $32 
-Shaggy bought a Fair used Shirts from SellerD576 for $1  
-Shaggy bought a Good used Hats from SellerA98 for $2  
-Shaggy bought a Excellent new Guitar from SellerF128 for $35  
-It's wonderful day: nothing was damaged
-Shaggy closed the store on day 1 and came back home 
+the total number of items in the inventory is  63
+arriveAtStore: Velma arrives at store at day 1  
+Check register: today 1, 0 in the register
+goToBank: The staff withdraw $1000 from the bank
+Velma using haphard tunealgorithm change a RecordPlayer from not equalized to equalized 
+Velma using haphard tunealgorithm change a RecordPlayer from not equalized to equalized 
+Velma using haphard tunealgorithm change a PlayerCD from not equalized to equalized 
+Velma using haphard tunealgorithm change a MP3 from not equalized to equalized 
+Velma using haphard tunealgorithm change a MP3 from not equalized to equalized 
+Velma using haphard tunealgorithm change a Guitar from not tuned to tuned 
+Velma using haphard tunealgorithm change a Flute from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a Flute from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a Harmonica from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a Saxophone from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from not equalized to equalized 
+Do inventory: The total value of all the items in the store is 1538
+openStore: Velma sold a PracticeAmps to BuyerI525  for  94  
+openStore: Velma sold a Flute to BuyerD348  for  74  
+openStore: Velma sold a Hats to BuyerF39  for  24  
+openStore: Velma sold a Hats to BuyerF974  for  84  
+openStore: Velma sold a Strings to BuyerB467  for  56  
+openStore: Velma bought a Very Good used Bandanas from SellerH598 for 17  
+OpenStore: Velma bought a Excellent new Guitar from SellerJ893 for 28 
+the SellerC234 doesn't sell Cassette since he dissatisfied with the price 
+openStore: Velma bought a Good used Guitar from SellerI686 for 16  
+OpenStore: Velma bought a Excellent used Flute from SellerF445 for 32 
+OpenStore: Velma bought a Very Good used Saxophone from SellerG929 for 24 
+the SellerC356 doesn't sell Guitar since he dissatisfied with the price 
+Leave Store: Velma close the store at the day 1 and back home 
+++++++++++++++++++
+Day: 1
+{Shaggy={Items Purchased=0, Items Sold=0, Items Damaged=0}, Daphne={Items Purchased=0, Items Sold=0, Items Damaged=0}, Velma={Items Purchased=5, Items Sold=5, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Shaggy arrives at store at day 2  
-On day 2, $1089 is in the register
-The total value of all the items in the store is $1035
-BuyerG549 didn't buy since he dissatisfied with the price 
-Shaggy sold a Bass to BuyerA898 for $48  
-Shaggy sold a PaperScore to BuyerF983 for $68 after a 10% discount 
-Shaggy sold a Cables to BuyerA535 for $16 after a 10% discount 
-Shaggy sold a Strings to BuyerJ955 for $81 after a 10% discount 
-Shaggy sold a Strings to BuyerJ153 for $10  
-Shaggy sold a Strings to BuyerH553 for $2  
-Shaggy sold a PaperScore to BuyerD763 for $88 after a 10% discount 
-Shaggy sold a Harmonica to BuyerG376 for $98  
-SellerH545 didn't sell Hats since they dissatisfied with the price 
-SellerG148 didn't sell Bandanas since they dissatisfied with the price 
-Shaggy bought a Very Good new PaperScore from SellerC443 for $12 
-Shaggy bought a Very Good new RecordPlayer from SellerE418 for $9  
-Shaggy bought a Excellent used Shirts from SellerE204 for $13  
-Shaggy bought a Excellent new Guitar from SellerD324 for $8 
-Shaggy bought a Excellent used Bandanas from SellerF147 for $4 
-Shaggy bought a Very Good used Harmonica from SellerJ997 for $3  
-Shaggy bought a Very Good used MusicCD from SellerI501 for $3 
-Shaggy closed the store on day 2 and came back home 
+arriveAtStore: Shaggy arrives at store at day 2  
+Check register: today 2, 1215 in the register
+Shaggy using Manual tunealgorithm change a RecordPlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Bass from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Bass from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Bass from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Flute from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Do inventory: The total value of all the items in the store is 1487
+openStore: Shaggy sold a Strings to BuyerH491  for  28  
+BuyerA223 doesn't buy anything and leave because the dissatisfaction for the price 
+openStore: Shaggy sold a Hats to BuyerE336  for  34  
+OpenStore: Shaggy bought a Very Good used CassettePlayer from SellerF720 for 18 
+the SellerJ559 doesn't sell PracticeAmps since he dissatisfied with the price 
+the SellerJ264 doesn't sell Vinyl since he dissatisfied with the price 
+the SellerF54 doesn't sell Flute since he dissatisfied with the price 
+Leave Store: Shaggy close the store at the day 2 and back home 
+++++++++++++++++++
+Day: 2
+{Shaggy={Items Purchased=1, Items Sold=2, Items Damaged=0}, Daphne={Items Purchased=0, Items Sold=0, Items Damaged=0}, Velma={Items Purchased=5, Items Sold=5, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Velma arrives at store at day 3  
-On day 3, $1448 is in the register
-The total value of all the items in the store is $866
-Velma ordered Strings at the 3 day 
-Velma sold a Vinyl to BuyerI548 for $96  
-Velma sold a Bandanas to BuyerD29 for $12 after a 10% discount 
-BuyerC108 didn't buy since he dissatisfied with the price 
-BuyerA781 wanted to buy a Strings but none were in inventory, so they left
-Velma sold a Hats to BuyerC621 for $72  
-Velma sold a Vinyl to BuyerJ841 for $72  
-Velma sold a Flute to BuyerG562 for $42  
-Velma sold a Bandanas to BuyerF82 for $32  
-Velma bought a Very Good used Strings from SellerA374 for $19  
-SellerJ465 didn't sell MP3 since they dissatisfied with the price 
-Velma bought a Very Good new Harmonica from SellerE480 for $26  
-Velma bought a Excellent used Bandanas from SellerA511 for $44  
-SellerI541 didn't sell PaperScore since they dissatisfied with the price 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 3 and came back home 
+Daphne had assigned to work for day 3, but Daphne got sick 
+arriveAtStore: Shaggy arrives at store at day 3  
+Check register: today 3, 1259 in the register
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Do inventory: The total value of all the items in the store is 1474
+class Hats items has been removed
+openStore: Shaggy sold a Guitar to BuyerH746  for  26  
+openStore: Shaggy sold a MusicCD to BuyerA90  for  96  
+BuyerG704 doesn't buy anything and leave because the dissatisfaction for the price 
+The Clothing items in the store is outofstock
+OpenStore: Shaggy bought a Excellent used Mandolin from SellerI868 for 28 
+openStore: Shaggy bought a Good used PaperScore from SellerJ697 for 6  
+OpenStore: Shaggy bought a Very Good used Cables from SellerE80 for 15 
+OpenStore: Shaggy bought a Very Good used Saxophone from SellerH158 for 24 
+openStore: Shaggy bought a Good used RecordPlayer from SellerB548 for 3  
+Damage: Shaggy destroyed a RecordPlayerG647 by accident 
+Leave Store: Shaggy close the store at the day 3 and back home 
+++++++++++++++++++
+Day: 3
+{Shaggy={Items Purchased=6, Items Sold=4, Items Damaged=1}, Daphne={Items Purchased=0, Items Sold=0, Items Damaged=0}, Velma={Items Purchased=5, Items Sold=5, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Velma arrives at store at day 4  
-On day 4, $1652 is in the register
-The total value of all the items in the store is $784
-Velma sold a Flute to BuyerD570 for $22  
-Velma sold a PaperScore to BuyerF312 for $73 after a 10% discount 
-Velma sold a Shirts to BuyerD747 for $81 after a 10% discount 
-Velma sold a MusicCD to BuyerC474 for $32 after a 10% discount 
-Velma sold a Strings to BuyerC39 for $25 after a 10% discount 
-Velma sold a PracticeAmps to BuyerJ332 for $10  
-Velma bought a Very Good used Vinyl from SellerI226 for $21 
-Velma bought a Good new Mandolin from SellerE660 for $12 
-SellerH109 didn't sell Vinyl since they dissatisfied with the price 
-Velma bought a Fair new Harmonica from SellerA344 for $5 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 4 and came back home 
+arriveAtStore: Velma arrives at store at day 4  
+Check register: today 4, 1305 in the register
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Mandolin from not tuned to tuned 
+Do inventory: The total value of all the items in the store is 1466
+class Bandanas items has been removed
+class Shirts items has been removed
+openStore: BuyerI730 want to buy a GigBag but none were in inventory , so left
+BuyerI506 doesn't buy anything and leave because the dissatisfaction for the price 
+openStore: Velma sold a MusicCD to BuyerF737  for  26  
+The Clothing items in the store is outofstock
+openStore: Velma bought a Poor new PracticeAmps from SellerI59 for 4  
+the SellerC576 doesn't sell Cassette since he dissatisfied with the price 
+the SellerA360 doesn't sell Guitar since he dissatisfied with the price 
+openStore: Velma bought a Fair used Harmonica from SellerA345 for 19  
+OpenStore: Velma bought a Fair used MusicCD from SellerC524 for 5 
+Leave Store: Velma close the store at the day 4 and back home 
+++++++++++++++++++
+Day: 4
+{Shaggy={Items Purchased=6, Items Sold=4, Items Damaged=1}, Daphne={Items Purchased=0, Items Sold=0, Items Damaged=0}, Velma={Items Purchased=8, Items Sold=6, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Shaggy arrives at store at day 5  
- the  StringsI444 get arrived at the store on day 5 
- the  StringsF926 get arrived at the store on day 5 
- the  StringsD925 get arrived at the store on day 5 
-On day 5, $1857 is in the register
-The total value of all the items in the store is $782
-Shaggy sold a Bandanas to BuyerJ481 for $14 after a 10% discount 
-Shaggy sold a MusicCD to BuyerF966 for $68  
-Shaggy sold a PracticeAmps to BuyerI337 for $58  
-Shaggy sold a Shirts to BuyerC402 for $38  
-Shaggy sold a Guitar to BuyerF968 for $55 after a 10% discount 
-Shaggy bought a Excellent new Cables from SellerB658 for $16 
-Shaggy bought a Fair new Flute from SellerH495 for $9  
-Shaggy bought a Fair used Bandanas from SellerJ56 for $2 
-Shaggy bought a Excellent used Bandanas from SellerC796 for $8 
-Shaggy bought a Excellent new Mandolin from SellerE984 for $16 
-Shaggy bought a Very Good used Flute from SellerD9 for $26  
-SellerF530 didn't sell RecordPlayer since they dissatisfied with the price 
-It's wonderful day: nothing was damaged
-Shaggy closed the store on day 5 and came back home 
+arriveAtStore: Velma arrives at store at day 5  
+Check register: today 5, 1303 in the register
+Velma using haphard tunealgorithm change a RecordPlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a PlayerCD from not equalized to equalized 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Mandolin from not tuned to tuned 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Saxophone from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from not equalized to equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from not tuned to tuned 
+Velma using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a RecordPlayer from not equalized to equalized 
+Velma using haphard tunealgorithm change a Harmonica from not adjusted to adjusted 
+Do inventory: The total value of all the items in the store is 1480
+openStore: Velma sold a Vinyl to BuyerA722  for  62  
+The Clothing items in the store is outofstock
+Velma sold a Harmonica to BuyerI131  for  38 after a 10% discount 
+Velma sold a Saxophone to BuyerH193  for  48 after a 10% discount 
+OpenStore: Velma bought a Very Good new Guitar from SellerJ97 for 15 
+OpenStore: Velma bought a Good new CassettePlayer from SellerI149 for 18 
+openStore: Velma bought a Poor used Cassette from SellerA331 for 7  
+OpenStore: Velma bought a Excellent used MusicCD from SellerH791 for 16 
+Leave Store: Velma close the store at the day 5 and back home 
+++++++++++++++++++
+Day: 5
+{Shaggy={Items Purchased=6, Items Sold=4, Items Damaged=1}, Daphne={Items Purchased=0, Items Sold=0, Items Damaged=0}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Shaggy arrives at store at day 6  
-On day 6, $2013 is in the register
-The total value of all the items in the store is $747
-Shaggy sold a Flute to BuyerJ345 for $79 after a 10% discount 
-Shaggy sold a MP3 to BuyerC433 for $58  
-Shaggy sold a Bass to BuyerD49 for $16  
-Shaggy sold a PlayerCD to BuyerB698 for $43 after a 10% discount 
-Shaggy sold a Mandolin to BuyerB220 for $52  
-Shaggy bought a Very Good used PracticeAmps from SellerI979 for $30 
-Shaggy bought a Fair used Vinyl from SellerB628 for $4 
-SellerF68 didn't sell PlayerCD since they dissatisfied with the price 
-Shaggy bought a Good new Guitar from SellerC352 for $4 
-Shaggy bought a Fair used PaperScore from SellerA954 for $1 
-Shaggy bought a Fair new Mandolin from SellerB895 for $4  
-Shaggy bought a Fair used PracticeAmps from SellerF783 for $8 
-Shaggy bought a Very Good new MP3 from SellerB543 for $23  
-SellerI494 didn't sell Guitar since they dissatisfied with the price 
-Shaggy bought a Good used Guitar from SellerD243 for $4  
-It's wonderful day: nothing was damaged
-Shaggy closed the store on day 6 and came back home 
----------------------------
-today is Sunday, so the store closed 
------------------------------------
-Velma arrives at store at day 8  
-On day 8, $2183 is in the register
-The total value of all the items in the store is $737
-Velma sold a Flute to BuyerA714 for $86 after a 10% discount 
-Velma sold a RecordPlayer to BuyerF692 for $88  
-Velma sold a RecordPlayer to BuyerC901 for $73 after a 10% discount 
-Velma sold a Shirts to BuyerF238 for $20  
-Velma sold a Strings to BuyerD895 for $12  
-Velma sold a RecordPlayer to BuyerH837 for $56  
-Velma sold a RecordPlayer to BuyerG797 for $10 after a 10% discount 
-Velma bought a Fair used Shirts from SellerG653 for $9 
-Velma bought a Very Good new Mandolin from SellerF753 for $27 
-Velma bought a Good used RecordPlayer from SellerA452 for $16 
-Velma bought a Fair used Strings from SellerD935 for $7 
-Velma bought a Good used Mandolin from SellerI969 for $4 
-Velma bought a Good used Flute from SellerB869 for $16 
-SellerI753 didn't sell Mandolin since they dissatisfied with the price 
-SellerB621 didn't sell Strings since they dissatisfied with the price 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 8 and came back home 
----------------------------
-Velma arrives at store at day 9  
-On day 9, $2449 is in the register
-The total value of all the items in the store is $730
-Velma sold a PaperScore to BuyerH765 for $33  
-Velma sold a Harmonica to BuyerB79 for $54  
-Velma sold a RecordPlayer to BuyerG106 for $72 after a 10% discount 
-BuyerG924 wanted to buy a RecordPlayer but none were in inventory, so they left
-Velma sold a MP3 to BuyerH556 for $32  
-Velma sold a Vinyl to BuyerJ364 for $88  
-Velma sold a MusicCD to BuyerD452 for $26  
-Velma sold a Mandolin to BuyerA515 for $94  
-Velma sold a MP3 to BuyerJ648 for $42  
-Velma bought a Fair used Shirts from SellerA50 for $3  
-SellerC156 didn't sell Strings since they dissatisfied with the price 
-Velma bought a Good new Strings from SellerB591 for $8  
-Velma bought a Fair used Hats from SellerA403 for $10 
-Velma bought a Fair new Cables from SellerA781 for $4 
-Velma bought a Excellent new Flute from SellerA568 for $8  
-Velma bought a Fair used RecordPlayer from SellerI96 for $8  
-Velma bought a Excellent used MP3 from SellerD687 for $20 
-SellerA573 didn't sell Flute since they dissatisfied with the price 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 9 and came back home 
----------------------------
-Shaggy arrives at store at day 10  
-On day 10, $2829 is in the register
-The total value of all the items in the store is $651
-Shaggy sold a Vinyl to BuyerI836 for $63 after a 10% discount 
-Shaggy sold a Cables to BuyerI101 for $2  
-Shaggy sold a MP3 to BuyerG764 for $40  
-Shaggy sold a Cables to BuyerC219 for $30 after a 10% discount 
-Shaggy sold a Strings to BuyerB336 for $4  
-SellerA344 didn't sell Vinyl since they dissatisfied with the price 
-Shaggy bought a Very Good new Flute from SellerF841 for $12 
-SellerA362 didn't sell RecordPlayer since they dissatisfied with the price 
-Shaggy bought a Good used Vinyl from SellerC491 for $4 
-It's wonderful day: nothing was damaged
-Shaggy closed the store on day 10 and came back home 
----------------------------
-Shaggy arrives at store at day 11  
-On day 11, $2952 is in the register
-The total value of all the items in the store is $570
-Shaggy sold a Shirts to BuyerA545 for $3 after a 10% discount 
-Shaggy sold a PaperScore to BuyerJ428 for $68 after a 10% discount 
-Shaggy sold a PlayerCD to BuyerG428 for $9 after a 10% discount 
-Shaggy sold a PracticeAmps to BuyerC969 for $6  
-SellerA256 didn't sell Cables since they dissatisfied with the price 
-SellerH575 didn't sell Hats since they dissatisfied with the price 
-Shaggy bought a Very Good used Hats from SellerB348 for $27 
-SellerI392 didn't sell Vinyl since they dissatisfied with the price 
-Shaggy bought a Fair used Flute from SellerJ868 for $6 
-Shaggy destroyed a BandanasH364 by accident 
-Shaggy closed the store on day 11 and came back home 
----------------------------
-Velma arrives at store at day 12  
-On day 12, $3005 is in the register
-The total value of all the items in the store is $589
-Velma ordered PaperScore at the 12 day 
-Velma ordered PlayerCD at the 12 day 
-Velma sold a Strings to BuyerH152 for $4  
-BuyerG337 didn't buy since he dissatisfied with the price 
-BuyerA494 didn't buy since he dissatisfied with the price 
-Velma sold a RecordPlayer to BuyerH970 for $22  
-BuyerG287 wanted to buy a RecordPlayer but none were in inventory, so they left
-BuyerG356 wanted to buy a RecordPlayer but none were in inventory, so they left
-Velma sold a Mandolin to BuyerE184 for $22  
-Velma bought a Very Good used Vinyl from SellerA905 for $3 
-SellerB125 didn't sell Vinyl since they dissatisfied with the price 
-SellerG262 didn't sell Strings since they dissatisfied with the price 
-Velma bought a Good new Cables from SellerF485 for $6  
-It's wonderful day: nothing was damaged
-Velma closed the store on day 12 and came back home 
----------------------------
-Shaggy arrives at store at day 13  
-On day 13, $3022 is in the register
-The total value of all the items in the store is $584
-Shaggy ordered RecordPlayer at the 13 day 
-BuyerG782 wanted to buy a PaperScore but none were in inventory, so they left
-BuyerG290 didn't buy since he dissatisfied with the price 
-Shaggy sold a Flute to BuyerA881 for $25 after a 10% discount 
-Shaggy sold a MP3 to BuyerH481 for $82 after a 10% discount 
-Shaggy bought a Very Good new Bandanas from SellerG449 for $33  
-Shaggy bought a Very Good used Vinyl from SellerE395 for $18 
-Shaggy bought a Excellent new MP3 from SellerF206 for $44  
-Shaggy bought a Good used Cables from SellerC777 for $13  
-SellerD184 didn't sell Guitar since they dissatisfied with the price 
-Shaggy bought a Fair new MP3 from SellerA630 for $8  
-SellerH245 didn't sell Hats since they dissatisfied with the price 
-SellerG7 didn't sell Strings since they dissatisfied with the price 
-It's wonderful day: nothing was damaged
-Shaggy closed the store on day 13 and came back home 
+arriveAtStore: Shaggy arrives at store at day 6  
+Check register: today 6, 1395 in the register
+Shaggy using Manual tunealgorithm change a RecordPlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Bass from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Do inventory: The total value of all the items in the store is 1463
+BuyerG692 doesn't buy anything and leave because the dissatisfaction for the price 
+Shaggy sold a Harmonica to BuyerF970  for  34 after a 10% discount 
+openStore: Shaggy sold a PaperScore to BuyerG7  for  90  
+OpenStore: Shaggy bought a Good used Harmonica from SellerH51 for 8 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, PaperScore@4459eb14, MusicCD@5a2e4553, Vinyl@28c97a5, Vinyl@6659c656, RecordPlayer@6d5380c2, RecordPlayer@45ff54e6, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@108c4c35, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@4629104a, Flute@27f8302d, Harmonica@4d76f3f8, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, PracticeAmps@7ab2bfe1, PracticeAmps@497470ed, Cables@63c12fb0, Cables@b1a58a3, Cables@6438a396, Strings@e2144e4, Saxophone@6477463f, Saxophone@3d71d552, Cassette@1cf4f579, Cassette@18769467, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@4ee285c6, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Guitar@5d6f64b1, Flute@32a1bec0, Saxophone@22927a81, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Cables@61e4705b, Saxophone@50134894, RecordPlayer@2957fcb0, PracticeAmps@1376c05c, MusicCD@51521cc1, Guitar@1b4fb997, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e]
+openStore: Shaggy bought a Poor new Flute from SellerG921 for 4  
+OpenStore: Shaggy bought a Excellent used Guitar from SellerF860 for 36 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, PaperScore@4459eb14, MusicCD@5a2e4553, Vinyl@28c97a5, Vinyl@6659c656, RecordPlayer@6d5380c2, RecordPlayer@45ff54e6, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@108c4c35, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@4629104a, Flute@27f8302d, Harmonica@4d76f3f8, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, PracticeAmps@7ab2bfe1, PracticeAmps@497470ed, Cables@63c12fb0, Cables@b1a58a3, Cables@6438a396, Strings@e2144e4, Saxophone@6477463f, Saxophone@3d71d552, Cassette@1cf4f579, Cassette@18769467, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@4ee285c6, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Guitar@5d6f64b1, Flute@32a1bec0, Saxophone@22927a81, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Cables@61e4705b, Saxophone@50134894, RecordPlayer@2957fcb0, PracticeAmps@1376c05c, MusicCD@51521cc1, Guitar@1b4fb997, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1]
+OpenStore: Shaggy bought a Good new PracticeAmps from SellerC689 for 10 
+OpenStore: Shaggy bought a Excellent new GigBa from SellerD973 for 8 
+openStore: Shaggy bought a Fair used Mandolin from SellerB80 for 6  
+Leave Store: Shaggy close the store at the day 6 and back home 
+++++++++++++++++++
+Day: 6
+{Shaggy={Items Purchased=12, Items Sold=6, Items Damaged=1}, Daphne={Items Purchased=0, Items Sold=0, Items Damaged=0}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
 today is Sunday, so the store closed 
+++++++++++++++++++
+Day: 7
+{Shaggy={Items Purchased=12, Items Sold=6, Items Damaged=1}, Daphne={Items Purchased=0, Items Sold=0, Items Damaged=0}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 -----------------------------------
-Velma arrives at store at day 15  
- the  PaperScoreC458 get arrived at the store on day 15 
- the  PaperScoreJ273 get arrived at the store on day 15 
- the  PaperScoreG576 get arrived at the store on day 15 
- the  PlayerCDJ162 get arrived at the store on day 15 
- the  PlayerCDF769 get arrived at the store on day 15 
- the  PlayerCDG724 get arrived at the store on day 15 
-On day 15, $3006 is in the register
-The total value of all the items in the store is $784
-Velma sold a Bandanas to BuyerG267 for $54  
-Velma sold a Vinyl to BuyerJ153 for $10 after a 10% discount 
-Velma sold a Guitar to BuyerI670 for $8  
-BuyerF68 wanted to buy a RecordPlayer but none were in inventory, so they left
-Velma sold a Flute to BuyerD758 for $30  
-Velma sold a Shirts to BuyerB730 for $80  
-Velma bought a Excellent used Bandanas from SellerI691 for $35  
-SellerF327 didn't sell RecordPlayer since they dissatisfied with the price 
-SellerG529 didn't sell Shirts since they dissatisfied with the price 
-Velma bought a Very Good used MP3 from SellerC973 for $3 
-Velma bought a Fair new Hats from SellerA708 for $9  
-SellerD632 didn't sell Harmonica since they dissatisfied with the price 
-Velma bought a Very Good used PlayerCD from SellerI515 for $21 
-Velma bought a Fair new Mandolin from SellerH474 for $4 
-Velma bought a Good new Bandanas from SellerG693 for $4 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 15 and came back home 
+arriveAtStore: Shaggy arrives at store at day 8  
+Check register: today 8, 1447 in the register
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Flute from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Do inventory: The total value of all the items in the store is 1512
+openStore: Shaggy sold a MusicCD to BuyerI855  for  44  
+The Clothing items in the store is outofstock
+openStore: Shaggy sold a PracticeAmps to BuyerG541  for  90  
+The Clothing items in the store is outofstock
+openStore: Shaggy sold a RecordPlayer to BuyerI436  for  54  
+Shaggy sold a Flute to BuyerH100  for  84 after a 10% discount 
+The Clothing items in the store is outofstock
+openStore: Shaggy sold a Mandolin to BuyerB181  for  66  
+openStore: Shaggy bought a Poor new Vinyl from SellerG494 for 5  
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, PaperScore@4459eb14, MusicCD@5a2e4553, Vinyl@28c97a5, Vinyl@6659c656, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@4d76f3f8, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, PracticeAmps@7ab2bfe1, PracticeAmps@497470ed, Cables@63c12fb0, Cables@b1a58a3, Cables@6438a396, Strings@e2144e4, Saxophone@6477463f, Saxophone@3d71d552, Cassette@1cf4f579, Cassette@18769467, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@4ee285c6, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Guitar@5d6f64b1, Flute@32a1bec0, Saxophone@22927a81, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Cables@61e4705b, Saxophone@50134894, RecordPlayer@2957fcb0, Guitar@1b4fb997, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, PracticeAmps@6aa8ceb6, GigBag@2530c12, Mandolin@73c6c3b2, Vinyl@48533e64]
+openStore: Shaggy bought a Good used PlayerCD from SellerE288 for 6  
+openStore: Shaggy bought a Poor used Guitar from SellerD992 for 5  
+openStore: Shaggy bought a Fair new CassettePlayer from SellerH300 for 15  
+openStore: Shaggy bought a Fair used MP3 from SellerE426 for 11  
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, PaperScore@4459eb14, MusicCD@5a2e4553, Vinyl@28c97a5, Vinyl@6659c656, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@4d76f3f8, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, PracticeAmps@7ab2bfe1, PracticeAmps@497470ed, Cables@63c12fb0, Cables@b1a58a3, Cables@6438a396, Strings@e2144e4, Saxophone@6477463f, Saxophone@3d71d552, Cassette@1cf4f579, Cassette@18769467, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@4ee285c6, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Guitar@5d6f64b1, Flute@32a1bec0, Saxophone@22927a81, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Cables@61e4705b, Saxophone@50134894, RecordPlayer@2957fcb0, Guitar@1b4fb997, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, PracticeAmps@6aa8ceb6, GigBag@2530c12, Mandolin@73c6c3b2, Vinyl@48533e64, PlayerCD@64a294a6, Guitar@7e0b37bc, CassettePlayer@3b95a09c, MP3@6ae40994]
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, PaperScore@4459eb14, MusicCD@5a2e4553, Vinyl@28c97a5, Vinyl@6659c656, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@4d76f3f8, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, PracticeAmps@7ab2bfe1, PracticeAmps@497470ed, Cables@63c12fb0, Cables@b1a58a3, Cables@6438a396, Strings@e2144e4, Saxophone@6477463f, Saxophone@3d71d552, Cassette@1cf4f579, Cassette@18769467, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@4ee285c6, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Guitar@5d6f64b1, Flute@32a1bec0, Saxophone@22927a81, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Cables@61e4705b, Saxophone@50134894, RecordPlayer@2957fcb0, Guitar@1b4fb997, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, PracticeAmps@6aa8ceb6, GigBag@2530c12, Mandolin@73c6c3b2, Vinyl@48533e64, PlayerCD@64a294a6, Guitar@7e0b37bc, CassettePlayer@3b95a09c, MP3@6ae40994]
+OpenStore: Shaggy bought a Excellent used MusicCD from SellerD1 for 20 
+Leave Store: Shaggy close the store at the day 8 and back home 
+++++++++++++++++++
+Day: 8
+{Shaggy={Items Purchased=18, Items Sold=11, Items Damaged=1}, Daphne={Items Purchased=0, Items Sold=0, Items Damaged=0}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Velma arrives at store at day 16  
- the  RecordPlayerA654 get arrived at the store on day 16 
- the  RecordPlayerD771 get arrived at the store on day 16 
- the  RecordPlayerI564 get arrived at the store on day 16 
-On day 16, $3112 is in the register
-The total value of all the items in the store is $852
-Velma sold a PracticeAmps to BuyerE297 for $77 after a 10% discount 
-Velma sold a MusicCD to BuyerB654 for $5 after a 10% discount 
-Velma sold a Harmonica to BuyerE240 for $23 after a 10% discount 
-Velma sold a Guitar to BuyerH539 for $16  
-Velma sold a Bass to BuyerI628 for $28  
-Velma bought a Very Good new Mandolin from SellerA381 for $9  
-Velma bought a Excellent used RecordPlayer from SellerG315 for $8 
-Velma bought a Excellent used Mandolin from SellerG861 for $32 
-Velma bought a Good used Shirts from SellerA782 for $2  
-Velma bought a Excellent used Bandanas from SellerE275 for $28 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 16 and came back home 
+arriveAtStore: Daphne arrives at store at day 9  
+Check register: today 9, 1723 in the register
+Daphne using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Daphne using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Daphne using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Daphne using mannual tunealgorithm change a PlayerCD from not equalized to equalized 
+Daphne using mannual tunealgorithm change a Guitar from not tuned to tuned 
+Daphne using mannual tunealgorithm change a MP3 from not equalized to equalized 
+Do inventory: The total value of all the items in the store is 1461
+openStore: Daphne sold a Vinyl to BuyerC723  for  46  
+openStore: BuyerD538 want to buy a GigBag but none were in inventory , so left
+Daphne sold a RecordPlayer to BuyerF846  for  22 after a 10% discount 
+OpenStore: Daphne bought a Fair new Bass from SellerD528 for 8 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, PaperScore@4459eb14, MusicCD@5a2e4553, Vinyl@6659c656, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@4d76f3f8, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, PracticeAmps@7ab2bfe1, PracticeAmps@497470ed, Cables@63c12fb0, Cables@b1a58a3, Cables@6438a396, Strings@e2144e4, Saxophone@6477463f, Saxophone@3d71d552, Cassette@1cf4f579, Cassette@18769467, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@4ee285c6, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Guitar@5d6f64b1, Flute@32a1bec0, Saxophone@22927a81, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Cables@61e4705b, Saxophone@50134894, Guitar@1b4fb997, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, PracticeAmps@6aa8ceb6, GigBag@2530c12, Mandolin@73c6c3b2, Vinyl@48533e64, PlayerCD@64a294a6, Guitar@7e0b37bc, CassettePlayer@3b95a09c, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f]
+OpenStore: Daphne bought a Excellent new Mandolin from SellerF915 for 20 
+the SellerF864 doesn't sell Mandolin since he dissatisfied with the price 
+Leave Store: Daphne close the store at the day 9 and back home 
+++++++++++++++++++
+Day: 9
+{Shaggy={Items Purchased=18, Items Sold=11, Items Damaged=1}, Daphne={Items Purchased=2, Items Sold=2, Items Damaged=1}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Shaggy arrives at store at day 17  
-On day 17, $3182 is in the register
-The total value of all the items in the store is $863
-Shaggy ordered Bass at the 17 day 
-Shaggy ordered MusicCD at the 17 day 
-Shaggy sold a Flute to BuyerB612 for $27 after a 10% discount 
-BuyerC29 wanted to buy a Bass but none were in inventory, so they left
-Shaggy sold a Shirts to BuyerG805 for $12 after a 10% discount 
-Shaggy sold a Harmonica to BuyerD165 for $72  
-Shaggy sold a PlayerCD to BuyerC854 for $14 after a 10% discount 
-Shaggy bought a Good used Shirts from SellerH12 for $17  
-Shaggy bought a Very Good used Guitar from SellerG115 for $24 
-Shaggy bought a Excellent new PlayerCD from SellerG996 for $20 
-SellerD79 didn't sell Vinyl since they dissatisfied with the price 
-SellerC835 didn't sell Harmonica since they dissatisfied with the price 
-Shaggy bought a Excellent new PracticeAmps from SellerD159 for $8 
-Shaggy bought a Very Good used Flute from SellerF507 for $12 
-Shaggy bought a Fair used Vinyl from SellerB128 for $6  
-SellerF709 didn't sell Mandolin since they dissatisfied with the price 
-It's wonderful day: nothing was damaged
-Shaggy closed the store on day 17 and came back home 
+arriveAtStore: Shaggy arrives at store at day 10  
+Check register: today 10, 1763 in the register
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Flute from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Flute from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Flute from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Bass from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Do inventory: The total value of all the items in the store is 1463
+openStore: Shaggy sold a Cassette to BuyerB883  for  2  
+openStore: Shaggy sold a Saxophone to BuyerJ900  for  42  
+openStore: Shaggy sold a PracticeAmps to BuyerE790  for  80  
+openStore: Shaggy sold a Cables to BuyerH565  for  80  
+openStore: Shaggy sold a Cassette to BuyerA655  for  58  
+OpenStore: Shaggy bought a Very Good used Cables from SellerH298 for 24 
+OpenStore: Shaggy bought a Good used PaperScore from SellerI557 for 6 
+openStore: Shaggy bought a Very Good used MP3 from SellerD748 for 30  
+OpenStore: Shaggy bought a Fair used Saxophone from SellerC819 for 6 
+the SellerA593 doesn't sell Flute since he dissatisfied with the price 
+openStore: Shaggy bought a Fair new RecordPlayer from SellerI785 for 11  
+OpenStore: Shaggy bought a Excellent used Guitar from SellerF725 for 36 
+OpenStore: Shaggy bought a Very Good new Harmonica from SellerG60 for 27 
+openStore: Shaggy bought a Good used CassettePlayer from SellerB899 for 3  
+Leave Store: Shaggy close the store at the day 10 and back home 
+++++++++++++++++++
+Day: 10
+{Shaggy={Items Purchased=26, Items Sold=16, Items Damaged=1}, Daphne={Items Purchased=2, Items Sold=2, Items Damaged=1}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Velma arrives at store at day 18  
- the  MusicCDH348 get arrived at the store on day 18 
- the  MusicCDE912 get arrived at the store on day 18 
- the  MusicCDG387 get arrived at the store on day 18 
-On day 18, $3154 is in the register
-The total value of all the items in the store is $953
-BuyerJ749 didn't buy since he dissatisfied with the price 
-Velma sold a Bandanas to BuyerA30 for $10 after a 10% discount 
-BuyerG148 didn't buy since he dissatisfied with the price 
-Velma sold a Hats to BuyerB941 for $18  
-SellerA112 didn't sell Bass since they dissatisfied with the price 
-Velma bought a Fair new Flute from SellerE53 for $7  
-Velma bought a Good used Guitar from SellerF443 for $11  
-Velma bought a Fair used PracticeAmps from SellerF193 for $6 
-Velma bought a Good used Guitar from SellerG209 for $2 
-Velma bought a Fair new Mandolin from SellerB400 for $7 
-SellerH964 didn't sell Strings since they dissatisfied with the price 
-SellerG911 didn't sell MP3 since they dissatisfied with the price 
-Velma bought a Fair used Vinyl from SellerE504 for $9 
-Velma bought a Good used Hats from SellerD424 for $8  
-It's wonderful day: nothing was damaged
-Velma closed the store on day 18 and came back home 
+arriveAtStore: Daphne arrives at store at day 11  
+Check register: today 11, 1882 in the register
+Daphne using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Daphne using mannual tunealgorithm change a MP3 from not equalized to equalized 
+Daphne using mannual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Daphne using mannual tunealgorithm change a RecordPlayer from not equalized to equalized 
+Daphne using mannual tunealgorithm change a Guitar from not tuned to tuned 
+Daphne using mannual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Do inventory: The total value of all the items in the store is 1494
+The Clothing items in the store is outofstock
+openStore: Daphne sold a RecordPlayer to BuyerA488  for  46  
+BuyerG760 doesn't buy anything and leave because the dissatisfaction for the price 
+The Clothing items in the store is outofstock
+openStore: BuyerH787 want to buy a GigBag but none were in inventory , so left
+openStore: Daphne sold a CassettePlayer to BuyerH721  for  22  
+OpenStore: Daphne bought a Very Good used Bass from SellerA847 for 12 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, PaperScore@4459eb14, MusicCD@5a2e4553, Vinyl@6659c656, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@4d76f3f8, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, PracticeAmps@497470ed, Cables@63c12fb0, Cables@b1a58a3, Cables@6438a396, Strings@e2144e4, Saxophone@6477463f, Saxophone@3d71d552, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@4ee285c6, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Guitar@5d6f64b1, Flute@32a1bec0, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Saxophone@50134894, Guitar@1b4fb997, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, PracticeAmps@6aa8ceb6, GigBag@2530c12, Mandolin@73c6c3b2, Vinyl@48533e64, PlayerCD@64a294a6, Guitar@7e0b37bc, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f, Mandolin@4dcbadb4, Cables@4e515669, PaperScore@17d10166, MP3@1b9e1916, Saxophone@ba8a1dc, Guitar@4f8e5cde, Harmonica@504bae78, CassettePlayer@3b764bce, Bass@759ebb3d]
+openStore: Daphne bought a Fair used Guitar from SellerE713 for 19  
+openStore: Daphne bought a Fair used Cables from SellerA985 for 11  
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, PaperScore@4459eb14, MusicCD@5a2e4553, Vinyl@6659c656, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@4d76f3f8, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, PracticeAmps@497470ed, Cables@63c12fb0, Cables@b1a58a3, Cables@6438a396, Strings@e2144e4, Saxophone@6477463f, Saxophone@3d71d552, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@4ee285c6, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Guitar@5d6f64b1, Flute@32a1bec0, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Saxophone@50134894, Guitar@1b4fb997, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, PracticeAmps@6aa8ceb6, GigBag@2530c12, Mandolin@73c6c3b2, Vinyl@48533e64, PlayerCD@64a294a6, Guitar@7e0b37bc, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f, Mandolin@4dcbadb4, Cables@4e515669, PaperScore@17d10166, MP3@1b9e1916, Saxophone@ba8a1dc, Guitar@4f8e5cde, Harmonica@504bae78, CassettePlayer@3b764bce, Bass@759ebb3d, Guitar@484b61fc, Cables@45fe3ee3]
+Leave Store: Daphne close the store at the day 11 and back home 
+++++++++++++++++++
+Day: 11
+{Shaggy={Items Purchased=26, Items Sold=16, Items Damaged=1}, Daphne={Items Purchased=5, Items Sold=4, Items Damaged=1}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Velma arrives at store at day 19  
-On day 19, $3132 is in the register
-The total value of all the items in the store is $962
-Velma sold a Vinyl to BuyerD999 for $75 after a 10% discount 
-Velma sold a Harmonica to BuyerG585 for $14 after a 10% discount 
-Velma sold a RecordPlayer to BuyerG464 for $54  
-Velma sold a Bandanas to BuyerA402 for $76  
-BuyerI703 didn't buy since he dissatisfied with the price 
-SellerG13 didn't sell Bandanas since they dissatisfied with the price 
-Velma bought a Very Good new MP3 from SellerH592 for $6 
-SellerG93 didn't sell Cables since they dissatisfied with the price 
-Velma bought a Good new Vinyl from SellerC622 for $8 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 19 and came back home 
+arriveAtStore: Daphne arrives at store at day 12  
+Check register: today 12, 1908 in the register
+Daphne using haphard tunealgorithm change a RecordPlayer from  equalized to not equalized 
+Daphne using mannual tunealgorithm change a PlayerCD from not equalized to equalized 
+Daphne using mannual tunealgorithm change a MP3 from not equalized to equalized 
+Daphne using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Daphne using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Daphne using mannual tunealgorithm change a PlayerCD from not equalized to equalized 
+Daphne using mannual tunealgorithm change a Mandolin from not tuned to tuned 
+Daphne using mannual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Daphne using mannual tunealgorithm change a Bass from not tuned to tuned 
+Damage: Daphne destroyed a HarmonicaF439 by accident 
+Do inventory: The total value of all the items in the store is 1510
+BuyerA432 doesn't buy anything and leave because the dissatisfaction for the price 
+openStore: Daphne sold a PracticeAmps to BuyerF343  for  64  
+openStore: Daphne sold a PracticeAmps to BuyerB819  for  44  
+OpenStore: Daphne bought a Excellent new MP3 from SellerA403 for 4 
+openStore: Daphne bought a Good used PaperScore from SellerD724 for 19  
+openStore: Daphne bought a Very Good used Cassette from SellerI627 for 8  
+OpenStore: Daphne bought a Good used Cables from SellerH862 for 14 
+openStore: Daphne bought a Fair used RecordPlayer from SellerE805 for 17  
+OpenStore: Daphne bought a Very Good new Mandolin from SellerH540 for 18 
+Leave Store: Daphne close the store at the day 12 and back home 
+++++++++++++++++++
+Day: 12
+{Shaggy={Items Purchased=26, Items Sold=16, Items Damaged=1}, Daphne={Items Purchased=11, Items Sold=6, Items Damaged=2}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Shaggy arrives at store at day 20  
- the  BassB121 get arrived at the store on day 20 
- the  BassB136 get arrived at the store on day 20 
- the  BassD256 get arrived at the store on day 20 
-On day 20, $3337 is in the register
-The total value of all the items in the store is $1022
-BuyerD348 didn't buy since he dissatisfied with the price 
-Shaggy sold a MusicCD to BuyerA127 for $82  
-Shaggy sold a PaperScore to BuyerB162 for $38  
-Shaggy sold a Flute to BuyerB25 for $28  
-Shaggy sold a Shirts to BuyerH520 for $37 after a 10% discount 
-Shaggy sold a RecordPlayer to BuyerJ921 for $64 after a 10% discount 
-Shaggy sold a Harmonica to BuyerD904 for $44  
-Shaggy sold a Bandanas to BuyerB428 for $55 after a 10% discount 
-Shaggy bought a Good used Bandanas from SellerB141 for $10 
-Shaggy bought a Good used Flute from SellerE380 for $17  
-Shaggy bought a Fair new Hats from SellerC763 for $1 
-Shaggy bought a Good used PlayerCD from SellerB364 for $6 
-Shaggy bought a Very Good used MP3 from SellerG912 for $3 
-It's wonderful day: nothing was damaged
-Shaggy closed the store on day 20 and came back home 
+Velma had assigned to work for day 13, but Velma got sick 
+arriveAtStore: Shaggy arrives at store at day 13  
+Check register: today 13, 1936 in the register
+Shaggy using Manual tunealgorithm change a RecordPlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Bass from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a RecordPlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Do inventory: The total value of all the items in the store is 1537
+PlaceOrder: Shaggy ordered PracticeAmps at the 13 day 
+Shaggy sold a Saxophone to BuyerE573  for  38 after a 10% discount 
+openStore: Shaggy sold a CassettePlayer to BuyerH79  for  22  
+openStore: BuyerA700 want to buy a PracticeAmps but none were in inventory , so left
+The Clothing items in the store is outofstock
+openStore: Shaggy sold a PaperScore to BuyerF434  for  36  
+The Clothing items in the store is outofstock
+openStore: BuyerC130 want to buy a PracticeAmps but none were in inventory , so left
+openStore: Shaggy sold a Bass to BuyerG899  for  40  
+OpenStore: Shaggy bought a Very Good new Strings from SellerA278 for 15 
+OpenStore: Shaggy bought a Very Good new PlayerCD from SellerF492 for 24 
+OpenStore: Shaggy bought a Fair used Saxophone from SellerA461 for 2 
+openStore: Shaggy bought a Good new CassettePlayer from SellerH731 for 26  
+OpenStore: Shaggy bought a Fair used MP3 from SellerG313 for 2 
+Leave Store: Shaggy close the store at the day 13 and back home 
+++++++++++++++++++
+Day: 13
+{Shaggy={Items Purchased=31, Items Sold=20, Items Damaged=1}, Daphne={Items Purchased=11, Items Sold=6, Items Damaged=2}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
 today is Sunday, so the store closed 
+++++++++++++++++++
+Day: 14
+{Shaggy={Items Purchased=31, Items Sold=20, Items Damaged=1}, Daphne={Items Purchased=11, Items Sold=6, Items Damaged=2}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 -----------------------------------
-Velma arrives at store at day 22  
-On day 22, $3648 is in the register
-The total value of all the items in the store is $924
-Velma ordered Harmonica at the 22 day 
-BuyerA865 didn't buy since he dissatisfied with the price 
-Velma sold a RecordPlayer to BuyerC169 for $14  
-Velma sold a PracticeAmps to BuyerJ339 for $77 after a 10% discount 
-Velma sold a Hats to BuyerH842 for $41 after a 10% discount 
-Velma sold a MP3 to BuyerJ515 for $86 after a 10% discount 
-BuyerF515 wanted to buy a Harmonica but none were in inventory, so they left
-Velma sold a Shirts to BuyerC4 for $14  
-BuyerD541 didn't buy since he dissatisfied with the price 
-Velma sold a Bass to BuyerB503 for $98  
-Velma bought a Fair new Flute from SellerC998 for $9 
-Velma bought a Fair new PlayerCD from SellerB645 for $3  
-Velma bought a Good used Harmonica from SellerC914 for $17  
-Velma bought a Excellent new RecordPlayer from SellerJ126 for $28 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 22 and came back home 
+arriveAtStore: Shaggy arrives at store at day 15  
+ArriveAtStore: the  PracticeAmpsG555 get arrived at the store at days 15 
+ArriveAtStore: the  PracticeAmpsH856 get arrived at the store at days 15 
+ArriveAtStore: the  PracticeAmpsF976 get arrived at the store at days 15 
+Check register: today 15, 1959 in the register
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Do inventory: The total value of all the items in the store is 1631
+adda Strings additionally
+additional sold items:Strings
+openStore: Shaggy sold a Guitar,Strings to BuyerI407  for  70  
+add a cables additionally
+add a practiceamp additionally
+adda Strings additionally
+additional sold items:Cables,PracticeAmps,Strings
+Shaggy sold a Guitar,Cables,PracticeAmps,Strings to BuyerI316  for  180 after a 10% discount 
+The Clothing items in the store is outofstock
+openStore: Shaggy sold a PracticeAmps to BuyerG716  for  54  
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, PaperScore@4459eb14, MusicCD@5a2e4553, Vinyl@6659c656, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Cables@b1a58a3, Cables@6438a396, Saxophone@6477463f, Saxophone@3d71d552, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Saxophone@50134894, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, Vinyl@48533e64, PlayerCD@64a294a6, Guitar@7e0b37bc, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f, Mandolin@4dcbadb4, Cables@4e515669, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, Harmonica@504bae78, CassettePlayer@3b764bce, Guitar@484b61fc, Cables@45fe3ee3, MP3@6bf2d08e, Cassette@5eb5c224, Cables@53e25b76, RecordPlayer@73a8dfcc, Mandolin@ea30797, PlayerCD@7e774085, Saxophone@3f8f9dd6, CassettePlayer@aec6354, MP3@1c655221, PracticeAmps@58d25a40]
+openStore: Shaggy bought a Very Good new CassettePlayer from SellerH27 for 22  
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, PaperScore@4459eb14, MusicCD@5a2e4553, Vinyl@6659c656, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Cables@b1a58a3, Cables@6438a396, Saxophone@6477463f, Saxophone@3d71d552, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Saxophone@50134894, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, Vinyl@48533e64, PlayerCD@64a294a6, Guitar@7e0b37bc, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f, Mandolin@4dcbadb4, Cables@4e515669, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, Harmonica@504bae78, CassettePlayer@3b764bce, Guitar@484b61fc, Cables@45fe3ee3, MP3@6bf2d08e, Cassette@5eb5c224, Cables@53e25b76, RecordPlayer@73a8dfcc, Mandolin@ea30797, PlayerCD@7e774085, Saxophone@3f8f9dd6, CassettePlayer@aec6354, MP3@1c655221, PracticeAmps@58d25a40, CassettePlayer@1b701da1]
+openStore: Shaggy bought a Fair new Bass from SellerJ689 for 19  
+Leave Store: Shaggy close the store at the day 15 and back home 
+++++++++++++++++++
+Day: 15
+{Shaggy={Items Purchased=33, Items Sold=27, Items Damaged=1}, Daphne={Items Purchased=11, Items Sold=6, Items Damaged=2}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Velma arrives at store at day 23  
- the  HarmonicaH962 get arrived at the store on day 23 
- the  HarmonicaG472 get arrived at the store on day 23 
- the  HarmonicaE38 get arrived at the store on day 23 
-On day 23, $3910 is in the register
-The total value of all the items in the store is $958
-Velma sold a Hats to BuyerC487 for $3 after a 10% discount 
-Velma sold a Vinyl to BuyerB455 for $7 after a 10% discount 
-Velma sold a Harmonica to BuyerG606 for $54 after a 10% discount 
-Velma sold a MusicCD to BuyerA456 for $14  
-Velma bought a Very Good new Harmonica from SellerH379 for $21 
-Velma bought a Excellent new Guitar from SellerJ372 for $8 
-Velma bought a Excellent new PlayerCD from SellerH779 for $13  
-Velma bought a Fair new MP3 from SellerD389 for $7 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 23 and came back home 
+arriveAtStore: Daphne arrives at store at day 16  
+Check register: today 16, 2222 in the register
+Daphne using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Daphne using mannual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Daphne using mannual tunealgorithm change a Bass from not tuned to tuned 
+Do inventory: The total value of all the items in the store is 1551
+PlaceOrder: Daphne ordered Strings at the 16 day 
+add a cables additionally
+BuyerG670 doesn't buy anything and leave because the dissatisfaction for the price 
+add a practiceamp additionally
+BuyerA493 doesn't buy anything and leave because the dissatisfaction for the price 
+openStore: Daphne sold a PaperScore to BuyerB197  for  80  
+openStore: BuyerC332 want to buy a GigBag but none were in inventory , so left
+The Clothing items in the store is outofstock
+OpenStore: Daphne bought a Very Good used Harmonica from SellerE907 for 9 
+OpenStore: Daphne bought a Excellent new PlayerCD from SellerG581 for 12 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, MusicCD@5a2e4553, Vinyl@6659c656, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Cables@b1a58a3, Cables@6438a396, Saxophone@6477463f, Saxophone@3d71d552, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Saxophone@50134894, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, Vinyl@48533e64, PlayerCD@64a294a6, Guitar@7e0b37bc, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f, Mandolin@4dcbadb4, Cables@4e515669, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, Harmonica@504bae78, CassettePlayer@3b764bce, Guitar@484b61fc, Cables@45fe3ee3, MP3@6bf2d08e, Cassette@5eb5c224, Cables@53e25b76, RecordPlayer@73a8dfcc, Mandolin@ea30797, PlayerCD@7e774085, Saxophone@3f8f9dd6, CassettePlayer@aec6354, MP3@1c655221, PracticeAmps@58d25a40, CassettePlayer@1b701da1, Bass@442d9b6e, Harmonica@ee7d9f1, PlayerCD@15615099]
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, MusicCD@5a2e4553, Vinyl@6659c656, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, PlayerCD@7a4f0f29, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Mandolin@4ccabbaa, Bass@4bf558aa, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Cables@b1a58a3, Cables@6438a396, Saxophone@6477463f, Saxophone@3d71d552, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, Mandolin@5e8c92f4, Saxophone@50134894, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, Vinyl@48533e64, PlayerCD@64a294a6, Guitar@7e0b37bc, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f, Mandolin@4dcbadb4, Cables@4e515669, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, Harmonica@504bae78, CassettePlayer@3b764bce, Guitar@484b61fc, Cables@45fe3ee3, MP3@6bf2d08e, Cassette@5eb5c224, Cables@53e25b76, RecordPlayer@73a8dfcc, Mandolin@ea30797, PlayerCD@7e774085, Saxophone@3f8f9dd6, CassettePlayer@aec6354, MP3@1c655221, PracticeAmps@58d25a40, CassettePlayer@1b701da1, Bass@442d9b6e, Harmonica@ee7d9f1, PlayerCD@15615099]
+openStore: Daphne bought a Good new Strings from SellerA694 for 13  
+Leave Store: Daphne close the store at the day 16 and back home 
+++++++++++++++++++
+Day: 16
+{Shaggy={Items Purchased=33, Items Sold=27, Items Damaged=1}, Daphne={Items Purchased=14, Items Sold=7, Items Damaged=2}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Shaggy arrives at store at day 24  
-On day 24, $3939 is in the register
-The total value of all the items in the store is $947
-Shaggy sold a Cables to BuyerA671 for $66 after a 10% discount 
-Shaggy sold a Harmonica to BuyerJ8 for $9 after a 10% discount 
-BuyerB717 didn't buy since he dissatisfied with the price 
-BuyerC901 didn't buy since he dissatisfied with the price 
-Shaggy sold a Flute to BuyerI384 for $18  
-Shaggy bought a Very Good used Cables from SellerC102 for $15 
-SellerB254 didn't sell Mandolin since they dissatisfied with the price 
-Shaggy bought a Fair new Cables from SellerD445 for $3 
-Shaggy bought a Excellent used MusicCD from SellerC95 for $20 
-It's wonderful day: nothing was damaged
-Shaggy closed the store on day 24 and came back home 
+Velma had assigned to work for day 17, but Velma got sick 
+arriveAtStore: Daphne arrives at store at day 17  
+arriveAtStore: the  StringsD553 get arrived at the store at days 17 
+arriveAtStore: the  StringsI993 get arrived at the store at days 17 
+arriveAtStore: the  StringsA377 get arrived at the store at days 17 
+Check register: today 17, 2240 in the register
+Daphne using haphard tunealgorithm change a RecordPlayer from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Daphne using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Daphne using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Daphne using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Daphne using mannual tunealgorithm change a Bass from not tuned to tuned 
+Daphne using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Daphne using mannual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Daphne using mannual tunealgorithm change a PlayerCD from not equalized to equalized 
+Do inventory: The total value of all the items in the store is 1600
+BuyerB872 doesn't buy anything and leave because the dissatisfaction for the price 
+Daphne sold a Saxophone to BuyerB844  for  36 after a 10% discount 
+openStore: Daphne sold a MusicCD to BuyerD489  for  84  
+openStore: Daphne sold a Strings to BuyerH703  for  96  
+add a cables additionally
+add a practiceamp additionally
+additional sold items:Cables,PracticeAmps
+openStore: Daphne sold a Bass,Cables,PracticeAmps to BuyerD195  for  156  
+Daphne sold a RecordPlayer to BuyerI919  for  80 after a 10% discount 
+openStore: Daphne sold a Mandolin to BuyerI338  for  18  
+openStore: Daphne sold a Cables to BuyerI593  for  64  
+adda Strings additionally
+adda Strings additionally
+adda Strings additionally
+additional sold items:Strings,Strings,Strings
+openStore: Daphne sold a Mandolin,Strings,Strings,Strings to BuyerB684  for  74  
+openStore: Daphne sold a PlayerCD to BuyerG27  for  64  
+openStore: BuyerG582 want to buy a Strings but none were in inventory , so left
+the SellerJ152 doesn't sell GigBa since he dissatisfied with the price 
+openStore: Daphne bought a Very Good new PaperScore from SellerI223 for 17  
+openStore: Daphne bought a Very Good new Saxophone from SellerC760 for 8  
+OpenStore: Daphne bought a Excellent new PaperScore from SellerA662 for 8 
+openStore: Daphne bought a Poor new PracticeAmps from SellerD716 for 4  
+openStore: Daphne bought a Poor new GigBa from SellerE735 for 9  
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, Vinyl@6659c656, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, MP3@45283ce2, MP3@2077d4de, MP3@7591083d, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Cables@6438a396, Saxophone@6477463f, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, Saxophone@50134894, CassettePlayer@deb6432, Cassette@28ba21f3, MusicCD@694f9431, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, Vinyl@48533e64, PlayerCD@64a294a6, Guitar@7e0b37bc, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f, Mandolin@4dcbadb4, Cables@4e515669, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, Harmonica@504bae78, CassettePlayer@3b764bce, Guitar@484b61fc, Cables@45fe3ee3, MP3@6bf2d08e, Cassette@5eb5c224, Mandolin@ea30797, PlayerCD@7e774085, Saxophone@3f8f9dd6, CassettePlayer@aec6354, MP3@1c655221, CassettePlayer@1b701da1, Bass@442d9b6e, Harmonica@ee7d9f1, PlayerCD@15615099, PaperScore@368102c8, Saxophone@6996db8, PaperScore@1963006a, PracticeAmps@7fbe847c, GigBag@41975e01]
+Leave Store: Daphne close the store at the day 17 and back home 
+++++++++++++++++++
+Day: 17
+{Shaggy={Items Purchased=33, Items Sold=27, Items Damaged=1}, Daphne={Items Purchased=19, Items Sold=21, Items Damaged=4}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Velma arrives at store at day 25  
-On day 25, $3994 is in the register
-The total value of all the items in the store is $958
-Velma sold a Cables to BuyerI778 for $21 after a 10% discount 
-BuyerD349 didn't buy since he dissatisfied with the price 
-Velma sold a Bandanas to BuyerD382 for $78  
-Velma sold a RecordPlayer to BuyerH851 for $40  
-Velma sold a Shirts to BuyerB282 for $42  
-Velma sold a Hats to BuyerB339 for $38  
-Velma bought a Very Good used Cables from SellerF372 for $27 
-Velma bought a Fair used Strings from SellerA581 for $5 
-Velma bought a Good used Guitar from SellerF555 for $4 
-Velma bought a Fair used PaperScore from SellerD664 for $3 
-SellerI371 didn't sell MP3 since they dissatisfied with the price 
-Velma bought a Good new Guitar from SellerC756 for $11  
-Velma bought a Good new RecordPlayer from SellerI205 for $20 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 25 and came back home 
+arriveAtStore: Shaggy arrives at store at day 18  
+Check register: today 18, 2866 in the register
+Shaggy using Manual tunealgorithm change a RecordPlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Flute from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Do inventory: The total value of all the items in the store is 1340
+Shaggy sold a MP3 to BuyerE80  for  68 after a 10% discount 
+openStore: Shaggy sold a Harmonica to BuyerB314  for  94  
+openStore: BuyerA176 want to buy a GigBag but none were in inventory , so left
+openStore: Shaggy sold a MP3 to BuyerD591  for  20  
+Shaggy sold a Saxophone to BuyerJ634  for  56 after a 10% discount 
+openStore: Shaggy sold a Vinyl to BuyerC212  for  62  
+OpenStore: Shaggy bought a Good used Guitar from SellerH435 for 14 
+OpenStore: Shaggy bought a Excellent used Vinyl from SellerE129 for 28 
+the SellerC720 doesn't sell Harmonica since he dissatisfied with the price 
+OpenStore: Shaggy bought a Very Good used Harmonica from SellerE557 for 6 
+the SellerE751 doesn't sell MP3 since he dissatisfied with the price 
+OpenStore: Shaggy bought a Good used Mandolin from SellerD132 for 10 
+openStore: Shaggy bought a Very Good used MP3 from SellerH337 for 39  
+Leave Store: Shaggy close the store at the day 18 and back home 
+++++++++++++++++++
+Day: 18
+{Shaggy={Items Purchased=38, Items Sold=32, Items Damaged=1}, Daphne={Items Purchased=19, Items Sold=21, Items Damaged=4}, Velma={Items Purchased=12, Items Sold=9, Items Damaged=0}}
+++++++++++++++++++
 ---------------------------
-Shaggy arrives at store at day 26  
-On day 26, $4143 is in the register
-The total value of all the items in the store is $930
-Shaggy ordered Shirts at the 26 day 
-Shaggy sold a RecordPlayer to BuyerG904 for $6  
-Shaggy sold a Cables to BuyerG713 for $59 after a 10% discount 
-BuyerB704 didn't buy since he dissatisfied with the price 
-Shaggy sold a Guitar to BuyerA955 for $37 after a 10% discount 
-Shaggy sold a RecordPlayer to BuyerB971 for $80  
-Shaggy sold a Guitar to BuyerE29 for $12  
-BuyerG305 didn't buy since he dissatisfied with the price 
-Shaggy sold a PracticeAmps to BuyerF509 for $10 after a 10% discount 
-BuyerJ307 didn't buy since he dissatisfied with the price 
-Shaggy bought a Very Good used Flute from SellerA401 for $27 
-Shaggy bought a Very Good new Vinyl from SellerI470 for $9 
-SellerH226 didn't sell MusicCD since they dissatisfied with the price 
-Shaggy bought a Fair used Cables from SellerB718 for $9 
-Shaggy bought a Excellent new RecordPlayer from SellerD722 for $8 
-It's wonderful day: nothing was damaged
-Shaggy closed the store on day 26 and came back home 
+arriveAtStore: Velma arrives at store at day 19  
+Check register: today 19, 3069 in the register
+Velma using haphard tunealgorithm change a RecordPlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Harmonica from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a Mandolin from not tuned to tuned 
+Velma using haphard tunealgorithm change a MP3 from not equalized to equalized 
+Do inventory: The total value of all the items in the store is 1386
+BuyerC900 doesn't buy anything and leave because the dissatisfaction for the price 
+openStore: Velma sold a Vinyl to BuyerI729  for  70  
+openStore: Velma sold a MusicCD to BuyerD323  for  92  
+the SellerI345 doesn't sell Vinyl since he dissatisfied with the price 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, MP3@45283ce2, MP3@2077d4de, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Cables@6438a396, Saxophone@6477463f, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, Saxophone@50134894, CassettePlayer@deb6432, Cassette@28ba21f3, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, PlayerCD@64a294a6, Guitar@7e0b37bc, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f, Mandolin@4dcbadb4, Cables@4e515669, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, CassettePlayer@3b764bce, Guitar@484b61fc, Cables@45fe3ee3, Cassette@5eb5c224, Mandolin@ea30797, PlayerCD@7e774085, CassettePlayer@aec6354, MP3@1c655221, CassettePlayer@1b701da1, Bass@442d9b6e, Harmonica@ee7d9f1, PlayerCD@15615099, PaperScore@368102c8, Saxophone@6996db8, PaperScore@1963006a, PracticeAmps@7fbe847c, GigBag@41975e01, Guitar@6d9c638, Vinyl@7dc5e7b4, Harmonica@1ee0005, Mandolin@75a1cd57, MP3@3d012ddd]
+OpenStore: Velma bought a Very Good new Cassette from SellerG222 for 12 
+openStore: Velma bought a Fair new PracticeAmps from SellerC540 for 11  
+OpenStore: Velma bought a Good new Cables from SellerA46 for 10 
+OpenStore: Velma bought a Excellent used Cassette from SellerF369 for 12 
+Leave Store: Velma close the store at the day 19 and back home 
+++++++++++++++++++
+Day: 19
+{Shaggy={Items Purchased=38, Items Sold=32, Items Damaged=1}, Daphne={Items Purchased=19, Items Sold=21, Items Damaged=4}, Velma={Items Purchased=16, Items Sold=11, Items Damaged=2}}
+++++++++++++++++++
 ---------------------------
-Velma arrives at store at day 27  
- the  ShirtsC401 get arrived at the store on day 27 
- the  ShirtsC936 get arrived at the store on day 27 
- the  ShirtsC208 get arrived at the store on day 27 
-On day 27, $4279 is in the register
-The total value of all the items in the store is $1036
-Velma sold a Strings to BuyerF871 for $22  
-Velma sold a Hats to BuyerB473 for $68  
-Velma sold a Guitar to BuyerC561 for $72  
-Velma sold a Vinyl to BuyerA837 for $38  
-Velma bought a Fair used Harmonica from SellerE813 for $7 
-SellerI655 didn't sell MusicCD since they dissatisfied with the price 
-SellerH135 didn't sell Bandanas since they dissatisfied with the price 
-Velma bought a Excellent used MusicCD from SellerD625 for $40 
-Velma bought a Excellent new Cables from SellerE333 for $8 
-Velma bought a Fair used PracticeAmps from SellerH614 for $6 
-Velma bought a Excellent used Bandanas from SellerI300 for $39  
-It's wonderful day: nothing was damaged
-Velma closed the store on day 27 and came back home 
+arriveAtStore: Velma arrives at store at day 20  
+Check register: today 20, 3186 in the register
+Velma using haphard tunealgorithm change a PlayerCD from not equalized to equalized 
+Velma using haphard tunealgorithm change a MP3 from not equalized to equalized 
+Velma using haphard tunealgorithm change a MP3 from not equalized to equalized 
+Velma using haphard tunealgorithm change a Mandolin from not tuned to tuned 
+Velma using haphard tunealgorithm change a Flute from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a Harmonica from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from not equalized to equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Saxophone from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a Flute from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a PlayerCD from not equalized to equalized 
+Velma using haphard tunealgorithm change a Saxophone from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a Guitar from not tuned to tuned 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Damage: Velma destroyed a GuitarA781 by accident 
+Do inventory: The total value of all the items in the store is 1379
+openStore: Velma sold a PaperScore to BuyerD192  for  78  
+BuyerA830 doesn't buy anything and leave because the dissatisfaction for the price 
+openStore: Velma sold a Cables to BuyerA664  for  2  
+BuyerH228 doesn't buy anything and leave because the dissatisfaction for the price 
+BuyerJ909 doesn't buy anything and leave because the dissatisfaction for the price 
+OpenStore: Velma bought a Fair new Mandolin from SellerA714 for 7 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, MP3@45283ce2, MP3@2077d4de, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Saxophone@6477463f, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, Saxophone@50134894, CassettePlayer@deb6432, Cassette@28ba21f3, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, PlayerCD@64a294a6, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f, Mandolin@4dcbadb4, Cables@4e515669, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, CassettePlayer@3b764bce, Guitar@484b61fc, Cables@45fe3ee3, Cassette@5eb5c224, Mandolin@ea30797, PlayerCD@7e774085, CassettePlayer@aec6354, MP3@1c655221, CassettePlayer@1b701da1, Bass@442d9b6e, Harmonica@ee7d9f1, PlayerCD@15615099, Saxophone@6996db8, PaperScore@1963006a, PracticeAmps@7fbe847c, GigBag@41975e01, Guitar@6d9c638, Vinyl@7dc5e7b4, Harmonica@1ee0005, Mandolin@75a1cd57, MP3@3d012ddd, Cassette@1eb44e46, PracticeAmps@6504e3b2, Cables@515f550a, Cassette@626b2d4a, Mandolin@5e91993f]
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, MP3@45283ce2, MP3@2077d4de, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Saxophone@6477463f, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, Saxophone@50134894, CassettePlayer@deb6432, Cassette@28ba21f3, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, PlayerCD@64a294a6, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f, Mandolin@4dcbadb4, Cables@4e515669, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, CassettePlayer@3b764bce, Guitar@484b61fc, Cables@45fe3ee3, Cassette@5eb5c224, Mandolin@ea30797, PlayerCD@7e774085, CassettePlayer@aec6354, MP3@1c655221, CassettePlayer@1b701da1, Bass@442d9b6e, Harmonica@ee7d9f1, PlayerCD@15615099, Saxophone@6996db8, PaperScore@1963006a, PracticeAmps@7fbe847c, GigBag@41975e01, Guitar@6d9c638, Vinyl@7dc5e7b4, Harmonica@1ee0005, Mandolin@75a1cd57, MP3@3d012ddd, Cassette@1eb44e46, PracticeAmps@6504e3b2, Cables@515f550a, Cassette@626b2d4a, Mandolin@5e91993f]
+the SellerH689 doesn't sell PlayerCD since he dissatisfied with the price 
+OpenStore: Velma bought a Excellent used Vinyl from SellerE200 for 24 
+the SellerH968 doesn't sell Strings since he dissatisfied with the price 
+Leave Store: Velma close the store at the day 20 and back home 
+++++++++++++++++++
+Day: 20
+{Shaggy={Items Purchased=38, Items Sold=32, Items Damaged=1}, Daphne={Items Purchased=19, Items Sold=21, Items Damaged=4}, Velma={Items Purchased=18, Items Sold=13, Items Damaged=4}}
+++++++++++++++++++
 ---------------------------
 today is Sunday, so the store closed 
+++++++++++++++++++
+Day: 21
+{Shaggy={Items Purchased=38, Items Sold=32, Items Damaged=1}, Daphne={Items Purchased=19, Items Sold=21, Items Damaged=4}, Velma={Items Purchased=18, Items Sold=13, Items Damaged=4}}
+++++++++++++++++++
 -----------------------------------
-Velma arrives at store at day 29  
-On day 29, $4379 is in the register
-The total value of all the items in the store is $1109
-Velma sold a Bandanas to BuyerE174 for $36  
-Velma sold a Harmonica to BuyerG440 for $84  
-Velma sold a Mandolin to BuyerF570 for $14 after a 10% discount 
-BuyerJ863 didn't buy since he dissatisfied with the price 
-Velma sold a Guitar to BuyerH732 for $96  
-Velma sold a Harmonica to BuyerB406 for $64 after a 10% discount 
-Velma sold a Shirts to BuyerC219 for $36  
-SellerB165 didn't sell Bandanas since they dissatisfied with the price 
-Velma bought a Excellent used RecordPlayer from SellerE935 for $44  
-Velma bought a Fair used Shirts from SellerJ263 for $7 
-SellerA514 didn't sell Hats since they dissatisfied with the price 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 29 and came back home 
+arriveAtStore: Daphne arrives at store at day 22  
+Check register: today 22, 3235 in the register
+Daphne using mannual tunealgorithm change a Guitar from not tuned to tuned 
+Daphne using mannual tunealgorithm change a Bass from not tuned to tuned 
+Daphne using mannual tunealgorithm change a Bass from not tuned to tuned 
+Daphne using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Daphne using mannual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Daphne using mannual tunealgorithm change a Guitar from not tuned to tuned 
+Daphne using mannual tunealgorithm change a Flute from not adjusted to adjusted 
+Daphne using mannual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Daphne using mannual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Daphne using mannual tunealgorithm change a PlayerCD from not equalized to equalized 
+Daphne using mannual tunealgorithm change a MP3 from not equalized to equalized 
+Daphne using mannual tunealgorithm change a Bass from not tuned to tuned 
+Daphne using mannual tunealgorithm change a Mandolin from not tuned to tuned 
+Daphne using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Daphne using mannual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Daphne using mannual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Daphne using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Daphne using mannual tunealgorithm change a Mandolin from not tuned to tuned 
+Daphne using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Daphne using mannual tunealgorithm change a Mandolin from not tuned to tuned 
+Do inventory: The total value of all the items in the store is 1388
+openStore: Daphne sold a PracticeAmps to BuyerE503  for  4  
+openStore: Daphne sold a CassettePlayer to BuyerA815  for  72  
+The Clothing items in the store is outofstock
+openStore: Daphne sold a Cassette to BuyerI618  for  18  
+openStore: Daphne bought a Poor new CassettePlayer from SellerI372 for 4  
+OpenStore: Daphne bought a Good used MusicCD from SellerB454 for 4 
+OpenStore: Daphne bought a Fair new RecordPlayer from SellerB342 for 4 
+OpenStore: Daphne bought a Excellent used MP3 from SellerJ587 for 8 
+OpenStore: Daphne bought a Excellent used GigBa from SellerH677 for 36 
+the SellerF492 doesn't sell Vinyl since he dissatisfied with the price 
+openStore: Daphne bought a Fair used Guitar from SellerF884 for 6  
+Leave Store: Daphne close the store at the day 22 and back home 
+++++++++++++++++++
+Day: 22
+{Shaggy={Items Purchased=38, Items Sold=32, Items Damaged=1}, Daphne={Items Purchased=25, Items Sold=24, Items Damaged=4}, Velma={Items Purchased=18, Items Sold=13, Items Damaged=4}}
+++++++++++++++++++
 ---------------------------
-Velma arrives at store at day 30  
-On day 30, $4658 is in the register
-The total value of all the items in the store is $1057
-Velma sold a Shirts to BuyerE429 for $62  
-Velma sold a Bass to BuyerC313 for $80  
-Velma sold a PracticeAmps to BuyerI934 for $26  
-Velma sold a Harmonica to BuyerD645 for $44  
-BuyerB754 didn't buy since he dissatisfied with the price 
-Velma sold a Vinyl to BuyerH395 for $37 after a 10% discount 
-Velma bought a Very Good new Bass from SellerF229 for $29  
-Velma bought a Excellent used Flute from SellerJ610 for $20 
-SellerD63 didn't sell Guitar since they dissatisfied with the price 
-Velma bought a Very Good new MusicCD from SellerD477 for $15 
-SellerB278 didn't sell PlayerCD since they dissatisfied with the price 
-Velma bought a Fair new PaperScore from SellerD713 for $11  
-SellerB365 didn't sell Harmonica since they dissatisfied with the price 
-It's wonderful day: nothing was damaged
-Velma closed the store on day 30 and came back home 
+arriveAtStore: Velma arrives at store at day 23  
+Check register: today 23, 3267 in the register
+Velma using haphard tunealgorithm change a RecordPlayer from not equalized to equalized 
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Flute from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a RecordPlayer from not equalized to equalized 
+Do inventory: The total value of all the items in the store is 1418
+Velma sold a Harmonica to BuyerG939  for  8 after a 10% discount 
+The Clothing items in the store is outofstock
+openStore: Velma sold a RecordPlayer to BuyerC271  for  76  
+openStore: Velma sold a Cables to BuyerC117  for  40  
+openStore: Velma bought a Good used PlayerCD from SellerC179 for 6  
+openStore: Velma bought a Poor new Saxophone from SellerJ277 for 8  
+OpenStore: Velma bought a Good used MP3 from SellerG856 for 4 
+OpenStore: Velma bought a Fair new MusicCD from SellerF103 for 9 
+OpenStore: Velma bought a Excellent new Mandolin from SellerF143 for 4 
+openStore: Velma bought a Fair used Strings from SellerA701 for 8  
+openStore: Velma bought a Poor new Cables from SellerH824 for 5  
+OpenStore: Velma bought a Fair new Harmonica from SellerI750 for 8 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, MP3@45283ce2, MP3@2077d4de, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Bass@2d38eb89, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Saxophone@6477463f, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, Saxophone@50134894, CassettePlayer@deb6432, Cassette@28ba21f3, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, PlayerCD@64a294a6, MP3@6ae40994, MusicCD@3d82c5f3, Bass@2b05039f, Mandolin@4dcbadb4, Cables@4e515669, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, CassettePlayer@3b764bce, Guitar@484b61fc, Cables@45fe3ee3, Mandolin@ea30797, PlayerCD@7e774085, CassettePlayer@aec6354, MP3@1c655221, Bass@442d9b6e, PlayerCD@15615099, Saxophone@6996db8, PaperScore@1963006a, GigBag@41975e01, Guitar@6d9c638, Vinyl@7dc5e7b4, Harmonica@1ee0005, Mandolin@75a1cd57, MP3@3d012ddd, Cassette@1eb44e46, PracticeAmps@6504e3b2, Cassette@626b2d4a, Mandolin@5e91993f, Vinyl@cac736f, CassettePlayer@5e265ba4, MusicCD@156643d4, MP3@123a439b, GigBag@7de26db8, Guitar@1175e2db, PlayerCD@36aa7bc2, Saxophone@76ccd017, MP3@182decdb, MusicCD@26f0a63f, Mandolin@4361bd48, Strings@53bd815b, Cables@2401f4c3, Harmonica@7637f22]
+OpenStore: Velma bought a Good new PlayerCD from SellerC882 for 4 
+Leave Store: Velma close the store at the day 23 and back home 
+++++++++++++++++++
+Day: 23
+{Shaggy={Items Purchased=38, Items Sold=32, Items Damaged=1}, Daphne={Items Purchased=25, Items Sold=24, Items Damaged=4}, Velma={Items Purchased=27, Items Sold=16, Items Damaged=5}}
+++++++++++++++++++
+---------------------------
+arriveAtStore: Shaggy arrives at store at day 24  
+Check register: today 24, 3335 in the register
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Flute from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Bass from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Bass from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Do inventory: The total value of all the items in the store is 1451
+The Clothing items in the store is outofstock
+The Clothing items in the store is outofstock
+openStore: Shaggy sold a Saxophone to BuyerF782  for  4  
+The Clothing items in the store is outofstock
+openStore: Shaggy sold a MusicCD to BuyerF585  for  64  
+openStore: Shaggy bought a Very Good new Flute from SellerC726 for 35  
+openStore: Shaggy bought a Very Good used Vinyl from SellerH933 for 39  
+OpenStore: Shaggy bought a Very Good new RecordPlayer from SellerI595 for 24 
+OpenStore: Shaggy bought a Excellent new Flute from SellerB851 for 36 
+openStore: Shaggy bought a Fair used Vinyl from SellerE702 for 19  
+OpenStore: Shaggy bought a Good new Saxophone from SellerJ243 for 16 
+OpenStore: Shaggy bought a Excellent used PlayerCD from SellerA200 for 12 
+OpenStore: Shaggy bought a Fair used Cassette from SellerI397 for 2 
+Leave Store: Shaggy close the store at the day 24 and back home 
+++++++++++++++++++
+Day: 24
+{Shaggy={Items Purchased=46, Items Sold=34, Items Damaged=1}, Daphne={Items Purchased=25, Items Sold=24, Items Damaged=4}, Velma={Items Purchased=27, Items Sold=16, Items Damaged=5}}
+++++++++++++++++++
+---------------------------
+arriveAtStore: Velma arrives at store at day 25  
+Check register: today 25, 3220 in the register
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a RecordPlayer from not equalized to equalized 
+Velma using haphard tunealgorithm change a Flute from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a Saxophone from not adjusted to adjusted 
+Damage: Velma destroyed a SaxophoneG754 by accident 
+Do inventory: The total value of all the items in the store is 1583
+openStore: Velma sold a MusicCD to BuyerF650  for  58  
+BuyerA666 doesn't buy anything and leave because the dissatisfaction for the price 
+Velma sold a PlayerCD to BuyerG817  for  64 after a 10% discount 
+The Clothing items in the store is outofstock
+add a cables additionally
+add a cables additionally
+adda Strings additionally
+additional sold items:Cables,Cables,Strings
+Velma sold a Bass,Cables,Cables,Strings to BuyerJ433  for  170 after a 10% discount 
+The Clothing items in the store is outofstock
+openStore: Velma sold a Mandolin to BuyerI874  for  82  
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, MP3@45283ce2, MP3@2077d4de, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Saxophone@6477463f, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, CassettePlayer@deb6432, Cassette@28ba21f3, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, PlayerCD@64a294a6, MP3@6ae40994, Bass@2b05039f, Mandolin@4dcbadb4, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, CassettePlayer@3b764bce, Guitar@484b61fc, Mandolin@ea30797, PlayerCD@7e774085, CassettePlayer@aec6354, MP3@1c655221, Bass@442d9b6e, PlayerCD@15615099, Saxophone@6996db8, PaperScore@1963006a, GigBag@41975e01, Guitar@6d9c638, Vinyl@7dc5e7b4, Harmonica@1ee0005, Mandolin@75a1cd57, MP3@3d012ddd, Cassette@1eb44e46, PracticeAmps@6504e3b2, Cassette@626b2d4a, Vinyl@cac736f, CassettePlayer@5e265ba4, MusicCD@156643d4, MP3@123a439b, GigBag@7de26db8, Guitar@1175e2db, PlayerCD@36aa7bc2, MP3@182decdb, Mandolin@4361bd48, Cables@2401f4c3, Harmonica@7637f22, PlayerCD@5d22bbb7, Flute@41a4555e, Vinyl@3830f1c0, RecordPlayer@39ed3c8d, Flute@71dac704, Vinyl@123772c4, Saxophone@2d363fb3, Cassette@7d6f77cc]
+openStore: Velma bought a Very Good new Harmonica from SellerF348 for 30  
+OpenStore: Velma bought a Very Good used Saxophone from SellerJ967 for 21 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, MP3@45283ce2, MP3@2077d4de, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Saxophone@6477463f, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, CassettePlayer@deb6432, Cassette@28ba21f3, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, PlayerCD@64a294a6, MP3@6ae40994, Bass@2b05039f, Mandolin@4dcbadb4, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, CassettePlayer@3b764bce, Guitar@484b61fc, Mandolin@ea30797, PlayerCD@7e774085, CassettePlayer@aec6354, MP3@1c655221, Bass@442d9b6e, PlayerCD@15615099, Saxophone@6996db8, PaperScore@1963006a, GigBag@41975e01, Guitar@6d9c638, Vinyl@7dc5e7b4, Harmonica@1ee0005, Mandolin@75a1cd57, MP3@3d012ddd, Cassette@1eb44e46, PracticeAmps@6504e3b2, Cassette@626b2d4a, Vinyl@cac736f, CassettePlayer@5e265ba4, MusicCD@156643d4, MP3@123a439b, GigBag@7de26db8, Guitar@1175e2db, PlayerCD@36aa7bc2, MP3@182decdb, Mandolin@4361bd48, Cables@2401f4c3, Harmonica@7637f22, PlayerCD@5d22bbb7, Flute@41a4555e, Vinyl@3830f1c0, RecordPlayer@39ed3c8d, Flute@71dac704, Vinyl@123772c4, Saxophone@2d363fb3, Cassette@7d6f77cc, Harmonica@5aaa6d82, Saxophone@73a28541]
+the SellerH79 doesn't sell Vinyl since he dissatisfied with the price 
+Leave Store: Velma close the store at the day 25 and back home 
+++++++++++++++++++
+Day: 25
+{Shaggy={Items Purchased=46, Items Sold=34, Items Damaged=1}, Daphne={Items Purchased=25, Items Sold=24, Items Damaged=4}, Velma={Items Purchased=29, Items Sold=23, Items Damaged=8}}
+++++++++++++++++++
+---------------------------
+arriveAtStore: Velma arrives at store at day 26  
+Check register: today 26, 3543 in the register
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a MP3 from not equalized to equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Mandolin from not tuned to tuned 
+Velma using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from not equalized to equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from not equalized to equalized 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Bass from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Mandolin from not tuned to tuned 
+Velma using haphard tunealgorithm change a MP3 from not equalized to equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a PlayerCD from not equalized to equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Saxophone from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a MP3 from not equalized to equalized 
+Velma using haphard tunealgorithm change a Guitar from not tuned to tuned 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a PlayerCD from not equalized to equalized 
+Velma using haphard tunealgorithm change a Flute from not adjusted to adjusted 
+Do inventory: The total value of all the items in the store is 1535
+The Clothing items in the store is outofstock
+The Clothing items in the store is outofstock
+the SellerJ480 doesn't sell Mandolin since he dissatisfied with the price 
+OpenStore: Velma bought a Very Good new PaperScore from SellerG334 for 9 
+openStore: Velma bought a Fair used Cables from SellerD840 for 15  
+openStore: Velma bought a Very Good used CassettePlayer from SellerH560 for 17  
+OpenStore: Velma bought a Excellent used MusicCD from SellerE137 for 24 
+openStore: Velma bought a Fair new PracticeAmps from SellerC472 for 8  
+openStore: Velma bought a Very Good used MP3 from SellerD731 for 4  
+OpenStore: Velma bought a Fair used GigBa from SellerF194 for 5 
+OpenStore: Velma bought a Good used Mandolin from SellerA679 for 4 
+Leave Store: Velma close the store at the day 26 and back home 
+++++++++++++++++++
+Day: 26
+{Shaggy={Items Purchased=46, Items Sold=34, Items Damaged=1}, Daphne={Items Purchased=25, Items Sold=24, Items Damaged=4}, Velma={Items Purchased=37, Items Sold=23, Items Damaged=9}}
+++++++++++++++++++
+---------------------------
+arriveAtStore: Shaggy arrives at store at day 27  
+Check register: today 27, 3457 in the register
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Bass from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Flute from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Flute from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Bass from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Bass from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a PlayerCD from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Guitar from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Harmonica from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a Saxophone from not adjusted to adjusted 
+Shaggy using Manual tunealgorithm change a CassettePlayer from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a MP3 from not equalized to equalized 
+Shaggy using Manual tunealgorithm change a Mandolin from not tuned to tuned 
+Do inventory: The total value of all the items in the store is 1619
+The Clothing items in the store is outofstock
+Shaggy sold a Flute to BuyerE242  for  22 after a 10% discount 
+The Clothing items in the store is outofstock
+The Clothing items in the store is outofstock
+OpenStore: Shaggy bought a Good new PracticeAmps from SellerC839 for 10 
+openStore: Shaggy bought a Fair new MusicCD from SellerB522 for 13  
+openStore: Shaggy bought a Good new Mandolin from SellerF467 for 13  
+openStore: Shaggy bought a Fair used Flute from SellerC343 for 6  
+OpenStore: Shaggy bought a Excellent new Guitar from SellerF579 for 32 
+openStore: Shaggy bought a Poor used GigBa from SellerG863 for 3  
+OpenStore: Shaggy bought a Very Good new Flute from SellerJ375 for 12 
+Leave Store: Shaggy close the store at the day 27 and back home 
+++++++++++++++++++
+Day: 27
+{Shaggy={Items Purchased=53, Items Sold=35, Items Damaged=2}, Daphne={Items Purchased=25, Items Sold=24, Items Damaged=4}, Velma={Items Purchased=37, Items Sold=23, Items Damaged=9}}
+++++++++++++++++++
+---------------------------
+today is Sunday, so the store closed 
+++++++++++++++++++
+Day: 28
+{Shaggy={Items Purchased=53, Items Sold=35, Items Damaged=2}, Daphne={Items Purchased=25, Items Sold=24, Items Damaged=4}, Velma={Items Purchased=37, Items Sold=23, Items Damaged=9}}
+++++++++++++++++++
+-----------------------------------
+arriveAtStore: Daphne arrives at store at day 29  
+Check register: today 29, 3390 in the register
+Daphne using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Daphne using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Daphne using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Daphne using mannual tunealgorithm change a Flute from not adjusted to adjusted 
+Daphne using mannual tunealgorithm change a Flute from not adjusted to adjusted 
+Do inventory: The total value of all the items in the store is 1670
+openStore: Daphne sold a Mandolin to BuyerD420  for  44  
+The Clothing items in the store is outofstock
+The Clothing items in the store is outofstock
+openStore: Daphne sold a Cables to BuyerF187  for  38  
+OpenStore: Daphne bought a Very Good new Vinyl from SellerI556 for 3 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, MP3@45283ce2, MP3@2077d4de, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Saxophone@6477463f, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, CassettePlayer@deb6432, Cassette@28ba21f3, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, PlayerCD@64a294a6, MP3@6ae40994, Bass@2b05039f, Mandolin@4dcbadb4, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, CassettePlayer@3b764bce, Guitar@484b61fc, Mandolin@ea30797, PlayerCD@7e774085, CassettePlayer@aec6354, MP3@1c655221, Bass@442d9b6e, PlayerCD@15615099, Saxophone@6996db8, PaperScore@1963006a, GigBag@41975e01, Guitar@6d9c638, Vinyl@7dc5e7b4, Harmonica@1ee0005, MP3@3d012ddd, Cassette@1eb44e46, PracticeAmps@6504e3b2, Cassette@626b2d4a, Vinyl@cac736f, CassettePlayer@5e265ba4, MusicCD@156643d4, MP3@123a439b, GigBag@7de26db8, Guitar@1175e2db, PlayerCD@36aa7bc2, MP3@182decdb, Mandolin@4361bd48, Harmonica@7637f22, PlayerCD@5d22bbb7, Flute@41a4555e, Vinyl@3830f1c0, RecordPlayer@39ed3c8d, Vinyl@123772c4, Saxophone@2d363fb3, Cassette@7d6f77cc, Harmonica@5aaa6d82, Saxophone@73a28541, PaperScore@782830e, Cables@470e2030, CassettePlayer@3fb4f649, MusicCD@33833882, PracticeAmps@200a570f, MP3@16b3fc9e, GigBag@e2d56bf, Mandolin@244038d0, PracticeAmps@5680a178, MusicCD@5fdef03a, Mandolin@3b22cdd0, Flute@1e81f4dc, Guitar@4d591d15, GigBag@65ae6ba4, Flute@48cf768c, Vinyl@59f95c5d]
+openStore: Daphne bought a Fair used Cables from SellerF495 for 11  
+OpenStore: Daphne bought a Excellent used PlayerCD from SellerJ47 for 28 
+the SellerI231 doesn't sell Saxophone since he dissatisfied with the price 
+openStore: Daphne bought a Very Good used Strings from SellerG215 for 35  
+the SellerG745 doesn't sell CassettePlayer since he dissatisfied with the price 
+Leave Store: Daphne close the store at the day 29 and back home 
+++++++++++++++++++
+Day: 29
+{Shaggy={Items Purchased=53, Items Sold=35, Items Damaged=2}, Daphne={Items Purchased=29, Items Sold=26, Items Damaged=5}, Velma={Items Purchased=37, Items Sold=23, Items Damaged=9}}
+++++++++++++++++++
+---------------------------
+arriveAtStore: Velma arrives at store at day 30  
+Check register: today 30, 3395 in the register
+Velma using haphard tunealgorithm change a PlayerCD from not equalized to equalized 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Flute from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Flute from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a PlayerCD from  equalized to not equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Saxophone from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a Guitar from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Harmonica from  adjusted to not adjusted 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a CassettePlayer from not equalized to equalized 
+Velma using haphard tunealgorithm change a MP3 from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a RecordPlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Harmonica from not adjusted to adjusted 
+Velma using haphard tunealgorithm change a CassettePlayer from  equalized to not equalized 
+Velma using haphard tunealgorithm change a Mandolin from  tuned to not tuned 
+Velma using haphard tunealgorithm change a Mandolin from not tuned to tuned 
+Velma using haphard tunealgorithm change a Guitar from not tuned to tuned 
+Velma using haphard tunealgorithm change a PlayerCD from not equalized to equalized 
+Do inventory: The total value of all the items in the store is 1728
+openStore: Velma sold a Cables to BuyerH143  for  64  
+Velma sold a PlayerCD to BuyerG438  for  32 after a 10% discount 
+BuyerI326 doesn't buy anything and leave because the dissatisfaction for the price 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, MP3@45283ce2, MP3@2077d4de, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Saxophone@6477463f, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, CassettePlayer@deb6432, Cassette@28ba21f3, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, MP3@6ae40994, Bass@2b05039f, Mandolin@4dcbadb4, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, CassettePlayer@3b764bce, Guitar@484b61fc, Mandolin@ea30797, PlayerCD@7e774085, CassettePlayer@aec6354, MP3@1c655221, Bass@442d9b6e, PlayerCD@15615099, Saxophone@6996db8, PaperScore@1963006a, GigBag@41975e01, Guitar@6d9c638, Vinyl@7dc5e7b4, Harmonica@1ee0005, MP3@3d012ddd, Cassette@1eb44e46, PracticeAmps@6504e3b2, Cassette@626b2d4a, Vinyl@cac736f, CassettePlayer@5e265ba4, MusicCD@156643d4, MP3@123a439b, GigBag@7de26db8, Guitar@1175e2db, PlayerCD@36aa7bc2, MP3@182decdb, Mandolin@4361bd48, Harmonica@7637f22, PlayerCD@5d22bbb7, Flute@41a4555e, Vinyl@3830f1c0, RecordPlayer@39ed3c8d, Vinyl@123772c4, Saxophone@2d363fb3, Cassette@7d6f77cc, Harmonica@5aaa6d82, Saxophone@73a28541, PaperScore@782830e, CassettePlayer@3fb4f649, MusicCD@33833882, PracticeAmps@200a570f, MP3@16b3fc9e, GigBag@e2d56bf, Mandolin@244038d0, PracticeAmps@5680a178, MusicCD@5fdef03a, Mandolin@3b22cdd0, Flute@1e81f4dc, Guitar@4d591d15, GigBag@65ae6ba4, Flute@48cf768c, Vinyl@59f95c5d, Cables@4aa8f0b4, PlayerCD@7960847b, Strings@6a6824be]
+OpenStore: Velma bought a Good new GigBa from SellerE893 for 16 
+we don't buy any Clothing from the seller due to the stock issues
+[PaperScore@69663380, PaperScore@5b37e0d2, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, MP3@45283ce2, MP3@2077d4de, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Saxophone@6477463f, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, CassettePlayer@deb6432, Cassette@28ba21f3, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, MP3@6ae40994, Bass@2b05039f, Mandolin@4dcbadb4, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, CassettePlayer@3b764bce, Guitar@484b61fc, Mandolin@ea30797, PlayerCD@7e774085, CassettePlayer@aec6354, MP3@1c655221, Bass@442d9b6e, PlayerCD@15615099, Saxophone@6996db8, PaperScore@1963006a, GigBag@41975e01, Guitar@6d9c638, Vinyl@7dc5e7b4, Harmonica@1ee0005, MP3@3d012ddd, Cassette@1eb44e46, PracticeAmps@6504e3b2, Cassette@626b2d4a, Vinyl@cac736f, CassettePlayer@5e265ba4, MusicCD@156643d4, MP3@123a439b, GigBag@7de26db8, Guitar@1175e2db, PlayerCD@36aa7bc2, MP3@182decdb, Mandolin@4361bd48, Harmonica@7637f22, PlayerCD@5d22bbb7, Flute@41a4555e, Vinyl@3830f1c0, RecordPlayer@39ed3c8d, Vinyl@123772c4, Saxophone@2d363fb3, Cassette@7d6f77cc, Harmonica@5aaa6d82, Saxophone@73a28541, PaperScore@782830e, CassettePlayer@3fb4f649, MusicCD@33833882, PracticeAmps@200a570f, MP3@16b3fc9e, GigBag@e2d56bf, Mandolin@244038d0, PracticeAmps@5680a178, MusicCD@5fdef03a, Mandolin@3b22cdd0, Flute@1e81f4dc, Guitar@4d591d15, GigBag@65ae6ba4, Flute@48cf768c, Vinyl@59f95c5d, Cables@4aa8f0b4, PlayerCD@7960847b, Strings@6a6824be, GigBag@5c8da962]
+openStore: Velma bought a Very Good used Strings from SellerC958 for 35  
+Leave Store: Velma close the store at the day 30 and back home 
+++++++++++++++++++
+Day: 30
+{Shaggy={Items Purchased=53, Items Sold=35, Items Damaged=2}, Daphne={Items Purchased=29, Items Sold=26, Items Damaged=5}, Velma={Items Purchased=39, Items Sold=25, Items Damaged=11}}
+++++++++++++++++++
 ---------------------------
 -----------------------summarization-------------------------
-The total value of items in the inventory is $1020
-The items in the inventory is [Guitar@58372a00, Mandolin@4dd8dc3, Mandolin@6d03e736, Mandolin@568db2f2, Hats@378bf509, Cables@5fd0d5ae, Guitar@2d98a335, Guitar@16b98e56, Strings@7ef20235, Vinyl@27d6c5e0, Guitar@4f3f5b24, Strings@15aeb7ab, Mandolin@7b23ec81, Cables@6acbcfc0, Flute@5f184fc6, Vinyl@3feba861, Vinyl@5b480cf9, MP3@6f496d9f, MP3@723279cf, PaperScore@10f87f48, PaperScore@b4c966a, PlayerCD@2f4d3709, PlayerCD@4e50df2e, Hats@1d81eb93, PlayerCD@7291c18f, Mandolin@34a245ab, Mandolin@7cc355be, Mandolin@6e8cf4c6, Guitar@12edcd21, PlayerCD@34c45dca, Flute@52cc8049, MusicCD@5b6f7412, Flute@27973e9b, Guitar@312b1dae, Mandolin@7530d0a, Hats@27bc2616, MP3@3941a79c, Bass@506e1b77, Bandanas@4fca772d, PlayerCD@9807454, MP3@3d494fbf, Flute@1ddc4ec2, PlayerCD@133314b, PlayerCD@b1bc7ed, MP3@7cd84586, Cables@30dae81, MusicCD@1b2c6ec2, Cables@4edde6e5, PaperScore@70177ecd, Flute@1e80bfe8, Cables@66a29884, RecordPlayer@4769b07b, Shirts@cc34f4d, Harmonica@17a7cec2, MusicCD@65b3120a, Cables@6f539caf, PracticeAmps@79fc0f2f, Bandanas@50040f0c, RecordPlayer@2dda6444, Shirts@5e9f23b4, Bass@4783da3f, Flute@378fd1ac, MusicCD@49097b5d, PaperScore@6e2c634b]
-RecordPlayerF398 sell a price for $28 on day 1 
-BandanasC584 sell a price for $34 on day 1 
-HatsJ783 sell a price for $38 on day 1 
-PlayerCDH87 sell a price for $62 on day 1 
-BassI264 sell a price for $48 on day 2 
-PaperScoreJ332 sell a price for $68 on day 2 
-CablesH245 sell a price for $16 on day 2 
-StringsJ321 sell a price for $81 on day 2 
-StringsF905 sell a price for $10 on day 2 
-StringsA695 sell a price for $2 on day 2 
-PaperScoreI663 sell a price for $88 on day 2 
-HarmonicaC422 sell a price for $98 on day 2 
-VinylC671 sell a price for $96 on day 3 
-BandanasE244 sell a price for $12 on day 3 
-HatsG753 sell a price for $72 on day 3 
-VinylH284 sell a price for $72 on day 3 
-FluteJ815 sell a price for $42 on day 3 
-BandanasE986 sell a price for $32 on day 3 
-FluteE103 sell a price for $22 on day 4 
-PaperScoreI444 sell a price for $73 on day 4 
-ShirtsI659 sell a price for $81 on day 4 
-MusicCDC423 sell a price for $32 on day 4 
-StringsD205 sell a price for $25 on day 4 
-PracticeAmpsG912 sell a price for $10 on day 4 
-BandanasB71 sell a price for $14 on day 5 
-MusicCDA621 sell a price for $68 on day 5 
-PracticeAmpsC94 sell a price for $58 on day 5 
-ShirtsG355 sell a price for $38 on day 5 
-GuitarI833 sell a price for $55 on day 5 
-FluteJ625 sell a price for $79 on day 6 
-MP3B409 sell a price for $58 on day 6 
-BassB895 sell a price for $16 on day 6 
-PlayerCDA959 sell a price for $43 on day 6 
-MandolinJ544 sell a price for $52 on day 6 
-FluteA553 sell a price for $86 on day 8 
-RecordPlayerC465 sell a price for $88 on day 8 
-RecordPlayerA628 sell a price for $73 on day 8 
-ShirtsD941 sell a price for $20 on day 8 
-StringsF926 sell a price for $12 on day 8 
-RecordPlayerG725 sell a price for $56 on day 8 
-RecordPlayerB697 sell a price for $10 on day 8 
-PaperScoreG531 sell a price for $33 on day 9 
-HarmonicaF939 sell a price for $54 on day 9 
-RecordPlayerC994 sell a price for $72 on day 9 
-MP3D804 sell a price for $32 on day 9 
-VinylF752 sell a price for $88 on day 9 
-MusicCDA460 sell a price for $26 on day 9 
-MandolinA583 sell a price for $94 on day 9 
-MP3J459 sell a price for $42 on day 9 
-VinylA808 sell a price for $63 on day 10 
-CablesF937 sell a price for $2 on day 10 
-MP3C329 sell a price for $40 on day 10 
-CablesI161 sell a price for $30 on day 10 
-StringsD633 sell a price for $4 on day 10 
-ShirtsJ715 sell a price for $3 on day 11 
-PaperScoreD647 sell a price for $68 on day 11 
-PlayerCDB995 sell a price for $9 on day 11 
-PracticeAmpsB588 sell a price for $6 on day 11 
-StringsD925 sell a price for $4 on day 12 
-RecordPlayerC609 sell a price for $22 on day 12 
-MandolinD738 sell a price for $22 on day 12 
-FluteG763 sell a price for $25 on day 13 
-MP3D955 sell a price for $82 on day 13 
-BandanasH73 sell a price for $54 on day 15 
-VinylE891 sell a price for $10 on day 15 
-GuitarG562 sell a price for $8 on day 15 
-FluteI882 sell a price for $30 on day 15 
-ShirtsF64 sell a price for $80 on day 15 
-PracticeAmpsG539 sell a price for $77 on day 16 
-MusicCDF781 sell a price for $5 on day 16 
-HarmonicaI589 sell a price for $23 on day 16 
-GuitarE360 sell a price for $16 on day 16 
-BassH509 sell a price for $28 on day 16 
-FluteD514 sell a price for $27 on day 17 
-ShirtsA595 sell a price for $12 on day 17 
-HarmonicaH162 sell a price for $72 on day 17 
-PlayerCDJ162 sell a price for $14 on day 17 
-BandanasJ775 sell a price for $10 on day 18 
-HatsH676 sell a price for $18 on day 18 
-VinylC924 sell a price for $75 on day 19 
-HarmonicaB154 sell a price for $14 on day 19 
-RecordPlayerI564 sell a price for $54 on day 19 
-BandanasC336 sell a price for $76 on day 19 
-MusicCDG387 sell a price for $82 on day 20 
-PaperScoreG576 sell a price for $38 on day 20 
-FluteA739 sell a price for $28 on day 20 
-ShirtsC81 sell a price for $37 on day 20 
-RecordPlayerA654 sell a price for $64 on day 20 
-HarmonicaB712 sell a price for $44 on day 20 
-BandanasE8 sell a price for $55 on day 20 
-RecordPlayerD267 sell a price for $14 on day 22 
-PracticeAmpsJ219 sell a price for $77 on day 22 
-HatsI266 sell a price for $41 on day 22 
-MP3F275 sell a price for $86 on day 22 
-ShirtsE131 sell a price for $14 on day 22 
-BassD256 sell a price for $98 on day 22 
-HatsB327 sell a price for $3 on day 23 
-VinylB565 sell a price for $7 on day 23 
-HarmonicaE95 sell a price for $54 on day 23 
-MusicCDH348 sell a price for $14 on day 23 
-CablesF356 sell a price for $66 on day 24 
-HarmonicaG472 sell a price for $9 on day 24 
-FluteI952 sell a price for $18 on day 24 
-CablesE837 sell a price for $21 on day 25 
-BandanasH563 sell a price for $78 on day 25 
-RecordPlayerE1 sell a price for $40 on day 25 
-ShirtsG417 sell a price for $42 on day 25 
-HatsD93 sell a price for $38 on day 25 
-RecordPlayerD771 sell a price for $6 on day 26 
-CablesE730 sell a price for $59 on day 26 
-GuitarA166 sell a price for $37 on day 26 
-RecordPlayerA109 sell a price for $80 on day 26 
-GuitarD44 sell a price for $12 on day 26 
-PracticeAmpsB965 sell a price for $10 on day 26 
-StringsE872 sell a price for $22 on day 27 
-HatsF12 sell a price for $68 on day 27 
-GuitarC940 sell a price for $72 on day 27 
-VinylG926 sell a price for $38 on day 27 
-BandanasE490 sell a price for $36 on day 29 
-HarmonicaB740 sell a price for $84 on day 29 
-MandolinI492 sell a price for $14 on day 29 
-GuitarJ243 sell a price for $96 on day 29 
-HarmonicaH962 sell a price for $64 on day 29 
-ShirtsC936 sell a price for $36 on day 29 
-ShirtsC401 sell a price for $62 on day 30 
-BassB136 sell a price for $80 on day 30 
-PracticeAmpsG144 sell a price for $26 on day 30 
-HarmonicaE38 sell a price for $44 on day 30 
-VinylD700 sell a price for $37 on day 30 
-The total value for sold items is $5543
-The sum of money in the register is $4832
+The total value of items in the inventory is $1756
+The items in the inventory is [PaperScore@69663380, PaperScore@5b37e0d2, RecordPlayer@6d5380c2, PlayerCD@2328c243, PlayerCD@bebdb06, MP3@45283ce2, MP3@2077d4de, Guitar@77a567e1, Guitar@736e9adb, Mandolin@6d21714c, Bass@5fa7e7ff, Flute@27f8302d, Harmonica@2d8e6db6, Shirts@23ab930d, Shirts@4534b60d, Shirts@3fa77460, Bandanas@619a5dff, Bandanas@1ed6993a, Bandanas@7e32c033, Saxophone@6477463f, Cassette@46ee7fe8, CassettePlayer@7506e922, CassettePlayer@621be5d1, GigBag@573fd745, GigBag@15327b79, GigBag@4f2410ac, Bandanas@722c41f4, Guitar@5b80350b, Flute@32a1bec0, CassettePlayer@78e03bb5, CassettePlayer@deb6432, Cassette@28ba21f3, Harmonica@f2a0b8e, Flute@593634ad, Guitar@20fa23c1, GigBag@2530c12, Mandolin@73c6c3b2, MP3@6ae40994, Bass@2b05039f, Mandolin@4dcbadb4, PaperScore@17d10166, MP3@1b9e1916, Guitar@4f8e5cde, CassettePlayer@3b764bce, Guitar@484b61fc, Mandolin@ea30797, PlayerCD@7e774085, CassettePlayer@aec6354, MP3@1c655221, Bass@442d9b6e, PlayerCD@15615099, Saxophone@6996db8, PaperScore@1963006a, GigBag@41975e01, Guitar@6d9c638, Vinyl@7dc5e7b4, Harmonica@1ee0005, MP3@3d012ddd, Cassette@1eb44e46, PracticeAmps@6504e3b2, Cassette@626b2d4a, Vinyl@cac736f, CassettePlayer@5e265ba4, MusicCD@156643d4, MP3@123a439b, GigBag@7de26db8, Guitar@1175e2db, PlayerCD@36aa7bc2, MP3@182decdb, Mandolin@4361bd48, Harmonica@7637f22, PlayerCD@5d22bbb7, Flute@41a4555e, Vinyl@3830f1c0, RecordPlayer@39ed3c8d, Vinyl@123772c4, Saxophone@2d363fb3, Cassette@7d6f77cc, Harmonica@5aaa6d82, Saxophone@73a28541, PaperScore@782830e, CassettePlayer@3fb4f649, MusicCD@33833882, PracticeAmps@200a570f, MP3@16b3fc9e, GigBag@e2d56bf, Mandolin@244038d0, PracticeAmps@5680a178, MusicCD@5fdef03a, Mandolin@3b22cdd0, Flute@1e81f4dc, Guitar@4d591d15, GigBag@65ae6ba4, Flute@48cf768c, Vinyl@59f95c5d, Cables@4aa8f0b4, PlayerCD@7960847b, Strings@6a6824be, GigBag@5c8da962, Strings@512ddf17]
+PracticeAmpsG412 sell a price for $94 on day 1 
+FluteE387 sell a price for $74 on day 1 
+HatsJ49 sell a price for $24 on day 1 
+HatsF453 sell a price for $84 on day 1 
+StringsD953 sell a price for $56 on day 1 
+StringsD886 sell a price for $28 on day 2 
+HatsE578 sell a price for $34 on day 2 
+GuitarA362 sell a price for $26 on day 3 
+MusicCDD419 sell a price for $96 on day 3 
+MusicCDA777 sell a price for $26 on day 4 
+VinylF505 sell a price for $62 on day 5 
+HarmonicaH115 sell a price for $38 on day 5 
+SaxophoneI214 sell a price for $48 on day 5 
+HarmonicaB215 sell a price for $34 on day 6 
+PaperScoreC341 sell a price for $90 on day 6 
+MusicCDE643 sell a price for $44 on day 8 
+PracticeAmpsE216 sell a price for $90 on day 8 
+RecordPlayerH584 sell a price for $54 on day 8 
+FluteB587 sell a price for $84 on day 8 
+MandolinJ413 sell a price for $66 on day 8 
+VinylJ762 sell a price for $46 on day 9 
+RecordPlayerB579 sell a price for $22 on day 9 
+CassetteJ598 sell a price for $2 on day 10 
+SaxophoneA124 sell a price for $42 on day 10 
+PracticeAmpsD955 sell a price for $80 on day 10 
+CablesI929 sell a price for $80 on day 10 
+CassetteB385 sell a price for $58 on day 10 
+RecordPlayerE774 sell a price for $46 on day 11 
+CassettePlayerG861 sell a price for $22 on day 11 
+PracticeAmpsA722 sell a price for $64 on day 12 
+PracticeAmpsF173 sell a price for $44 on day 12 
+SaxophoneI82 sell a price for $38 on day 13 
+CassettePlayerE15 sell a price for $22 on day 13 
+PaperScoreB648 sell a price for $36 on day 13 
+BassB875 sell a price for $40 on day 13 
+GuitarF879 sell a price for $32 on day 15 
+StringsH627 sell a price for $38 on day 15 
+GuitarB93 sell a price for $44 on day 15 
+CablesA38 sell a price for $12 on day 15 
+PracticeAmpsG555 sell a price for $42 on day 15 
+StringsC784 sell a price for $82 on day 15 
+PracticeAmpsF976 sell a price for $54 on day 15 
+PaperScoreF558 sell a price for $80 on day 16 
+SaxophoneF362 sell a price for $36 on day 17 
+MusicCDD649 sell a price for $84 on day 17 
+StringsI993 sell a price for $96 on day 17 
+BassD225 sell a price for $16 on day 17 
+CablesI686 sell a price for $88 on day 17 
+PracticeAmpsH856 sell a price for $52 on day 17 
+RecordPlayerF918 sell a price for $80 on day 17 
+MandolinE206 sell a price for $18 on day 17 
+CablesC10 sell a price for $64 on day 17 
+MandolinE387 sell a price for $50 on day 17 
+StringsB584 sell a price for $8 on day 17 
+StringsD553 sell a price for $4 on day 17 
+StringsA377 sell a price for $12 on day 17 
+PlayerCDF995 sell a price for $64 on day 17 
+MP3D934 sell a price for $68 on day 18 
+HarmonicaE220 sell a price for $94 on day 18 
+MP3I920 sell a price for $20 on day 18 
+SaxophoneI658 sell a price for $56 on day 18 
+VinylE122 sell a price for $62 on day 18 
+VinylJ460 sell a price for $70 on day 19 
+MusicCDA685 sell a price for $92 on day 19 
+PaperScoreD339 sell a price for $78 on day 20 
+CablesC723 sell a price for $2 on day 20 
+PracticeAmpsJ975 sell a price for $4 on day 22 
+CassettePlayerB622 sell a price for $72 on day 22 
+CassetteG50 sell a price for $18 on day 22 
+HarmonicaI522 sell a price for $8 on day 23 
+RecordPlayerI24 sell a price for $76 on day 23 
+CablesB964 sell a price for $40 on day 23 
+SaxophoneF231 sell a price for $4 on day 24 
+MusicCDB696 sell a price for $64 on day 24 
+MusicCDB725 sell a price for $58 on day 25 
+PlayerCDH764 sell a price for $64 on day 25 
+BassH412 sell a price for $38 on day 25 
+CablesE823 sell a price for $20 on day 25 
+CablesC400 sell a price for $60 on day 25 
+StringsA230 sell a price for $52 on day 25 
+MandolinB583 sell a price for $82 on day 25 
+FluteH267 sell a price for $22 on day 27 
+MandolinG206 sell a price for $44 on day 29 
+CablesI901 sell a price for $38 on day 29 
+CablesG221 sell a price for $64 on day 30 
+PlayerCDD440 sell a price for $32 on day 30 
+The total value for sold items is $4252
+The sum of money in the register is $3440
 The amount of money withdrawn from the bank is $1000
+
+Process finished with exit code 0
