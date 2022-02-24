@@ -32,6 +32,15 @@ The link to the document that describes the changes from 1.1 to 2.0 of our UML:
 The link to the document that describes the changes from 1.1 to 2.0 of our UML: 
 [UML Documentation3](https://docs.google.com/document/d/1SlzilDsgJlP43i0qHNBBo2lF20u1aGkEvNOy1AfkgkM/edit?usp=sharing) <br>
 
+## Regarding the three Design Patterns
+1.Stragety
+We create an interface tuneAlgorithm that contains three subclasses of specific tune algorithms. The three objects of the Staff class will delegate these three subclasses: each Staff object will have a specific tune algorithm. <br>
+
+2.Observer
+We create a class concreteSubjct to implement interface Subject, which receives messages/information from Staff and sends messages to Logger and Tracker. The Logger and Tracker take the responsibility to reprocess the messages sent to them. <br>
+
+3.Decorator
+We create an abstract class addDecorator extending the abstract class inventory. Four concrete decorators will inherit from the addDecorator and wrap the inventory object. <br>
 
 <h3>To make the code run, we adopt the bellowing modifications/Assumptions:</h3><br>
 <ol>
