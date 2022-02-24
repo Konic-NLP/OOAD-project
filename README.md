@@ -4,6 +4,9 @@
 Java Version:16.0.2 <br>
 Code Version:2.0 <br>
 
+The output files are in the [output](https://github.com/Konic-NLP/OOAD-project/tree/Project3/output) folder. <br>
+
+The 10 tests are in the [testCasewithJunit](https://github.com/Konic-NLP/OOAD-project/tree/Project3/testCasewithJunit) folder. <br>
 
 The link to Project2 Part1 version of UML:
 [UML 1.0](https://drive.google.com/file/d/1DqevxZm52xK2XGYTwmdSzqwT_yVpVpwH/view?usp=sharing)
