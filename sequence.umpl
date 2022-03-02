@@ -1,0 +1,80 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Staffs-> Store: Authentication Request
+destroy Staffs
+
+Store->todayStaff:selectStaff
+
+activate todayStaff
+todayStaff->Inventory:do_stock
+note right: initialize the stock in the inventory
+group ArriveatStore
+create Order
+todayStaff->Order:checkOrderlist
+Order->Inventory:updateStock
+note right:if the ordered items arrive at the store
+end
+group checkRegister
+todayStaff->Register:checkRegister()
+Register->todayStaff:getSumMoney()
+create Bank
+todayStaff->Bank:goToBank()
+Bank->Register:withDraw()
+note right
+withdraw the money from the
+ bank and put into the register
+end note
+end
+
+group DoInventory
+activate todayStaff
+activate Inventory
+
+todayStaff->Inventory:doInventory()
+todayStaff->Inventory:tuneAlgorithms.operation()
+todayStaff-->Inventory:damage()
+Inventory->todayStaff:getTotalvalue()
+todayStaff->Inventory:checkStock()
+Inventory->todayStaff:waitorderlist()
+deactivate Inventory
+activate Order
+todayStaff->Order:placeOrder()
+deactivate Order
+
+deactivate Inventory
+
+note right:get the total value of the items in stock
+deactivate todayStaff
+end
+group OpenStore
+activate Seller
+Seller->todayStaff:getItemstoSell()
+todayStaff->Seller:checkWithSeller()
+todayStaff->Inventory:updateStock()
+todayStaff->Register:addMoney()
+note left:addMoney to the register
+deactivate Seller
+destroy Seller
+activate Buyer
+Buyer->todayStaff:getItemstoBuy()
+todayStaff->Seller:checkWithBuyer()
+todayStaff->Inventory:removeItems()
+todayStaff->Register:reduceMoney()
+deactivate Buyer
+destroy Buyer
+end
+group CleanStore
+todayStaff->Inventory:CleanStore()
+todayStaff->Inventory:DamgeItem()
+deactivate todayStaff
+end
+create Logger
+Logger->
+create Tracker
+Tracker->
+deactivate todayStaff
+
+@enduml
