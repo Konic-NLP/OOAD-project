@@ -3,26 +3,38 @@
 
 autonumber
 
-Staffs-> Store: Authentication Request
-destroy Staffs
+'Staffs-> Store: Authentication Request
+'destroy Staffs
+activate Store
+create Register
+Store->Register:"creates"
+Store->Staff:selectStaff
+activate Staff
+Store->Inventory:do_stock
 
-Store->todayStaff:selectStaff
-
-activate todayStaff
-todayStaff->Inventory:do_stock
+activate Inventory
+'Staff->Inventory:do_stock
 note right: initialize the stock in the inventory
+
+
 group ArriveatStore
-create Order
-todayStaff->Order:checkOrderlist
+
+Staff->Order:checkOrderlist
+activate Order
 Order->Inventory:updateStock
+deactivate Order
 note right:if the ordered items arrive at the store
 end
+
 group checkRegister
-todayStaff->Register:checkRegister()
-Register->todayStaff:getSumMoney()
-create Bank
-todayStaff->Bank:goToBank()
+Staff->Register:checkRegister()
+activate Register
+Register->Staff:getSumMoney()
+Staff->Bank:goToBank()
+activate Bank
 Bank->Register:withDraw()
+deactivate Bank
+deactivate Register
 note right
 withdraw the money from the
  bank and put into the register
@@ -30,51 +42,64 @@ end note
 end
 
 group DoInventory
-activate todayStaff
+activate Staff
 activate Inventory
-
-todayStaff->Inventory:doInventory()
-todayStaff->Inventory:tuneAlgorithms.operation()
-todayStaff-->Inventory:damage()
-Inventory->todayStaff:getTotalvalue()
-todayStaff->Inventory:checkStock()
-Inventory->todayStaff:waitorderlist()
-deactivate Inventory
-activate Order
-todayStaff->Order:placeOrder()
-deactivate Order
-
-deactivate Inventory
-
+Staff->Inventory:doInventory()
+Staff->Inventory:tuneAlgorithms.operation()
+Staff-->Inventory:damage()
+Inventory->Staff:getTotalvalue()
 note right:get the total value of the items in stock
-deactivate todayStaff
+Staff->Inventory:checkStock()
+Inventory->Staff:waitorderlist()
+'deactivate Inventory
+activate Order
+Staff->Order:placeOrder()
+deactivate Order
+'activate Register
+'Staff->Register:placeOrder()
+'deactivate Register
+'deactivate Inventory
+'deactivate Staff
 end
+
+
 group OpenStore
+create Seller
+Seller<--Store: Store.createSellers()
+note right: Sellers are created by Store.createSellers() method.
 activate Seller
-Seller->todayStaff:getItemstoSell()
-todayStaff->Seller:checkWithSeller()
-todayStaff->Inventory:updateStock()
-todayStaff->Register:addMoney()
-note left:addMoney to the register
+Seller->Staff:getItemstoSell()
+Staff->Seller:checkWithSeller()
+Staff->Inventory:updateStock()
+activate Register
+Staff->Register:reduceMoney()
+deactivate Register
+note left:reduceMoney to the register
 deactivate Seller
 destroy Seller
+create Buyer
+Buyer<--Store: Store.createBuyers()
 activate Buyer
-Buyer->todayStaff:getItemstoBuy()
-todayStaff->Seller:checkWithBuyer()
-todayStaff->Inventory:removeItems()
-todayStaff->Register:reduceMoney()
+Buyer->Staff:getItemstoBuy()
+note right:Buyers are ceated by Store.createBuyers() method.
+Staff->Buyer:checkWithBuyer()
+Staff->Inventory:removeItems()
+activate Register
+Staff->Register:addMoney()
+deactivate Register
 deactivate Buyer
 destroy Buyer
 end
+
 group CleanStore
-todayStaff->Inventory:CleanStore()
-todayStaff->Inventory:DamgeItem()
-deactivate todayStaff
+Staff->Inventory:CleanStore()
+Staff->Inventory:DamgeItem()
+deactivate Staff
 end
-create Logger
-Logger->
-create Tracker
-Tracker->
-deactivate todayStaff
+'create Logger
+'Logger->
+'create Tracker
+'Tracker->
+'deactivate todayStaff
 
 @enduml
