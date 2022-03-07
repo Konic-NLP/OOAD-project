@@ -41,6 +41,10 @@ public class Logger implements Observer {
 
 
     }
+    //                   String string, Strema write
+    // if ==1:
+    //stream writer = Nstreamwrite
+    // write(string, nstreamwrite)
     public void writeToFile(String string) throws IOException {
 
         this.out.write(string);

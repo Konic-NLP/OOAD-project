@@ -185,7 +185,7 @@ public class Store {
         for (int i = 0; i<3; i++){itemsList.add(new GigBag());}
 
 
-            System.out.println("the total number of items in the inventory is  "+itemsList.size());
+//            System.out.println("the total number of items in the inventory is  "+itemsList.size());
         return itemsList;}
 
 

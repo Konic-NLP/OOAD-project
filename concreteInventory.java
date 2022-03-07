@@ -31,29 +31,41 @@ public class concreteInventory extends Inventory {
 
         //update
         ArrayList<Items> waitorder= new ArrayList<Items>();// get the items that may need to restock
-
-
-        for (Map.Entry<Class,Integer> entry : this.countItems.entrySet()){
-
+        Iterator<Map.Entry<Class,Integer>> iteror=this.countItems.entrySet().iterator();
+        while(iteror.hasNext()){
+//        for (Map.Entry<Class,Integer> entry : this.countItems.entrySet()){
+            Map.Entry<Class,Integer> entry =iteror.next();
             if(entry.getKey().getSuperclass().toString().contains("Clothing")){
                 // if the superclass of the items is class
                 if (entry.getValue()==0| clothingsellout == true){
                     // the or means that it might be the first subtype
                     //clothing that to be sold out, or has been sold out
                     // once one kind of clothing was soldout, all kinds of clothing will soldout
-                    this.countItems.remove(entry.getKey());
+                    iteror.remove();
+
                     // once any kind of clothing was sold out, the rest type of clothing will remove.
                     clothingsellout=true;
+
                     // mark that the one subtype of clothing has sold out
                     System.out.println(entry.getKey()+" items has been removed");
                 }
 
-            }
+            }}
+            if(this.clothingsellout){
+                Iterator<Items> iter=this.itemsList.iterator();
+                while(iter.hasNext()){
+//                for(Items item:this.itemsList){
+                    Items each=iter.next();
+
+                    if(each.getClass().getSuperclass().toString().contains("Clothing")){
+                        iter.remove();
+                    }
+                }}
             /*get the itemtype that has been ordered to avoid order repeatly.
              https://www.codegrepper.com/code-examples/java/java+stream+get+list+of+one+field
              */
             List<Class> namelist= order.getorderlist().stream().map(Items::getClass).collect(Collectors.toList());
-
+            for(Map.Entry<Class,Integer> entry:this.countItems.entrySet()){
             // stock =0 and this has not been ordered in orderlist.
             if (entry.getValue() ==0 & !namelist.contains(entry.getKey())){
                 /* use reflect meachanism in java to instantiate object from a "class"
@@ -61,9 +73,9 @@ public class concreteInventory extends Inventory {
                  */
                 Items newitem= (Items) entry.getKey().newInstance();
 //                System.out.println(newitem);
-                if(newitem.getClass().getSuperclass().toString().contains("Clothing")==false){
+//                if(newitem.getClass().getSuperclass().toString().contains("Clothing")==false){
                     waitorder.add(newitem);
-                }
+
 
 
     }}
@@ -90,7 +102,7 @@ public class concreteInventory extends Inventory {
 
     // to remove item from store inventory
     public void removeItems(Items items){
-
+//        System.out.println("warning"+items);
         this.itemsList.remove(items);
 
 

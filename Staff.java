@@ -190,7 +190,7 @@ public class Staff {
                 // once any subtype of clothing was sold out, the store will not buy clothing from sellers anymore.
                 System.out.println("we don't buy any Clothing from the seller due to the stock issues");
                 // test case
-                System.out.println(inventory.getItemsList());
+//                System.out.println(inventory.getItemsList());
             }
 
         else if(seller.getsellOrNot(50) == true){
@@ -239,10 +239,10 @@ public class Staff {
     public int checkWithBuyer(Buyer buyer, Inventory inventory,  Store store) throws IOException {
         String[] notype= new String[]{"Shirts","Hats","Bandanas"};
         String buyitemtype=buyer.randomItemWantToBuy();
-        if(Arrays.asList(notype).contains(buyitemtype)&inventory.queryClothingStock()){
-
-            System.out.println("The Clothing items in the store is outofstock");
-        }else{
+//        if(Arrays.asList(notype).contains(buyitemtype)&inventory.queryClothingStock()){
+//
+//            System.out.println("The Clothing items in the store is outofstock");
+//        }else{
         /* decorator: the client will treat the decorated class as the same way as
         the original class object without decorating
 
@@ -256,6 +256,7 @@ public class Staff {
        if(buyitems ==null){
             System.out.format("openStore: %s want to buy a %s but none were in inventory , so left%n", buyer.getName(),buyitemtype );
         }else{
+
             // if the buyer agree to buy with the original price
         if (buyer.getBuyOrNot(buyitems,50)== true){
 //            System.out.println(addgigbag);
@@ -306,8 +307,9 @@ public class Staff {
             }
         }
        }
-        return 0;
-    }return 0;}
+//        return 0;
+//    }
+        return 0;}
 
     public void sellitem(Items buyitem,Store store,Inventory inventory){
             store.register.addmoney((buyitem.getListPrice()));
