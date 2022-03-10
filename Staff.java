@@ -296,8 +296,9 @@ public class Staff {
                 if(buyitems.size()>1){System.out.println("additional sold items:" +Helper.mergeString(new ArrayList<Items>(buyitems.subList(1,buyitems.size()))));}
 
                 for(Items items:buyitems){
-                    this.sellsum+=items.getSalePrice();
+
                     sellitem(items,store,discountprice);
+                    this.sellsum+=items.getSalePrice();
                     sum+=items.getSalePrice();
                 }
 //                if(buyitems.size()>1){

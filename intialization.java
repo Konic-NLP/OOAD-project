@@ -9,8 +9,10 @@ import org.knowm.xchart.SwingWrapper;
 import org.knowm.xchart.XYChart;
 public class intialization {
 //    Store FNMS =new Store();
-    Store SouthFNMS =new Store(1);
-    Store NorthFNMS =new Store(0);
+    Factory southfac=new FactorySouth();
+    Factory northfac=new FactoryNorth();
+    Store SouthFNMS =new Store(1,southfac);
+    Store NorthFNMS =new Store(0,northfac);
     Bank bank=new Bank();
     Publisher publisher=new Publisher();
     ArrayList<Staff> staffs= new ArrayList<>();
@@ -200,7 +202,7 @@ public class intialization {
             date[c]=c+1;
         }
         double[][]graph1 =new double[][]{resgiters,itemsale};
-        String[] seriesNames_1 = new String[] {"Item Sales", "Total Register"};
+        String[] seriesNames_1 = new String[] { "Total Register","Item Sales"};
         XYChart chart_1 = QuickChart.getChart("Chart#1", "Date", "$", seriesNames_1, date, graph1);
         new SwingWrapper(chart_1).displayChart();
     System.out.println("-----------------------summarization-------------------------");

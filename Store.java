@@ -27,14 +27,14 @@ public class Store {
     public Factory getFactory(){
         return this.factory;
     }
-    public Store(int code){
+    public Store(int code,Factory factory){
         this.code=code;
         this.order=new Order();
         this.soldList=new ArrayList<Items>();
 //        this.outOfStocklist=new ArrayList<Items>();
         this.register=new Register();
         this.inventory=new concreteInventory();
-        this.factory=new FactoryNorth();
+        this.factory=factory;
 //        this.publisher = new Publisher();
     }
     public int getCode(){
