@@ -33,7 +33,7 @@ The link to the document that describes the changes from 1.1 to 2.0 of our UML:
 The link to the document that describes the changes from 2.0 to 2.1 of our UML: 
 [UML Documentation3](https://docs.google.com/document/d/1SlzilDsgJlP43i0qHNBBo2lF20u1aGkEvNOy1AfkgkM/edit?usp=sharing)<br>
 
-## Regarding the three Design Patterns
+## Regarding the Design Patterns
 1. Strategy  <br>
 We create an interface tuneAlgorithm that contains three subclasses of specific tune algorithms. The three objects of the Staff class will delegate these three subclasses: each Staff object will have a specific tune algorithm. <br>
 
