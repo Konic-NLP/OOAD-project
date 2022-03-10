@@ -12,9 +12,9 @@ public class Bank {
     }
 
     // return the total money withdrawn from goToBank method
-    public void getSum(){
-
+    public int getSum(){
+    
         System.out.println("The amount of money withdrawn from the bank is $" + this.sum);
-
+        return this.sum;
     }
 }
