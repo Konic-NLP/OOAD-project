@@ -6,6 +6,7 @@ import org.junit.After;
 import static org.junit.Assert.*;
 
 public class FactoryTest {
+    //Test if the factorynorth works.
     @Test
     public void testGenerateNorth(){
         int expected = 24;
@@ -18,6 +19,7 @@ public class FactoryTest {
         assertTrue(price == expected );
     }
     @Test
+    //Test if the factorysouth works.
     public void testGenerateSouth(){
         int expected = 48;
         FactorySouth factorySouth = new FactorySouth();
