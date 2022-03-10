@@ -21,8 +21,8 @@ public class Publisher implements Subject {
     }
 
     @Override
-    public void notifyObservers(int caseNumber,String name, int number) throws IOException {
-        for (Observer observer:observers){observer.update(caseNumber,name,number);
+    public void notifyObservers(int caseNumber,int storenum, String name, int number) throws IOException {
+        for (Observer observer:observers){observer.update(caseNumber,storenum,name,number);
         }
 
     }

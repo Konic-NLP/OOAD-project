@@ -6,20 +6,41 @@ import java.util.Random.*;
 
 // the Store object remain the same around 30 days
 public class Store {
-    private int days; //get the today is what day
+    public Inventory inventory;
+    private int days=1; //get the today is what day
     private ArrayList<Items>soldList;// all items that have been sold;
-    private ArrayList<Items>outOfStocklist;// the items that has been sold out, it will clean each day
+//  private ArrayList<Items>outOfStocklist;// the items that has been sold out, it will clean each day
     Staff todayStaff; // who is the today's clerk
     public Register register;
+    private Factory factory;
+    private GuitarKit guitarKit;
+    public Order order;
+    private int code;
 //    private Publisher publisher;
 
-    public Store(){
+    public void setTodayStaff(Staff todayStaff) {
+        this.todayStaff = todayStaff;
+    }
+    public Staff getTodayStaff() {
+        return this.todayStaff ;
+    }
+    public Factory getFactory(){
+        return this.factory;
+    }
+    public Store(int code){
+        this.code=code;
+        this.order=new Order();
         this.soldList=new ArrayList<Items>();
-        this.outOfStocklist=new ArrayList<Items>();
+//        this.outOfStocklist=new ArrayList<Items>();
         this.register=new Register();
+        this.inventory=new concreteInventory();
+        this.factory=new FactoryNorth();
 //        this.publisher = new Publisher();
     }
+    public int getCode(){
+        return this.code;
 
+    }
     public int getDays(){
         // get today, and increase the date
         int today=this.days;
@@ -188,7 +209,16 @@ public class Store {
 //            System.out.println("the total number of items in the inventory is  "+itemsList.size());
         return itemsList;}
 
+    public GuitarKit CreateGuitarKit(){
+        int [] nums=new int[6];
+        for(int i=0;i<6;i++){
+            int num=Helper.random_number(3,0);
+            nums[i]=num;
+        }
 
-}
+       return  factory.generate(nums[0],nums[1],nums[2],nums[3],nums[4],nums[5]);
+    }}
+
+
 
 

@@ -1,8 +1,6 @@
 
 
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.StringJoiner;
+import java.util.*;
 
 import org.apache.commons.math3.distribution.PoissonDistribution;
 //This class is made of multiple methods with simple functions that are used to create random names, number,prices for items and other classes.
@@ -81,4 +79,54 @@ public class Helper {
         return joiner.toString();
     }
 
-}
+    public static Staff[] assignStaff(ArrayList<Staff> staffs){
+
+        Random random=new Random();
+        // build an array to store the possible staff for work
+        ArrayList<Staff> candidate = new ArrayList<>(staffs);
+        // exclude who has worked for 3 days
+        for (Staff staff : staffs) {
+            if (staff.getCwd() == 2) {
+                staff.cleanCwd();
+                candidate.remove(staff);
+
+            }
+        }
+        // get one to be sick from all staffs
+        int sickindex=random.nextInt(staffs.size());
+        Collections.shuffle(candidate);
+        Staff [] todayStaff=new Staff[2];
+        todayStaff[0]=candidate.get(0);
+        todayStaff[1]=candidate.get(1);
+
+        // first select two as the staff for each of the stores
+        int sickprob=random.nextInt(101);// set the probability for sick
+        /* if the oen who get sick is the one that had assigned to work for that day
+        this one get rest and the other one is assigned
+         */
+
+        if (sickprob<10&staffs.get(sickindex)==todayStaff[0]){
+            System.out.format("today should be %s but %s get sick",staffs.get(sickindex),staffs.get(sickindex));
+
+            todayStaff[0]=candidate.get(2);
+        }if(sickprob<10&staffs.get(sickindex)==todayStaff[1]){
+            System.out.format("today should be %s but %s get sick",staffs.get(sickindex),staffs.get(sickindex));
+
+            todayStaff[1]=candidate.get(2);}
+
+            // if the sick staff not the one of two staffs should work for that day....
+            // anyone can work for that day but not work that day can take a rest
+            todayStaff[0].addCwd();
+            todayStaff[1].addCwd();
+            for(Staff rest:candidate){
+                if(!Arrays.asList(todayStaff).contains(rest)){
+                    rest.cleanCwd();
+                }
+            }
+//        for(Staff member:staffs){
+//            System.out.println(member.getName()+" "+member.getCwd());
+//        }
+            return todayStaff;
+
+        }}
+

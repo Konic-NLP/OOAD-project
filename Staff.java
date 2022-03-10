@@ -9,7 +9,14 @@ public class Staff {
     private int cwd;// to represent 'consecutive_work_days' although it may mix with current work directory :)
     private int damageChance;// the chance for damaging things
     private tuneAlgorithms tunealgorithms;
+    private int sellsum;
 
+    public int getSellsum(){
+        int sum=this.sellsum;
+        this.sellsum=0;
+        return sum;
+
+    }
     public String getName(){// get the name of Staff.
         return this.name;
 
@@ -36,14 +43,15 @@ public class Staff {
         this.cwd=0;
     }
 
-    public void arriveAtStore(Order order,Inventory inventory,Store store,Publisher publisher) throws IOException {
+    public void arriveAtStore(Order order,Store store,Publisher publisher) throws IOException {
         int count = 0;
         int today=store.getDays();
+        System.out.format("arriveAtStore: %s arrives at store at day %d  %n",this.getName(),today);
         ArrayList<Items> orderlist =order.getorderlist();
         for(Items ordereditem:orderlist){
             if (ordereditem.getDayArrived()==today){// means the ordered items arrived at the store
                 System.out.format("arriveAtStore: the  %s get arrived at the store at days %d %n", ordereditem.getName(),today);
-                inventory.updateStock(ordereditem);//update the inventory
+                store.inventory.updateStock(ordereditem);//update the inventory
                 ordereditem.setDayArrived(-1);//signal that the one has been arrived
 //                orderlist.remove(ordereditem);
                 count+=1;
@@ -52,14 +60,14 @@ public class Staff {
                 // if the day before today is sunday and by chance there was an order get arrived,
                 // today to pick up the order
                 System.out.format("ArriveAtStore: the  %s get arrived at the store at days %d %n", ordereditem.getName(),today);
-                inventory.updateStock(ordereditem);
+                store.inventory.updateStock(ordereditem);
                 ordereditem.setDayArrived(-1);
 //                orderlist.remove(ordereditem); ; may induce conModificationException
                 count+=1;
             }
         }
-        publisher.notifyObservers(0,this.getName(),0);
-        publisher.notifyObservers(1,this.getName(),count);
+        publisher.notifyObservers(0,store.getCode(),this.getName(),0);
+        publisher.notifyObservers(1,store.getCode(),this.getName(),count);
 
     }
 
@@ -67,13 +75,13 @@ public class Staff {
     public void checkRegister(Bank bank,Store store,Publisher publisher) throws IOException {
         //if register money lower than the threshold, enter to the bank.
         int money=store.register.getMoneysum();
-        publisher.notifyObservers(2,this.getName(),money);
+        publisher.notifyObservers(2,store.getCode(),this.getName(),money);
         int today=store.getDays();
         System.out.format("Check register: today %d, %d in the register%n",today,money);
         if (store.register.getMoneysum() < 75) {
 
             goToBank(store,bank);
-            publisher.notifyObservers(3,this.getName(),store.register.getMoneysum());
+            publisher.notifyObservers(3,store.getCode(),this.getName(),store.register.getMoneysum());
         }
     }
 
@@ -87,14 +95,14 @@ public class Staff {
         store.register.addmoney(money); //register increase the money
     }
 
-    public void doInventory(Inventory inventory,Order order,Store store,Publisher publisher) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
+    public void doInventory(Order order,Store store,Publisher publisher) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
 
-        int totalvalue=getTotalValue(inventory,publisher);
+        int totalvalue=getTotalValue(store,publisher);
         System.out.println("Do inventory: The total value of all the items in the store is " + totalvalue);
-        publisher.notifyObservers(4,this.getName(),inventory.getItemsList().size());
-        publisher.notifyObservers(5,this.getName(),totalvalue);
+        publisher.notifyObservers(4,store.getCode(),this.getName(),store.inventory.getItemsList().size());
+        publisher.notifyObservers(5,store.getCode(),this.getName(),totalvalue);
         // get the items that required to order
-        ArrayList<Items> waitorder=inventory.checkStock(order);
+        ArrayList<Items> waitorder=store.inventory.checkStock(order);
         if(waitorder.size()!=0) { //if any need to be ordered
             this.placeAnOrder(waitorder, order, store,publisher);
         }
@@ -131,29 +139,29 @@ public class Staff {
             store.register.deductmoney(items.getPurchasePrice());  // then deduct the money for the order
 
         }
-        publisher.notifyObservers(7,this.getName(), waitorder.size()*3);
+        publisher.notifyObservers(7,store.getCode(),this.getName(), waitorder.size()*3);
     }
 
-    public void openStore(Seller[] sellers,Buyer[] buyers,Inventory inventory,Store store,Publisher publisher) throws InstantiationException, IllegalAccessException, IOException {
+    public void openStore(Seller[] sellers,Buyer[] buyers,Store store,Publisher publisher) throws InstantiationException, IllegalAccessException, IOException {
         int boughtCount =0;
         int soldCount =0;
         for(Buyer buyer:buyers){
-            boughtCount += checkWithBuyer(buyer,inventory,store);
+            boughtCount += checkWithBuyer(buyer,store);
         }
 
         for(Seller seller:sellers){
-            soldCount += checkWithSeller(seller,store.register,inventory);
+            soldCount += checkWithSeller(seller,store.register,store.inventory);
         }
-        publisher.notifyObservers(8,this.getName(),boughtCount);
-        publisher.notifyObservers(9,this.getName(),soldCount);
+        publisher.notifyObservers(8,store.getCode(),this.getName(),boughtCount);
+        publisher.notifyObservers(9,store.getCode(),this.getName(),soldCount);
 
 
             }
-    public int getTotalValue(Inventory inventory,Publisher publisher) throws IOException {
+    public int getTotalValue(Store store,Publisher publisher) throws IOException {
         int totalValue = 0;
         int damageCount = 0;
         ArrayList<Items> maydamage= new ArrayList<Items>();
-        for (Items items: inventory.getItemsList()){
+        for (Items items: store.inventory.getItemsList()){
             boolean T2F=this.tunealgorithms.operation(this.name,items); // get wehther true to false
 
 
@@ -165,8 +173,9 @@ public class Staff {
             totalValue += items.purchasePrice;
         }
         for(Items item:maydamage){
-            damageCount +=damageItems(item,inventory,10);} // call damage item
-        publisher.notifyObservers(6,this.name,damageCount);
+            damageCount +=damageItems(item,store.inventory,10);} // call damage item
+        System.out.format("%s damage the %d items %n",this.getName(),damageCount);
+        publisher.notifyObservers(6,store.getCode(),this.name,damageCount);
         return totalValue;
     }
 
@@ -174,7 +183,7 @@ public class Staff {
 
     public void leaveTheShop(Store store,Publisher publisher) throws IOException {
         System.out.format("Leave Store: %s close the store at the day %d and back home %n",this.getName(),store.getDays());
-        publisher.notifyObservers(11,this.getName(),0);
+        publisher.notifyObservers(11,store.getCode(),this.getName(),0);
     }
 
 
@@ -193,7 +202,7 @@ public class Staff {
 //                System.out.println(inventory.getItemsList());
             }
 
-        else if(seller.getsellOrNot(50) == true){
+        else if(seller.getsellOrNot(50)){
             count+=1;
             // cohesion, the getsellornot just give me the boolean value whether the customer is willing to buy
             // if the the seller agree to sell
@@ -201,7 +210,7 @@ public class Staff {
 //            selleritems.setSalePrice(purchaseprice);
             inventory.updateStock(selleritems);// add the item to the inventory
             String condition= Items.getConditionList()[(int)(selleritems.getCondition())];// get the condition
-
+            this.sellsum-=purchaseprice;
             System.out.format("OpenStore: %s bought a %s %s %s from %s for %d %n",this.getName(),
                     condition,
                     selleritems.getNewOrUsed(),
@@ -210,13 +219,13 @@ public class Staff {
                     purchaseprice);
         }else{
             purchaseprice=(int)(purchaseprice*1.1);// if the seller disagree, increase the price to appeal the customer
-            if(seller.getsellOrNot(75)==true){
+            if(seller.getsellOrNot(75)){
                 count+=1;
                 reg.deductmoney(purchaseprice);
 //                selleritems.setSalePrice(sellprice);
                 inventory.updateStock(selleritems);
                 String condition= Items.getConditionList()[(int)(selleritems.getCondition())-1];
-
+                this.sellsum-=purchaseprice;
                 System.out.format("openStore: %s bought a %s %s %s from %s for %d  %n",this.getName(),//staff's name
                         condition,  //condition
                         selleritems.getNewOrUsed(), // new or old
@@ -236,8 +245,8 @@ public class Staff {
     }
 
 
-    public int checkWithBuyer(Buyer buyer, Inventory inventory,  Store store) throws IOException {
-        String[] notype= new String[]{"Shirts","Hats","Bandanas"};
+    public int checkWithBuyer(Buyer buyer,  Store store) throws IOException {
+//        String[] notype= new String[]{"Shirts","Hats","Bandanas"};
         String buyitemtype=buyer.randomItemWantToBuy();
 //        if(Arrays.asList(notype).contains(buyitemtype)&inventory.queryClothingStock()){
 //
@@ -247,7 +256,7 @@ public class Staff {
         the original class object without decorating
 
          */
-        Inventory inventory1= new addgigbag(inventory);
+        Inventory inventory1= new addgigbag(store.inventory);
         inventory1=new addCables(inventory1);
         inventory1=new addPracticeAmp(inventory1);
         inventory1=new addStrings(inventory1);
@@ -265,8 +274,9 @@ public class Staff {
             if(buyitems.size()>1){System.out.println("additional sold items:" +Helper.mergeString(new ArrayList<Items>(buyitems.subList(1,buyitems.size()))));}
             for(Items items:buyitems){
 
-                sellitem(items,store,inventory);
-                sum+=items.getListPrice();
+                sellitem(items,store,items.getListPrice());
+                this.sellsum+=items.getSalePrice();
+                sum+=items.getSalePrice();
 
             }
 
@@ -280,15 +290,15 @@ public class Staff {
         }else{
             // otherwise, we will give the buyer a discount
             int discountprice=(int)(buyitems.get(0).getListPrice()*0.9);
-            if(buyer.getBuyOrNot(buyitems,75)==true){
+            if(buyer.getBuyOrNot(buyitems, 75)){
 
                 int sum=0;
                 if(buyitems.size()>1){System.out.println("additional sold items:" +Helper.mergeString(new ArrayList<Items>(buyitems.subList(1,buyitems.size()))));}
 
                 for(Items items:buyitems){
-
-                    sellitem(items,store,inventory);
-                    sum+=items.getListPrice();
+                    this.sellsum+=items.getSalePrice();
+                    sellitem(items,store,discountprice);
+                    sum+=items.getSalePrice();
                 }
 //                if(buyitems.size()>1){
 //                    System.out.print(buyitems);};
@@ -311,17 +321,17 @@ public class Staff {
 //    }
         return 0;}
 
-    public void sellitem(Items buyitem,Store store,Inventory inventory){
-            store.register.addmoney((buyitem.getListPrice()));
-            inventory.removeItems(buyitem);
-            buyitem.setSalePrice(buyitem.getListPrice());
+    public void sellitem(Items buyitem,Store store,int discountprice){
+            store.register.addmoney(discountprice);
+            store.inventory.removeItems(buyitem);
+            buyitem.setSalePrice(discountprice);
             store.addSoldItem(buyitem);}
 
-    public void cleanStore(Inventory inventory,Publisher publisher) throws IOException {
+    public void cleanStore(Store store,Publisher publisher) throws IOException {
 
-        Items destroyitems=inventory.randomItem();
-        int count = damageItems(destroyitems,inventory,this.damageChance);
-        publisher.notifyObservers(10,this.getName(),count);
+        Items destroyitems=store.inventory.randomItem();
+        int count = damageItems(destroyitems,store.inventory,this.damageChance);
+        publisher.notifyObservers(10,store.getCode(),this.getName(),count);
 
 
 
