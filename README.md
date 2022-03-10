@@ -1,4 +1,4 @@
-# OOAD-project3
+# OOAD-project4
 **A course project repo for CSCI5448**. <br>
 **Group member**: Sijia Ge, Xiaosong Wang, and Zhiyong Wang.<br>
 Java Version:16.0.2 <br>
@@ -60,3 +60,5 @@ We create an abstract class addDecorator extending the abstract class inventory.
 
 <li> We generate Poisson distribution with commons.math3 jar package.</li>
 <li> On each day, the three staffs have even chance to be sick, no matter they are no duty or not, and ones who are not on duty that day for that day will reset his/her consecutive work days.</li> 
+<li> In commend line, input from users should be appropriate such as integer or string. However, we haven't handle the outlier input problem due to time limitation.</li>
+<li> We create two line charts by importing charting library XChart.</li>
