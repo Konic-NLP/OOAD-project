@@ -52,12 +52,12 @@ The Store is the client for this pattern. The North Store is associated with the
 For each kinds of elements, there are three subtypes:type A, B, and C. <br>
 The two factories are different in terms price: for the same type of element, the south store's price is always twice as the north store's price. <br> 
 The factory will choose different types of elements to make up Guitarkit according to the parameters it receives.<br>
-[Graph]<https://drive.google.com/file/d/12Ue7KuNTLZ4JPREAdEdONFB4NPhDoO85/view?usp=sharing>
+[Graph](https://drive.google.com/file/d/12Ue7KuNTLZ4JPREAdEdONFB4NPhDoO85/view?usp=sharing)
 
 6. Singleton pattern <br>
 we apply the singleton pattern for logger and tracker class, making both of them only have one object. <br>
 Moreover, we will use lazy instantiation for logger and eager instantiation for tracker.<br>
-[Graph]<https://drive.google.com/file/d/173fz9efP1HEeUEfT45CkFsxtQu3Q3b9z/view?usp=sharing> <br>
+[Graph](https://drive.google.com/file/d/173fz9efP1HEeUEfT45CkFsxtQu3Q3b9z/view?usp=sharing) <br>
 
 ## To make the code run, we adopt the bellowing modifications/Assumptions:
 <li> The conditions of items are integers from 1 to 5 inclusively. The correspond relation between number and words is {Poor:1, Fair:2, Good:3, Very Good:4, Excellent:5}.</li>
