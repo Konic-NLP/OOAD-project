@@ -11,7 +11,7 @@ import static org.junit.Assert.assertTrue;
 
 
 public class staffTest {
-
+//Test if the staff will be called to work continuely more than three days.
     @Test
     public void testCWD(){
         Factory southfac=new FactorySouth();
