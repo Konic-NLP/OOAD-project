@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 public class LoggerTest {
-@Test
+    //Test if the singleton actually wokrs.
+    @Test
     public void testGetInstance() throws FileNotFoundException {
         Publisher publisher = new Publisher();
         String day = "0";
