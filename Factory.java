@@ -8,6 +8,9 @@ public interface Factory {
     public GuitarKit generate(int num1,int num2, int num3, int num4, int num5, int num6);
 }
 class FactoryNorth implements Factory{
+    //Each elements has three types.
+    //The num paramters will determine the type of the elements.
+    //num 0 corresponds typeA, num 1 corresponds typeB, num 2 corresponds typeC,  
     public GuitarKit generate(int num1,int num2, int num3, int num4, int num5, int num6){
         Bridge bridge = createBridge(num1);
         KnobSet knobSet = createKnobSet(num2);
