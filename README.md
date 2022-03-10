@@ -67,3 +67,5 @@ We create an abstract class addDecorator extending the abstract class inventory.
 <li>In our Abstract Factory pattern, customer will randomly choose the choices of each category of guitar kit part.</li>
 <li>We create two line charts by importing charting library XChart.</li>
 <li>The item sales, total register, counts of items in inventory, damaged items, and item sold which are shown in line charts are the sum of two stores.</li>
+<li>We assume that only one clerk in the object pool will be sick each day.</li>
+<li>We assume that the raw elements of the guitar kit of the south store are all hand-made, so the price of the element at the south store is twice the price of the same element at the north store.</li>
