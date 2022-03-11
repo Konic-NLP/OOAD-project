@@ -44,6 +44,11 @@ We create a class concreteSubject to implement interface Subject, which receives
 We create an abstract class addDecorator extending the abstract class inventory. Four concrete decorators will inherit from the addDecorator and wrap the inventory object. <br>
 
 4. Command pattern <br>
+We apply the Command pattern to interact with a user via command line. Invoker holds two collections of commands for each store and interact with the user via `Scanner` class.  
+First the user could choose a store to manipulate and a local variable will refer to the specific commandlist according to the choice of the user, then the user could type the    
+option to the invoker, and invoker will invoke the `execute()` method of the ith(i equals the option number) command in the commandlist gotten from the first interaction, and  
+each command hold a `Store` object as the receiver, and then call the corresponding method to perform the function.  
+[Graph](https://drive.google.com/file/d/12sm19SfrJttH4s0VWrt7HOuehYth0sI-/view?usp=sharing)
 
 
 5. Abstract Factory pattern <br>
@@ -86,3 +91,4 @@ Moreover, we will use lazy instantiation for logger and eager instantiation for 
 <li>The item sales, total register, counts of items in inventory, damaged items, and item sold which are shown in line charts are the sum of two stores.</li>
 <li>We assume that only one clerk in the object pool will be sick each day.</li>
 <li>We assume that the raw elements of the guitar kit of the south store are all hand-made, so the price of the element at the south store is twice the price of the same element at the north store.</li>
+<li>The number damage items refer to the number that the Clerk damage the items and reduce the condition of the item, number of destroyed items refer to the amount that damaged and then reduce the condition to 0 and removed from the inventory.</li>
