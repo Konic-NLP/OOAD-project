@@ -1,0 +1,10 @@
+North Store:Tom has arrived at the store.
+North Store:0 items has added to inventory.
+North Store:$1479 is in the register.
+North Store:0 items has been damaged in the process of tuning.
+North Store:63 items are in the inventory in total.
+North Store::The total value in the inventory is $1552.
+North Store:5 items has been sold.
+North Store:4 items has been purchased.
+North Store:0 items has been damaged in the process of cleaning.
+North Store:Tom has left the store.

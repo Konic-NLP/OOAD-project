@@ -1,0 +1,9 @@
+South Store:Velma has arrived at the store.
+South Store:0 items has added to inventory.
+South Store:$2779 is in the register.
+South Store:4 items has been damaged in the process of tuning.
+South Store:107 items are in the inventory in total.
+South Store::The total value in the inventory is $1502.
+South Store:1 items has been purchased.
+South Store:1 items has been damaged in the process of cleaning.
+South Store:Velma has left the store.

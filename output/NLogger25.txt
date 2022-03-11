@@ -1,0 +1,10 @@
+North Store:Shaggy has arrived at the store.
+North Store:0 items has added to inventory.
+North Store:$3210 is in the register.
+North Store:0 items has been damaged in the process of tuning.
+North Store:95 items are in the inventory in total.
+North Store::The total value in the inventory is $1701.
+North Store:3 items has been ordered.
+North Store:1 items has been sold.
+North Store:0 items has been damaged in the process of cleaning.
+North Store:Shaggy has left the store.
