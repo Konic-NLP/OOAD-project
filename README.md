@@ -37,7 +37,7 @@ The link to the document that describes the changes from 1.1 to 2.0 of our UML:
 The link to the document that describes the changes from 2.0 to 2.1 of our UML: 
 [UML Documentation3](https://docs.google.com/document/d/1SlzilDsgJlP43i0qHNBBo2lF20u1aGkEvNOy1AfkgkM/edit?usp=sharing)<br>
 
-*note: we ddin't make any modifications on the UML 3.0 version while we draw the UML for the pattern which was implemented in the Project 4 specifically as below*  
+*note: we didn't make any modifications on the UML 3.0 version while we draw the UML for the pattern which was implemented in the Project 4 specifically as below*  
 
 
 ## Regarding the Design Patterns
