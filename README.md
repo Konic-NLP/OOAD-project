@@ -25,7 +25,7 @@ The link to Project3 Part2 (current) version of UML:
 <br>
 
 The link to Project4 Part2 (current) version of UML:
-[UML 3.0](https://drive.google.com/file/d/1m1sBKMnuXuZXXbP9N78wuhJgt7NsPCx_/view?usp=sharing)
+[UML 3.0](https://drive.google.com/file/d/12sm19SfrJttH4s0VWrt7HOuehYth0sI-/view?usp=sharing)
 <br>
 
 The link to the document that describes the changes from 1.0 to 1.1 of our UML: 
@@ -36,6 +36,8 @@ The link to the document that describes the changes from 1.1 to 2.0 of our UML:
 
 The link to the document that describes the changes from 2.0 to 2.1 of our UML: 
 [UML Documentation3](https://docs.google.com/document/d/1SlzilDsgJlP43i0qHNBBo2lF20u1aGkEvNOy1AfkgkM/edit?usp=sharing)<br>
+
+* we ddin't make any modifications on the UML 3.0 version while we draw the UML for the pattern which was implemented in the Project 4 specifically below*
 
 ## Regarding the Design Patterns
 1. Strategy  <br>
