@@ -101,8 +101,8 @@ Moreover, we will use lazy instantiation for logger and eager instantiation for 
 <li>The number damage items refer to the number that the Clerk damage the items and reduce the condition of the item, number of destroyed items refer to the amount that damaged and then reduce the condition to 0 and removed from the inventory.</li>
 
 <li> the sale of guitar kit does not count into the count record in the logger but does in anywhere else.</li>
-<li> The external package we are currently using in the project:
+<li> The external package we are currently using in the project:  </li>
   1. Junit 3.8.2  
   2. commons-math 3.6.1  
   3. xchart 3.8.1
-  </li>
+
