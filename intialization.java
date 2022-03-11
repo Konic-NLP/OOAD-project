@@ -54,6 +54,7 @@ public class intialization {
     // new clerk
 
 }
+  // create a list whoose each element hold a store as a receiver
     public ArrayList<Command> Commandintil(Store store){
         ArrayList<Command> commandlist=new ArrayList<Command>();
         Command command1=new clerkCommand(store);
@@ -88,7 +89,9 @@ public class intialization {
 //        store.todayStaff.leaveTheShop(FNMS,publisher);
 //
 //    }
+    // the summary for store simulation on total days
     public void summerize(Store store){
+
         int totalvalue=0;
         for(Items item:store.inventory.getItemsList()){
             totalvalue+=item.getPurchasePrice();
@@ -107,18 +110,28 @@ public class intialization {
         bank.getSum();}
 
     public void run() throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException {
-
+        SouthFNMS.setPublisher(publisher);
+        NorthFNMS.setPublisher(publisher);
         int totaldays=Helper.random_number(30,10);
-        if(totaldays%7==0){totaldays=totaldays+1;}
+//        totaldays=24;
+//        if(totaldays%7==0){totaldays=totaldays+1;}
+        // record the data for drawing the chart
+        double [] soldcount=new double[totaldays];
+        double [] damagecount=new double[totaldays];
+        double []  itemscount=new double[totaldays];
         double [] itemsale=new double[totaldays];
         double [] resgiters=new double[totaldays];
         System.out.format("The store will run %d days in total %n",totaldays);
+
+
+
         for(int i=0;i<totaldays;i++){
+            // sunday close the store, all staff take a rest, the order arrive at the sunday will put into the inventory on monday
             if ((i+1)%7==0){
                 SouthFNMS.nextDay();
                 NorthFNMS.nextDay();
-                publisher.notifyObservers(11,0,"",0);
-                publisher.notifyObservers(11,1,"",0);
+//                publisher.notifyObservers(11,0,"",0);
+//                publisher.notifyObservers(11,1,"",0);
                 System.out.println("today is Sunday, so the store closed ");
                 publisher.notifyObservers(12,0,"",0);
 //                publisher.notifyObservers(12,1,"",0);
@@ -129,13 +142,14 @@ public class intialization {
 
                 continue;
             }else{
-
+                // assign the staff for each store everyday.
                 Staff[]  todaystaffs=Helper.assignStaff(staffs);
                 Logger logger=Logger.getInstance(publisher,String.valueOf(1));
 
-                System.out.println(logger);
+//                System.out.println(logger);
                 SouthFNMS.setTodayStaff(todaystaffs[0]);
                 NorthFNMS.setTodayStaff(todaystaffs[1]);
+                // since it is a single instance, I have to change the outputstream for file output dynamically
                 logger.setout(SouthFNMS.getDays());
                 System.out.println("*************Below is the activity about the South store*********");
                 Staff StodayStaff=SouthFNMS.getTodayStaff();
@@ -144,20 +158,10 @@ public class intialization {
                 StodayStaff.doInventory(SouthFNMS.order,SouthFNMS,publisher);
                 Seller[] sellers=SouthFNMS.createSellers();
                 Buyer[] buyers= SouthFNMS.createBuyers();
-                if (i==totaldays-1){
-                    Invoker invoker=new Invoker();
-                    ArrayList<Command> SCommandlist=Commandintil(SouthFNMS);
-                    ArrayList<Command> NCommandlist=Commandintil(NorthFNMS);
-                    invoker.setCommandlist(0,NCommandlist);
-                    invoker.setCommandlist(1,SCommandlist);
-                    invoker.interaction();
-
-
-                }else{
                 StodayStaff.openStore(sellers,buyers,SouthFNMS,publisher);
 
                 StodayStaff.cleanStore(SouthFNMS,publisher);
-                StodayStaff.leaveTheShop(SouthFNMS,publisher);}
+                StodayStaff.leaveTheShop(SouthFNMS,publisher);
 
 //                publisher.notifyObservers(12,1,"",0);
 //                logger.CCGlogger();
@@ -168,7 +172,7 @@ public class intialization {
                 NtodayStaff.doInventory(NorthFNMS.order,NorthFNMS,publisher);
                 sellers=NorthFNMS.createSellers();
                 buyers= NorthFNMS.createBuyers();
-                if(i!=totaldays-1) {
+
                     NtodayStaff.openStore(sellers, buyers, NorthFNMS, publisher);
 
                     NtodayStaff.cleanStore(NorthFNMS, publisher);
@@ -180,31 +184,71 @@ public class intialization {
 
 
                     System.out.println("------------------------------------------------------------------------------------------");
-                }
+
 
                 logger.CCGlogger();
                 publisher.notifyObservers(12, 0, "", 0);
-
+                itemscount[SouthFNMS.getDays()-1]=SouthFNMS.inventory.getItemsList().size()+NorthFNMS.inventory.getItemsList().size();
+                damagecount[SouthFNMS.getDays()-1]=SouthFNMS.todayStaff.getDamagecount()+NorthFNMS.todayStaff.getDamagecount();
+                soldcount[SouthFNMS.getDays()-1]=SouthFNMS.todayStaff.getCountsold()+NorthFNMS.todayStaff.getCountsold();
                 resgiters[SouthFNMS.getDays()-1]=SouthFNMS.register.getMoneysum()+NorthFNMS.register.getMoneysum();
                 itemsale[SouthFNMS.getDays()-1]=SouthFNMS.todayStaff.getSellsum()+NorthFNMS.todayStaff.getSellsum();
-                System.out.println(Arrays.toString(Arrays.stream(resgiters).toArray()));
-                System.out.println(Arrays.toString(Arrays.stream(itemsale).toArray()));
                 NorthFNMS.nextDay();
                 SouthFNMS.nextDay();
 
-        }
+        }}
 
 
-        }
+//        }
+//        SouthFNMS.nextDay();
+//        NorthFNMS.nextDay();
+        // at the next day of the end of the simulation
+        Staff[]  todaystaffs=Helper.assignStaff(staffs);
+        Logger logger=Logger.getInstance(publisher,String.valueOf(1));
 
+//        System.out.println(logger);
+        SouthFNMS.setTodayStaff(todaystaffs[0]);
+        NorthFNMS.setTodayStaff(todaystaffs[1]);
+        logger.setout(SouthFNMS.getDays());
+        System.out.println("*************Below is the activity about the South store*********");
+        Staff StodayStaff=SouthFNMS.getTodayStaff();
+        StodayStaff.arriveAtStore(SouthFNMS.order,SouthFNMS,publisher);
+        StodayStaff.checkRegister(bank,SouthFNMS,publisher);
+        StodayStaff.doInventory(SouthFNMS.order,SouthFNMS,publisher);
+        Staff NtodayStaff=NorthFNMS.getTodayStaff();
+        NtodayStaff.arriveAtStore(NorthFNMS.order,NorthFNMS,publisher);
+        NtodayStaff.checkRegister(bank,NorthFNMS,publisher);
+        NtodayStaff.doInventory(NorthFNMS.order,NorthFNMS,publisher);
+
+        // start the interaction with the command line .
+        Invoker invoker=new Invoker();
+        ArrayList<Command> SCommandlist=Commandintil(SouthFNMS);
+        ArrayList<Command> NCommandlist=Commandintil(NorthFNMS);
+        invoker.setCommandlist(0,NCommandlist);
+        invoker.setCommandlist(1,SCommandlist);
+        invoker.interaction();
+
+        StodayStaff.cleanStore(SouthFNMS,publisher);
+        StodayStaff.leaveTheShop(SouthFNMS,publisher);
+        NtodayStaff.cleanStore(NorthFNMS, publisher);
+        NtodayStaff.leaveTheShop(NorthFNMS, publisher);
+
+        logger.CCGlogger();
         double [] date= new double[totaldays];
         for(int c=0; c<totaldays;c++){
             date[c]=c+1;
         }
+        // output the chart
         double[][]graph1 =new double[][]{resgiters,itemsale};
+        double[][]graph2= new double[][]{itemscount,damagecount,soldcount};
         String[] seriesNames_1 = new String[] { "Total Register","Item Sales"};
-        XYChart chart_1 = QuickChart.getChart("Chart#1", "Date", "$", seriesNames_1, date, graph1);
-        new SwingWrapper(chart_1).displayChart();
+        String[] seriesNames_2 = new String[] { "items count","damage count","sold count"};
+        XYChart chart_1 = QuickChart.getChart("The money in the register and sales for each day", "Date", "$", seriesNames_1, date, graph1);
+        XYChart chart_2 = QuickChart.getChart("the count of items in the inventory,damageitems,sold items for each day", "Date", "nums", seriesNames_2, date, graph2);
+                BitmapEncoder.saveBitmapWithDPI(chart_1, "./output/chart_1", BitmapEncoder.BitmapFormat.JPG, 300);
+        BitmapEncoder.saveBitmapWithDPI(chart_2, "./output/chart_2", BitmapEncoder.BitmapFormat.JPG, 300);
+//        new SwingWrapper(chart_1).displayChart();
+//        new SwingWrapper(chart_2).displayChart();
     System.out.println("-----------------------summarization-------------------------");
 
 //    int totalvalue=0;

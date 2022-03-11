@@ -12,12 +12,13 @@ public class Store {
 //  private ArrayList<Items>outOfStocklist;// the items that has been sold out, it will clean each day
     Staff todayStaff; // who is the today's clerk
     public Register register;
-    private Factory factory;
-    private GuitarKit guitarKit;
+    private Factory factory;//associated with a factory to get the guitarkit
+//    private GuitarKit guitarKit;
     public Order order;
-    private int code;
-//    private Publisher publisher;
-
+    private int code; // record the its code used in the command pattern
+    private Publisher publisher;
+    public Publisher getPublisher(){return  this.publisher;}
+    public void setPublisher(Publisher publisher){this.publisher=publisher;}
     public void setTodayStaff(Staff todayStaff) {
         this.todayStaff = todayStaff;
     }

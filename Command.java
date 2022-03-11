@@ -1,4 +1,5 @@
 import java.io.Console;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -6,20 +7,16 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public interface Command {
-    public void execute();
+    public void execute() throws IOException;
 
 }
 
-// abstract class NCommand  implements Command{
-//    Store store;
-//    public NCommand(Store store){
-//        this.store=store;
-//
-//    }
-//    public abstract void execute();
-//
-//}
+/*
+each command just hold a store object as the receiver
 
+ */
+
+// get the name of the staff at the corresponding store.
 class clerkCommand implements Command{
     Store store;
     public clerkCommand(Store store){
@@ -34,6 +31,7 @@ class clerkCommand implements Command{
 
 }
 
+// get the current system time using simpleDate package and data package https://www.yisu.com/zixun/200579.html
 class timeCommand implements Command{
     Store store;
     public timeCommand(Store store){
@@ -50,6 +48,7 @@ class timeCommand implements Command{
 
 
 }
+// buy an item from the store based on the command input
 class buyCommand implements  Command{
    Store store;
     Scanner scanner=new Scanner(System.in);
@@ -57,7 +56,7 @@ class buyCommand implements  Command{
 
         this.store=store;
     }
-    public void execute(){
+    public void execute() throws IOException {
         System.out.println("please input your items want to buy");
 
         ArrayList<Items> buyitems=this.store.inventory.Getitemstosell( scanner.next());
@@ -80,7 +79,7 @@ class buyCommand implements  Command{
             // to the soldlist
 //
 
-
+            this.store.getPublisher().notifyObservers(8,this.store.getCode(),this.store.todayStaff.getName(),buyitems.size());
             System.out.format("openStore: %s sold a %s to CommandUser  for  %d  %n",store.todayStaff.getName(),Helper.mergeString(buyitems),sum);
 
         }else{
@@ -101,7 +100,7 @@ class buyCommand implements  Command{
                 // to the soldlist
 //
 
-
+                this.store.getPublisher().notifyObservers(8,this.store.getCode(),this.store.todayStaff.getName(),buyitems.size());
                 System.out.format("openStore: %s sold a %s to CommandUser  for  %d  %n",store.todayStaff.getName(),Helper.mergeString(buyitems),sum);
         }else{
 
@@ -114,7 +113,8 @@ class buyCommand implements  Command{
 
 
 }}
-
+// sell an item to the store and the item created by the method not by the command line and the user just
+//decide whether to sell or not
 class SellCommand implements Command{
     Scanner scanner=new Scanner(System.in);
     Store store;
@@ -123,7 +123,7 @@ class SellCommand implements Command{
 
     };
 
-    public void execute(){
+    public void execute() throws IOException {
         Items selleritems=Classpicker.MakeRandomInstance();
         selleritems.setPurchasePrice(selleritems.getCondition() * Helper.random_number(10, 1));
         int purchaseprice=selleritems.getPurchasePrice();
@@ -141,6 +141,7 @@ class SellCommand implements Command{
                 store.inventory.updateStock(selleritems);// add the item to the inventory
                 String condition= Items.getConditionList()[(int)(selleritems.getCondition())];// get the condition
 
+                this.store.getPublisher().notifyObservers(9,this.store.getCode(),this.store.todayStaff.getName(),1);
                 System.out.format("OpenStore: %s bought a %s %s %s from %s for %d %n",this.store.todayStaff.getName(),
                         condition,
                         selleritems.getNewOrUsed(),
@@ -157,6 +158,7 @@ class SellCommand implements Command{
                 this.store.register.deductmoney(purchaseprice);
                 this.store.inventory.updateStock(selleritems);
                 String condition= Items.getConditionList()[(int)(selleritems.getCondition())-1];
+                    this.store.getPublisher().notifyObservers(9,this.store.getCode(),this.store.todayStaff.getName(),1);
                 System.out.format("openStore: %s bought a %s %s %s from %s for %d  %n",this.store.todayStaff.getName(),//staff's name
                         condition,  //condition
                         selleritems.getNewOrUsed(), // new or old
@@ -189,7 +191,8 @@ class SellCommand implements Command{
 
 }
 
-
+/* buy a guitar kit from the store and the guitarkit is created by the abstract factory, the choice for each product type
+is created randomly*/
 class guitaCommand implements Command{
     Store store;
     public guitaCommand(Store store){
@@ -200,6 +203,7 @@ class guitaCommand implements Command{
 
     @Override
     public void execute() {
+     // call the method of the store and get the guitar kit
      GuitarKit guitarKit=this.store.CreateGuitarKit();
      int saleprice=guitarKit.getSumPrice();
 

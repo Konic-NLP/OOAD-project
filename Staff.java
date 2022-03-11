@@ -9,8 +9,15 @@ public class Staff {
     private int cwd;// to represent 'consecutive_work_days' although it may mix with current work directory :)
     private int damageChance;// the chance for damaging things
     private tuneAlgorithms tunealgorithms;
+    // the below three field is to count the number and for the purpose of drawing the chart
     private int sellsum;
+    private int damagecount;
+    private int countsold;
 
+    // below two methods are the same purpose as the above
+    public  int getCountsold(){
+        return  this.countsold;
+    }
     public int getSellsum(){
         int sum=this.sellsum;
         this.sellsum=0;
@@ -152,6 +159,7 @@ public class Staff {
         for(Seller seller:sellers){
             soldCount += checkWithSeller(seller,store.register,store.inventory);
         }
+        countsold=soldCount;
         publisher.notifyObservers(8,store.getCode(),this.getName(),boughtCount);
         publisher.notifyObservers(9,store.getCode(),this.getName(),soldCount);
 
@@ -174,7 +182,8 @@ public class Staff {
         }
         for(Items item:maydamage){
             damageCount +=damageItems(item,store.inventory,10);} // call damage item
-        System.out.format("%s damage the %d items %n",this.getName(),damageCount);
+        this.damagecount+=damageCount;
+//        System.out.format("%s damage the %d items %n",this.getName(),damageCount);
         publisher.notifyObservers(6,store.getCode(),this.name,damageCount);
         return totalValue;
     }
@@ -332,18 +341,25 @@ public class Staff {
 
         Items destroyitems=store.inventory.randomItem();
         int count = damageItems(destroyitems,store.inventory,this.damageChance);
+        this.damagecount+=count;
         publisher.notifyObservers(10,store.getCode(),this.getName(),count);
 
 
 
     }
-    public int damageItems(Items destoryeditem,Inventory inventory,int chance) throws IOException {
+
+    public int getDamagecount() {
+        return damagecount;
+    }
+
+    public int damageItems(Items destoryeditem, Inventory inventory, int chance) throws IOException {
         int count=0;
         Random random=new Random();
         int prob=random.nextInt(101);
         //generate a probability and see whether it invoke the change to damage
         if(prob<chance){
             count=1;
+            System.out.format("Damage: %s damaged a %s by accident %n",this.getName(),destoryeditem.getName());
             destoryeditem.setCondition(destoryeditem.getCondition()-1);
             destoryeditem.setListPrice((int)(destoryeditem.getListPrice()*0.8));
             // result of damage: condition-1, price decrease 20%
@@ -353,8 +369,8 @@ public class Staff {
                 System.out.format("Damage: %s destroyed a %s by accident %n",this.getName(),destoryeditem.getName());
             }
         }else{
-
-//            System.out.println("nothing happened");
+//
+////            System.out.println("nothing happened");
         }
         return count;
     }

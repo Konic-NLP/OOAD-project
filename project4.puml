@@ -1,0 +1,611 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam linetype ortho
+skinparam ranksep 300
+title Classes - Class Diagram
+Class Register{
+ moneysum:int
+   addMoney(int amount)
+   getMoneySum():int
+   deduceMoney(int price)
+}
+Register--Store
+Class Order{
+orderlist:ArrayList<Items>
+orderItems(classname,store)
+getorderlist():ArrayList<Items>
+}
+note top of Order: order new items
+
+class Bank{
+int sum
+withdraw()
+getSum()
+
+
+}
+Order--Staff
+
+Store--Staff
+Bank--Staff
+Inventory--Staff
+concreteInventory-u-|>Inventory
+addDecorator-d-|>Inventory
+addGigbag-d-|>addDecorator
+addCables-d-|>addDecorator
+addPracticeAmps-d-|>addDecorator
+addStrings-d-|>addDecorator
+
+tuneAlgorithms--Staff
+class Store{
+days: int
+soldList:ArrayList<Items>
+todayStaff:Staff
+Register reg
+getDays():int
+nextday():void
+addSoldItems(Items)
+selectStaff(Arraylist<Staff>):Staff
+createSellers():Sellers[]
+createBuyers():Buyers[]
+do_stock():Arraylist<Items>
+
+}
+
+class concreteInventory{
+itemsList:ArrayList<Items>
+countItems:Hashmap<Class,int>
+getTotalValue():int
+checkStock():ArrayList<Items>
+updateStock(Items)
+removeItems(Items)
+randomItems():Items
+getItemstoSell(String type):ArrayList<Items>
+}
+
+abstract Inventory <<abstract>>{
+getItemstoSell(String type):ArrayList<Items>
+}
+
+abstract addDecorator<<abstract>>  {
+Inventory
+getItemstoSell():ArrayList<Items>
+getTotalValue():int
+checkStock():ArrayList<Items>
+updateStock(Items)
+removeItems(Items)
+randomItems():Items
+getItemstoSell(String type):ArrayList<Items>
+}
+
+together {
+class addGigbag{
+Inventory inventory
+getItemstoSell():ArrayList<Items>
+getTotalValue():int
+checkStock():ArrayList<Items>
+updateStock(Items)
+removeItems(Items)
+randomItems():Items
+getItemstoSell(String type):ArrayList<Items>
+
+
+}
+class addPracticeAmps{
+Inventory inventory
+getItemstoSell():ArrayList<Items>
+getTotalValue():int
+checkStock():ArrayList<Items>
+updateStock(Items)
+removeItems(Items)
+randomItems():Items
+getItemstoSell(String type):ArrayList<Items>
+}
+
+class addStrings{
+Inventory inventory
+getItemstoSell():ArrayList<Items>
+getTotalValue():int
+checkStock():ArrayList<Items>
+updateStock(Items)
+removeItems(Items)
+randomItems():Items
+getItemstoSell(String type):ArrayList<Items>
+}
+
+class addCables{
+class addPracticeAmps{
+Inventory inventory
+getItemstoSell():ArrayList<Items>
+getTotalValue():int
+checkStock():ArrayList<Items>
+updateStock(Items)
+removeItems(Items)
+randomItems():Items
+getItemstoSell(String type):ArrayList<Items>
+}
+}
+
+class Staff{
+name:String
+cwd:int // represent consecutiveworkdays
+damageChange:int
+tuneAlgorithms tuneAlgorithms
+arriveAtStore(Order,Store,inventory;publisher)
+checkRegister(Store,bank,publisher)
+goToBank(register, bank)
+
+Doinventory(inventory, store,order, publisher)
+PlaceAnOrder(Arraylist<Items>)
+OpentheStore(Sellers[], Buyers[],Store,inventory,publisher)
+checkwithbuyer(buyer,store,inventory)
+checkwithSeller(seller,register,inventory)'
+cleanstore(inventory,publisher)
+damageItems(destroyitems,inventory,chance)
+slleItems(buyitem,store,inventory)
+getCWD()
+setCWD()// cwd+=1
+clearCWD()//CWD=0
+leaveStore(store,publisher)
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+abstract tuneAlgorithms <<abstract>> {
+operation(String name,Items items)
+}
+
+together {
+class electric{
+operation(String name,Items items)
+}
+
+class Manual{
+operation(String name, Items items)
+
+}
+
+class Haphazrd{
+operation(String name, Items items)
+}
+}
+tuneAlgorithms-[hidden]-Manual
+tuneAlgorithms<|-d-Manual
+tuneAlgorithms<|-electric
+tuneAlgorithms<|-Haphazrd
+
+together {
+
+class covers
+class Pickups
+class Bridge
+
+}
+
+Interface Command <<interface>>{
+  public execute()
+}
+together {
+class CommandA{
+  execute()
+}
+class CommandB{
+execute()
+}
+class CommandC{
+execute()
+}
+class CommandD{
+execute()
+}
+class CommandE{
+execute
+}
+class CommandF{
+executeF()
+}
+class ExitCommand{
+executeG()
+}
+note left: each command correspond to one action
+
+Command<|-d-CommandA
+Command<|-d-CommandB
+Command<|-CommandC
+Command<|-CommandD
+Command<|-CommandE
+Command<|-CommandF
+Command<|-CommandG
+Command<|-ExitCommand
+CommandA-->Store
+CommandB-->Store
+CommandC-->Store
+CommandD-->Inventory
+CommandE-->Inventory
+CommandF-->guitaKit
+Invoker-->Command
+class Invoker{
+  private Scanner scanner
+  private command[]
+  public setcommand(int command)
+  public selecOption(int num)
+}
+
+together {
+class Pickups
+class Bridge
+class covers
+}
+
+together {
+
+class factoryA
+class factoryB
+class factoryC
+
+}
+Abstract Pickups <<abstract>>{
+    private cost
+}
+together {
+class PickupsA{
+  private cost
+  publict getcost()
+
+}
+class PickupsB{
+  private cost
+  publict getcost()
+
+}
+class PickupsC{
+  private cost
+  publict getcost()
+
+}
+}
+PickupsB-[hidden]-|>Pickups
+PickupsA...|>Pickups
+PickupsB..d..|>Pickups
+PickupsC..d..|>Pickups
+
+abstract Bridge<<abstract>>{
+-cost
+}
+
+together {
+class BridgeA{
+}
+class BridgeB{
+}
+}
+abstract covers <<abstract>>{
+-cost
+}
+
+together {
+class coversA{}
+class coversB{}
+class coversC{}
+
+}
+'Bridge<|-[hidden]-BridgeB
+Bridge<|....BridgeA
+Bridge<|....BridgeB
+Bridge<|....BridgeC
+'covers<|-[hidden]-coversA
+covers<|....coversA
+covers<|....coversB
+covers<|....coversC
+ note top of factoryA: "return pickupsA"
+interface abstractfactory<<interface>>{
+  public createpickups()
+  public createcovers()
+  public createBridge()
+
+}
+
+
+
+
+abstract abstractguitaKit <<abstract>>{
+  -factory
+  -cost
+  abstract assemble()
+  abstract getcost()
+}
+guitaCommand--abstractguitaKit
+abstractguitaKit--abstractfactory
+PickupsA -[hidden]-> factoryA
+PickupsA -l-> factoryA
+coversB-l->factoryA
+BridgeA-l->factoryA
+PickupsB --> factoryB
+coversA-->factoryB
+BridgeC-->factoryB
+PickupsC --> factoryC
+coversC-->factoryC
+BridgeB-->factoryC
+skinparam groupInheritance 1
+
+abstractfactory<|-d-factoryA
+abstractfactory<|-d-factoryB
+abstractfactory<|-d-factoryC
+Class guitaKit{
+
+    Factory
+
+    assamble()
+note left:pass different accessory into the method
+}
+guita --|>abstractguitaKit
+
+
+together {
+class factoryA{}
+class factoryB{}
+class factoryC{}
+}
+
+interface Subject <<interface>> {
+registerObserver(Observer)
+removeObserver(Observer)
+notifyObservers(int, String, int)
+}
+
+interface Observer <<interface>>{
+update(int, String, int)
+}
+
+class Logger {
+private static Logger logger
+private Logger()
+-subject:Subject
+public static Logger getLogger()
+-out:NOutputfilestream
+-out:SOutputfilestream
+update(int location int, String, int)
+writeToFile(String)
+CCGlogger()// close the output stream
+}
+
+class Tracker {
+private Tracker()
+private static Tracker tracker
+-day:int
+-subject:Subject
+-content:NHashMap<String,HashMap<String,Integer>>
+-content:SHashMap<String,HashMap<String,Integer>>
+public static getTracker()
+update(int, String, int)
+write()
+}
+
+class publisher {
+-observers:List<Observer>
+registerObserver(Observer)
+removeObserver(Observer)
+notifyObservers(int, String, int)
+}
+
+abstract class Customer <<abstract>> {
+-name:String
+getName():String
+}
+
+class Buyer {
+-name:String
+-itemWantToBuy:Items
+-buyOrNot:boolean
+-buyOrNotWithHigherPrice:boolean
+getName():String
+randomItemWantToBuy():String
+getItemWantToBuy():String
+checkItemInStore(concreteInventory):boolean
+getBuyOrNot(ArrayList<Items>, int):boolean
+}
+
+class Seller {
+-name:String
+-itemWantToSell:Items
+-sellOrNot:boolean
+-sellOrNotWithHigherPrice:boolean
+getName():String
+getItemsWantToSell():Items
+getSellOrNot(int):boolean
+}
+
+class Classpicker {
+classes:ArrayList<Class?>
+MakeRandomInstance():Items
+}
+
+
+
+Observer <|-- Logger
+Observer <|-- Tracker
+Subject --> Observer
+Observer --> Subject
+Subject <|-- publisher
+Staff -- publisher
+
+Seller -- Classpicker
+Customer <|-- Buyer
+Customer <|-- Seller
+Staff -- Customer
+Register -- Store
+publisher -- Store
+
+Items-->Classpicker
+Items-->Inventory
+Class Items{
+  name:String
+  itemType:String
+  purchasePrice:int
+  listPrice:int
+  salePrice:int
+  newOrUsed:String
+  condition:int
+  daySold:int
+  dayArrived:int
+  Property:property
+  getName():String
+  setName(String):
+  getItemType():String
+  setItemType(String):
+  getPurchasePrice():int
+  setPurchasePrice(int)
+  getListPrice():int
+  setListPrice(int):
+  getSalePrice():int
+  setSalePrice(int):
+  getNeworUsed():String
+  setNeworUsed(String):
+  getCondition():String
+  setCondition(String):
+  getDaySold():int
+  setDaySold(int):
+  getConditionList():String[]
+
+}
+note left of Items::getConditionList():String[]
+  return a String list of conditions
+end note
+Items <|-- Music
+Class Music{
+  band:String
+  album:String
+  getBand():String
+  getAlbum():String
+  setBand(String)
+  setAlbum(String)
+}
+Music <|-- PaperSocre
+Music <|-- CD
+Music <|-- Vinyl
+Music <|-- Cassete
+Class Players{
+property: Property
+}
+Players  <|-- MP3
+Players  <|-- CDPlayer
+Players  <|-- RecordPlayer
+Players  <|-- CassetePlayer
+Players -- Property
+Class Property{
+  value:bool
+  change:int
+  type:String
+  setProperty():
+  getproperty:bool value
+  getchange():int
+  getname():String
+}
+Items <|-- Instruments
+Instruments  <|-- Stringed
+Instruments  <|-- Wind
+Class Stringed{
+electric:boolean
+property:Property
+getElectric():boolean
+setElectric(boolean):
+}
+Stringed <|-- Mandolin
+Stringed <|-- Bass
+Stringed <|-- Guitar
+Stringed -- Property
+Class Wind{
+property:Property
+}
+Wind <|-- Flute
+Wind <|-- Saxophone
+Wind <|-- Harmonica
+Wind -- Property
+Class Flute{
+type:String
+getType():String
+setType(String):
+}
+Class Saxophone{
+type:String
+getType():String
+setType(String):
+}
+Class Harmonica{
+key:String
+getKey():String
+setKey(String):
+}
+
+Items <|-- Clothing
+Class Clothing{
+}
+Clothing  <|-- Shirts
+Clothing  <|-- Hats
+Clothing  <|-- Bandanas
+Class Hats{
+hatSize:int
+getHatSize():int
+setHatSize(int):
+}
+Class Shirts{
+shirtSize:int
+getShirtSize(int):
+setShirtSize():
+}
+Class Bandanas{
+}
+Items <|-- Accessories
+Class Accessories{
+}
+Accessories  <|-- Cables
+Accessories  <|-- Gitbags
+Accessories  <|-- Strings
+Accessories  <|-- PracticeAmps
+Class Cables{
+length:int
+getLength()int:
+setLength(int):
+}
+Class Strings{
+type:String
+getType():String
+setType(String):
+}
+Class PracticeAmps{
+Wattage:int
+getWattage():int
+setWattage(int):
+}
+
+Items -- Helper
+Class Helper{
+random_number(int Max, int Min) int
+random_letter()String
+random_name(String) String
+random_purchasePrice(int)
+random_newOrUsed(String)
+random_boolearn()
+random_arriveDay(int)
+new：uniform_prob(): int
+poisson_prob(mean):int
+}
+
+
+
+
+@enduml
+

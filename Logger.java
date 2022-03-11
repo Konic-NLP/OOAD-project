@@ -55,13 +55,13 @@ public class Logger implements Observer {
     public void update(int caseNumber,int storeNumber, String name,int number) throws IOException {
         String storeName = null;
         OutputStreamWriter writer=null;
-        switch(storeNumber){
-            case 0: storeName = "North Store";
-             writer=this.Nout;
-            break;
-            case 1: storeName = "South Store";
+        if(storeNumber==0) {
+            storeName = "North Store";
+            writer = this.Nout;
+        }else{
+            storeName = "South Store";
             writer=this.Sout;
-            break;
+
         }
         // update would be called inside the notify method of the subject, and do different action based on the code
         switch (caseNumber) {
@@ -86,7 +86,7 @@ public class Logger implements Observer {
         writer.write(string);
     }
     public void CCGlogger() throws IOException { // at the end of day, close the file stream
-     this.subject.removeObserver(this);
+//     this.subject.removeObserver(this);
      this.Nout.close();
      this.Sout.close();
     }
