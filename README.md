@@ -4,7 +4,7 @@
 Java Version:16.0.2 <br>
 Code Version:3.0 <br>
 
-The **output files** are in the [output](https://github.com/Konic-NLP/OOAD-project/tree/Project4/output) folder. including `output.txt` for console output, chart_1.jpg/chart_2 jpg for the graph output via `xchart` libray, and daily logger produced by the `Logger` class <br>
+The **output files** are in the [output](https://github.com/Konic-NLP/OOAD-project/tree/Project4/output) folder. including `output.txt` for console output, `chart_1.jpg/chart_2 jpg` for the graph output via `xchart` libray, and daily `logger.txt` produced by the `Logger` class <br>
 
 The 15 **tests cases** are in the [testCasewithJunit](https://github.com/Konic-NLP/OOAD-project/tree/Project4/testCasewithJunit) folder. <br>
 
