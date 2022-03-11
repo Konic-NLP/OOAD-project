@@ -52,7 +52,6 @@ We create an abstract class addDecorator extending the abstract class inventory.
 
 4. Command pattern <br>
 We apply the Command pattern to interact with a user via command line. Invoker holds two collections of commands for each store and interact with the user via `Scanner` class.  
-
 First the user could choose a store to manipulate and a local variable will refer to the specific commandlist according to the choice of the user, then the user could type the   
 option to the invoker, and invoker will invoke the `execute()` method of the ith(i equals the option number) command in the commandlist gotten from the first interaction, andeach command hold a `Store` object as the receiver, and then call the corresponding method to perform the function.  
 [Graph](https://drive.google.com/file/d/12sm19SfrJttH4s0VWrt7HOuehYth0sI-/view?usp=sharing)
