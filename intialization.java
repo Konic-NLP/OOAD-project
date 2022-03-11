@@ -239,14 +239,22 @@ public class intialization {
         for(int c=0; c<totaldays;c++){
             date[c]=c+1;
         }
+        /*
+        below are code for drawing the chart.
+         */
+
         // output the chart
+        // prepare the data
         double[][]graph1 =new double[][]{resgiters,itemsale};
         double[][]graph2= new double[][]{itemscount,damagecount,soldcount};
+        // prepare the labels for the chart
         String[] seriesNames_1 = new String[] { "Total Register","Item Sales"};
         String[] seriesNames_2 = new String[] { "items count","damage count","sold count"};
+        // generate the chart
         XYChart chart_1 = QuickChart.getChart("The money in the register and sales for each day", "Date", "$", seriesNames_1, date, graph1);
         XYChart chart_2 = QuickChart.getChart("the count of items in the inventory,damageitems,sold items for each day", "Date", "nums", seriesNames_2, date, graph2);
-                BitmapEncoder.saveBitmapWithDPI(chart_1, "./output/chart_1", BitmapEncoder.BitmapFormat.JPG, 300);
+       // generate the chart into a file.
+        BitmapEncoder.saveBitmapWithDPI(chart_1, "./output/chart_1", BitmapEncoder.BitmapFormat.JPG, 300);
         BitmapEncoder.saveBitmapWithDPI(chart_2, "./output/chart_2", BitmapEncoder.BitmapFormat.JPG, 300);
 //        new SwingWrapper(chart_1).displayChart();
 //        new SwingWrapper(chart_2).displayChart();
