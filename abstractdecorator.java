@@ -50,7 +50,7 @@ class addgigbag extends abstractdecorator{
                          // check the stock and add the item to the list
                          if (Objects.equals(item.getItemType(), "Gigbag")) {
                               originalitems.add(item);
-                              System.out.println("add one gigbag additionally");
+                              System.out.println("add one gigbag additionally into the cart");
                               break;
                          }
 
@@ -122,7 +122,7 @@ class addPracticeAmp extends abstractdecorator{
                for(Items item:this.inventory.getItemsList()){
                     if(Objects.equals(item.getItemType(), "PracticeAmps")){
                          originalitems.add(item);
-                         System.out.println("add a practiceamp additionally");
+                         System.out.println("add a practiceamp additionally into a cart");
                          break;
                     }
 
@@ -193,7 +193,7 @@ class addCables extends abstractdecorator{
                for(Items item:this.inventory.getItemsList()){
                     if(Objects.equals(item.getItemType(), "Cables")){
                          originalitems.add(item);
-                         System.out.println("add a cables additionally");
+                         System.out.println("add a cables additionally into the cart");
                          num-=1;
                          if (num==0){
                          break;}
@@ -267,7 +267,7 @@ class addStrings extends abstractdecorator{
                for(Items item:this.inventory.getItemsList()){
                     if(Objects.equals(item.getItemType(), "Strings")){
                          originalitems.add(item);
-                         System.out.println("adda Strings additionally");
+                         System.out.println("add a Strings additionally into the cart");
                          num-=1;
                          if (num==0){
                               break;}

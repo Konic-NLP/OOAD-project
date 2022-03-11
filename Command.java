@@ -1,10 +1,7 @@
 import java.io.Console;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
 
 public interface Command {
     public void execute() throws IOException;
@@ -58,8 +55,13 @@ class buyCommand implements  Command{
     }
     public void execute() throws IOException {
         System.out.println("please input your items want to buy");
-
-        ArrayList<Items> buyitems=this.store.inventory.Getitemstosell( scanner.next());
+        String buyitemtype=scanner.next();
+//        ArrayList<Items> buyitems=this.store.inventory.Getitemstosell( scanner.next());
+        Inventory inventory1= new addgigbag(this.store.inventory);
+        inventory1=new addCables(inventory1);
+        inventory1=new addPracticeAmp(inventory1);
+        inventory1=new addStrings(inventory1);
+        ArrayList<Items> buyitems=inventory1.Getitemstosell(buyitemtype);
         if(buyitems ==null){
         System.out.println("Sorry, we currently out of stock for such items");
     }else{
@@ -195,22 +197,37 @@ class SellCommand implements Command{
 is created randomly*/
 class guitaCommand implements Command{
     Store store;
+    Scanner scanner;
     public guitaCommand(Store store){
 
     this.store=store;
-
+    this.scanner=new Scanner(System.in);
     }
 
     @Override
     public void execute() {
      // call the method of the store and get the guitar kit
-     GuitarKit guitarKit=this.store.CreateGuitarKit();
+     System.out.println("please input your choice(0-2) for each elements of the Guitar kit and seperate by space");
+     String [] input=scanner.nextLine().split(" ");
+     int[] nums= Arrays.stream(input).mapToInt(Integer::parseInt).toArray();
+     // get the choice from the command line user
+
+        /*
+        randomly generate the choice for each of the elements.
+         */
+//        int [] nums=new int[6];
+//        for(int i=0;i<6;i++){
+//            int num=Helper.random_number(3,0);
+//            nums[i]=num;
+//        }
+     GuitarKit guitarKit=this.store.CreateGuitarKit(nums);
      int saleprice=guitarKit.getSumPrice();
 
      guitarKit.setSalePrice(saleprice);
      store.addSoldItem(guitarKit);
      store.register.addmoney(saleprice);
      System.out.println("Thanks for your purchase, enjoy the guitar");
+        System.out.format("openStore: %s sold a %s to CommandUser  for  %d  %n",store.todayStaff.getName(),"GuitarKit",saleprice);
     }}
 
 

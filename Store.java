@@ -210,12 +210,8 @@ public class Store {
 //            System.out.println("the total number of items in the inventory is  "+itemsList.size());
         return itemsList;}
 
-    public GuitarKit CreateGuitarKit(){
-        int [] nums=new int[6];
-        for(int i=0;i<6;i++){
-            int num=Helper.random_number(3,0);
-            nums[i]=num;
-        }
+    public GuitarKit CreateGuitarKit(int [] nums){
+
 
        return  factory.generate(nums[0],nums[1],nums[2],nums[3],nums[4],nums[5]);
     }}

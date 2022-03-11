@@ -113,8 +113,9 @@ public class intialization {
         SouthFNMS.setPublisher(publisher);
         NorthFNMS.setPublisher(publisher);
         int totaldays=Helper.random_number(30,10);
+//        totaldays=22;
 //        totaldays=24;
-//        if(totaldays%7==0){totaldays=totaldays+1;}
+        if(totaldays%7==0){totaldays=totaldays+1;}
         // record the data for drawing the chart
         double [] soldcount=new double[totaldays];
         double [] damagecount=new double[totaldays];
