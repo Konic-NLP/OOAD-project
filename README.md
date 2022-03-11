@@ -102,6 +102,7 @@ Moreover, we will use lazy instantiation for logger and eager instantiation for 
 
 <li> the sale of guitar kit does not count into the count record in the logger but does in anywhere else.</li>
 <li> The external package we are currently using in the project:  </li>
+  
 | Package     |  Version    |
 | ----------- | ----------- |
 |  Junit      | 3.8.2       |
