@@ -102,7 +102,10 @@ Moreover, we will use lazy instantiation for logger and eager instantiation for 
 
 <li> the sale of guitar kit does not count into the count record in the logger but does in anywhere else.</li>
 <li> The external package we are currently using in the project:  </li>
-  1. Junit 3.8.2  
-  2. commons-math 3.6.1  
-  3. xchart 3.8.1
+| Package     |  Version    |
+| ----------- | ----------- |
+|  Junit      | 3.8.2       |
+|Commons-math3| 3.6.1       |
+|X-chart      | 3.8.1       |
+
 
