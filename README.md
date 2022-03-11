@@ -99,3 +99,5 @@ Moreover, we will use lazy instantiation for logger and eager instantiation for 
 <li>We assume that only one clerk in the object pool will be sick each day.</li>
 <li>We assume that the raw elements of the guitar kit of the south store are all hand-made, so the price of the element at the south store is twice the price of the same element at the north store.</li>
 <li>The number damage items refer to the number that the Clerk damage the items and reduce the condition of the item, number of destroyed items refer to the amount that damaged and then reduce the condition to 0 and removed from the inventory.</li>
+
+<li> the sale of guitar kit does not count into the count record in the logger but does in anywhere else.
