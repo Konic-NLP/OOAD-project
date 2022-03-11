@@ -86,7 +86,7 @@ Moreover, we will use lazy instantiation for logger and eager instantiation for 
 <li> Once any kind of clothing are sold out, the rest subtypes of clothing would also be removed from the inventory. </li>
 <li> If the customer wants to buy stringed instruments, even if some kind of additional items the customer may also want to buy are out of stock, it will not impact this whole transaction. e.g, if there is no gigbag in the store but Strings, the customer will buy Stringed instruments + Strings.</li>
 <li> We generate Poisson distribution with commons.math3 jar package.</li>
-~~On each day, the three staffs have even chance to be sick, no matter they are no duty or not, and ones who are not on duty that day for that day will reset his/her consecutive work days.~~  
+<li><strike>On each day, the three staffs have even chance to be sick, no matter they are no duty or not, and ones who are not on duty that day for that day will reset his/her consecutive work days.</strike></li>  
 
 <li> each day, we will pick up one person to be sick from 5 staffs.
 <li>In commend line, input from users should be appropriate such as the type and the number of input. However, we haven't handle the outlier input problem due to time limitation.</li>
