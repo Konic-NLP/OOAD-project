@@ -1,0 +1,8 @@
+North Store:Velma has arrived at the store.
+North Store:3 items has added to inventory.
+North Store:$3429 is in the register.
+North Store:2 items has been damaged in the process of tuning.
+North Store:69 items are in the inventory in total.
+North Store::The total value in the inventory is $1073.
+North Store:0 items has been damaged in the process of cleaning.
+North Store:Velma has left the store.

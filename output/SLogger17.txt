@@ -1,0 +1,10 @@
+South Store:Jerry has arrived at the store.
+South Store:0 items has added to inventory.
+South Store:$1930 is in the register.
+South Store:0 items has been damaged in the process of tuning.
+South Store:96 items are in the inventory in total.
+South Store::The total value in the inventory is $1493.
+South Store:6 items has been sold.
+South Store:5 items has been purchased.
+South Store:0 items has been damaged in the process of cleaning.
+South Store:Jerry has left the store.

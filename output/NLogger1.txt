@@ -1,0 +1,11 @@
+North Store:Daphne has arrived at the store.
+North Store:0 items has added to inventory.
+North Store:$0 is in the register.
+North Store:$1000 is in the register after withdraw.
+North Store:0 items has been damaged in the process of tuning.
+North Store:63 items are in the inventory in total.
+North Store::The total value in the inventory is $1751.
+North Store:5 items has been sold.
+North Store:6 items has been purchased.
+North Store:0 items has been damaged in the process of cleaning.
+North Store:Daphne has left the store.
