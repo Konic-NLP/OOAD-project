@@ -20,7 +20,7 @@ The link to Project3 Part1 version of UML:
 [UML 2.0](https://drive.google.com/file/d/1hSDn2l9CgKIbKhYhrpg_vuS4Z9ieeJdF/view?usp=sharing)
 <br>
 
-The link to Project3 Part2 (current) version of UML:
+The link to Project3 Part2 version of UML:
 [UML 2.1](https://drive.google.com/file/d/1m1sBKMnuXuZXXbP9N78wuhJgt7NsPCx_/view?usp=sharing)
 <br>
 
